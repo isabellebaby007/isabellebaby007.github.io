@@ -8,26 +8,91 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Mon, 12 Feb 2018 12:58:47 GMT</pubDate>
+    <pubDate>Tue, 13 Feb 2018 04:00:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Hello World</title>
-      <link>http://yoursite.com/2018/02/12/hello-world/</link>
-      <guid>http://yoursite.com/2018/02/12/hello-world/</guid>
-      <pubDate>Mon, 12 Feb 2018 12:58:47 GMT</pubDate>
+      <title>九大排序算法总结</title>
+      <link>http://yoursite.com/2018/02/13/ercha/</link>
+      <guid>http://yoursite.com/2018/02/13/ercha/</guid>
+      <pubDate>Tue, 13 Feb 2018 05:42:04 GMT</pubDate>
+      <description>
+      
+        &lt;pre&gt;&lt;code&gt;主要有以下32种：
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在右上角或者左上角实现fork me on github&lt;br&gt;添加RSS&lt;br&gt;添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<pre><code>主要有以下32种：</code></pre><p>在右上角或者左上角实现fork me on github<br>添加RSS<br>添加动态背景<br>实现点击出现桃心效果<br><a id="more"></a><br>修改文章内链接文本样式<br>修改文章底部的那个带#号的标签<br>在每篇文章末尾统一添加“本文结束”标记<br>修改作者头像并旋转<br>博文压缩<br>修改“代码块自定义样式<br>侧边栏社交小图标设置<br>主页文章添加阴影效果<br>在网站底部加上访问量<br>添加热度<br>网站底部字数统计<br>添加 README.md 文件<br>设置网站的图标Favicon<br>实现统计功能<br>添加顶部加载条<br>在文章底部增加版权信息<br>添加网易云跟帖(跟帖关闭，已失效，改为来必力)<br>隐藏网页底部powered By Hexo / 强力驱动<br>修改网页底部的桃心<br>文章加密访问<br>添加jiathis分享<br>博文置顶<br>修改字体大小<br>修改打赏字体不闪动<br>自定义鼠标样式<br>为博客加上萌萌的宠物<br>DaoVoice 在线联系<br>点击爆炸效果</p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/13/ercha/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>(更新)hexo+github博客搭建进阶指南</title>
+      <link>http://yoursite.com/2018/02/13/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</link>
+      <guid>http://yoursite.com/2018/02/13/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</guid>
+      <pubDate>Tue, 13 Feb 2018 05:42:04 GMT</pubDate>
+      <description>
+      
+        &lt;pre&gt;&lt;code&gt;主要有以下32种：
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在右上角或者左上角实现fork me on github&lt;br&gt;添加RSS&lt;br&gt;添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<pre><code>主要有以下32种：</code></pre><p>在右上角或者左上角实现fork me on github<br>添加RSS<br>添加动态背景<br>实现点击出现桃心效果<br><a id="more"></a><br>修改文章内链接文本样式<br>修改文章底部的那个带#号的标签<br>在每篇文章末尾统一添加“本文结束”标记<br>修改作者头像并旋转<br>博文压缩<br>修改“代码块自定义样式<br>侧边栏社交小图标设置<br>主页文章添加阴影效果<br>在网站底部加上访问量<br>添加热度<br>网站底部字数统计<br>添加 README.md 文件<br>设置网站的图标Favicon<br>实现统计功能<br>添加顶部加载条<br>在文章底部增加版权信息<br>添加网易云跟帖(跟帖关闭，已失效，改为来必力)<br>隐藏网页底部powered By Hexo / 强力驱动<br>修改网页底部的桃心<br>文章加密访问<br>添加jiathis分享<br>博文置顶<br>修改字体大小<br>修改打赏字体不闪动<br>自定义鼠标样式<br>为博客加上萌萌的宠物<br>DaoVoice 在线联系<br>点击爆炸效果</p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/13/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>青蛙旅行破解版</title>
+      <link>http://yoursite.com/2018/02/13/qingwa/</link>
+      <guid>http://yoursite.com/2018/02/13/qingwa/</guid>
+      <pubDate>Tue, 13 Feb 2018 05:42:04 GMT</pubDate>
       <description>
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+          &lt;pre&gt;&lt;code&gt;链接    密码
+gggg
+hhhhhhhhhhhhh
+
+
+
+aaaaaaaaaaaaaa
+
+aadddddddddddddd
+
+rrrrrrrrrrrrrrrrrr
+
+ggggggggggggggggg
+&lt;/code&gt;&lt;/pre&gt;
         
       
       </description>
       
-      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<pre><code>链接    密码gggghhhhhhhhhhhhhaaaaaaaaaaaaaaaaddddddddddddddrrrrrrrrrrrrrrrrrrggggggggggggggggg</code></pre>]]></content:encoded>
       
-      <comments>http://yoursite.com/2018/02/12/hello-world/#disqus_thread</comments>
+      <comments>http://yoursite.com/2018/02/13/qingwa/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>DOM浅谈</title>
+      <link>http://yoursite.com/2018/02/02/DOM%E6%B5%85%E8%B0%88/</link>
+      <guid>http://yoursite.com/2018/02/02/DOM%E6%B5%85%E8%B0%88/</guid>
+      <pubDate>Fri, 02 Feb 2018 05:42:04 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;先附上一个DOM的教程：&lt;a href=&quot;http://www.w3school.com.cn/htmldom/dom_methods.asp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.w3school.com.cn/htmldom/dom_methods.asp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;   DOM的结构实际上和数据结构里面的树非常相似&lt;/p&gt;
+&lt;p&gt;方法    描述&lt;br&gt;getElementById()    返回带有指定 ID 的元素。&lt;br&gt;getElementsByTagName()    返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。&lt;br&gt;getElementsByClassName()    返回包含带有指定类名的所有元素的节点列表。&lt;br&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>先附上一个DOM的教程：<a href="http://www.w3school.com.cn/htmldom/dom_methods.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/htmldom/dom_methods.asp</a></p><p>   DOM的结构实际上和数据结构里面的树非常相似</p><p>方法    描述<br>getElementById()    返回带有指定 ID 的元素。<br>getElementsByTagName()    返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。<br>getElementsByClassName()    返回包含带有指定类名的所有元素的节点列表。<br><a id="more"></a><br>appendChild()    把新的子节点添加到指定节点。<br>removeChild()    删除子节点。<br>replaceChild()    替换子节点。<br>insertBefore()    在指定的子节点前面插入新的子节点。<br>createAttribute()    创建属性节点。<br>createElement()    创建元素节点。<br>createTextNode()    创建文本节点。<br>getAttribute()    返回指定的属性值。<br>setAttribute()    把指定属性设置或修改为指定的值。<br>Copyright：isabllezhou mail:isabellezhou@163.com</p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/02/DOM%E6%B5%85%E8%B0%88/#disqus_thread</comments>
     </item>
     
   </channel>
