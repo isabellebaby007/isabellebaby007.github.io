@@ -403,7 +403,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  213
+                  426
                 </span>
               
 
@@ -419,7 +419,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -443,40 +443,25 @@
         
           
             <p>H5的语义化标签以及属性，可以让开发者非常方便地实现清晰的web页面布局，加上css3的效果渲染，快速建立web页面就容易多了。<br>H5的新增标签有：<a href="http://www.w3school.com.cn/html5/html5_reference.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/html5/html5_reference.asp</a><br>使用这些标签可以使代码语义化更加直观，而且更方便seo优化，但是H5新标签在ie6/7/8上并不能识别，这里使用JavaScript来解决兼容性问题。<br>一、原理说明  </p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;&lt;/title&gt;       
-    &lt;style type=&quot;text/css&quot;&gt;
-    header {
-        width: 200px;
-        height: 200px;
-        background-color: red;
-    }
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">	&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">	    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">	    &lt;title&gt;&lt;/title&gt;	   </span><br><span class="line">	    &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	    header &#123;</span><br><span class="line">	        width: 200px;</span><br><span class="line">	        height: 200px;</span><br><span class="line">	        background-color: red;</span><br><span class="line">	    &#125;</span><br><span class="line">	</span><br><span class="line">	    section &#123;</span><br><span class="line">	        width: 150px;</span><br><span class="line">	        height: 150px;</span><br><span class="line">	        background-color: yellow;</span><br><span class="line">	    &#125;</span><br><span class="line">	</span><br><span class="line">	    footer &#123;</span><br><span class="line">	        width: 100px;</span><br><span class="line">	        height: 100px;</span><br><span class="line">	        background-color: blue;</span><br><span class="line">	    &#125;</span><br><span class="line">	    &lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	    &lt;header&gt;header&lt;/header&gt;</span><br><span class="line">	    &lt;section&gt;section&lt;/section&gt;</span><br><span class="line">	    &lt;footer&gt;footer&lt;/footer&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">	&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>例如上面这段代使用了header、section、footer标签，这几个H5的标签在ie7浏览器下打开是这个样子的:<br><img src="/2018/02/20/H5标签兼容性解决方案/ie7.jpg" alt="不兼容"><br>这是因为这几个H5的标签在ie以下的浏览器并不兼容，所以显示不出来样式。解决方法：用js来自定义这三个H5标签，但是因为自定义标签默认为内联样式（不支持宽高的设置，靠内容充满),所以看到的如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	document.createElement(&quot;header&quot;); /*自定义标签，默认为内联元素，不支持宽高，靠内容撑满，用display：block转成块元素*/</span><br><span class="line">	document.createElement(&quot;section&quot;);</span><br><span class="line">	document.createElement(&quot;footer&quot;);</span><br><span class="line">	&lt;/script&gt; </span><br><span class="line">```  </span><br><span class="line">![加js解决](H5标签兼容性解决方案/js.jpg)  </span><br><span class="line"> 如果要以块级元素显示，显示宽高，则在没饿过样式里面添加代码display：blockl;</span><br></pre></td></tr></table></figure></p>
+<p>   <style type="text/css"><br>    header {<br>        width: 200px;<br>        height: 200px;<br>        background-color: red;<br>        display: block;<br>    }</p>
+<pre><code>section {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    display: block;
+}
 
-    section {
-        width: 150px;
-        height: 150px;
-        background-color: yellow;
-    }
-
-    footer {
-        width: 100px;
-        height: 100px;
-        background-color: blue;
-    }
-    &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;header&gt;header&lt;/header&gt;
-    &lt;section&gt;section&lt;/section&gt;
-    &lt;footer&gt;footer&lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;  
-</code></pre><p>例如上面这段代使用了header、section、footer标签，这几个H5的标签在ie7浏览器下打开是这个样子的:<br><img src="/2018/02/20/H5标签兼容性解决方案/ie7.jpg" alt="不兼容">  </p>
-
+footer {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: block;
+        }
+&lt;/style&gt;
+</code></pre><p>```</p>
+</style></p>
           
         
       
@@ -813,7 +798,7 @@
 </code></pre><p>在右上角或者左上角实现fork me on github<br>添加RSS<br>添加动态背景<br>实现点击出现桃心效果<br></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/13/ercha/#espandi" rel="contents">
+            <a class="btn" href="/2018/02/13/ercha/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -991,7 +976,7 @@
 <h1 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h1><p>点击  <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">这里</a>  或者 <a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>选择自己喜欢的样式，并复制相应的代码。<br>然后复制代码到themes/next/layout/_layout.swig文件中，放置在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面，并把href改为你的GitHub地址。<br><img src="/2018/02/13/github-hexo博客搭建进阶指南/github+hexo博客搭建进阶指南/github.jpg" alt=""><br></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/13/github-hexo博客搭建进阶指南/#espandi" rel="contents">
+            <a class="btn" href="/2018/02/13/github-hexo博客搭建进阶指南/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1377,7 +1362,7 @@ ggggggggggggggggg
 <p>方法    描述<br>getElementById()    返回带有指定 ID 的元素。<br>getElementsByTagName()    返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。<br>getElementsByClassName()    返回包含带有指定类名的所有元素的节点列表。<br></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/02/02/DOM浅谈/#espandi" rel="contents">
+            <a class="btn" href="/2018/02/02/DOM浅谈/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1598,7 +1583,7 @@ ggggggggggggggggg
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.1k</span>
+    <span title="Site words total count">1.3k</span>
   
 </div>
 
