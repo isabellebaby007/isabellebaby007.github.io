@@ -51,23 +51,6 @@
     </item>
     
     <item>
-      <title>九大排序算法总结</title>
-      <link>http://yoursite.com/2018/02/13/ercha/</link>
-      <guid>http://yoursite.com/2018/02/13/ercha/</guid>
-      <pubDate>Tue, 13 Feb 2018 05:42:04 GMT</pubDate>
-      <description>
-      
-        &lt;pre&gt;&lt;code&gt;主要有以下32种：
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在右上角或者左上角实现fork me on github&lt;br&gt;添加RSS&lt;br&gt;添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<pre><code>主要有以下32种：</code></pre><p>在右上角或者左上角实现fork me on github<br>添加RSS<br>添加动态背景<br>实现点击出现桃心效果<br><a id="more"></a><br>修改文章内链接文本样式<br>修改文章底部的那个带#号的标签<br>在每篇文章末尾统一添加“本文结束”标记<br>修改作者头像并旋转<br>博文压缩<br>修改“代码块自定义样式<br>侧边栏社交小图标设置<br>主页文章添加阴影效果<br>在网站底部加上访问量<br>添加热度<br>网站底部字数统计<br>添加 README.md 文件<br>设置网站的图标Favicon<br>实现统计功能<br>添加顶部加载条<br>在文章底部增加版权信息<br>添加网易云跟帖(跟帖关闭，已失效，改为来必力)<br>隐藏网页底部powered By Hexo / 强力驱动<br>修改网页底部的桃心<br>文章加密访问<br>添加jiathis分享<br>博文置顶<br>修改字体大小<br>修改打赏字体不闪动<br>自定义鼠标样式<br>为博客加上萌萌的宠物<br>DaoVoice 在线联系<br>点击爆炸效果</p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/02/13/ercha/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>(更新)hexo+github博客搭建进阶指南</title>
       <link>http://yoursite.com/2018/02/13/github-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</link>
       <guid>http://yoursite.com/2018/02/13/github-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</guid>
@@ -114,6 +97,23 @@ ggggggggggggggggg
       <content:encoded><![CDATA[<pre><code>链接    密码gggghhhhhhhhhhhhhaaaaaaaaaaaaaaaaddddddddddddddrrrrrrrrrrrrrrrrrrggggggggggggggggg</code></pre>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/02/13/qingwa/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>九大排序算法总结</title>
+      <link>http://yoursite.com/2018/02/13/ercha/</link>
+      <guid>http://yoursite.com/2018/02/13/ercha/</guid>
+      <pubDate>Tue, 13 Feb 2018 05:42:04 GMT</pubDate>
+      <description>
+      
+        &lt;pre&gt;&lt;code&gt;主要有以下32种：
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在右上角或者左上角实现fork me on github&lt;br&gt;添加RSS&lt;br&gt;添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<pre><code>主要有以下32种：</code></pre><p>在右上角或者左上角实现fork me on github<br>添加RSS<br>添加动态背景<br>实现点击出现桃心效果<br><a id="more"></a><br>修改文章内链接文本样式<br>修改文章底部的那个带#号的标签<br>在每篇文章末尾统一添加“本文结束”标记<br>修改作者头像并旋转<br>博文压缩<br>修改“代码块自定义样式<br>侧边栏社交小图标设置<br>主页文章添加阴影效果<br>在网站底部加上访问量<br>添加热度<br>网站底部字数统计<br>添加 README.md 文件<br>设置网站的图标Favicon<br>实现统计功能<br>添加顶部加载条<br>在文章底部增加版权信息<br>添加网易云跟帖(跟帖关闭，已失效，改为来必力)<br>隐藏网页底部powered By Hexo / 强力驱动<br>修改网页底部的桃心<br>文章加密访问<br>添加jiathis分享<br>博文置顶<br>修改字体大小<br>修改打赏字体不闪动<br>自定义鼠标样式<br>为博客加上萌萌的宠物<br>DaoVoice 在线联系<br>点击爆炸效果</p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/13/ercha/#disqus_thread</comments>
     </item>
     
   </channel>
