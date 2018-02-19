@@ -8,8 +8,47 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Tue, 13 Feb 2018 04:00:39 GMT</pubDate>
+    <pubDate>Mon, 19 Feb 2018 18:09:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>H5标签兼容性解决方案</title>
+      <link>http://yoursite.com/2018/02/20/H5%E6%A0%87%E7%AD%BE%E5%85%BC%E5%AE%B9%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <guid>http://yoursite.com/2018/02/20/H5%E6%A0%87%E7%AD%BE%E5%85%BC%E5%AE%B9%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <pubDate>Mon, 19 Feb 2018 17:28:23 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;H5的语义化标签以及属性，可以让开发者非常方便地实现清晰的web页面布局，加上css3的效果渲染，快速建立web页面就容易多了。&lt;br&gt;H5的新增标签有：&lt;a href=&quot;http://www.w3school.com.cn/html5/html5_reference.as
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>H5的语义化标签以及属性，可以让开发者非常方便地实现清晰的web页面布局，加上css3的效果渲染，快速建立web页面就容易多了。<br>H5的新增标签有：<a href="http://www.w3school.com.cn/html5/html5_reference.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/html5/html5_reference.asp</a><br>使用这些标签可以使代码语义化更加直观，而且更方便seo优化，但是H5新标签在ie6/7/8上并不能识别，这里使用JavaScript来解决兼容性问题。<br>一、原理说明  </p><pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;meta charset=&quot;utf-8&quot;&gt;    &lt;title&gt;&lt;/title&gt;           &lt;style type=&quot;text/css&quot;&gt;    header {        width: 200px;        height: 200px;        background-color: red;    }    section {        width: 150px;        height: 150px;        background-color: yellow;    }    footer {        width: 100px;        height: 100px;        background-color: blue;    }    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;    &lt;header&gt;header&lt;/header&gt;    &lt;section&gt;section&lt;/section&gt;    &lt;footer&gt;footer&lt;/footer&gt;&lt;/body&gt;&lt;/html&gt;  </code></pre><p>例如上面这段代使用了header、section、footer标签，这几个H5的标签在ie7浏览器下打开是这个样子的:<br><img src="/2018/02/20/H5标签兼容性解决方案/ie7.jpg" alt="不兼容">  </p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/20/H5%E6%A0%87%E7%AD%BE%E5%85%BC%E5%AE%B9%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>手把手教你github+hexo搭建博客（基础篇）</title>
+      <link>http://yoursite.com/2018/02/14/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0github-hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/</link>
+      <guid>http://yoursite.com/2018/02/14/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0github-hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/</guid>
+      <pubDate>Tue, 13 Feb 2018 19:55:02 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/2018/02/14/手把手教你github-hexo搭建博客（基础篇）/github.jpg&quot; alt=&quot;git&quot;&gt;&lt;/p&gt;
+
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><img src="/2018/02/14/手把手教你github-hexo搭建博客（基础篇）/github.jpg" alt="git"></p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/14/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0github-hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>九大排序算法总结</title>
@@ -19,7 +58,7 @@
       <description>
       
         &lt;pre&gt;&lt;code&gt;主要有以下32种：
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在右上角或者左上角实现fork me on github&lt;br&gt;添加RSS&lt;br&gt;添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在右上角或者左上角实现fork me on github&lt;br&gt;添加RSS&lt;br&gt;添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;&lt;/p&gt;
       
       </description>
       
@@ -30,25 +69,19 @@
     
     <item>
       <title>(更新)hexo+github博客搭建进阶指南</title>
-      <link>http://yoursite.com/2018/02/13/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</link>
-      <guid>http://yoursite.com/2018/02/13/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</guid>
+      <link>http://yoursite.com/2018/02/13/github-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</link>
+      <guid>http://yoursite.com/2018/02/13/github-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</guid>
       <pubDate>Tue, 13 Feb 2018 05:42:04 GMT</pubDate>
       <description>
       
         &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;在右上角或者左上角实现fork-me-on-github&quot;&gt;&lt;a href=&quot;#在右上角或者左上角实现fork-me-on-github&quot; class=&quot;headerlink&quot; title=&quot;在右上角或者左上角实现fork me on github&quot;&gt;&lt;/a&gt;在右上角或者左上角实现fork me on github&lt;/h1&gt;&lt;p&gt;点击  &lt;a href=&quot;https://github.com/blog/273-github-ribbons&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;  或者 &lt;a href=&quot;http://tholman.com/github-corners/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;选择自己喜欢的样式，并复制相应的代码。&lt;br&gt;然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;code&gt;&amp;lt;div class=&amp;quot;headband&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;的下面，并把href改为你的GitHub地址。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./github.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;添加RSS&quot;&gt;&lt;a href=&quot;#添加RSS&quot; class=&quot;headerlink&quot; title=&quot;添加RSS&quot;&gt;&lt;/a&gt;添加RSS&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;./rss.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;npm install --save hexo-generator-feed&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！)&lt;/p&gt;
-&lt;p&gt;#3、添加动态背景&lt;br&gt;实现点击出现桃心效果&lt;br&gt;
+&lt;h1 id=&quot;在右上角或者左上角实现fork-me-on-github&quot;&gt;&lt;a href=&quot;#在右上角或者左上角实现fork-me-on-github&quot; class=&quot;headerlink&quot; title=&quot;在右上角或者左上角实现fork me on github&quot;&gt;&lt;/a&gt;在右上角或者左上角实现fork me on github&lt;/h1&gt;&lt;p&gt;点击  &lt;a href=&quot;https://github.com/blog/273-github-ribbons&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;  或者 &lt;a href=&quot;http://tholman.com/github-corners/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;选择自己喜欢的样式，并复制相应的代码。&lt;br&gt;然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;code&gt;&amp;lt;div class=&amp;quot;headband&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;的下面，并把href改为你的GitHub地址。&lt;br&gt;&lt;img src=&quot;/2018/02/13/github-hexo博客搭建进阶指南/github+hexo博客搭建进阶指南/github.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<p>[TOC]</p><h1 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h1><p>点击  <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">这里</a>  或者 <a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>选择自己喜欢的样式，并复制相应的代码。<br>然后复制代码到themes/next/layout/_layout.swig文件中，放置在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面，并把href改为你的GitHub地址。</p><p><img src="./github.jpg" alt=""></p><h1 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h1><p><img src="./rss.jpg" alt=""></p><p>切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块</p><p><code>npm install --save hexo-generator-feed</code></p><p>然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！)</p><p>#3、添加动态背景<br>实现点击出现桃心效果<br><a id="more"></a><br>修改文章内链接文本样式<br>修改文章底部的那个带#号的标签<br>在每篇文章末尾统一添加“本文结束”标记<br>修改作者头像并旋转<br>博文压缩<br>修改“代码块自定义样式<br>侧边栏社交小图标设置<br>主页文章添加阴影效果<br>在网站底部加上访问量<br>添加热度<br>网站底部字数统计<br>添加 README.md 文件<br>设置网站的图标Favicon<br>实现统计功能<br>添加顶部加载条<br>在文章底部增加版权信息<br>添加网易云跟帖(跟帖关闭，已失效，改为来必力)<br>隐藏网页底部powered By Hexo / 强力驱动<br>修改网页底部的桃心<br>文章加密访问<br>添加jiathis分享<br>博文置顶<br>修改字体大小<br>修改打赏字体不闪动<br>自定义鼠标样式<br>为博客加上萌萌的宠物<br>DaoVoice 在线联系<br>点击爆炸效果</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>[TOC]</p><h1 id="在右上角或者左上角实现fork-me-on-github"><a href="#在右上角或者左上角实现fork-me-on-github" class="headerlink" title="在右上角或者左上角实现fork me on github"></a>在右上角或者左上角实现fork me on github</h1><p>点击  <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">这里</a>  或者 <a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>选择自己喜欢的样式，并复制相应的代码。<br>然后复制代码到themes/next/layout/_layout.swig文件中，放置在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面，并把href改为你的GitHub地址。<br><img src="/2018/02/13/github-hexo博客搭建进阶指南/github+hexo博客搭建进阶指南/github.jpg" alt=""><br><a id="more"></a>    </p><h1 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h1><p><img src="/2018/02/13/github-hexo博客搭建进阶指南/github+hexo博客搭建进阶指南/rss.jpg" alt=""></p><p>切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块</p><p><code>npm install --save hexo-generator-feed</code></p><p>然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！)</p><p>#3、添加动态背景<br>实现点击出现桃心效果</p><p>修改文章内链接文本样式<br>修改文章底部的那个带#号的标签<br>在每篇文章末尾统一添加“本文结束”标记<br>修改作者头像并旋转<br>博文压缩<br>修改“代码块自定义样式<br>侧边栏社交小图标设置<br>主页文章添加阴影效果<br>在网站底部加上访问量<br>添加热度<br>网站底部字数统计<br>添加 README.md 文件<br>设置网站的图标Favicon<br>实现统计功能<br>添加顶部加载条<br>在文章底部增加版权信息<br>添加网易云跟帖(跟帖关闭，已失效，改为来必力)<br>隐藏网页底部powered By Hexo / 强力驱动<br>修改网页底部的桃心<br>文章加密访问<br>添加jiathis分享<br>博文置顶<br>修改字体大小<br>修改打赏字体不闪动<br>自定义鼠标样式<br>为博客加上萌萌的宠物<br>DaoVoice 在线联系<br>点击爆炸效果</p>]]></content:encoded>
       
-      <comments>http://yoursite.com/2018/02/13/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/#disqus_thread</comments>
+      <comments>http://yoursite.com/2018/02/13/github-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/#disqus_thread</comments>
     </item>
     
     <item>
@@ -81,24 +114,6 @@ ggggggggggggggggg
       <content:encoded><![CDATA[<pre><code>链接    密码gggghhhhhhhhhhhhhaaaaaaaaaaaaaaaaddddddddddddddrrrrrrrrrrrrrrrrrrggggggggggggggggg</code></pre>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/02/13/qingwa/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>DOM浅谈</title>
-      <link>http://yoursite.com/2018/02/02/DOM%E6%B5%85%E8%B0%88/</link>
-      <guid>http://yoursite.com/2018/02/02/DOM%E6%B5%85%E8%B0%88/</guid>
-      <pubDate>Fri, 02 Feb 2018 05:42:04 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;先附上一个DOM的教程：&lt;a href=&quot;http://www.w3school.com.cn/htmldom/dom_methods.asp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.w3school.com.cn/htmldom/dom_methods.asp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;   DOM的结构实际上和数据结构里面的树非常相似&lt;/p&gt;
-&lt;p&gt;方法    描述&lt;br&gt;getElementById()    返回带有指定 ID 的元素。&lt;br&gt;getElementsByTagName()    返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。&lt;br&gt;getElementsByClassName()    返回包含带有指定类名的所有元素的节点列表。&lt;br&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>先附上一个DOM的教程：<a href="http://www.w3school.com.cn/htmldom/dom_methods.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/htmldom/dom_methods.asp</a></p><p>   DOM的结构实际上和数据结构里面的树非常相似</p><p>方法    描述<br>getElementById()    返回带有指定 ID 的元素。<br>getElementsByTagName()    返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。<br>getElementsByClassName()    返回包含带有指定类名的所有元素的节点列表。<br><a id="more"></a><br>appendChild()    把新的子节点添加到指定节点。<br>removeChild()    删除子节点。<br>replaceChild()    替换子节点。<br>insertBefore()    在指定的子节点前面插入新的子节点。<br>createAttribute()    创建属性节点。<br>createElement()    创建元素节点。<br>createTextNode()    创建文本节点。<br>getAttribute()    返回指定的属性值。<br>setAttribute()    把指定属性设置或修改为指定的值。</p><p>·其他细节修改<br>Copyright：isabllezhou mail:isabellezhou@163.com</p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/02/02/DOM%E6%B5%85%E8%B0%88/#disqus_thread</comments>
     </item>
     
   </channel>
