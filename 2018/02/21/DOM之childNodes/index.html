@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="js,DOM," />
+  <meta name="keywords" content="DOM,js," />
 
 
 
@@ -125,21 +125,23 @@
 
 
 
-<meta name="description" content="DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。">
-<meta name="keywords" content="js,DOM">
+<meta name="description" content="写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用childrenDOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成">
+<meta name="keywords" content="DOM,js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM之childNodes">
 <meta property="og:url" content="http://yoursite.com/2018/02/21/DOM之childNodes/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。">
+<meta property="og:description" content="写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用childrenDOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/非标准浏览器.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/标准ie.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/出错.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/文本类型.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/元素节点.jpg">
-<meta property="og:updated_time" content="2018-02-21T07:58:45.014Z">
+<meta property="og:updated_time" content="2018-02-21T08:36:19.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM之childNodes">
-<meta name="twitter:description" content="DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。">
+<meta name="twitter:description" content="写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用childrenDOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成">
 <meta name="twitter:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/非标准浏览器.jpg">
 
 
@@ -407,7 +409,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  826
+                  926
                 </span>
               
 
@@ -423,7 +425,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -444,7 +446,8 @@
       
 
       
-        <p>DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。 <a id="more"></a><br>小结：一般地，节点至少拥有nodeType、nodeName和nodeValue这三个基本属性。节点类型不同，三个属性的值也不相同。  </p>
+        <p>写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用children<br>DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。 <a id="more"></a><br>小结：一般地，节点至少拥有nodeType、nodeName和nodeValue这三个基本属性。节点类型不同，三个属性的值也不相同。  </p>
+<h3 id="childNodes-子节点"><a href="#childNodes-子节点" class="headerlink" title="childNodes 子节点"></a>childNodes 子节点</h3><p>元素.childNodes为子节点列表集合（只读），注意childNodes只包含一级子节点，不包含后辈孙级以下的节点。</p>
 <h3 id="nodeType-节点类型"><a href="#nodeType-节点类型" class="headerlink" title="nodeType 节点类型"></a>nodeType 节点类型</h3><p>nodeType属性返回节点类型的常数值(无符号短整型)。不同的类型对应不同的常数值，12种类型分别对应12种不同的常数值  </p>
 <table>
 <thead>
@@ -521,17 +524,19 @@
 <p>这是因为在标准ie下包含了文本和元素类型的节点，也会包含非法嵌套的节点。而在非标准的浏览器下，只包含元素类型的节点，ie7以下不会包含非法嵌套的节点。所以在这个例子中，在标准浏览器下，会把标签元素之间的回车换行符当作文本类型的节点（有5个）+4个元素节点，合起来就是9个；在非标准下只有4个元素节点。如果删掉其中的一个回车换行符，则会在标准浏览器下减少一个节点。<br>区分了这一点，再看下面这个例子：  </p>
 <pre><code>for (var i=0; i&lt;oUl.childNodes.length; i++) {
 
-        if ( oUl.childNodes[i].nodeType == 1 ) {
+
             oUl.childNodes[i].style.background = &apos;red&apos;;
         }
-</code></pre><p>如果要循环当前oUl下的所有的子节点列表，给所有子节点加上一个背景色。则在非标准的ie下可以很正常地显示：<br><img src="/2018/02/21/DOM之childNodes/非标准浏览器.jpg" alt="正常显示"><br>而在标准ie下，会显示出错。这是因为回车换行符被当作文本节点，所以第0个子节点其实是一个文本，文本是没有style也没有background的属性的。<br> 这里我们可以添加以下代码来验证第0个元素的节点类型: </p>
+</code></pre><p>如果要循环当前oUl下的所有的子节点列表，给所有子节点加上一个背景色。则在非标准的ie下可以很正常地显示：<br><img src="/2018/02/21/DOM之childNodes/非标准浏览器.jpg" alt="正常显示"><br>而在标准ie下，会显示出错。这是因为回车换行符被当作文本节点，所以第0个子节点其实是一个文本，文本是没有style也没有background的属性的。<br><img src="/2018/02/21/DOM之childNodes/标准ie.jpg" alt="正常显示"><br><img src="/2018/02/21/DOM之childNodes/出错.jpg" alt="正常显示"><br> 这里我们可以添加以下代码来验证第0个元素的节点类型: </p>
 <pre><code>alert(oUl.childNodes[0].nodeType);
 </code></pre><p>在标准ie下，显示3，说明第0个元素是文本节点。而在非标准ie下显示1，说明第0个节点是元素节点：  </p>
 <p><img src="/2018/02/21/DOM之childNodes/文本类型.jpg" alt=""></p>
 <p><img src="/2018/02/21/DOM之childNodes/元素节点.jpg" alt="">  </p>
-<h3 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h3><p>元素.attributes用来获取当前的属性（只读，属性列表集合），添加以下代码获取并显示元素属性个数：  </p>
-<pre><code>alert( oUl.attributes.length );
-</code></pre>
+<h3 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h3><p>元素.attributes用来获取当前的属性（只读，属性列表集合)    </p>
+<pre><code>alert( oUl.attributes.length );获取并显示元素属性个数
+alert(oUl.attributes[1].value);显示属性值
+</code></pre><h3 id="children"><a href="#children" class="headerlink" title="children"></a>children</h3><p>工作中推荐使用children，只读属性，子节点列表集合。和child差不多，有一点区别就是：</p>
+
       
     </div>
     
@@ -577,9 +582,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
-          
             <a href="/tags/DOM/" rel="tag"><i class="fa fa-tag"></i> DOM</a>
+          
+            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
           
         </div>
       
@@ -825,7 +830,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#nodeType-节点类型"><span class="nav-number">1.</span> <span class="nav-text">nodeType 节点类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素节点和文本节点"><span class="nav-number">2.</span> <span class="nav-text">元素节点和文本节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性节点"><span class="nav-number">3.</span> <span class="nav-text">属性节点</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#childNodes-子节点"><span class="nav-number">1.</span> <span class="nav-text">childNodes 子节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nodeType-节点类型"><span class="nav-number">2.</span> <span class="nav-text">nodeType 节点类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素节点和文本节点"><span class="nav-number">3.</span> <span class="nav-text">元素节点和文本节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性节点"><span class="nav-number">4.</span> <span class="nav-text">属性节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#children"><span class="nav-number">5.</span> <span class="nav-text">children</span></a></li></ol></div>
             
 
           </div>
@@ -859,7 +864,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.3k</span>
+    <span title="Site words total count">2.4k</span>
   
 </div>
 
