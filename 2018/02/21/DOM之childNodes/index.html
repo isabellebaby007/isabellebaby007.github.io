@@ -138,7 +138,11 @@
 <meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/出错.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/文本类型.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/元素节点.jpg">
-<meta property="og:updated_time" content="2018-02-21T08:36:19.849Z">
+<meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/children.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/children标准结构.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/children1.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/21/DOM之childNodes/children非标准结构.png">
+<meta property="og:updated_time" content="2018-02-21T14:45:00.129Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM之childNodes">
 <meta name="twitter:description" content="写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用childrenDOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成">
@@ -409,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  926
+                  1,033
                 </span>
               
 
@@ -535,7 +539,20 @@
 <h3 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h3><p>元素.attributes用来获取当前的属性（只读，属性列表集合)    </p>
 <pre><code>alert( oUl.attributes.length );获取并显示元素属性个数
 alert(oUl.attributes[1].value);显示属性值
-</code></pre><h3 id="children"><a href="#children" class="headerlink" title="children"></a>children</h3><p>工作中推荐使用children，只读属性，子节点列表集合。和child差不多，有一点区别就是：</p>
+</code></pre><h3 id="children"><a href="#children" class="headerlink" title="children"></a>children</h3><p>工作中推荐使用children，只读属性，子节点列表集合。和child差不多，有一点区别就是：  </p>
+<pre><code>&lt;body&gt;
+    &lt;ul id=&quot;ul1&quot; &gt;
+
+        &lt;li&gt;11111 &lt;span&gt;span&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;22222&lt;/li&gt;
+        &lt;li&gt;33333&lt;/li&gt;
+        &lt;li&gt;44444&lt;/li&gt;
+        &lt;p&gt;pppppppp&lt;/p&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+</code></pre><p>上述这段代码，在标准ie下，显示的children.length为5，可以看出使用children的时候不会再把文本节点算进去了，但是把非法嵌套的</p><p>也包括进去了  </p>
+<p><img src="/2018/02/21/DOM之childNodes/children.png" alt="">  </p>
+<p><img src="/2018/02/21/DOM之childNodes/children标准结构.png" alt=""><br>而在非标准ie下，显示的children.length为4，这是因为</p><p>没有算进去，不认这种非法嵌套。<br><img src="/2018/02/21/DOM之childNodes/children1.png" alt=""><br><img src="/2018/02/21/DOM之childNodes/children非标准结构.png" alt=""> </p>
 
       
     </div>
@@ -864,7 +881,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.4k</span>
+    <span title="Site words total count">2.5k</span>
   
 </div>
 
