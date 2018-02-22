@@ -125,18 +125,26 @@
 
 
 
-<meta name="description" content="元素.parentNode元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。   offsetParent元素.offsetParent:只读，属性，有定位的父节点。如果多个父节点有定位，就是离它最近的有定位的父节点。如果没有定位父级，默认是body，ie7以下，如果当前元素没有定位默认是body，如果有定位则是htm">
+<meta name="description" content="元素.parentNode元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。js部分：  window.onload = function() { var oDiv3 = document.getElementById(&amp;apos;div3&amp;apos;); alert( oDiv3.parentNode.id ); }">
 <meta name="keywords" content="js,前端,父节点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="父节点">
 <meta property="og:url" content="http://yoursite.com/2018/02/22/父节点/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="元素.parentNode元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。   offsetParent元素.offsetParent:只读，属性，有定位的父节点。如果多个父节点有定位，就是离它最近的有定位的父节点。如果没有定位父级，默认是body，ie7以下，如果当前元素没有定位默认是body，如果有定位则是htm">
+<meta property="og:description" content="元素.parentNode元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。js部分：  window.onload = function() { var oDiv3 = document.getElementById(&amp;apos;div3&amp;apos;); alert( oDiv3.parentNode.id ); }">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-22T07:48:28.111Z">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/标准.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/非标准.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/offset.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/定位.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/body.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/html.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/22/父节点/layout.png">
+<meta property="og:updated_time" content="2018-02-22T12:11:29.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="父节点">
-<meta name="twitter:description" content="元素.parentNode元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。   offsetParent元素.offsetParent:只读，属性，有定位的父节点。如果多个父节点有定位，就是离它最近的有定位的父节点。如果没有定位父级，默认是body，ie7以下，如果当前元素没有定位默认是body，如果有定位则是htm">
+<meta name="twitter:description" content="元素.parentNode元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。js部分：  window.onload = function() { var oDiv3 = document.getElementById(&amp;apos;div3&amp;apos;); alert( oDiv3.parentNode.id ); }">
+<meta name="twitter:image" content="http://yoursite.com/2018/02/22/父节点/标准.jpg">
 
 
 
@@ -403,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  163
+                  504
                 </span>
               
 
@@ -419,7 +427,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -440,8 +448,86 @@
       
 
       
-        <h3 id="元素-parentNode"><a href="#元素-parentNode" class="headerlink" title="元素.parentNode"></a>元素.parentNode</h3><p>元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。  </p>
-<h3 id="offsetParent"><a href="#offsetParent" class="headerlink" title="offsetParent"></a>offsetParent</h3><p>元素.offsetParent:只读，属性，有定位的父节点。如果多个父节点有定位，就是离它最近的有定位的父节点。如果没有定位父级，默认是body，<br>ie7以下，如果当前元素没有定位默认是body，如果有定位则是html . <a id="more"></a><br>ie7以下，如果当前元素的某个父级触发了layout，那么offsetParent就会指向到触发了layout特性的父节点上。 </p>
+        <h3 id="元素-parentNode"><a href="#元素-parentNode" class="headerlink" title="元素.parentNode"></a>元素.parentNode</h3><p>元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。<br>js部分： </p>
+<pre><code>window.onload = function() {
+var oDiv3 = document.getElementById(&apos;div3&apos;);
+alert( oDiv3.parentNode.id );
+}  
+</code></pre><p><a id="more"></a>html部分：  </p>
+<pre><code>body id=&quot;body1&quot;&gt;
+    &lt;div id=&quot;div1&quot;&gt;
+        &lt;div id=&quot;div2&quot;&gt;
+            &lt;div id=&quot;div3&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p>在标准ie和非标准ie下，div3的父级都是div2，没有什么兼容性问题。<br><img src="/2018/02/22/父节点/标准.jpg" alt=""><br><img src="/2018/02/22/父节点/非标准.jpg" alt=""></p>
+<h3 id="元素-offsetParent"><a href="#元素-offsetParent" class="headerlink" title="元素.offsetParent"></a>元素.offsetParent</h3><p>元素.offsetParent:只读，属性，有定位的父节点。如果多个父节点有定位，就是离它最近的有定位的父节点。如果没有定位父级，默认是body。   </p>
+<h4 id="没有定位父级的例子"><a href="#没有定位父级的例子" class="headerlink" title="没有定位父级的例子"></a>没有定位父级的例子</h4><p>css部分:  </p>
+<pre><code>&lt;style&gt;
+div {padding: 40px 50px;}
+#div1 {background: red;}
+#div2 {background: green; zoom: 1;}
+#div3 {background: orange;}
+&lt;/style&gt;  
+</code></pre><p>js部分：  </p>
+<pre><code>&lt;script&gt;
+window.onload = function() {    
+    var oDiv3 = document.getElementById(&apos;div3&apos;);
+    alert( oDiv3.offsetParent );    
+}  
+</code></pre><p>html部分：  </p>
+<pre><code>&lt;body id=&quot;body1&quot;&gt;
+    &lt;div id=&quot;div1&quot;&gt;
+        &lt;div id=&quot;div2&quot;&gt;
+            &lt;div id=&quot;div3&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p><img src="/2018/02/22/父节点/offset.jpg" alt=""></p>
+<h4 id="加了定位属性的例子"><a href="#加了定位属性的例子" class="headerlink" title="加了定位属性的例子"></a>加了定位属性的例子</h4><p>css部分:  </p>
+<pre><code>&lt;style&gt;
+div {padding: 40px 50px;}
+#div1 {background: red;}
+#div2 {background: green; zoom: 1;position: relative;}
+#div3 {background: orange;}
+&lt;/style&gt;  
+</code></pre><p>js部分： </p>
+<pre><code>window.onload = function() {    
+    var oDiv3 = document.getElementById(&apos;div3&apos;);
+    alert( oDiv3.offsetParent.id );    
+}  
+</code></pre><p>展示效果如下，可以看出，div2加了定位属性之后，div3的offsetParent就变成了div2,而不是body了。  </p>
+<p><img src="/2018/02/22/父节点/定位.jpg" alt="">  </p>
+<h4 id="ie7以下，当前元素有定位例子"><a href="#ie7以下，当前元素有定位例子" class="headerlink" title="ie7以下，当前元素有定位例子"></a>ie7以下，当前元素有定位例子</h4><p>ie7以下，如果当前元素没有定位默认是body，如果有定位则是html.<br>css部分：</p>
+<pre><code>&lt;style&gt;
+div {padding: 40px 50px;}
+#div1 {background: red;}
+#div2 {background: green; zoom: 1;}
+#div3 {background: orange;position: relative;}
+&lt;/style&gt;  
+</code></pre><p>js部分：  </p>
+<pre><code>window.onload = function() {    
+        var oDiv3 = document.getElementById(&apos;div3&apos;);
+        alert( oDiv3.offsetParent.tagName );    
+    }    
+</code></pre><p>在ie11的效果如下图：  </p>
+<p><img src="/2018/02/22/父节点/body.png" alt="">  </p>
+<p>在ie7及以下的效果如下图:  </p>
+<p><img src="/2018/02/22/父节点/html.png" alt="">  </p>
+<h4 id="ie7以下，当前元素某个父级触发layout"><a href="#ie7以下，当前元素某个父级触发layout" class="headerlink" title="ie7以下，当前元素某个父级触发layout"></a>ie7以下，当前元素某个父级触发layout</h4><p>ie7以下，如果当前元素的某个父级触发了layout，那么offsetParent就会指向到触发了layout特性的父节点上。<br>css部分：  </p>
+<pre><code>&lt;style&gt;
+div {padding: 40px 50px;}
+#div1 {background: red;}
+#div2 {background: green; zoom: 1;}
+#div3 {background: orange;}
+&lt;/style&gt;
+</code></pre><p>js部分：  </p>
+<pre><code>window.onload = function() {                    
+        alert( oDiv3.offsetParent.id);    
+    }  
+</code></pre><p>效果如下所示，因为div2有zoom属性，zoom触发了layout,所以div3的offsetParent是触发了layout特性的父节点div2  </p>
+<p><img src="/2018/02/22/父节点/layout.png" alt=""></p>
 
       
     </div>
@@ -738,7 +824,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#元素-parentNode"><span class="nav-number">1.</span> <span class="nav-text">元素.parentNode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#offsetParent"><span class="nav-number">2.</span> <span class="nav-text">offsetParent</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#元素-parentNode"><span class="nav-number">1.</span> <span class="nav-text">元素.parentNode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素-offsetParent"><span class="nav-number">2.</span> <span class="nav-text">元素.offsetParent</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#没有定位父级的例子"><span class="nav-number">2.1.</span> <span class="nav-text">没有定位父级的例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加了定位属性的例子"><span class="nav-number">2.2.</span> <span class="nav-text">加了定位属性的例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ie7以下，当前元素有定位例子"><span class="nav-number">2.3.</span> <span class="nav-text">ie7以下，当前元素有定位例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ie7以下，当前元素某个父级触发layout"><span class="nav-number">2.4.</span> <span class="nav-text">ie7以下，当前元素某个父级触发layout</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -772,7 +858,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.0k</span>
+    <span title="Site words total count">3.3k</span>
   
 </div>
 
