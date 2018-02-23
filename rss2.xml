@@ -8,8 +8,63 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Thu, 22 Feb 2018 19:50:28 GMT</pubDate>
+    <pubDate>Fri, 23 Feb 2018 13:46:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>给博客添加feed</title>
+      <link>http://yoursite.com/2018/02/23/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0feed/</link>
+      <guid>http://yoursite.com/2018/02/23/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0feed/</guid>
+      <pubDate>Fri, 23 Feb 2018 13:36:28 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;安装hexo-generator-feed  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ npm install hexo-generator-feed --save  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;配置到站点配置文件_config.yml&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>安装hexo-generator-feed  </p><pre><code>$ npm install hexo-generator-feed --save  </code></pre><p>配置到站点配置文件_config.yml  <a id="more"></a></p><pre><code># Extensions## Plugins: http://hexo.io/plugins/#RSS订阅plugin:- hexo-generator-feed#Feed Atomfeed:type: atompath: atom.xmllimit: 20  </code></pre><p>最后，在你next主题下的_config.yml下，添加RSS订阅链接即可：  </p><pre><code>rss: /atom.xml</code></pre>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/23/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0feed/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>给博客添加站点地图</title>
+      <link>http://yoursite.com/2018/02/23/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/</link>
+      <guid>http://yoursite.com/2018/02/23/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/</guid>
+      <pubDate>Fri, 23 Feb 2018 13:29:12 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;安装hexo-generator-seo-friendly-sitemap  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ npm install hexo-generator-seo-friendly-sitemap --save  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在站点配置文件
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>安装hexo-generator-seo-friendly-sitemap  </p><pre><code>$ npm install hexo-generator-seo-friendly-sitemap --save  </code></pre><p>在站点配置文件_config.yml中添加  </p><pre><code>sitemap:    path: sitemap.xml</code></pre>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/23/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>hexo添加站内搜索</title>
+      <link>http://yoursite.com/2018/02/23/hexo%E6%B7%BB%E5%8A%A0%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/</link>
+      <guid>http://yoursite.com/2018/02/23/hexo%E6%B7%BB%E5%8A%A0%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/</guid>
+      <pubDate>Fri, 23 Feb 2018 12:49:43 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;NexT主题支持集成 Swiftype、 微搜索、Local Search 和 Algolia,Swiftype和Algolia都只有一段时间的试用期，可以采用Hexo提供的Local Search,原理是通过hexo-generator-search插件在本地生成一个search.xml文件，搜索的时候从这个文件中根据关键字检索出相应的链接。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>NexT主题支持集成 Swiftype、 微搜索、Local Search 和 Algolia,Swiftype和Algolia都只有一段时间的试用期，可以采用Hexo提供的Local Search,原理是通过hexo-generator-search插件在本地生成一个search.xml文件，搜索的时候从这个文件中根据关键字检索出相应的链接。<a id="more"></a> </p><h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="安装hexo-generator-search"><a href="#安装hexo-generator-search" class="headerlink" title="安装hexo-generator-search"></a>安装hexo-generator-search</h4><p>在站点的根目录下执行：  </p><pre><code>$ npm install hexo-generator-search --save  </code></pre><h4 id="安装hexo-generator-searchdb"><a href="#安装hexo-generator-searchdb" class="headerlink" title="安装hexo-generator-searchdb"></a>安装hexo-generator-searchdb</h4><p>在站点的根目录下执行：  </p><pre><code>$ npm install hexo-generator-searchdb --save  </code></pre><h4 id="启用搜索"><a href="#启用搜索" class="headerlink" title="启用搜索"></a>启用搜索</h4><p>编辑站点配置文件，加入以下代码： </p><pre><code>search:  path: search.xml  field: post  format: html  limit: 10000</code></pre>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/02/23/hexo%E6%B7%BB%E5%8A%A0%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>元素各种位置宽高</title>
@@ -47,59 +102,6 @@ alert( oDiv3.parentNode.id );
       <content:encoded><![CDATA[<h3 id="元素-parentNode"><a href="#元素-parentNode" class="headerlink" title="元素.parentNode"></a>元素.parentNode</h3><p>元素.parentNode:只读，属性，当前节点的父级节点，一个元素的父节点只有一个。在标准下和非标准下都可以，没有什么兼容问题。<br>js部分： </p><pre><code>window.onload = function() {var oDiv3 = document.getElementById(&apos;div3&apos;);alert( oDiv3.parentNode.id );}  </code></pre><p><a id="more"></a>html部分：  </p><pre><code>body id=&quot;body1&quot;&gt;    &lt;div id=&quot;div1&quot;&gt;        &lt;div id=&quot;div2&quot;&gt;            &lt;div id=&quot;div3&quot;&gt;&lt;/div&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/body&gt;</code></pre><p>在标准ie和非标准ie下，div3的父级都是div2，没有什么兼容性问题。<br><img src="/2018/02/22/父节点/标准.jpg" alt=""><br><img src="/2018/02/22/父节点/非标准.jpg" alt=""></p><h3 id="元素-offsetParent"><a href="#元素-offsetParent" class="headerlink" title="元素.offsetParent"></a>元素.offsetParent</h3><p>元素.offsetParent:只读，属性，有定位的父节点。如果多个父节点有定位，就是离它最近的有定位的父节点。如果没有定位父级，默认是body。   </p><h4 id="没有定位父级的例子"><a href="#没有定位父级的例子" class="headerlink" title="没有定位父级的例子"></a>没有定位父级的例子</h4><p>css部分:  </p><pre><code>&lt;style&gt;div {padding: 40px 50px;}#div1 {background: red;}#div2 {background: green; zoom: 1;}#div3 {background: orange;}&lt;/style&gt;  </code></pre><p>js部分：  </p><pre><code>&lt;script&gt;window.onload = function() {        var oDiv3 = document.getElementById(&apos;div3&apos;);    alert( oDiv3.offsetParent );    }  </code></pre><p>html部分：  </p><pre><code>&lt;body id=&quot;body1&quot;&gt;    &lt;div id=&quot;div1&quot;&gt;        &lt;div id=&quot;div2&quot;&gt;            &lt;div id=&quot;div3&quot;&gt;&lt;/div&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/body&gt;</code></pre><p><img src="/2018/02/22/父节点/offset.jpg" alt=""></p><h4 id="加了定位属性的例子"><a href="#加了定位属性的例子" class="headerlink" title="加了定位属性的例子"></a>加了定位属性的例子</h4><p>css部分:  </p><pre><code>&lt;style&gt;div {padding: 40px 50px;}#div1 {background: red;}#div2 {background: green; zoom: 1;position: relative;}#div3 {background: orange;}&lt;/style&gt;  </code></pre><p>js部分： </p><pre><code>window.onload = function() {        var oDiv3 = document.getElementById(&apos;div3&apos;);    alert( oDiv3.offsetParent.id );    }  </code></pre><p>展示效果如下，可以看出，div2加了定位属性之后，div3的offsetParent就变成了div2,而不是body了。  </p><p><img src="/2018/02/22/父节点/定位.jpg" alt="">  </p><h4 id="ie7以下，当前元素有定位例子"><a href="#ie7以下，当前元素有定位例子" class="headerlink" title="ie7以下，当前元素有定位例子"></a>ie7以下，当前元素有定位例子</h4><p>ie7以下，如果当前元素没有定位默认是body，如果有定位则是html.<br>css部分：</p><pre><code>&lt;style&gt;div {padding: 40px 50px;}#div1 {background: red;}#div2 {background: green; zoom: 1;}#div3 {background: orange;position: relative;}&lt;/style&gt;  </code></pre><p>js部分：  </p><pre><code>window.onload = function() {            var oDiv3 = document.getElementById(&apos;div3&apos;);        alert( oDiv3.offsetParent.tagName );        }    </code></pre><p>在ie11的效果如下图：  </p><p><img src="/2018/02/22/父节点/body.png" alt="">  </p><p>在ie7及以下的效果如下图:  </p><p><img src="/2018/02/22/父节点/html.png" alt="">  </p><h4 id="ie7以下，当前元素某个父级触发layout"><a href="#ie7以下，当前元素某个父级触发layout" class="headerlink" title="ie7以下，当前元素某个父级触发layout"></a>ie7以下，当前元素某个父级触发layout</h4><p>ie7以下，如果当前元素的某个父级触发了layout，那么offsetParent就会指向到触发了layout特性的父节点上。<br>css部分：  </p><pre><code>&lt;style&gt;div {padding: 40px 50px;}#div1 {background: red;}#div2 {background: green; zoom: 1;}#div3 {background: orange;}&lt;/style&gt;</code></pre><p>js部分：  </p><pre><code>window.onload = function() {                            alert( oDiv3.offsetParent.id);        }  </code></pre><p>效果如下所示，因为div2有zoom属性，zoom触发了layout,所以div3的offsetParent是触发了layout特性的父节点div2  </p><p><img src="/2018/02/22/父节点/layout.png" alt=""></p>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/02/22/%E7%88%B6%E8%8A%82%E7%82%B9/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>子节点和兄弟节点的操作</title>
-      <link>http://yoursite.com/2018/02/21/%E5%AD%90%E8%8A%82%E7%82%B9%E5%92%8C%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9%E7%9A%84%E6%93%8D%E4%BD%9C/</link>
-      <guid>http://yoursite.com/2018/02/21/%E5%AD%90%E8%8A%82%E7%82%B9%E5%92%8C%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9%E7%9A%84%E6%93%8D%E4%BD%9C/</guid>
-      <pubDate>Wed, 21 Feb 2018 14:51:44 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;元素-firstChild&quot;&gt;&lt;a href=&quot;#元素-firstChild&quot; class=&quot;headerlink&quot; title=&quot;元素.firstChild&quot;&gt;&lt;/a&gt;元素.firstChild&lt;/h3&gt;&lt;p&gt;元素.firstChild:只读，属性，第一个子节点  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;body&amp;gt;
-    &amp;lt;ul id=&amp;quot;ul1&amp;quot;&amp;gt;
-        &amp;lt;li&amp;gt;11111&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;22222&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;33333&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;44444&amp;lt;/li&amp;gt;
-    &amp;lt;/ul&amp;gt;
-&amp;lt;/body&amp;gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;添加下列代码来显示第一个子节点&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="元素-firstChild"><a href="#元素-firstChild" class="headerlink" title="元素.firstChild"></a>元素.firstChild</h3><p>元素.firstChild:只读，属性，第一个子节点  </p><pre><code>&lt;body&gt;    &lt;ul id=&quot;ul1&quot;&gt;        &lt;li&gt;11111&lt;/li&gt;        &lt;li&gt;22222&lt;/li&gt;        &lt;li&gt;33333&lt;/li&gt;        &lt;li&gt;44444&lt;/li&gt;    &lt;/ul&gt;&lt;/body&gt;  </code></pre><p>添加下列代码来显示第一个子节点  <a id="more"></a> 下图说明在标准ie浏览器下:firstChild会包含文本类型的节点；在非标准的ie下：只包含元素节点</p><pre><code>alert( oUl.firstChild );  </code></pre><p><img src="/2018/02/21/子节点和兄弟节点的操作/firstChild.png" alt="">  </p><p><img src="/2018/02/21/子节点和兄弟节点的操作/firstChild非标准.png" alt="">  </p><h3 id="元素-firstElementChild"><a href="#元素-firstElementChild" class="headerlink" title="元素.firstElementChild"></a>元素.firstElementChild</h3><p>元素.firstElementChild:只读，属性，标准下获取第一个元素类型的子节点（所以在非标准的ie下是不支持这个属性的),所以非标准下会输出下图所示undefined </p><p><img src="/2018/02/21/子节点和兄弟节点的操作/非标准firstele.png" alt=""><br>可以用以下代码，这样的话在标准下和非标准下都可以正常。</p><pre><code>if ( oUl.firstElementChild ) {     oUl.firstElementChild.style.background = &apos;red&apos;; //在标准浏览器下 } else {     oUl.firstChild.style.background = &apos;red&apos;;   //在非标准ie下 }  </code></pre><p>简化这段代码：  </p><pre><code>var oFirst=oUl.firstElementChild || oUl.firstChild;if(oFirst){    oFirst.style.background=&apos;red&apos;;}else{    alert(&apos;没有子节点可以设置&apos;);    }  </code></pre><h3 id="元素-lastChild-元素-lastElementChild"><a href="#元素-lastChild-元素-lastElementChild" class="headerlink" title="元素.lastChild || 元素.lastElementChild"></a>元素.lastChild || 元素.lastElementChild</h3><p>元素.lastChild || 元素.lastElementChild:最后一个子节点  </p><pre><code>var oLast=oUl.lastElementChild || oUl.lastChild;if(oLast){    oLast.style.background=&apos;yellow&apos;;}else{    alert(&apos;没有子节点可以设置&apos;);    }  </code></pre><h3 id="元素-nextSibling-元素-nextElementSibling"><a href="#元素-nextSibling-元素-nextElementSibling" class="headerlink" title="元素.nextSibling || 元素.nextElementSibling"></a>元素.nextSibling || 元素.nextElementSibling</h3><p>元素.nextSibling || 元素.nextElementSibling:下一个兄弟节点  </p><pre><code>var oNext=oFirst.nextElementSibling || oFirst.nextSibling;  oNext.style.background=&apos;blue&apos;;  </code></pre><h3 id="元素-previousSibling-元素-previousElementSibling"><a href="#元素-previousSibling-元素-previousElementSibling" class="headerlink" title="元素.previousSibling || 元素.previousElementSibling"></a>元素.previousSibling || 元素.previousElementSibling</h3><p>元素.previousSibling || 元素.previousElementSibling：上一个兄弟节点  </p><pre><code>var oPrev=oLast.previousElementSibling || oLast.previousSibling;  oPrev.style.background=&apos;orange&apos;;</code></pre>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/02/21/%E5%AD%90%E8%8A%82%E7%82%B9%E5%92%8C%E5%85%84%E5%BC%9F%E8%8A%82%E7%82%B9%E7%9A%84%E6%93%8D%E4%BD%9C/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>DOM之childNodes</title>
-      <link>http://yoursite.com/2018/02/21/DOM%E4%B9%8BchildNodes/</link>
-      <guid>http://yoursite.com/2018/02/21/DOM%E4%B9%8BchildNodes/</guid>
-      <pubDate>Wed, 21 Feb 2018 06:25:19 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用children&lt;br&gt;DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>写在前面的话：工作当中不太推荐使用childNodes，兼容性问题比较多。推荐使用children<br>DOM是javascript操作网页的接口，全称为文档对象模型（Document Object Model）。它的作用是将网页转为一个JavaScript对象，从而可以使用JavaScript对网页进行各种操作（比如增删内容）。浏览器会根据DOM模型，将HTML文档解析成一系列的节点，再由这些节点组成一个树状结构。DOM的最小组成单位叫做节点（node），文档的树形结构由12种类型的节点组成。 <a id="more"></a><br>小结：一般地，节点至少拥有nodeType、nodeName和nodeValue这三个基本属性。节点类型不同，三个属性的值也不相同。  </p><h3 id="childNodes-子节点"><a href="#childNodes-子节点" class="headerlink" title="childNodes 子节点"></a>childNodes 子节点</h3><p>元素.childNodes为子节点列表集合（只读），注意childNodes只包含一级子节点，不包含后辈孙级以下的节点。</p><h3 id="nodeType-节点类型"><a href="#nodeType-节点类型" class="headerlink" title="nodeType 节点类型"></a>nodeType 节点类型</h3><p>nodeType属性返回节点类型的常数值(无符号短整型)。不同的类型对应不同的常数值，12种类型分别对应12种不同的常数值  </p><table><thead><tr><th style="text-align:left">节点类型</th><th>名称</th><th style="text-align:center">对应的常数值</th></tr></thead><tbody><tr><td style="text-align:left">元素节点</td><td>Node.ELEMENT_NODE</td><td style="text-align:center">1</td></tr><tr><td style="text-align:left">属性节点</td><td>Node.ATTRIBUTE_NODE</td><td style="text-align:center">2</td></tr><tr><td style="text-align:left">文本节点</td><td>Node.TEXT_NODE</td><td style="text-align:center">3</td></tr><tr><td style="text-align:left">CDATA节点</td><td>Node.CDATA_SECTION_NODE</td><td style="text-align:center">4</td></tr><tr><td style="text-align:left">实体引用名称节点</td><td>Node.ENTRY_REFERENCE_NODE</td><td style="text-align:center">5</td></tr><tr><td style="text-align:left">实体名称节点</td><td>Node.ENTITY_NODE</td><td style="text-align:center">6</td></tr><tr><td style="text-align:left">处理指令节点</td><td>Node.PROCESSING_INSTRUCTION_NODE</td><td style="text-align:center">7</td></tr><tr><td style="text-align:left">注释节点</td><td>Node.COMMENT_NODE</td><td style="text-align:center">8</td></tr><tr><td style="text-align:left">文档节点</td><td>Node.DOCUMENT_NODE</td><td style="text-align:center">9</td></tr><tr><td style="text-align:left">文档类型节点</td><td>Node.DOCUMENT_TYPE_NODE</td><td style="text-align:center">10</td></tr><tr><td style="text-align:left">文档片段节点</td><td>Node.DOCUMENT_FRAGMENT_NODE</td><td style="text-align:center">11</td></tr><tr><td style="text-align:left">DTD声明节点</td><td>Node.NOTATION_NODE</td><td style="text-align:center">12  </td></tr></tbody></table><h3 id="元素节点和文本节点"><a href="#元素节点和文本节点" class="headerlink" title="元素节点和文本节点"></a>元素节点和文本节点</h3><p>下面这段代码在标准的ie下面显示是9个节点，在非标准的ie下显示4个节点。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;&lt;/title&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">window.onload = function() &#123;</span><br><span class="line"></span><br><span class="line">var oUl = document.getElementById(&apos;ul1&apos;);</span><br><span class="line">alert( oUl.childNodes.length );</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;ul id=&quot;ul1&quot;&gt;</span><br><span class="line">        &lt;li&gt;11111&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;22222&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;33333&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;44444&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p><p>这是因为在标准ie下包含了文本和元素类型的节点，也会包含非法嵌套的节点。而在非标准的浏览器下，只包含元素类型的节点，ie7以下不会包含非法嵌套的节点。所以在这个例子中，在标准浏览器下，会把标签元素之间的回车换行符当作文本类型的节点（有5个）+4个元素节点，合起来就是9个；在非标准下只有4个元素节点。如果删掉其中的一个回车换行符，则会在标准浏览器下减少一个节点。<br>区分了这一点，再看下面这个例子：  </p><pre><code>for (var i=0; i&lt;oUl.childNodes.length; i++) {            oUl.childNodes[i].style.background = &apos;red&apos;;        }</code></pre><p>如果要循环当前oUl下的所有的子节点列表，给所有子节点加上一个背景色。则在非标准的ie下可以很正常地显示：<br><img src="/2018/02/21/DOM之childNodes/非标准浏览器.jpg" alt="正常显示"><br>而在标准ie下，会显示出错。这是因为回车换行符被当作文本节点，所以第0个子节点其实是一个文本，文本是没有style也没有background的属性的。<br><img src="/2018/02/21/DOM之childNodes/标准ie.jpg" alt="正常显示"><br><img src="/2018/02/21/DOM之childNodes/出错.jpg" alt="正常显示"><br> 这里我们可以添加以下代码来验证第0个元素的节点类型: </p><pre><code>alert(oUl.childNodes[0].nodeType);</code></pre><p>在标准ie下，显示3，说明第0个元素是文本节点。而在非标准ie下显示1，说明第0个节点是元素节点：  </p><p><img src="/2018/02/21/DOM之childNodes/文本类型.jpg" alt=""></p><p><img src="/2018/02/21/DOM之childNodes/元素节点.jpg" alt="">  </p><h3 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h3><p>元素.attributes用来获取当前的属性（只读，属性列表集合)    </p><pre><code>alert( oUl.attributes.length );获取并显示元素属性个数alert(oUl.attributes[1].value);显示属性值</code></pre><h3 id="children"><a href="#children" class="headerlink" title="children"></a>children</h3><p>工作中推荐使用children，只读属性，子节点列表集合。和child差不多，有一点区别就是：  </p><pre><code>&lt;body&gt;    &lt;ul id=&quot;ul1&quot; &gt;        &lt;li&gt;11111 &lt;span&gt;span&lt;/span&gt;&lt;/li&gt;        &lt;li&gt;22222&lt;/li&gt;        &lt;li&gt;33333&lt;/li&gt;        &lt;li&gt;44444&lt;/li&gt;        &lt;p&gt;pppppppp&lt;/p&gt;    &lt;/ul&gt;&lt;/body&gt;</code></pre><p>上述这段代码，在标准ie下，显示的children.length为5，可以看出使用children的时候不会再把文本节点算进去了，但是把非法嵌套的P也包括进去了  </p><p><img src="/2018/02/21/DOM之childNodes/children.png" alt="">  </p><p><img src="/2018/02/21/DOM之childNodes/children标准结构.png" alt=""><br>而在非标准ie下，显示的children.length为4，这是因为p没有算进去，不认这种非法嵌套。<br><img src="/2018/02/21/DOM之childNodes/children1.png" alt="">  </p><p><img src="/2018/02/21/DOM之childNodes/children非标准结构.png" alt=""> </p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/02/21/DOM%E4%B9%8BchildNodes/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>XHTML+CSS2笔记1</title>
-      <link>http://yoursite.com/2018/02/20/XHTML-CSS2%E7%AC%94%E8%AE%B01/</link>
-      <guid>http://yoursite.com/2018/02/20/XHTML-CSS2%E7%AC%94%E8%AE%B01/</guid>
-      <pubDate>Tue, 20 Feb 2018 05:09:20 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>http://yoursite.com/2018/02/20/XHTML-CSS2%E7%AC%94%E8%AE%B01/#disqus_thread</comments>
     </item>
     
   </channel>
