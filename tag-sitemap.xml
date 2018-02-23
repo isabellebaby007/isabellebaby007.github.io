@@ -86,13 +86,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/js/</loc>
-        <lastmod>2018-02-22T19:50:28.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/DOM/</loc>
         <lastmod>2018-02-22T19:50:28.863Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,13 +121,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-02-23T14:59:44.021Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/web%E6%80%A7%E8%83%BD/</loc>
         <lastmod>2018-02-23T14:59:44.021Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -144,6 +130,27 @@
     <url>
         <loc>http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/</loc>
         <lastmod>2018-02-23T14:59:44.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/js/</loc>
+        <lastmod>2018-02-23T18:32:06.218Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-02-23T18:32:06.218Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C/</loc>
+        <lastmod>2018-02-23T18:32:06.218Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
