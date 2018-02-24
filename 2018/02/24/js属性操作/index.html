@@ -148,7 +148,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/02/24/js属性操作/duxie.png">
 <meta property="og:image" content="http://yoursite.com/2018/02/24/js属性操作/inner1.png">
 <meta property="og:image" content="http://yoursite.com/2018/02/24/js属性操作/inner2.png">
-<meta property="og:updated_time" content="2018-02-23T20:02:05.960Z">
+<meta property="og:updated_time" content="2018-02-24T11:17:35.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js属性操作">
 <meta name="twitter:description" content="HTML的属性操作：读、写属性：属性名+属性值。   属性的读操作读操作：获取、找到。元素.属性名">
@@ -453,7 +453,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  614
+                  1,292
                 </span>
               
 
@@ -469,7 +469,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -657,7 +657,112 @@ window.onload = function (){
 
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><h3 id="属性操作注意事项"><a href="#属性操作注意事项" class="headerlink" title="属性操作注意事项"></a>属性操作注意事项</h3>
+</code></pre><h3 id="属性操作注意事项"><a href="#属性操作注意事项" class="headerlink" title="属性操作注意事项"></a>属性操作注意事项</h3><h4 id="JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"><a href="#JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。" class="headerlink" title="JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"></a>JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。</h4><p>如：font-size      fontSize<br>padding-top       paddingTop<br>margin-left       marginLeft  </p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var oBtn1 = document.getElementById(&apos;btn1&apos;);
+        var oBtn2 = document.getElementById(&apos;btn2&apos;);
+        var oP = document.getElementById(&apos;p1&apos;);
+        var num = 14;
+
+        oBtn1.onclick = function() {
+            num -= 2;
+            oP.style.fontSize = num + &apos;px&apos;;              
+        };
+        oBtn2.onclick = function() {                  
+            num += 2;    
+            oP.style.fontSize = num + &apos;px&apos;;
+        };
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;-&quot; /&gt;
+    &lt;input id=&quot;btn2&quot; type=&quot;button&quot; value=&quot;+&quot; /&gt;
+    &lt;p id=&quot;p1&quot; style=&quot;font-size:16px;&quot;&gt;10月28日晚，中央纪委监察部官网发布消息，贵州省委常委、遵义市委书记廖少华因涉嫌严重违纪违法接受组织调查。3天后中组部宣布对其免职。廖成为十八大后中纪委一连串&quot;打虎&quot;行动中第十一位落马的副省部级以上高官。&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><h4 id="js中的class作为保留字，不能用，样式名用className"><a href="#js中的class作为保留字，不能用，样式名用className" class="headerlink" title="js中的class作为保留字，不能用，样式名用className"></a>js中的class作为保留字，不能用，样式名用className</h4><pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var oBtn1 = document.getElementById(&apos;btn1&apos;);
+        var oBtn2 = document.getElementById(&apos;btn2&apos;);
+        var oBtn3 = document.getElementById(&apos;btn3&apos;);
+        var oBtn4 = document.getElementById(&apos;btn4&apos;);
+        var oP = document.getElementById(&apos;p1&apos;);
+        var num = 14;
+
+        oBtn1.onclick = function() {
+            num -= 2;
+            oP.style.fontSize = num + &apos;px&apos;;
+        };
+        oBtn2.onclick = function() {
+            num += 2;
+            oP.style.fontSize = num + &apos;px&apos;;
+        };
+
+        oBtn3.onclick = function() {
+            oP.className = &apos;red&apos;;
+        };
+        oBtn4.onclick = function() {
+            oP.className = &apos;yellow&apos;;
+        };
+    };
+    &lt;/script&gt;
+    &lt;style&gt;
+    .red {
+        width: 400px;
+        border: 10px solid #333;
+        background: red;
+        padding: 20px;
+        color: yellow;
+    }    
+    .yellow {
+        width: 500px;
+        border: 5px solid #333;
+        background: yellow;
+        padding: 10px;
+        color: red;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;-&quot; /&gt;
+    &lt;input id=&quot;btn2&quot; type=&quot;button&quot; value=&quot;+&quot; /&gt;
+    &lt;input id=&quot;btn3&quot; type=&quot;button&quot; value=&quot;红&quot; /&gt;
+    &lt;input id=&quot;btn4&quot; type=&quot;button&quot; value=&quot;黄&quot; /&gt;
+    &lt;p id=&quot;p1&quot; style=&quot;font-size:16px;&quot;&gt;10月28日晚，中央纪委监察部官网发布消息，贵州省委常委、遵义市委书记廖少华因涉嫌严重违纪违法接受组织调查。3天后中组部宣布对其免职。廖成为十八大后中纪委一连串&quot;打虎&quot;行动中第十一位落马的副省部级以上高官。&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><h4 id="不能作为判断条件的有"><a href="#不能作为判断条件的有" class="headerlink" title="不能作为判断条件的有:"></a>不能作为判断条件的有:</h4><p>1、所有的相对路径地址:img src href<br>2、颜色值：color：red  #f00 rgb(100,0,0)<br>3、innerHTML不能拿来做判断  </p>
+<h4 id="js修改input的type-ie6-7-8无效"><a href="#js修改input的type-ie6-7-8无效" class="headerlink" title="js修改input的type(ie6/7/8无效)"></a>js修改input的type(ie6/7/8无效)</h4><p>点击按钮变成复选框的例子：</p>
+<pre><code>&lt;input id=&quot;inp1&quot; type=&quot;button&quot;/&gt;
+&lt;script&gt;
+var olp=document.getElementById(&apos;inp1&apos;);
+olnp.onclick=function(){
+  olnp.type=&apos;checkbox&apos;;  //注意：这里在ie6/7/8会报错！！！
+}
+&lt;/script&gt;  
+</code></pre><p>如果要做上面那个效果，还要兼容ie6/7/8，可以这样巧妙地回避：点击按钮，让按钮隐藏起来，checkbox本来是隐藏的，点击按钮之后让他显示出来。  </p>
+<h4 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h4><p>想要一个元素浮动，在IE下用styleFloat,非IE下用cssFloat,简而言之就是下面这样：同时写两句  </p>
+<pre><code>oDiv.style.styleFloat=&apos;left&apos;;    //兼容IE浏览器
+oDiv.style.cssFloat=&apos;left&apos;;      //兼容非IE浏览器下
+</code></pre>
       
     </div>
     
@@ -953,7 +1058,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML的属性操作：读、写"><span class="nav-number">1.</span> <span class="nav-text">HTML的属性操作：读、写</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性的读操作"><span class="nav-number">1.1.</span> <span class="nav-text">属性的读操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性的写操作"><span class="nav-number">1.2.</span> <span class="nav-text">属性的写操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#读写操作结合的例子"><span class="nav-number">1.3.</span> <span class="nav-text">读写操作结合的例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#innerHTML"><span class="nav-number">1.4.</span> <span class="nav-text">innerHTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-属性读写操作配合innerHTML"><span class="nav-number">1.5.</span> <span class="nav-text">例子:属性读写操作配合innerHTML</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性操作注意事项"><span class="nav-number">2.</span> <span class="nav-text">属性操作注意事项</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML的属性操作：读、写"><span class="nav-number">1.</span> <span class="nav-text">HTML的属性操作：读、写</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性的读操作"><span class="nav-number">1.1.</span> <span class="nav-text">属性的读操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性的写操作"><span class="nav-number">1.2.</span> <span class="nav-text">属性的写操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#读写操作结合的例子"><span class="nav-number">1.3.</span> <span class="nav-text">读写操作结合的例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#innerHTML"><span class="nav-number">1.4.</span> <span class="nav-text">innerHTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子-属性读写操作配合innerHTML"><span class="nav-number">1.5.</span> <span class="nav-text">例子:属性读写操作配合innerHTML</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性操作注意事项"><span class="nav-number">2.</span> <span class="nav-text">属性操作注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"><span class="nav-number">2.1.</span> <span class="nav-text">JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#js中的class作为保留字，不能用，样式名用className"><span class="nav-number">2.2.</span> <span class="nav-text">js中的class作为保留字，不能用，样式名用className</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不能作为判断条件的有"><span class="nav-number">2.3.</span> <span class="nav-text">不能作为判断条件的有:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#js修改input的type-ie6-7-8无效"><span class="nav-number">2.4.</span> <span class="nav-text">js修改input的type(ie6/7/8无效)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动"><span class="nav-number">2.5.</span> <span class="nav-text">浮动</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -988,7 +1093,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">5.5k</span>
+    <span title="Site words total count">6.2k</span>
   
 </div>
 
