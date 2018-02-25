@@ -78,14 +78,14 @@
 
     <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-02-24T11:17:35.855Z</lastmod>
+        <lastmod>2018-02-25T11:36:55.558Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/</loc>
-        <lastmod>2018-02-24T11:17:35.855Z</lastmod>
+        <lastmod>2018-02-25T11:36:55.558Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

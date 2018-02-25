@@ -8,7 +8,15 @@
 
     <url>
         <loc>http://yoursite.com/2018/02/24/js%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C/</loc>
-        <lastmod>2018-02-24T11:17:35.855Z</lastmod>
+        <lastmod>2018-02-25T11:36:55.558Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/02/24/%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%E4%B8%8B%E8%BD%BD%E7%A0%B4%E8%A7%A3/</loc>
+        <lastmod>2018-02-24T18:51:29.265Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

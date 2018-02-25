@@ -123,7 +123,7 @@
 
 
 
-  <meta name="keywords" content="js,前端,属性操作," />
+  <meta name="keywords" content="前端,js,属性操作," />
 
 
 
@@ -137,7 +137,7 @@
 
 
 <meta name="description" content="HTML的属性操作：读、写属性：属性名+属性值。   属性的读操作读操作：获取、找到。元素.属性名">
-<meta name="keywords" content="js,前端,属性操作">
+<meta name="keywords" content="前端,js,属性操作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js属性操作">
 <meta property="og:url" content="http://yoursite.com/2018/02/24/js属性操作/index.html">
@@ -148,7 +148,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/02/24/js属性操作/duxie.png">
 <meta property="og:image" content="http://yoursite.com/2018/02/24/js属性操作/inner1.png">
 <meta property="og:image" content="http://yoursite.com/2018/02/24/js属性操作/inner2.png">
-<meta property="og:updated_time" content="2018-02-24T11:17:35.855Z">
+<meta property="og:updated_time" content="2018-02-25T11:36:55.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js属性操作">
 <meta name="twitter:description" content="HTML的属性操作：读、写属性：属性名+属性值。   属性的读操作读操作：获取、找到。元素.属性名">
@@ -453,7 +453,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,292
+                  1,736
                 </span>
               
 
@@ -469,7 +469,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  9
                 </span>
               
             </div>
@@ -492,277 +492,25 @@
       
         <h3 id="HTML的属性操作：读、写"><a href="#HTML的属性操作：读、写" class="headerlink" title="HTML的属性操作：读、写"></a>HTML的属性操作：读、写</h3><p>属性：属性名+属性值。  </p>
 <h4 id="属性的读操作"><a href="#属性的读操作" class="headerlink" title="属性的读操作"></a>属性的读操作</h4><p>读操作：获取、找到。元素.属性名 <a id="more"></a> </p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;&lt;/title&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;
-    window.onload = function() {
-        var oBtn = document.getElementById(&apos;btn1&apos;);
-        var oText = document.getElementById(&apos;text1&apos;);
-        var oSelect = document.getElementById(&apos;select1&apos;);
-
-        oBtn.onclick = function() {
-            alert(oText.value + &apos;在&apos; + oSelect.value);
-        }
-
-    }
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;text&quot; id=&quot;text1&quot; /&gt;
-    &lt;select id=&quot;select1&quot;&gt;
-        &lt;option value=&quot;北京&quot;&gt;北京&lt;/option&gt;
-        &lt;option value=&quot;上海&quot;&gt;上海&lt;/option&gt;
-        &lt;option value=&quot;杭州&quot;&gt;杭州&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;input type=&quot;button&quot; id=&quot;btn1&quot; value=&quot;按钮&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/02/24/js属性操作/ducaozuo.png" alt="">  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">		</span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">		    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">		        <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="javascript">		        <span class="keyword">var</span> oText = <span class="built_in">document</span>.getElementById(<span class="string">'text1'</span>);</span></span><br><span class="line"><span class="javascript">		        <span class="keyword">var</span> oSelect = <span class="built_in">document</span>.getElementById(<span class="string">'select1'</span>);</span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="actionscript">		        oBtn.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">		            alert(oText.value + <span class="string">'在'</span> + oSelect.value);</span></span><br><span class="line"><span class="undefined">		        &#125;</span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="undefined">		    &#125;</span></span><br><span class="line"><span class="undefined">		    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"text1"</span> /&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"select1"</span>&gt;</span></span><br><span class="line">		        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"北京"</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">		        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"上海"</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">		        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"杭州"</span>&gt;</span>杭州<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">		    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">		</span><br><span class="line">		<span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/02/24/js属性操作/ducaozuo.png" alt="">  </p>
 <h4 id="属性的写操作"><a href="#属性的写操作" class="headerlink" title="属性的写操作"></a>属性的写操作</h4><p>(添加)替换、修改。元素.属性名=新的值。  </p>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;&lt;/title&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;
-    window.onload = function() {
-        var oBtn = document.getElementById(&apos;btn1&apos;);
-        var oText = document.getElementById(&apos;text1&apos;);
-        var oSelect = document.getElementById(&apos;select1&apos;);
-
-        oBtn.onclick = function() {
-            //oBtn.value=&apos;button&apos;;
-            //oText.value=&apos;按钮&apos;;
-            oText.value=oSelect.value;
-
-        }
-
-    }
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;text&quot; id=&quot;text1&quot; /&gt;
-    &lt;select id=&quot;select1&quot;&gt;
-        &lt;option value=&quot;北京&quot;&gt;北京&lt;/option&gt;
-        &lt;option value=&quot;上海&quot;&gt;上海&lt;/option&gt;
-        &lt;option value=&quot;杭州&quot;&gt;杭州&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;input type=&quot;button&quot; id=&quot;btn1&quot; value=&quot;按钮&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre><h4 id="读写操作结合的例子"><a href="#读写操作结合的例子" class="headerlink" title="读写操作结合的例子"></a>读写操作结合的例子</h4><p>在文本框中输入图片地址，点击按钮切换图片。  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var oBtn = document.getElementById(&apos;btn1&apos;);
-        var oText = document.getElementById(&apos;text1&apos;);
-        var oImg = document.getElementById(&apos;img1&apos;);
-
-        oBtn.onclick = function() {
-            oImg.src = oText.value;
-        };
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input id=&quot;text1&quot; type=&quot;text&quot; /&gt;
-    &lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;按钮&quot; /&gt;
-    &lt;p id=&quot;p1&quot;&gt;这是一些文字&lt;/p&gt;
-    &lt;img id=&quot;img1&quot; src=&quot;img/1.jpg&quot; width=&quot;200&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/02/24/js属性操作/duxie.png" alt="">  </p>
-<h4 id="innerHTML"><a href="#innerHTML" class="headerlink" title="innerHTML"></a>innerHTML</h4><p>元素.innerHTML:可以读取元素内的所有HTML代码。元素.innerHTML=新的值：修改或者替换元素内的所有HTML内容。  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var oBtn = document.getElementById(&apos;btn1&apos;);
-        var oText = document.getElementById(&apos;text1&apos;);
-        var oP = document.getElementById(&apos;p1&apos;);
-
-        oBtn.onclick = function() {
-            // oImg.src = oText.value;
-            // alert( oP.innerHTML );
-            oP.innerHTML = oText.value;
-        };
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input id=&quot;text1&quot; type=&quot;text&quot; /&gt;
-    &lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;按钮&quot; /&gt;
-    &lt;p id=&quot;p1&quot;&gt;这是一些文字&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/02/24/js属性操作/inner1.png" alt="">  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oText = <span class="built_in">document</span>.getElementById(<span class="string">'text1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oSelect = <span class="built_in">document</span>.getElementById(<span class="string">'select1'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript">        oBtn.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">            <span class="comment">//oBtn.value='button';</span></span></span><br><span class="line"><span class="actionscript">            <span class="comment">//oText.value='按钮';</span></span></span><br><span class="line"><span class="undefined">            oText.value=oSelect.value;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"text1"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"select1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"北京"</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"上海"</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"杭州"</span>&gt;</span>杭州<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="读写操作结合的例子"><a href="#读写操作结合的例子" class="headerlink" title="读写操作结合的例子"></a>读写操作结合的例子</h4><p>在文本框中输入图片地址，点击按钮切换图片。  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oText = <span class="built_in">document</span>.getElementById(<span class="string">'text1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oImg = <span class="built_in">document</span>.getElementById(<span class="string">'img1'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript">        oBtn.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="undefined">            oImg.src = oText.value;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"text1"</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p1"</span>&gt;</span>这是一些文字<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">id</span>=<span class="string">"img1"</span> <span class="attr">src</span>=<span class="string">"img/1.jpg"</span> <span class="attr">width</span>=<span class="string">"200"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/02/24/js属性操作/duxie.png" alt="">  </p>
+<h4 id="innerHTML"><a href="#innerHTML" class="headerlink" title="innerHTML"></a>innerHTML</h4><p>元素.innerHTML:可以读取元素内的所有HTML代码。元素.innerHTML=新的值：修改或者替换元素内的所有HTML内容。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oText = <span class="built_in">document</span>.getElementById(<span class="string">'text1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oP = <span class="built_in">document</span>.getElementById(<span class="string">'p1'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript">        oBtn.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">            <span class="comment">// oImg.src = oText.value;</span></span></span><br><span class="line"><span class="actionscript">            <span class="comment">// alert( oP.innerHTML );</span></span></span><br><span class="line"><span class="undefined">            oP.innerHTML = oText.value;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"text1"</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p1"</span>&gt;</span>这是一些文字<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="/2018/02/24/js属性操作/inner1.png" alt="">  </p>
 <p><img src="/2018/02/24/js属性操作/inner2.png" alt=""> </p>
-<h4 id="例子-属性读写操作配合innerHTML"><a href="#例子-属性读写操作配合innerHTML" class="headerlink" title="例子:属性读写操作配合innerHTML"></a>例子:属性读写操作配合innerHTML</h4><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-&lt;title&gt;无标题文档&lt;/title&gt;
-&lt;style&gt;
-#div1 { width:240px; height:200px; border:1px solid #333; background:#f1f1f1; padding:10px; }
-&lt;/style&gt;
-&lt;script&gt;
-window.onload = function (){
-    var oDiv = document.getElementById(&apos;div1&apos;);
-    var oStrong = document.getElementById(&apos;strong1&apos;);
-    var oText = document.getElementById(&apos;text1&apos;);
-    var oBtn = document.getElementById(&apos;btn1&apos;);
-
-    oBtn.onclick = function (){
-        // 原来的内容，你得给我留着，然后再加上新内容
-        // a = a + b
-        // a += b
-
-        // 添加：+=
-        // oDiv.innerHTML = oDiv.innerHTML + oText.value + &apos;&lt;br /&gt;&apos;;
-        oDiv.innerHTML += oStrong.innerHTML + oText.value + &apos;&lt;br /&gt;&apos;;
-        oText.value = &apos;&apos;;
-    };
-};
-&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;div id=&quot;div1&quot;&gt;&lt;/div&gt;
-&lt;strong id=&quot;strong1&quot;&gt;张三：&lt;/strong&gt;
-&lt;input id=&quot;text1&quot; type=&quot;text&quot; /&gt;
-&lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;提交&quot; /&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h3 id="属性操作注意事项"><a href="#属性操作注意事项" class="headerlink" title="属性操作注意事项"></a>属性操作注意事项</h3><h4 id="JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"><a href="#JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。" class="headerlink" title="JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"></a>JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。</h4><p>如：font-size      fontSize<br>padding-top       paddingTop<br>margin-left       marginLeft  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var oBtn1 = document.getElementById(&apos;btn1&apos;);
-        var oBtn2 = document.getElementById(&apos;btn2&apos;);
-        var oP = document.getElementById(&apos;p1&apos;);
-        var num = 14;
-
-        oBtn1.onclick = function() {
-            num -= 2;
-            oP.style.fontSize = num + &apos;px&apos;;              
-        };
-        oBtn2.onclick = function() {                  
-            num += 2;    
-            oP.style.fontSize = num + &apos;px&apos;;
-        };
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;-&quot; /&gt;
-    &lt;input id=&quot;btn2&quot; type=&quot;button&quot; value=&quot;+&quot; /&gt;
-    &lt;p id=&quot;p1&quot; style=&quot;font-size:16px;&quot;&gt;10月28日晚，中央纪委监察部官网发布消息，贵州省委常委、遵义市委书记廖少华因涉嫌严重违纪违法接受组织调查。3天后中组部宣布对其免职。廖成为十八大后中纪委一连串&quot;打虎&quot;行动中第十一位落马的副省部级以上高官。&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><h4 id="js中的class作为保留字，不能用，样式名用className"><a href="#js中的class作为保留字，不能用，样式名用className" class="headerlink" title="js中的class作为保留字，不能用，样式名用className"></a>js中的class作为保留字，不能用，样式名用className</h4><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var oBtn1 = document.getElementById(&apos;btn1&apos;);
-        var oBtn2 = document.getElementById(&apos;btn2&apos;);
-        var oBtn3 = document.getElementById(&apos;btn3&apos;);
-        var oBtn4 = document.getElementById(&apos;btn4&apos;);
-        var oP = document.getElementById(&apos;p1&apos;);
-        var num = 14;
-
-        oBtn1.onclick = function() {
-            num -= 2;
-            oP.style.fontSize = num + &apos;px&apos;;
-        };
-        oBtn2.onclick = function() {
-            num += 2;
-            oP.style.fontSize = num + &apos;px&apos;;
-        };
-
-        oBtn3.onclick = function() {
-            oP.className = &apos;red&apos;;
-        };
-        oBtn4.onclick = function() {
-            oP.className = &apos;yellow&apos;;
-        };
-    };
-    &lt;/script&gt;
-    &lt;style&gt;
-    .red {
-        width: 400px;
-        border: 10px solid #333;
-        background: red;
-        padding: 20px;
-        color: yellow;
-    }    
-    .yellow {
-        width: 500px;
-        border: 5px solid #333;
-        background: yellow;
-        padding: 10px;
-        color: red;
-    }
-    &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input id=&quot;btn1&quot; type=&quot;button&quot; value=&quot;-&quot; /&gt;
-    &lt;input id=&quot;btn2&quot; type=&quot;button&quot; value=&quot;+&quot; /&gt;
-    &lt;input id=&quot;btn3&quot; type=&quot;button&quot; value=&quot;红&quot; /&gt;
-    &lt;input id=&quot;btn4&quot; type=&quot;button&quot; value=&quot;黄&quot; /&gt;
-    &lt;p id=&quot;p1&quot; style=&quot;font-size:16px;&quot;&gt;10月28日晚，中央纪委监察部官网发布消息，贵州省委常委、遵义市委书记廖少华因涉嫌严重违纪违法接受组织调查。3天后中组部宣布对其免职。廖成为十八大后中纪委一连串&quot;打虎&quot;行动中第十一位落马的副省部级以上高官。&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><h4 id="不能作为判断条件的有"><a href="#不能作为判断条件的有" class="headerlink" title="不能作为判断条件的有:"></a>不能作为判断条件的有:</h4><p>1、所有的相对路径地址:img src href<br>2、颜色值：color：red  #f00 rgb(100,0,0)<br>3、innerHTML不能拿来做判断  </p>
+<h4 id="例子-属性读写操作配合innerHTML"><a href="#例子-属性读写操作配合innerHTML" class="headerlink" title="例子:属性读写操作配合innerHTML"></a>例子:属性读写操作配合innerHTML</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css"><span class="selector-id">#div1</span> &#123; <span class="attribute">width</span>:<span class="number">240px</span>; <span class="attribute">height</span>:<span class="number">200px</span>; <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#333</span>; <span class="attribute">background</span>:<span class="number">#f1f1f1</span>; <span class="attribute">padding</span>:<span class="number">10px</span>; &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> oDiv = <span class="built_in">document</span>.getElementById(<span class="string">'div1'</span>);</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> oStrong = <span class="built_in">document</span>.getElementById(<span class="string">'strong1'</span>);</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> oText = <span class="built_in">document</span>.getElementById(<span class="string">'text1'</span>);</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="actionscript">	oBtn.onclick = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="actionscript">		<span class="comment">// 原来的内容，你得给我留着，然后再加上新内容</span></span></span><br><span class="line"><span class="actionscript">		<span class="comment">// a = a + b</span></span></span><br><span class="line"><span class="actionscript">		<span class="comment">// a += b</span></span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="actionscript">		<span class="comment">// 添加：+=</span></span></span><br><span class="line"><span class="actionscript">		<span class="comment">// oDiv.innerHTML = oDiv.innerHTML + oText.value + '&lt;br /&gt;';</span></span></span><br><span class="line"><span class="actionscript">		oDiv.innerHTML += oStrong.innerHTML + oText.value + <span class="string">'&lt;br /&gt;'</span>;</span></span><br><span class="line"><span class="actionscript">		oText.value = <span class="string">''</span>;</span></span><br><span class="line"><span class="undefined">	&#125;;</span></span><br><span class="line"><span class="undefined">&#125;;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span> <span class="attr">id</span>=<span class="string">"strong1"</span>&gt;</span>张三：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"text1"</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"提交"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="属性操作注意事项"><a href="#属性操作注意事项" class="headerlink" title="属性操作注意事项"></a>属性操作注意事项</h3><h4 id="JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"><a href="#JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。" class="headerlink" title="JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。"></a>JS中不允许出现“-”，都是去掉“-”，后面的单词的首字母大写。</h4><p>如：font-size      fontSize<br>padding-top       paddingTop<br>margin-left       marginLeft<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn1 = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn2 = <span class="built_in">document</span>.getElementById(<span class="string">'btn2'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oP = <span class="built_in">document</span>.getElementById(<span class="string">'p1'</span>);</span></span><br><span class="line"><span class="actionscript">        <span class="keyword">var</span> num = <span class="number">14</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript">        oBtn1.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="undefined">            num -= 2;</span></span><br><span class="line"><span class="actionscript">            oP.style.fontSize = num + <span class="string">'px'</span>;		      </span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="actionscript">        oBtn2.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;		          </span></span><br><span class="line"><span class="undefined">            num += 2;	</span></span><br><span class="line"><span class="actionscript">            oP.style.fontSize = num + <span class="string">'px'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"-"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn2"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"+"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p1"</span> <span class="attr">style</span>=<span class="string">"font-size:16px;"</span>&gt;</span>10月28日晚，中央纪委监察部官网发布消息，贵州省委常委、遵义市委书记廖少华因涉嫌严重违纪违法接受组织调查。3天后中组部宣布对其免职。廖成为十八大后中纪委一连串"打虎"行动中第十一位落马的副省部级以上高官。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="js中的class作为保留字，不能用，样式名用className"><a href="#js中的class作为保留字，不能用，样式名用className" class="headerlink" title="js中的class作为保留字，不能用，样式名用className"></a>js中的class作为保留字，不能用，样式名用className</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn1 = <span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn2 = <span class="built_in">document</span>.getElementById(<span class="string">'btn2'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn3 = <span class="built_in">document</span>.getElementById(<span class="string">'btn3'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn4 = <span class="built_in">document</span>.getElementById(<span class="string">'btn4'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oP = <span class="built_in">document</span>.getElementById(<span class="string">'p1'</span>);</span></span><br><span class="line"><span class="actionscript">        <span class="keyword">var</span> num = <span class="number">14</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript">        oBtn1.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="undefined">            num -= 2;</span></span><br><span class="line"><span class="actionscript">            oP.style.fontSize = num + <span class="string">'px'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="actionscript">        oBtn2.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="undefined">            num += 2;</span></span><br><span class="line"><span class="actionscript">            oP.style.fontSize = num + <span class="string">'px'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="actionscript">        oBtn3.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">            oP.className = <span class="string">'red'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="actionscript">        oBtn4.onclick = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span></span><br><span class="line"><span class="actionscript">            oP.className = <span class="string">'yellow'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-class">.red</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 400px;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">border</span>: 10<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#333</span>;</span></span><br><span class="line"><span class="undefined">        background: red;</span></span><br><span class="line"><span class="undefined">        padding: 20px;</span></span><br><span class="line"><span class="undefined">        color: yellow;</span></span><br><span class="line"><span class="undefined">    &#125;	</span></span><br><span class="line"><span class="css">    <span class="selector-class">.yellow</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 500px;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">border</span>: 5<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#333</span>;</span></span><br><span class="line"><span class="undefined">        background: yellow;</span></span><br><span class="line"><span class="undefined">        padding: 10px;</span></span><br><span class="line"><span class="undefined">        color: red;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn1"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"-"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn2"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"+"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn3"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"红"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btn4"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"黄"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p1"</span> <span class="attr">style</span>=<span class="string">"font-size:16px;"</span>&gt;</span>10月28日晚，中央纪委监察部官网发布消息，贵州省委常委、遵义市委书记廖少华因涉嫌严重违纪违法接受组织调查。3天后中组部宣布对其免职。廖成为十八大后中纪委一连串"打虎"行动中第十一位落马的副省部级以上高官。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="不能作为判断条件的有"><a href="#不能作为判断条件的有" class="headerlink" title="不能作为判断条件的有:"></a>不能作为判断条件的有:</h4><p>1、所有的相对路径地址:img src href<br>2、颜色值：color：red  #f00 rgb(100,0,0)<br>3、innerHTML不能拿来做判断  </p>
 <h4 id="js修改input的type-ie6-7-8无效"><a href="#js修改input的type-ie6-7-8无效" class="headerlink" title="js修改input的type(ie6/7/8无效)"></a>js修改input的type(ie6/7/8无效)</h4><p>点击按钮变成复选框的例子：</p>
-<pre><code>&lt;input id=&quot;inp1&quot; type=&quot;button&quot;/&gt;
-&lt;script&gt;
-var olp=document.getElementById(&apos;inp1&apos;);
-olnp.onclick=function(){
-  olnp.type=&apos;checkbox&apos;;  //注意：这里在ie6/7/8会报错！！！
-}
-&lt;/script&gt;  
-</code></pre><p>如果要做上面那个效果，还要兼容ie6/7/8，可以这样巧妙地回避：点击按钮，让按钮隐藏起来，checkbox本来是隐藏的，点击按钮之后让他显示出来。  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;input id=<span class="string">"inp1"</span> type=<span class="string">"button"</span>/&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> olp=<span class="built_in">document</span>.getElementById(<span class="string">'inp1'</span>);</span><br><span class="line">olnp.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  olnp.type=<span class="string">'checkbox'</span>;  <span class="comment">//注意：这里在ie6/7/8会报错！！！</span></span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<p>如果要做上面那个效果，还要兼容ie6/7/8，可以这样巧妙地回避：点击按钮，让按钮隐藏起来，checkbox本来是隐藏的，点击按钮之后让他显示出来。  </p>
 <h4 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h4><p>想要一个元素浮动，在IE下用styleFloat,非IE下用cssFloat,简而言之就是下面这样：同时写两句  </p>
-<pre><code>oDiv.style.styleFloat=&apos;left&apos;;    //兼容IE浏览器
-oDiv.style.cssFloat=&apos;left&apos;;      //兼容非IE浏览器下
-</code></pre>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">    		oDiv.style.styleFloat=<span class="string">'left'</span>;    <span class="comment">//兼容IE浏览器</span></span><br><span class="line">			oDiv.style.cssFloat=<span class="string">'left'</span>;      <span class="comment">//兼容非IE浏览器下  </span></span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string">还可以采用下面的方法：通过改class，来修改浮动。  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">`</span><span class="string">``</span> javascript</span><br><span class="line">			.left&#123;<span class="attr">float</span>:left;&#125;</span><br><span class="line">			.right&#123;<span class="attr">float</span>:right;&#125;  </span><br><span class="line"><span class="string">``</span><span class="string">`  </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">#### 点后面的值无法修改  </span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">`</span><span class="string">``</span>html </span><br><span class="line">		&lt;!DOCTYPE html&gt;</span><br><span class="line">		&lt;html&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;head&gt;</span><br><span class="line">		    &lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">		    &lt;title&gt;<span class="xml"><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line">		&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp">		</span></span><br><span class="line"><span class="regexp">		&lt;body&gt;</span></span><br><span class="line"><span class="regexp">		    &lt;script type="text/</span>javascript<span class="string">"&gt;</span></span><br><span class="line"><span class="string">		    window.onload = function() &#123;</span></span><br><span class="line"><span class="string">		        var oAttr = document.getElementById('attr');</span></span><br><span class="line"><span class="string">		        var oVal = document.getElementById('val');</span></span><br><span class="line"><span class="string">		        var oBtn = document.getElementById('btn1');</span></span><br><span class="line"><span class="string">		        var oDiv = document.getElementById('div1');</span></span><br><span class="line"><span class="string">		</span></span><br><span class="line"><span class="string">		        oBtn.onclick = function() &#123;           </span></span><br><span class="line"><span class="string">		            oDiv.style[oAttr.value] = oVal.value; //中括号里面的值可以随便改</span></span><br><span class="line"><span class="string">		            //js中允许把点换成[]</span></span><br><span class="line"><span class="string">		        &#125;</span></span><br><span class="line"><span class="string">		</span></span><br><span class="line"><span class="string">		    &#125;</span></span><br><span class="line"><span class="string">		    &lt;/script&gt;</span></span><br><span class="line"><span class="string">		    请输入属性名称：</span></span><br><span class="line"><span class="string">		    &lt;input type="</span>text<span class="string">" id="</span>attr<span class="string">" /&gt;</span></span><br><span class="line"><span class="string">		    &lt;br/&gt; 请输入属性值：</span></span><br><span class="line"><span class="string">		    &lt;input type="</span>text<span class="string">" id="</span>val<span class="string">" /&gt;</span></span><br><span class="line"><span class="string">		    &lt;input type="</span>button<span class="string">" value="</span>确定<span class="string">" id="</span>btn1<span class="string">" /&gt;</span></span><br><span class="line"><span class="string">		    &lt;div id="</span>div1<span class="string">"&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="string">		&lt;/body&gt;</span></span><br><span class="line"><span class="string">		</span></span><br><span class="line"><span class="string">		&lt;/html&gt;</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -808,9 +556,9 @@ oDiv.style.cssFloat=&apos;left&apos;;      //兼容非IE浏览器下
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
-          
             <a href="/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
+          
+            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
           
             <a href="/tags/属性操作/" rel="tag"><i class="fa fa-tag"></i> 属性操作</a>
           
@@ -834,6 +582,10 @@ oDiv.style.cssFloat=&apos;left&apos;;      //兼容非IE浏览器下
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/24/百度文库下载破解/" rel="prev" title="百度文库下载破解">
+                百度文库下载破解 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -945,7 +697,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1093,7 +845,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.2k</span>
+    <span title="Site words total count">6.6k</span>
   
 </div>
 
