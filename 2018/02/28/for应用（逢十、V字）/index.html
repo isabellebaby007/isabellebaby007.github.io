@@ -145,7 +145,8 @@
 <meta property="og:description" content="逢十往下一行用js生成100个div，每行十个。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/02/28/for应用（逢十、V字）/fengshi.png">
-<meta property="og:updated_time" content="2018-02-27T18:52:55.409Z">
+<meta property="og:image" content="http://yoursite.com/2018/02/28/for应用（逢十、V字）/vzi.png">
+<meta property="og:updated_time" content="2018-02-27T20:10:15.241Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="for应用（逢十、V字）">
 <meta name="twitter:description" content="逢十往下一行用js生成100个div，每行十个。">
@@ -450,7 +451,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  125
+                  352
                 </span>
               
 
@@ -466,7 +467,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -488,6 +489,63 @@
 
       
         <h4 id="逢十往下一行"><a href="#逢十往下一行" class="headerlink" title="逢十往下一行"></a>逢十往下一行</h4><p>用js生成100个div，每行十个。  <a id="more"></a></p>
+<pre><code class="html"><span class="meta">&lt;!DOCTYPE HTML&gt;</span>
+<span class="tag">&lt;<span class="name">html</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span>
+<span class="undefined">    div {</span>
+<span class="undefined">        width: 50px;</span>
+<span class="undefined">        height: 50px;</span>
+<span class="undefined">        background: red;</span>
+<span class="undefined">        position: absolute;</span>
+<span class="undefined">        top: 0;</span>
+<span class="undefined">        left: 0;</span>
+<span class="undefined">        font-size: 30px;</span>
+<span class="undefined">        text-align: center;</span>
+<span class="undefined">        line-height: 50px;</span>
+<span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#fff</span>;</span>
+<span class="undefined">    }</span>
+<span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span>
+<span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</span>
+<span class="javascript">        <span class="keyword">var</span> aDiv = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>);</span>
+<span class="undefined"></span>
+<span class="actionscript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) {</span>
+<span class="javascript">            <span class="built_in">document</span>.body.innerHTML += <span class="string">'&lt;div&gt;'</span> + i + <span class="string">'&lt;/div&gt;'</span>;</span>
+<span class="undefined">        }</span>
+<span class="undefined"></span>
+<span class="actionscript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; aDiv.length; i++) {</span>
+<span class="actionscript">            <span class="keyword">var</span> m = i % <span class="number">10</span>;</span>
+<span class="javascript">            <span class="keyword">var</span> n = <span class="built_in">parseInt</span>(i / <span class="number">10</span>);</span>
+<span class="actionscript">            aDiv[i].style.left = m * <span class="number">50</span> + <span class="string">'px'</span>;</span>
+<span class="actionscript">            aDiv[i].style.top = <span class="number">10</span> + n * <span class="number">50</span> + <span class="string">'px'</span>;</span>
+<span class="undefined">        }</span>
+<span class="undefined"></span>
+<span class="undefined"></span>
+<span class="undefined">    };</span>
+<span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">body</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="name">html</span>&gt;</span>
+</code></pre>
+<p><img src="/2018/02/28/for应用（逢十、V字）/fengshi.png" alt="">  </p>
+<p>小拓展：可以用这种方法来写一个元素周期表的效果<br>小结：<br>求余数  </p>
+<pre><code>document.write(1%4); //结果为1
+</code></pre><p>求商  </p>
+<pre><code>console.info(1/4);//结果为0.25  
+</code></pre><p>求商，取整  </p>
+<pre><code>console.info(parseInt(1/4));//结果为0  
+</code></pre><p>天花板取整  </p>
+<pre><code>console.info(Math.ceil(1/4));//结果为1
+</code></pre><p>地板取整  </p>
+<pre><code>console.info(Math.floor(1/4));//结果为0
+</code></pre><h4 id="V字形"><a href="#V字形" class="headerlink" title="V字形"></a>V字形</h4><p>js生成20个div,用js写一个v字形图案  </p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 
@@ -512,17 +570,18 @@
     window.onload = function() {
         var aDiv = document.getElementsByTagName(&apos;div&apos;);
 
-        for (var i = 0; i &lt; 100; i++) {
+        for (var i = 0; i &lt; 20; i++) {
             document.body.innerHTML += &apos;&lt;div&gt;&apos; + i + &apos;&lt;/div&gt;&apos;;
         }
 
-        for (var i = 0; i &lt; aDiv.length; i++) {
-            var m = i % 10;
-            var n = parseInt(i / 10);
-            aDiv[i].style.left = m * 50 + &apos;px&apos;;
-            aDiv[i].style.top = 10 + n * 50 + &apos;px&apos;;
+        for (var i = 0; i &lt; aDiv.length / 2; i++) {
+            aDiv[i].style.left = i * 50 + &apos;px&apos;;
+            aDiv[i].style.top = i * 50 + &apos;px&apos;;
         }
-
+        for (var i = aDiv.length / 2; i &lt; aDiv.length; i++) {
+            aDiv[i].style.left = i * 50 + &apos;px&apos;;
+            aDiv[i].style.top = 50*aDiv.length - (i+1) * 50 + &apos;px&apos;;
+        }
 
     };
     &lt;/script&gt;
@@ -531,9 +590,9 @@
 &lt;body&gt;
 &lt;/body&gt;
 
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/02/28/for应用（逢十、V字）/fengshi.png" alt="">  </p>
-<h4 id="V字形"><a href="#V字形" class="headerlink" title="V字形"></a>V字形</h4>
+&lt;/html&gt;
+</code></pre><p><img src="/2018/02/28/for应用（逢十、V字）/vzi.png" alt=""></p>
+
       
     </div>
     
@@ -864,7 +923,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.1k</span>
+    <span title="Site words total count">8.4k</span>
   
 </div>
 
