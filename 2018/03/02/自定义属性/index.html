@@ -153,7 +153,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei1.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei2.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei3.png">
-<meta property="og:updated_time" content="2018-03-01T20:33:25.752Z">
+<meta property="og:updated_time" content="2018-03-01T20:45:41.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自定义属性">
 <meta name="twitter:description" content="什么是自定义属性通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
@@ -458,7 +458,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  784
+                  1,137
                 </span>
               
 
@@ -474,7 +474,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  6
                 </span>
               
             </div>
@@ -724,9 +724,148 @@
     &lt;p&gt;c&lt;/p&gt;
 &lt;/body&gt;
 
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/03/02/自定义属性/pipei3.png" alt=""> </p>
+&lt;/html&gt;  hexo 
+</code></pre><p><img src="/2018/03/02/自定义属性/pipei3.png" alt="">  </p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
 
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;style&gt;
+    ul {
+        padding: 0;
+        margin: 0;
+    }/*样式的重置*/
+
+    li {
+        list-style: none;
+    }
+
+    body {
+        background: #333;
+    }
+
+    #pic {
+        width: 400px;
+        height: 500px;
+        position: relative;
+        margin: 0 auto;
+        background: url(img/loader_ico.gif) no-repeat center #fff;
+    }
+
+    #pic img {
+        width: 400px;
+        height: 500px;
+    }
+
+    #pic ul {
+        width: 40px;
+        position: absolute;
+        top: 0;
+        right: -50px;
+    }
+
+    #pic li {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 4px;
+        background: #666;
+    }
+
+    #pic .active {
+        background: #FC3;
+    }
+
+    #pic span {
+        top: 0;
+    }
+
+    #pic p {
+        bottom: 0;
+        margin: 0;
+    }
+
+    #pic p,
+    #pic span {
+        position: absolute;
+        left: 0;
+        width: 400px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background: #000;
+    }
+    &lt;/style&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var oDiv = document.getElementById(&apos;pic&apos;);
+        var oImg = oDiv.getElementsByTagName(&apos;img&apos;)[0];
+        var oSpan = oDiv.getElementsByTagName(&apos;span&apos;)[0];
+        var oP = oDiv.getElementsByTagName(&apos;p&apos;)[0];
+        var oUl = oDiv.getElementsByTagName(&apos;ul&apos;)[0];
+        var aLi = oUl.getElementsByTagName(&apos;li&apos;);
+
+        var arrUrl = [&apos;img/1.png&apos;, &apos;img/2.png&apos;, &apos;img/3.png&apos;, &apos;img/4.png&apos;];
+        var arrText = [&apos;小宠物&apos;, &apos;图片二&apos;, &apos;图片三&apos;, &apos;面具&apos;];
+        var num = 0;
+        var oldLi = null;
+
+        for (var i = 0; i &lt; arrUrl.length; i++) {
+            oUl.innerHTML += &apos;&lt;li&gt;&lt;/li&gt;&apos;;
+        }
+        oldLi = aLi[num];
+
+        // 初始化
+        oImg.src = arrUrl[num];
+        oSpan.innerHTML = 1 + num + &apos; / &apos; + arrUrl.length;
+        oP.innerHTML = arrText[num];
+        aLi[num].className = &apos;active&apos;;
+
+        for (var i = 0; i &lt; aLi.length; i++) {
+            aLi[i].index = i; // 索引值
+            aLi[i].onclick = function() {
+                oImg.src = arrUrl[this.index];
+                oP.innerHTML = arrText[this.index];
+                oSpan.innerHTML = 1 + this.index + &apos; / &apos; + arrText.length;
+
+                /*
+                    &lt;li class=&quot;active&quot;&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;/li&gt;
+                */
+
+                // 思路一：全部清空，当前添加
+                for (var i = 0; i &lt; aLi.length; i++) {
+                    aLi[i].className = &apos;&apos;;
+                }
+                this.className = &apos;active&apos;;
+
+                /*
+                // 思路二：清空上个，当前添加
+                oldLi.className = &apos;&apos;;
+                oldLi = this;
+                this.className = &apos;active&apos;;
+                */
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id=&quot;pic&quot;&gt;
+        &lt;img src=&quot;&quot; /&gt;
+        &lt;span&gt;数量正在加载中……&lt;/span&gt;
+        &lt;p&gt;文字说明正在加载中……&lt;/p&gt;
+        &lt;ul&gt;&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
       
     </div>
     
@@ -1057,7 +1196,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">10.1k</span>
+    <span title="Site words total count">10.4k</span>
   
 </div>
 
