@@ -136,19 +136,27 @@
 
 
 
-<meta name="description" content="什么是自定义属性js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
+<meta name="description" content="什么是自定义属性通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
 <meta name="keywords" content="js,前端,自定义属性">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自定义属性">
 <meta property="og:url" content="http://yoursite.com/2018/03/02/自定义属性/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="什么是自定义属性js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
+<meta property="og:description" content="什么是自定义属性通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/zidingyi.png">
-<meta property="og:updated_time" content="2018-03-01T18:15:30.604Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/kaiguan1.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/kaiguan2.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/zizeng.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/index1.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/index2.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei1.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei2.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei3.png">
+<meta property="og:updated_time" content="2018-03-01T20:33:25.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自定义属性">
-<meta name="twitter:description" content="什么是自定义属性js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
+<meta name="twitter:description" content="什么是自定义属性通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
 <meta name="twitter:image" content="http://yoursite.com/2018/03/02/自定义属性/zidingyi.png">
 
 
@@ -450,7 +458,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  126
+                  784
                 </span>
               
 
@@ -466,7 +474,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  4
                 </span>
               
             </div>
@@ -487,7 +495,7 @@
       
 
       
-        <h3 id="什么是自定义属性"><a href="#什么是自定义属性" class="headerlink" title="什么是自定义属性"></a>什么是自定义属性</h3><p>js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性 <a id="more"></a> </p>
+        <h3 id="什么是自定义属性"><a href="#什么是自定义属性" class="headerlink" title="什么是自定义属性"></a>什么是自定义属性</h3><p>通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性 <a id="more"></a> </p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 
@@ -516,7 +524,209 @@
 
 &lt;/html&gt;
 </code></pre><p><img src="/2018/03/02/自定义属性/zidingyi.png" alt=""></p>
-<h3 id="自定义属性应用"><a href="#自定义属性应用" class="headerlink" title="自定义属性应用"></a>自定义属性应用</h3>
+<h3 id="应用1-自定义一组开关应用"><a href="#应用1-自定义一组开关应用" class="headerlink" title="应用1:自定义一组开关应用"></a>应用1:自定义一组开关应用</h3><p>注意不能当作判断条件的有1、背景不能判断 2、color不能判断 3、相对路径不能当作判断条件  </p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;style&gt;
+    li {
+        list-style: none;
+        width: 114px;
+        height: 140px;
+        background: url(img/normal.png);
+        float: left;
+        margin-right: 20px;
+    }
+    &lt;/style&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aLi = document.getElementsByTagName(&apos;li&apos;);
+        // var onOff = true;    // 只能控制一组！
+
+        for (var i = 0; i &lt; aLi.length; i++) {
+
+            aLi[i].onOff = true;//给每个要控制的元素都添加一个开关
+
+            aLi[i].onclick = function() {
+
+                // alert( this.style.background );
+
+
+                if (this.onOff) {
+                    this.style.background = &apos;url(img/active.png)&apos;;
+                    this.onOff = false;
+                } else {
+                    this.style.background = &apos;url(img/normal.png)&apos;;
+                    this.onOff = true;
+                }
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre><p><img src="/2018/03/02/自定义属性/kaiguan1.png" alt="">  </p>
+<p><img src="/2018/03/02/自定义属性/kaiguan2.png" alt="">  </p>
+<h3 id="应用2：获取自身递增数字及匹配数组内容"><a href="#应用2：获取自身递增数字及匹配数组内容" class="headerlink" title="应用2：获取自身递增数字及匹配数组内容"></a>应用2：获取自身递增数字及匹配数组内容</h3><p>相当于一个按钮就可以 控制一组东西的变化  </p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aBtn = document.getElementsByTagName(&apos;input&apos;);
+        var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;];
+
+        for (var i = 0; i &lt; aBtn.length; i++) {
+
+            aBtn[i].num = 0;
+
+            aBtn[i].onclick = function() {
+                // alert( arr[ this.num ] );
+                this.value = arr[this.num];
+
+                this.num++;
+                if (this.num === arr.length) {
+                    this.num = 0;
+                }
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/02/自定义属性/zizeng.png" alt=""> </p>
+<h3 id="应用3：添加索引值、匹配数组"><a href="#应用3：添加索引值、匹配数组" class="headerlink" title="应用3：添加索引值、匹配数组"></a>应用3：添加索引值、匹配数组</h3><pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aBtn = document.getElementsByTagName(&apos;input&apos;);
+
+        for (var i = 0; i &lt; aBtn.length; i++) {
+
+            aBtn[i].index = i; // 自定义属性（索引值）
+
+            aBtn[i].onclick = function() {
+
+                // alert( i );            
+                alert(this.index); //添加索引值，自定义索引值
+
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/02/自定义属性/index1.png" alt="">  </p>
+<p><img src="/2018/03/02/自定义属性/index2.png" alt="">  </p>
+<h4 id="索引的引用"><a href="#索引的引用" class="headerlink" title="索引的引用"></a>索引的引用</h4><p>想建立“匹配”“对应”关系，就用索引值  </p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aBtn = document.getElementsByTagName(&apos;input&apos;);
+
+
+        var arr = [&apos;莫涛&apos;, &apos;张森&apos;, &apos;杜鹏&apos;];
+
+        for (var i = 0; i &lt; aBtn.length; i++) {
+
+            aBtn[i].index = i; // 自定义属性（索引值）
+
+            aBtn[i].onclick = function() {
+                // alert( arr[ this.index ] );
+                this.value = arr[this.index];
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/02/自定义属性/pipei1.png" alt="">  </p>
+<p><img src="/2018/03/02/自定义属性/pipei2.png" alt="">  </p>
+<h4 id="通过索引将按钮和P匹配"><a href="#通过索引将按钮和P匹配" class="headerlink" title="通过索引将按钮和P匹配"></a>通过索引将按钮和P匹配</h4><pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aBtn = document.getElementsByTagName(&apos;input&apos;);
+        var aP = document.getElementsByTagName(&apos;p&apos;);
+
+        var arr = [&apos;马云&apos;, &apos;马化腾&apos;, &apos;李彦宏&apos;];
+
+        for (var i = 0; i &lt; aBtn.length; i++) {
+
+            aBtn[i].index = i; // 自定义属性（索引值）
+
+            aBtn[i].onclick = function() {
+                // alert( arr[ this.index ] );
+                this.value = arr[this.index];
+
+                aP[this.index].innerHTML = arr[this.index];
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt;
+    &lt;p&gt;a&lt;/p&gt;
+    &lt;p&gt;b&lt;/p&gt;
+    &lt;p&gt;c&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/02/自定义属性/pipei3.png" alt=""> </p>
+
       
     </div>
     
@@ -812,7 +1022,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是自定义属性"><span class="nav-number">1.</span> <span class="nav-text">什么是自定义属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义属性应用"><span class="nav-number">2.</span> <span class="nav-text">自定义属性应用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是自定义属性"><span class="nav-number">1.</span> <span class="nav-text">什么是自定义属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用1-自定义一组开关应用"><span class="nav-number">2.</span> <span class="nav-text">应用1:自定义一组开关应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用2：获取自身递增数字及匹配数组内容"><span class="nav-number">3.</span> <span class="nav-text">应用2：获取自身递增数字及匹配数组内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用3：添加索引值、匹配数组"><span class="nav-number">4.</span> <span class="nav-text">应用3：添加索引值、匹配数组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#索引的引用"><span class="nav-number">4.1.</span> <span class="nav-text">索引的引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过索引将按钮和P匹配"><span class="nav-number">4.2.</span> <span class="nav-text">通过索引将按钮和P匹配</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -847,7 +1057,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">9.4k</span>
+    <span title="Site words total count">10.1k</span>
   
 </div>
 
