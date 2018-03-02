@@ -99,14 +99,21 @@
 
     <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-01T20:45:41.481Z</lastmod>
+        <lastmod>2018-03-02T03:06:57.099Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/</loc>
-        <lastmod>2018-03-01T20:45:41.481Z</lastmod>
+        <lastmod>2018-03-02T03:06:57.099Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/</loc>
+        <lastmod>2018-03-02T03:06:57.099Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

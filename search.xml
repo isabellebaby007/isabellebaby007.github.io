@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[简单实现QQ好友列表]]></title>
+    <url>%2F2018%2F03%2F02%2F%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0QQ%E5%A5%BD%E5%8F%8B%E5%88%97%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[简单实现QQ好友列表需求：实现折叠与展开，实现点击高亮显示 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; ul, h2 { /*样式重置*/ padding: 0; margin: 0; } li {/* 去掉列表前面的点*/ list-style: none; } #list { width: 240px; border: 1px solid #333; margin: 0 auto; } #list .lis {} #list h2 { height: 30px; line-height: 30px; text-indent: 20px; background: url(img/ico1.gif) no-repeat 5px center #6FF; color: #000; } #list .active { background: url(img/ico2.gif) no-repeat 5px center #FF9; color: #000; } #list ul { display: none; } #list ul li { line-height: 24px; border-bottom: 1px solid #333; text-indent: 24px; } #list ul .hover { background: #6FF; } &lt;/style&gt; &lt;script&gt; window.onload = function() { var oUl = document.getElementById(&apos;list&apos;); var aH2 = oUl.getElementsByTagName(&apos;h2&apos;); var aUl = oUl.getElementsByTagName(&apos;ul&apos;); var aLi = null; var arrLi = []; for (var i = 0; i &lt; aH2.length; i++) { aH2[i].index = i; aH2[i].onclick = function() { for (var i = 0; i &lt; aH2.length; i++) { if (i != this.index) { aUl[i].style.display = &apos;none&apos;; aH2[i].className = &apos;&apos;; } } if (this.className == &apos;&apos;) { /*这里两个等号或者三个等号都可以*/ aUl[this.index].style.display = &apos;block&apos;; this.className = &apos;active&apos;; } else { aUl[this.index].style.display = &apos;none&apos;; this.className = &apos;&apos;; } }; } for (var i = 0; i &lt; aUl.length; i++) { aLi = aUl[i].getElementsByTagName(&apos;li&apos;); for (var j = 0; j &lt; aLi.length; j++) { arrLi.push(aLi[j]); } } for (var i = 0; i &lt; arrLi.length; i++) { arrLi[i].onclick = function() { for (var i = 0; i &lt; arrLi.length; i++) { if (arrLi[i] != this) { arrLi[i].className = &apos;&apos;; } } if (this.className == &apos;&apos;) { this.className = &apos;hover&apos;; } else { this.className = &apos;&apos;; } }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;ul id=&quot;list&quot;&gt; &lt;li class=&quot;lis&quot;&gt; &lt;h2&gt;我的好友&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;张三&lt;/li&gt; &lt;li&gt;张三&lt;/li&gt; &lt;li&gt;张三&lt;/li&gt; &lt;li&gt;张三&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;lis&quot;&gt; &lt;h2&gt;企业好友&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;lis&quot;&gt; &lt;h2&gt;黑名单&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;张小三&lt;/li&gt; &lt;li&gt;李小四&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/body&gt; &lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>js</category>
+        <category>练习项目</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+        <tag>for</tag>
+        <tag>前端练习小项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自定义属性]]></title>
     <url>%2F2018%2F03%2F02%2F%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%2F</url>
     <content type="text"><![CDATA[什么是自定义属性通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; window.onload = function() { var aBtn = document.getElementsByTagName(&apos;input&apos;); for (var i = 0; i &lt; aBtn.length; i++) { aBtn[i].abc = 123; aBtn[i].xyz = true; } alert(aBtn[0].abc); }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;按钮1&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;按钮2&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;按钮3&quot; /&gt; &lt;/body&gt; &lt;/html&gt; 应用1:自定义一组开关应用注意不能当作判断条件的有1、背景不能判断 2、color不能判断 3、相对路径不能当作判断条件 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; li { list-style: none; width: 114px; height: 140px; background: url(img/normal.png); float: left; margin-right: 20px; } &lt;/style&gt; &lt;script&gt; window.onload = function() { var aLi = document.getElementsByTagName(&apos;li&apos;); // var onOff = true; // 只能控制一组！ for (var i = 0; i &lt; aLi.length; i++) { aLi[i].onOff = true;//给每个要控制的元素都添加一个开关 aLi[i].onclick = function() { // alert( this.style.background ); if (this.onOff) { this.style.background = &apos;url(img/active.png)&apos;; this.onOff = false; } else { this.style.background = &apos;url(img/normal.png)&apos;; this.onOff = true; } }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;ul&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/body&gt; &lt;/html&gt; 应用2：获取自身递增数字及匹配数组内容相当于一个按钮就可以 控制一组东西的变化 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; window.onload = function() { var aBtn = document.getElementsByTagName(&apos;input&apos;); var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;]; for (var i = 0; i &lt; aBtn.length; i++) { aBtn[i].num = 0; aBtn[i].onclick = function() { // alert( arr[ this.num ] ); this.value = arr[this.num]; this.num++; if (this.num === arr.length) { this.num = 0; } }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt; &lt;/body&gt; &lt;/html&gt; 应用3：添加索引值、匹配数组&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; window.onload = function() { var aBtn = document.getElementsByTagName(&apos;input&apos;); for (var i = 0; i &lt; aBtn.length; i++) { aBtn[i].index = i; // 自定义属性（索引值） aBtn[i].onclick = function() { // alert( i ); alert(this.index); //添加索引值，自定义索引值 }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt; &lt;/body&gt; &lt;/html&gt; 索引的引用想建立“匹配”“对应”关系，就用索引值 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; window.onload = function() { var aBtn = document.getElementsByTagName(&apos;input&apos;); var arr = [&apos;莫涛&apos;, &apos;张森&apos;, &apos;杜鹏&apos;]; for (var i = 0; i &lt; aBtn.length; i++) { aBtn[i].index = i; // 自定义属性（索引值） aBtn[i].onclick = function() { // alert( arr[ this.index ] ); this.value = arr[this.index]; }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt; &lt;/body&gt; &lt;/html&gt; 通过索引将按钮和P匹配&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; window.onload = function() { var aBtn = document.getElementsByTagName(&apos;input&apos;); var aP = document.getElementsByTagName(&apos;p&apos;); var arr = [&apos;马云&apos;, &apos;马化腾&apos;, &apos;李彦宏&apos;]; for (var i = 0; i &lt; aBtn.length; i++) { aBtn[i].index = i; // 自定义属性（索引值） aBtn[i].onclick = function() { // alert( arr[ this.index ] ); this.value = arr[this.index]; aP[this.index].innerHTML = arr[this.index]; }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt; &lt;p&gt;a&lt;/p&gt; &lt;p&gt;b&lt;/p&gt; &lt;p&gt;c&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; hexo &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; ul { padding: 0; margin: 0; }/*样式的重置*/ li { list-style: none; } body { background: #333; } #pic { width: 400px; height: 500px; position: relative; margin: 0 auto; background: url(img/loader_ico.gif) no-repeat center #fff; } #pic img { width: 400px; height: 500px; } #pic ul { width: 40px; position: absolute; top: 0; right: -50px; } #pic li { width: 40px; height: 40px; margin-bottom: 4px; background: #666; } #pic .active { background: #FC3; } #pic span { top: 0; } #pic p { bottom: 0; margin: 0; } #pic p, #pic span { position: absolute; left: 0; width: 400px; height: 30px; line-height: 30px; text-align: center; color: #fff; background: #000; } &lt;/style&gt; &lt;script&gt; window.onload = function() { var oDiv = document.getElementById(&apos;pic&apos;); var oImg = oDiv.getElementsByTagName(&apos;img&apos;)[0]; var oSpan = oDiv.getElementsByTagName(&apos;span&apos;)[0]; var oP = oDiv.getElementsByTagName(&apos;p&apos;)[0]; var oUl = oDiv.getElementsByTagName(&apos;ul&apos;)[0]; var aLi = oUl.getElementsByTagName(&apos;li&apos;); var arrUrl = [&apos;img/1.png&apos;, &apos;img/2.png&apos;, &apos;img/3.png&apos;, &apos;img/4.png&apos;]; var arrText = [&apos;小宠物&apos;, &apos;图片二&apos;, &apos;图片三&apos;, &apos;面具&apos;]; var num = 0; var oldLi = null; for (var i = 0; i &lt; arrUrl.length; i++) { oUl.innerHTML += &apos;&lt;li&gt;&lt;/li&gt;&apos;; } oldLi = aLi[num]; // 初始化 oImg.src = arrUrl[num]; oSpan.innerHTML = 1 + num + &apos; / &apos; + arrUrl.length; oP.innerHTML = arrText[num]; aLi[num].className = &apos;active&apos;; for (var i = 0; i &lt; aLi.length; i++) { aLi[i].index = i; // 索引值 aLi[i].onclick = function() { oImg.src = arrUrl[this.index]; oP.innerHTML = arrText[this.index]; oSpan.innerHTML = 1 + this.index + &apos; / &apos; + arrText.length; /* &lt;li class=&quot;active&quot;&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; */ // 思路一：全部清空，当前添加 for (var i = 0; i &lt; aLi.length; i++) { aLi[i].className = &apos;&apos;; } this.className = &apos;active&apos;; /* // 思路二：清空上个，当前添加 oldLi.className = &apos;&apos;; oldLi = this; this.className = &apos;active&apos;; */ }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=&quot;pic&quot;&gt; &lt;img src=&quot;&quot; /&gt; &lt;span&gt;数量正在加载中……&lt;/span&gt; &lt;p&gt;文字说明正在加载中……&lt;/p&gt; &lt;ul&gt;&lt;/ul&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;]]></content>
@@ -9,8 +25,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>自定义属性</tag>
       </tags>
   </entry>
@@ -35,8 +51,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>this</tag>
       </tags>
   </entry>
@@ -49,8 +65,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -63,8 +79,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -77,8 +93,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for循环</tag>
       </tags>
   </entry>
@@ -91,8 +107,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>图片切换</tag>
       </tags>
   </entry>
@@ -105,8 +121,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>ByTagName</tag>
       </tags>
   </entry>
@@ -131,8 +147,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>条件判断</tag>
       </tags>
   </entry>
@@ -150,8 +166,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>属性操作</tag>
       </tags>
   </entry>
@@ -220,9 +236,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -234,8 +250,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>父节点</tag>
       </tags>
   </entry>
@@ -248,9 +264,9 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -263,8 +279,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -339,8 +355,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
 </search>
