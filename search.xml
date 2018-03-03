@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[数据类型转换练习]]></title>
     <url>%2F2018%2F03%2F03%2F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E7%BB%83%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[找到合适的值QQ号码]]></content>
+    <content type="text"><![CDATA[找到合适的值 &lt;!--more--&gt; &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; body { font-size: 20px; } &lt;/style&gt; &lt;script&gt; window.onload = function() { var arr = [&apos;100px&apos;, &apos;abc&apos; - 6, [], -98765, 34, -2, 0, &apos;300&apos;, , function() { alert(1); }, null, document, [], true, &apos;200px&apos; - 30, &apos;23.45元&apos;, 5, Number(&apos;abc&apos;), function() { alert(3); }, &apos;xyz&apos; - 90]; var ob = document.getElementsByTagName(&apos;body&apos;)[0]; var a1 = []; var a2 = []; var a3 = []; var a4 = []; var max = 0; /* 1、找到arr里所有的数字：-98765, 34, -2, 0, 5 2、找到可以转成数字的：&apos;100px&apos;, -98765, 34, -2, 0, &apos;300&apos;, &apos;23.45元&apos;, 5 3、把转成数字以后，最大值判断出来：300 4、把 NaN 所在的位置找出来：1 14 17 19 */ //题目一：用函数把数字选择出来，由于NaN在数字类型，所以用ISNaN把NAN去除掉 ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;1、找到arr里所有的数字: &apos; for (var i = 0; i &lt; arr.length; i++) { if (typeof arr[i] == &apos;number&apos; &amp;&amp; !isNaN(arr[i])) { a1.push(arr[i]); } } for (var i = 0; i &lt; a1.length; i++) { ob.innerHTML += a1[i] + &apos; ,&apos;; } //题目二：用函数把可以数字转换的找出来，再单独找0,要把中括号去除呢 ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;2、找到可以转成数字的: &apos; for (var i = 0; i &lt; arr.length; i++) { if (parseFloat(arr[i]) || (arr[i] == 0 &amp;&amp; typeof arr[i] == &apos;number&apos;)) { a2.push(arr[i]); } } for (var i = 0; i &lt; a2.length; i++) { ob.innerHTML += a2[i] + &apos; ,&apos;; } //题目三：用函数把可以数字转换出来，再单独找0输入 for (var i = 0; i &lt; a2.length; i++) { if (parseFloat(a2[i]) || a2[i] == 0) { a3.push(parseFloat(a2[i])); } } ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;3、把转换数字后的数组为: &apos; for (var i = 0; i &lt; a3.length; i++) { if (max &lt; a3[i]) { max = a3[i]; } ob.innerHTML += a3[i] + &apos; ,&apos;; } ob.innerHTML += &apos; 排序后最大值：&apos; + max; //题目四：把 NaN 所在的位置找出来：1 14 17 19 ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;4、把 NaN 所在的位置找出来: &apos; for (var i = 0; i &lt; arr.length; i++) { if (isNaN(arr[i]) &amp;&amp; typeof arr[i] == &apos;number&apos;) { a4.push(i); } } for (var i = 0; i &lt; a4.length; i++) { ob.innerHTML += a4[i] + &apos; ,&apos;; } } &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; QQ号码&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;/head&gt; &lt;script&gt; window.onload = function() { var oText = document.getElementById(&apos;t&apos;) var oBtn = document.getElementById(&apos;b&apos;) var count = 0; oBtn.onclick = function() { if (oText.value == &apos;&apos;) { alert(&apos;没有输入&apos;) count++; } if (isNaN(oText.value)) { alert(&apos;非数字&apos;) count++; } if (oText.value.charAt(0) == 0) { alert(&apos;不能有0在前面&apos;) count++; } if (parseFloat(oText.value) != parseInt(oText.value)) { alert(&apos;不能是小数&apos;) count++; } if (oText.value.length &lt; 5 || oText.value.length &gt; 10) { alert(&apos;输入的数字必须在5位以上、10位以内&apos;) count++; } if (count == 0) { alert(&apos;输入的号码正确呢&apos;) } } } &lt;/script&gt; &lt;body&gt; 请输入QQ号码： &lt;input type=&quot;text&quot; value=&quot;&quot; id=&quot;t&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;判断&quot; id=&quot;b&quot; /&gt; &lt;br /&gt; 1、有没有输入 &lt;br /&gt; 2、输入的是不是数字 &lt;br /&gt; 3、不能有0在前面 &lt;br /&gt; 4、不能是小数 &lt;br /&gt; 5、输入的数字必须在5位以上、10位以内 &lt;br /&gt; &lt;/body&gt; &lt;/html&gt;]]></content>
       <categories>
         <category>前端</category>
         <category>练习项目</category>
@@ -11,8 +11,8 @@
       <tags>
         <tag>前端</tag>
         <tag>js</tag>
-        <tag>数据类型转换</tag>
         <tag>前端练习小项目</tag>
+        <tag>数据类型转换</tag>
       </tags>
   </entry>
   <entry>
@@ -66,7 +66,7 @@
   <entry>
     <title><![CDATA[黑客入门电子书整理]]></title>
     <url>%2F2018%2F03%2F01%2F%E9%BB%91%E5%AE%A2%E5%85%A5%E9%97%A8%E7%94%B5%E5%AD%90%E4%B9%A6%E6%95%B4%E7%90%86%2F</url>
-    <content type="text"><![CDATA[链接: https://pan.baidu.com/s/1sm2fjZ3 密码: dvt3]]></content>
+    <content type="text"><![CDATA[黑客攻防电子书整理 链接: https://pan.baidu.com/s/1sm2fjZ3 密码: dvt3]]></content>
       <categories>
         <category>books</category>
         <category>hacker</category>
@@ -339,6 +339,19 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[九大排序算法总结]]></title>
     <url>%2F2018%2F02%2F13%2Fercha%2F</url>
     <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -365,19 +378,6 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>
