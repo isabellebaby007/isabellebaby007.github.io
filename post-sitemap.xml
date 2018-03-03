@@ -7,8 +7,32 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/03/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E7%BB%83%E4%B9%A0/</loc>
+        <lastmod>2018-03-03T07:46:26.800Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/02/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0QQ%E5%A5%BD%E5%8F%8B%E5%88%97%E8%A1%A8/</loc>
-        <lastmod>2018-03-02T03:06:57.099Z</lastmod>
+        <lastmod>2018-03-03T04:45:09.104Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/02/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</loc>
+        <lastmod>2018-03-03T04:41:23.826Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/02/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%AE%80%E4%BB%8B/</loc>
+        <lastmod>2018-03-02T05:33:41.338Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

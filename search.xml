@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[数据类型转换练习]]></title>
+    <url>%2F2018%2F03%2F03%2F%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[找到合适的值QQ号码]]></content>
+      <categories>
+        <category>前端</category>
+        <category>练习项目</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+        <tag>数据类型转换</tag>
+        <tag>前端练习小项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[区块链简介]]></title>
+    <url>%2F2018%2F03%2F02%2F%E5%8C%BA%E5%9D%97%E9%93%BE%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[js数据类型、类型转换]]></title>
+    <url>%2F2018%2F03%2F02%2Fjs%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%2F</url>
+    <content type="text"><![CDATA[js数据类型以及相关操作 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; /* ECMAScript：标准、核心 HTML 标签类型：block、inline、inline-block、table…… JS中的数据类型：数字、字符串、布尔、函数、对象(obj、[]、{}、null)、未定义 typeof 判断数据类型 */ var i = 100; // alert( typeof i ); // number var s = &apos; miaov &apos;; // alert( typeof s ); // string // alert( s.length ); // 7 // alert( s.charAt(3) ); // &apos;a&apos; var b = true; // 布尔值：true false // alert( typeof b ); // boolean if ( true ) {} for ( ; false ; ) { } var fn = function (){ alert(1); }; // fn(); function fn1(){ alert(2); } // alert( fn1 ); // fn1(); var obj = document; // alert( typeof obj ); // object 物体、东西、对象 obj.abc = 123; obj.onOff = true; obj.fn1 = function (){ alert(1); }; // alert( document.onOff ); // 123 // obj.fn1(); var arr = [ 1,2,3,4 ]; // alert( arr.length ); // arr[2] = 345; // alert( arr ); // arr.push( 5,6,7 ); // alert( arr ); // alert( typeof arr ); // object arr.abc = 999; arr.fn1 = function (){ alert(&apos;ok&apos;); }; // alert( arr.abc ); // arr.fn1(); var json = { name:&apos;miaov&apos;, age:5 }; // alert( json.name + &apos;今年&apos; + json.age + &apos;岁了&apos; ); // alert( typeof json );//object var n = null; // alert( typeof n );//空的东西不能添加属性 var u; // alert( typeof u ); // undefined 未定义 // 表示你写的程序出问题了~~ &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 数据类型转换(显式类型转换)字符串变成数字&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; var a = &apos;+100&apos;; // alert( a+100 ); // &apos;100100&apos; // alert( Number(a) ); // 100 var a1 = &apos; &apos;; // alert( Number(a1) ); // 0 var a2 = true; // alert( Number(a2) ); // true-1 false-0 var a3=[]; alert(Number(a3)); //0 var a3=[&apos;&apos;]; alert(Number(a3)); //0 var a3 = [ 1 ]; // alert( Number(a3) ); // 1 var a4 = null; // alert( Number(a4) ); // 0 var a3=function(){alert(1);}; alert(Number(a3)); //NaN //////////////////////////////////////////////////////////////////////////// var json = {}; // alert( Number(json) ); //NaN var u; // alert( Number(u) ); //NaN var a3 = function (){ alert(1); }; // alert( Number(a3) ); // NaN &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; parseInt与parseFloat的区别与小技巧 var b = &apos; 200px&apos;; alert( parseInt(b) ); //200 默认十进制 var b = &apos; 200px&apos;; alert( parseInt(b，16进制) ); //200 十六进制 var b = &apos; 200px1234567&apos;; alert( parseInt(b) ); //200 var c = &apos;12.34元&apos;; // alert( parseInt(c) ); //12 var c = &apos;12.34元&apos;; // alert( parseFloat(c) ); //12.34 var c = &apos;12.3.4元&apos;; // alert( parseFloat(c) ); //12.3 验证是整数还是小数 var num = &apos;200.45&apos;; if( parseInt(num) == parseFloat(num) ){ alert( num + &apos;是整数&apos; ); }else{ alert( num + &apos;是小数&apos; ); } js中稀奇古怪的隐式类型转换&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; /* 显式类型转换（强制类型转换）： Number() parseInt() parseFloat() 隐式类型转换： + 200 + &apos;3&apos; 变成字符串 - * / % &apos;200&apos; - 3 变成数字 ++ -- 变成数字 &gt; &lt; 数字的比较 、字符串的比较 ! 取反 把右边的数据类型转成布尔值 == */ // alert( Number(&apos;……&apos;) ); NaN // alert( &apos;……&apos;-9 ); NaN // alert( &apos;2&apos; == 2 ); //字符串的比较 // alert( &apos;10000000&apos; &gt; &apos;9&apos; );//false 一位一位地比较 // 数字的比较与字符串的比较 // &apos;1000000&apos; &apos;9&apos; // alert( &apos;2&apos; == 2 ); //true 判断值，所以两个等号可以转换 alert(&apos;2&apos;===2); //三个等号更严谨，先去判断类型，再去判断值 alert(!&apos;ok&apos;); //false &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; NaN&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; // JS中的数据类型：数字（NaN）、字符串、布尔、函数、对象(obj、[]、{}、null)、未定义 var a = Number(&apos;abc&apos;); // alert( a ); // NaN // NaN：not a number 不是个 数字 的 数字类型 // alert( typeof (a) ); // number // 一旦写程序中出现：NaN 肯定进行了非法的运算操作 // alert( &apos;200px&apos; - 100 ); // NaN 是 false if (a) { alert( &apos;真&apos; ); } else { alert( &apos;假&apos; ); } var abc = []; // alert( abc === abc ); true // NaN 与自己都不相等！！除了NaN以外，其他的数据类型都是自己和自己相等的 alert(a === a); // false isNaN();//判断某些值是不是数字类型 不是数字true 是数字 false //在内部是根据Number来进行转换，转换之后进行判断 alert(isNaN(&apos;250&apos;));//&apos;250&apos;--250--false alert(isNaN(true));//true--1--false alert(isNaN([]));//[]--0--false &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; isNaN()小应用&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; window.onload = function() { var aInp = document.getElementsByTagName(&apos;input&apos;); var str = &apos;&apos;; aInp[1].onclick = function() { str = aInp[0].value; // HTML 中拿到的内容，类型都是字符串 // alert( typeof str ); if (isNaN(str)) { alert(str + &apos;不是数字&apos;); } else { alert(str + &apos;是数字&apos;); } }; }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;input type=&quot;text&quot; /&gt; &lt;input type=&quot;button&quot; value=&quot;判断输入值是不是数字&quot; /&gt; &lt;/body&gt; &lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+        <tag>数据类型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[简单实现QQ好友列表]]></title>
     <url>%2F2018%2F03%2F02%2F%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0QQ%E5%A5%BD%E5%8F%8B%E5%88%97%E8%A1%A8%2F</url>
     <content type="text"><![CDATA[简单实现QQ好友列表需求：实现折叠与展开，实现点击高亮显示 &lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; ul, h2 { /*样式重置*/ padding: 0; margin: 0; } li {/* 去掉列表前面的点*/ list-style: none; } #list { width: 240px; border: 1px solid #333; margin: 0 auto; } #list .lis {} #list h2 { height: 30px; line-height: 30px; text-indent: 20px; background: url(img/ico1.gif) no-repeat 5px center #6FF; color: #000; } #list .active { background: url(img/ico2.gif) no-repeat 5px center #FF9; color: #000; } #list ul { display: none; } #list ul li { line-height: 24px; border-bottom: 1px solid #333; text-indent: 24px; } #list ul .hover { background: #6FF; } &lt;/style&gt; &lt;script&gt; window.onload = function() { var oUl = document.getElementById(&apos;list&apos;); var aH2 = oUl.getElementsByTagName(&apos;h2&apos;); var aUl = oUl.getElementsByTagName(&apos;ul&apos;); var aLi = null; var arrLi = []; for (var i = 0; i &lt; aH2.length; i++) { aH2[i].index = i; aH2[i].onclick = function() { for (var i = 0; i &lt; aH2.length; i++) { if (i != this.index) { aUl[i].style.display = &apos;none&apos;; aH2[i].className = &apos;&apos;; } } if (this.className == &apos;&apos;) { /*这里两个等号或者三个等号都可以*/ aUl[this.index].style.display = &apos;block&apos;; this.className = &apos;active&apos;; } else { aUl[this.index].style.display = &apos;none&apos;; this.className = &apos;&apos;; } }; } for (var i = 0; i &lt; aUl.length; i++) { aLi = aUl[i].getElementsByTagName(&apos;li&apos;); for (var j = 0; j &lt; aLi.length; j++) { arrLi.push(aLi[j]); } } for (var i = 0; i &lt; arrLi.length; i++) { arrLi[i].onclick = function() { for (var i = 0; i &lt; arrLi.length; i++) { if (arrLi[i] != this) { arrLi[i].className = &apos;&apos;; } } if (this.className == &apos;&apos;) { this.className = &apos;hover&apos;; } else { this.className = &apos;&apos;; } }; } }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;ul id=&quot;list&quot;&gt; &lt;li class=&quot;lis&quot;&gt; &lt;h2&gt;我的好友&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;张三&lt;/li&gt; &lt;li&gt;张三&lt;/li&gt; &lt;li&gt;张三&lt;/li&gt; &lt;li&gt;张三&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;lis&quot;&gt; &lt;h2&gt;企业好友&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;li&gt;李四&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;lis&quot;&gt; &lt;h2&gt;黑名单&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;张小三&lt;/li&gt; &lt;li&gt;李小四&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/body&gt; &lt;/html&gt;]]></content>
       <categories>
         <category>前端</category>
-        <category>js</category>
         <category>练习项目</category>
       </categories>
       <tags>
@@ -306,6 +339,20 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[九大排序算法总结]]></title>
+    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
+    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -331,20 +378,6 @@
         <tag>博客</tag>
         <tag>github</tag>
         <tag>hxo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[九大排序算法总结]]></title>
-    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
-    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>排序</tag>
       </tags>
   </entry>
   <entry>
