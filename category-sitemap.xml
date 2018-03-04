@@ -98,15 +98,22 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/</loc>
         <lastmod>2018-03-04T07:53:49.625Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/</loc>
-        <lastmod>2018-03-04T07:53:49.625Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-04T10:56:11.424Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/css/</loc>
+        <lastmod>2018-03-04T10:56:11.424Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

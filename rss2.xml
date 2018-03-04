@@ -8,19 +8,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Sun, 04 Mar 2018 07:56:39 GMT</pubDate>
+    <pubDate>Sun, 04 Mar 2018 10:56:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>绝对定位和相对定位</title>
-      <link>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%92%8C%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/</link>
-      <guid>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%92%8C%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/</guid>
+      <title>绝对定位与相对定位</title>
+      <link>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/</link>
+      <guid>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/</guid>
       <pubDate>Sun, 04 Mar 2018 07:56:39 GMT</pubDate>
       <description>
       
+        &lt;p&gt;通常情况下，元素的position属性的值默认为static，也就是没有定位，元素出现再正常的文档流中，这个时候如果给元素设置left、right、bottom、top这些偏移属性，都不会生效，z-index也不会生效。&lt;/p&gt;
+      
       </description>
       
-      <comments>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%92%8C%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/#disqus_thread</comments>
+      <content:encoded><![CDATA[<p>通常情况下，元素的position属性的值默认为static，也就是没有定位，元素出现再正常的文档流中，这个时候如果给元素设置left、right、bottom、top这些偏移属性，都不会生效，z-index也不会生效。<a id="more"></a></p><h3 id="相对定位relative"><a href="#相对定位relative" class="headerlink" title="相对定位relative"></a>相对定位relative</h3><p>注意：使用相对定位时，就算元素被偏移了，但是它仍然会占据着没偏移之前的空间。  </p><p><img src="/2018/03/04/绝对定位与相对定位/relative1.png" alt=""></p><p><img src="/2018/03/04/绝对定位与相对定位/relative2.png" alt=""><br>上图，第二个块针对本身的位置发生了一个偏移，但是它原来所占据的那个位置空间仍然还在，即使它完全离开原来的位置，但是它原来位于文档流中的位置仍然会存在，不会被第三个浮动过来填补掉；同时它的偏移也不会把别的块从文档流中原来的位置挤开，如果有重叠的地方它会重叠再其他文档流元素之上，可以通关过设置z-index属性来调整他的堆叠顺序。  </p><h3 id="绝对定位absolute"><a href="#绝对定位absolute" class="headerlink" title="绝对定位absolute"></a>绝对定位absolute</h3><p>被设置了绝对定位的元素，在文档流中是不占据空间的，如果某元素设置了绝对定位，那么它在文档流中的位置会被删除，其实这个元素是浮了起来，它与relative的不同点在于：相对定位不会删除它本身在文档流中占据的那块空间，而绝对定位则会删除该元素在文档流中的位置，完全从文档流中抽出来。 </p><p>绝对定位是如何定位的？  </p><p>一、如果它的父级元素设置了除static之外的定位，比如position：relative 或者position：absolute或者position：fixed,那么它就会相对于它的父级元素来定位，位置通过left、top、right、bottom（刚好一个顺时针）属性来规定。</p><p>二、如果它的父级元素没有设置定位，那么就得看它父元素得父元素有没有设置定位，如果还是没有，就继续向更高层得祖先元素类推。  </p><p>小结：总之它的定位就是相对于设置了除static定位之外得定位得第一个祖先元素，如果以上情况都不存在，那么他就会相对于文档body来定位（并非窗口，相对于窗口来定位得是fixed）绝对定位得元素相对于谁来定位，我们就把这个“谁”叫做参照物。  </p><p><img src="/2018/03/04/绝对定位与相对定位/juedui1.png" alt=""><br>下面是使用了绝对定位得效果：  </p><p><img src="/2018/03/04/绝对定位与相对定位/juedui2.png" alt="">  </p><p><img src="/2018/03/04/绝对定位与相对定位/juedui3.png" alt="">  </p><p>注意：在设置偏移量得时候，可以设置负值。  </p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/#disqus_thread</comments>
     </item>
     
     <item>
