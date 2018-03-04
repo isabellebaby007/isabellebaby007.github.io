@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js作用域]]></title>
+    <url>%2F2018%2F03%2F04%2Fjs%E4%BD%9C%E7%94%A8%E5%9F%9F%2F</url>
+    <content type="text"><![CDATA[预解析机制]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[函数传参项目]]></title>
+    <url>%2F2018%2F03%2F04%2F%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82%E9%A1%B9%E7%9B%AE%2F</url>
+    <content type="text"><![CDATA[搜狐视频纪录片列表展示 修改文本框的值 选择卡里套选择卡]]></content>
+      <categories>
+        <category>前端</category>
+        <category>练习项目</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>js</tag>
+        <tag>函数传参</tag>
+        <tag>前端练习小项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[绝对定位与相对定位]]></title>
     <url>%2F2018%2F03%2F04%2F%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D%2F</url>
     <content type="text"><![CDATA[通常情况下，元素的position属性的值默认为static，也就是没有定位，元素出现再正常的文档流中，这个时候如果给元素设置left、right、bottom、top这些偏移属性，都不会生效，z-index也不会生效。 相对定位relative注意：使用相对定位时，就算元素被偏移了，但是它仍然会占据着没偏移之前的空间。 上图，第二个块针对本身的位置发生了一个偏移，但是它原来所占据的那个位置空间仍然还在，即使它完全离开原来的位置，但是它原来位于文档流中的位置仍然会存在，不会被第三个浮动过来填补掉；同时它的偏移也不会把别的块从文档流中原来的位置挤开，如果有重叠的地方它会重叠再其他文档流元素之上，可以通关过设置z-index属性来调整他的堆叠顺序。 绝对定位absolute被设置了绝对定位的元素，在文档流中是不占据空间的，如果某元素设置了绝对定位，那么它在文档流中的位置会被删除，其实这个元素是浮了起来，它与relative的不同点在于：相对定位不会删除它本身在文档流中占据的那块空间，而绝对定位则会删除该元素在文档流中的位置，完全从文档流中抽出来。 绝对定位是如何定位的？ 一、如果它的父级元素设置了除static之外的定位，比如position：relative 或者position：absolute或者position：fixed,那么它就会相对于它的父级元素来定位，位置通过left、top、right、bottom（刚好一个顺时针）属性来规定。 二、如果它的父级元素没有设置定位，那么就得看它父元素得父元素有没有设置定位，如果还是没有，就继续向更高层得祖先元素类推。 小结：总之它的定位就是相对于设置了除static定位之外得定位得第一个祖先元素，如果以上情况都不存在，那么他就会相对于文档body来定位（并非窗口，相对于窗口来定位得是fixed）绝对定位得元素相对于谁来定位，我们就把这个“谁”叫做参照物。 下面是使用了绝对定位得效果： 注意：在设置偏移量得时候，可以设置负值。]]></content>
@@ -368,19 +388,6 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[九大排序算法总结]]></title>
     <url>%2F2018%2F02%2F13%2Fercha%2F</url>
     <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -407,6 +414,19 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>
