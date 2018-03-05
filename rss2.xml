@@ -8,34 +8,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Mon, 05 Mar 2018 10:07:48 GMT</pubDate>
+    <pubDate>Mon, 05 Mar 2018 10:21:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title></title>
-      <link>http://yoursite.com/2018/03/05/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</link>
-      <guid>http://yoursite.com/2018/03/05/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</guid>
-      <pubDate>Mon, 05 Mar 2018 10:01:09 GMT</pubDate>
+      <title>运算符流程控制</title>
+      <link>http://yoursite.com/2018/03/05/%E8%BF%90%E7%AE%97%E7%AC%A6%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</link>
+      <guid>http://yoursite.com/2018/03/05/%E8%BF%90%E7%AE%97%E7%AC%A6%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</guid>
+      <pubDate>Mon, 05 Mar 2018 10:16:06 GMT</pubDate>
       <description>
       
-        &lt;hr&gt;
-&lt;p&gt;title: 运算符与流程控制&lt;br&gt;date: 2018-03-05 18:01:09&lt;br&gt;tags:  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;前端  &lt;/li&gt;
-&lt;li&gt;js  &lt;/li&gt;
-&lt;li&gt;运算符  &lt;/li&gt;
-&lt;li&gt;流程控制&lt;br&gt;categories:  &lt;/li&gt;
-&lt;li&gt;前端  &lt;/li&gt;
-&lt;li&gt;js  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;取余&quot;&gt;&lt;a href=&quot;#取余&quot; class=&quot;headerlink&quot; title=&quot;取余&quot;&gt;&lt;/a&gt;取余&lt;/h3&gt;&lt;p&gt;效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。&lt;/p&gt;
+        &lt;h3 id=&quot;取余&quot;&gt;&lt;a href=&quot;#取余&quot; class=&quot;headerlink&quot; title=&quot;取余&quot;&gt;&lt;/a&gt;取余&lt;/h3&gt;&lt;p&gt;效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。&lt;/p&gt;
       
       </description>
       
-      <content:encoded><![CDATA[<hr><p>title: 运算符与流程控制<br>date: 2018-03-05 18:01:09<br>tags:  </p><ul><li>前端  </li><li>js  </li><li>运算符  </li><li>流程控制<br>categories:  </li><li>前端  </li><li>js  </li></ul><hr><h3 id="取余"><a href="#取余" class="headerlink" title="取余"></a>取余</h3><p>效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。<a id="more"></a></p><pre><code>&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;    &lt;title&gt;无标题文档&lt;/title&gt;    &lt;script&gt;    window.onload = function() {        var aLi = document.getElementsByTagName(&apos;li&apos;);        var arr = [&apos;red&apos;, &apos;yellow&apos;, &apos;blue&apos;];        for (var i = 0; i &lt; aLi.length; i++) {            aLi[i].index = i;            aLi[i].style.background = arr[i % arr.length];            aLi[i].onmouseover = function() {                this.style.background = &apos;gray&apos;;            };            aLi[i].onmouseout = function() {                this.style.background = arr[this.index % arr.length];            };        }    };    &lt;/script&gt;    &lt;style&gt;    li {        height: 24px;        margin-bottom: 3px;        list-style: none;    }    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;    &lt;ul id=&quot;ul1&quot;&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;    &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;  </code></pre><p><img src="/2018/03/05/运算符与流程控制/运算符和流程控制/quyu.gif" alt=""></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="取余"><a href="#取余" class="headerlink" title="取余"></a>取余</h3><p>效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。<a id="more"></a>   </p><pre><code>&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;    &lt;title&gt;无标题文档&lt;/title&gt;    &lt;script&gt;    window.onload = function() {        var aLi = document.getElementsByTagName(&apos;li&apos;);        var arr = [&apos;red&apos;, &apos;yellow&apos;, &apos;blue&apos;];        for (var i = 0; i &lt; aLi.length; i++) {            aLi[i].index = i;            aLi[i].style.background = arr[i % arr.length];            aLi[i].onmouseover = function() {                this.style.background = &apos;gray&apos;;            };            aLi[i].onmouseout = function() {                this.style.background = arr[this.index % arr.length];            };        }    };    &lt;/script&gt;    &lt;style&gt;    li {        height: 24px;        margin-bottom: 3px;        list-style: none;    }    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;    &lt;ul id=&quot;ul1&quot;&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;        &lt;li&gt;&lt;/li&gt;    &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;  </code></pre><p><img src="/2018/03/05/运算符流程控制/quyu.gif" alt="">  </p><p>### </p>]]></content:encoded>
       
-      <comments>http://yoursite.com/2018/03/05/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/#disqus_thread</comments>
+      <comments>http://yoursite.com/2018/03/05/%E8%BF%90%E7%AE%97%E7%AC%A6%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/#disqus_thread</comments>
     </item>
     
     <item>

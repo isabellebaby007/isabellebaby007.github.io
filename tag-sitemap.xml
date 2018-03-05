@@ -240,20 +240,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-05T09:38:09.807Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/js/</loc>
-        <lastmod>2018-03-05T09:38:09.807Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
         <lastmod>2018-03-05T09:38:09.807Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -270,6 +256,27 @@
     <url>
         <loc>http://yoursite.com/tags/%E6%98%93%E9%94%99%E7%82%B9/</loc>
         <lastmod>2018-03-05T09:38:09.807Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/js/</loc>
+        <lastmod>2018-03-05T10:21:13.599Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-05T10:21:13.599Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+        <lastmod>2018-03-05T10:21:13.599Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
