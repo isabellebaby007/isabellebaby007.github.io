@@ -136,19 +136,20 @@
 
 
 
-<meta name="description" content="取余效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。">
+<meta name="description" content="运算符">
 <meta name="keywords" content="js,前端,运算符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="运算符流程控制">
 <meta property="og:url" content="http://yoursite.com/2018/03/05/运算符流程控制/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="取余效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。">
+<meta property="og:description" content="运算符">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/05/运算符流程控制/quyu.gif">
-<meta property="og:updated_time" content="2018-03-05T10:21:13.599Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/05/运算符流程控制/fanxuan.gif">
+<meta property="og:updated_time" content="2018-03-05T11:30:51.031Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="运算符流程控制">
-<meta name="twitter:description" content="取余效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。">
+<meta name="twitter:description" content="运算符">
 <meta name="twitter:image" content="http://yoursite.com/2018/03/05/运算符流程控制/quyu.gif">
 
 
@@ -450,7 +451,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  147
+                  658
                 </span>
               
 
@@ -466,7 +467,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -487,7 +488,9 @@
       
 
       
-        <h3 id="取余"><a href="#取余" class="headerlink" title="取余"></a>取余</h3><p>效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。<a id="more"></a>   </p>
+        <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><a id="more"></a> 
+<p>算术运算符：+  、- 、 <em>  、 /  、   %（取模)<br>赋值： =   、+=  、 -= 、 </em>= 、 /= 、 %=<br>关系： &lt; 、 &gt; 、 &lt;= 、 &gt;= 、 == 、 != 、 === 、 !==<br>逻辑：&amp;&amp; 、 || 、 ！<br>运算符优先级： 括号</p>
+<h3 id="取余"><a href="#取余" class="headerlink" title="取余"></a>取余</h3><p>效果：鼠标划过，隔行改变颜色，鼠标离开，恢复原来的灰色。  </p>
 <pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 
@@ -543,7 +546,156 @@
 
 &lt;/html&gt;  
 </code></pre><p><img src="/2018/03/05/运算符流程控制/quyu.gif" alt="">  </p>
-<p>### </p>
+<h3 id="隔行变色扩展"><a href="#隔行变色扩展" class="headerlink" title="隔行变色扩展"></a>隔行变色扩展</h3><pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+
+
+
+    window.onload = function() {
+        var aLi = document.getElementsByTagName(&apos;li&apos;);
+        var arr = [&apos;red&apos;, &apos;yellow&apos;];
+        var str = &apos;&apos;;
+
+        for (var i = 0; i &lt; aLi.length; i++) {
+
+            aLi[i].index = i;
+
+            aLi[i].style.background = arr[i % arr.length];
+
+            aLi[i].onmouseover = function() {
+                str = this.style.background; // 先存颜色
+                this.style.background = &apos;gray&apos;;
+            };
+            aLi[i].onmouseout = function() {
+                // this.style.background = arr[this.index%arr.length];
+                this.style.background = str;
+            };
+        }
+    };
+    &lt;/script&gt;
+    &lt;style&gt;
+    li {
+        height: 24px;
+        margin-bottom: 3px;
+        list-style: none;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul id=&quot;ul1&quot;&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt; 
+</code></pre><h3 id="京东商城秒转时间"><a href="#京东商城秒转时间" class="headerlink" title="京东商城秒转时间"></a>京东商城秒转时间</h3><pre><code>&lt;script&gt;
+  var s = 3605; // 秒
+alert(Math.floor(s / 60) + &apos;分&apos; + s % 60 + &apos;秒&apos;);
+&lt;/script&gt;  
+</code></pre><h3 id="与-的区别"><a href="#与-的区别" class="headerlink" title="==与===的区别"></a>==与===的区别</h3><p>== 只判断值,而===先判断类型，再判断值。  </p>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>注意：！还可以转换数据类型，如果！后面跟的是非零数，则结果为false。<br>以下例子里，alert(120&lt;90 || 20),结果为20 ，因为左边为false,继续往下找，直接把20赋给它。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    // &amp;&amp; 与、|| 或、! 否
+
+    alert( 12&lt;90 &amp;&amp; 230&lt;80 );            // false
+
+    var a = 120 &lt; 90 &amp;&amp; 20;
+    alert( a );                            // false
+
+    alert( 120&lt;90 || 230&lt;80 );           //false  
+
+    var b = 120 &lt; 90 || 20;
+    alert(b);                           // 20
+
+    var c = !!true;
+    alert( c );                        //true
+
+    var d = !200;
+    alert( d );                        //false 
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;   
+</code></pre><h4 id="反选小例子"><a href="#反选小例子" class="headerlink" title="反选小例子"></a>反选小例子</h4><pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aInp = document.getElementsByTagName(&apos;input&apos;);
+
+        // aInp[1].checked = false;
+        // aInp[2].checked = true;
+
+        aInp[0].onclick = function() {
+            for (var i = 1; i &lt; aInp.length; i++) {
+                aInp[i].checked = !aInp[i].checked;
+                /*
+                if( aInp[i].checked ) {
+                    aInp[i].checked = false;
+                } else {
+                    aInp[i].checked = true;
+                }
+                */
+            }
+        };
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;反选&quot; /&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;checkbox&quot; checked /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;checkbox&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;checkbox&quot; checked /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;checkbox&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;input type=&quot;checkbox&quot; /&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre><p><img src="/2018/03/05/运算符流程控制/fanxuan.gif" alt="">  </p>
+<h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><p>判断：if 、 switch 、  三目运算？：<br>循环： while、 for<br>跳出：break、continue跳过<br>什么是真：非零的数字、字符串、true、函数、object、[]、{}、元素（存在）<br>什么是假：零、NaN、空字符串、false、null、未定义  </p>
 
       
     </div>
@@ -844,7 +996,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#取余"><span class="nav-number">1.</span> <span class="nav-text">取余</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符"><span class="nav-number">1.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取余"><span class="nav-number">2.</span> <span class="nav-text">取余</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隔行变色扩展"><span class="nav-number">3.</span> <span class="nav-text">隔行变色扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#京东商城秒转时间"><span class="nav-number">4.</span> <span class="nav-text">京东商城秒转时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#与-的区别"><span class="nav-number">5.</span> <span class="nav-text">==与===的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">6.</span> <span class="nav-text">逻辑运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#反选小例子"><span class="nav-number">6.1.</span> <span class="nav-text">反选小例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程控制"><span class="nav-number">7.</span> <span class="nav-text">流程控制</span></a></li></ol></div>
             
 
           </div>
@@ -879,7 +1031,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">15.6k</span>
+    <span title="Site words total count">16.1k</span>
   
 </div>
 
