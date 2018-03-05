@@ -143,7 +143,7 @@
 <meta property="og:site_name" content="Isabelle的博客小站">
 <meta property="og:description" content="预解析机制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-05T04:12:40.432Z">
+<meta property="og:updated_time" content="2018-03-05T07:39:22.701Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js作用域">
 <meta name="twitter:description" content="预解析机制">
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  825
+                  1,310
                 </span>
               
 
@@ -430,7 +430,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -504,14 +504,108 @@ function fn1(){
 fn1();
 alert(a);                            // 2  
 </code></pre><p>小结：先找东西，后执行。执行过程中遇到表达式就会去修改原来库里面的东西，如果遇到函数调用就开了一个新的作用域，一旦新的作用域开始了，又会重复以上步骤，新的作用域中如果没找到里面有东西，又会返回父级里面去找。  </p>
-<h3 id="带参数的函数"><a href="#带参数的函数" class="headerlink" title="带参数的函数"></a>带参数的函数</h3><p>1)预解析： var function 参数….<br>a=…<br>fn1=function(a){<br>  alert(a);<br>  a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用<br>2.1）局部预解析：<br>因为函数里面没有var ,也没有找到函数，所有没有找到。参数本质上就是一个局部变量。找到了参数，但是这个例子里函数调用并没有传进来。<br>参数 a=…未定义<br>2.2)局部逐行解读代码：<br>  局部变量a就是undefined<br>    var a = 1;                           //全局变量a=1<br>    function fn1(a){<br>        alert(a);                        // undefined<br>        a = 2;                          //这句把a改成2<br>    }<br>    fn1();<br>    alert(a);                            // 这里读取父级的a=1  </p>
-<h3 id="函数调用带参数"><a href="#函数调用带参数" class="headerlink" title="函数调用带参数"></a>函数调用带参数</h3><pre><code> var a = 1;
+<h3 id="带参数的函数"><a href="#带参数的函数" class="headerlink" title="带参数的函数"></a>带参数的函数</h3><p>1)预解析： var function 参数….<br>a=…<br>fn1=function(a){<br>  alert(a);<br>  a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用<br>2.1）局部预解析：<br>因为函数里面没有var ,也没有找到函数，所有没有找到。参数本质上就是一个局部变量。找到了参数，但是这个例子里函数调用并没有传进来。<br>参数 a=…未定义<br>2.2)局部逐行解读代码：<br>  局部变量a就是undefined  </p>
+<pre><code>var a = 1;                           //全局变量a=1
+function fn1(a){
+    alert(a);                        // undefined
+    a = 2;                          //这句把a改成2
+}
+fn1();
+alert(a);                            // 这里读取父级的a=1  
+</code></pre><h3 id="函数调用带参数"><a href="#函数调用带参数" class="headerlink" title="函数调用带参数"></a>函数调用带参数</h3><p>1)预解析： var function 参数….<br>a=…<br>fn1=function(a){<br>  alert(a);<br>  a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用fn1(a)<br>2.1）局部预解析：<br>参数本质上就是一个局部变量，因为这个例子里面传递了参数进来，所以a=undefined。<br>参数 a=…未定义<br>2.2)局部逐行解读代码：<br>因为传递进来的a=1,所以局部变量a=1,再下一步就是局部变量a=2。  全局变量a仍然是1</p>
+<pre><code> var a = 1;
 function fn1(a){
     alert(a);                        // 1
     a = 2;
 }
 fn1(a);
 alert(a);                            // 1
+</code></pre><h3 id="任何函数都可以改全局变量"><a href="#任何函数都可以改全局变量" class="headerlink" title="任何函数都可以改全局变量"></a>任何函数都可以改全局变量</h3><p>因为函数内部没有这个变量的话，会从里往外找。</p>
+<pre><code>var num = 0;
+
+function fn1(){
+    num++;
+}
+function fn2(){
+    num--;
+}
+
+fn2();
+fn1();
+fn2();
+alert(num);  
+</code></pre><h3 id="获取函数内的值"><a href="#获取函数内的值" class="headerlink" title="获取函数内的值"></a>获取函数内的值</h3><p>巧妙利用全局变量来去获取函数内的内容</p>
+<pre><code>var str = &apos;&apos;;
+function fn1(){
+    var a = &apos;大鸡腿~&apos;;
+    str = a;
+}
+fn1();
+alert( str );   //大鸡腿
+</code></pre><p>另一种方法：</p>
+<pre><code>function fn2(){
+    var a = &apos;9999999克拉钻石23456789&apos;;
+    fn3(a);
+}
+fn2();
+
+function fn3(a){
+    alert(a);
+}  
+</code></pre><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>if(){}和for(){}、do{}while不是作用域，函数是作用域。<br>firefox不能对下面的函数进行预解析,除了火狐以外，其他的浏览器都可以。   </p>
+<pre><code>alert( fn1 );        // FF 不能对下面的函数进行预解析
+
+if( true ){
+    var a = 1;
+    function fn1(){
+    alert(123);
+}
+}  
+</code></pre><p>解决这个兼容性问题的方法是：以后尽量不要在if语句里面定义函数，全局变量。改成下面这种写法：  </p>
+<h3 id="for里面包了一个函数，在函数里面不要直接使用i"><a href="#for里面包了一个函数，在函数里面不要直接使用i" class="headerlink" title="for里面包了一个函数，在函数里面不要直接使用i"></a>for里面包了一个函数，在函数里面不要直接使用i</h3><pre><code>alert( fn1 );        // FF 不能对下面的函数进行预解析
+var a = 1;
+function fn1(){
+    alert(123);
+    }
+
+if( true ){
+
+
+}  
+
+    &lt;!DOCTYPE HTML&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+        &lt;title&gt;无标题文档&lt;/title&gt;
+        &lt;script&gt;
+        window.onload = function() {
+            var aBtn = document.getElementsByTagName(&apos;input&apos;);
+
+            for (var i = 0; i &lt; aBtn.length; i++) {
+                aBtn[i].onclick = function() {
+
+                    // alert( i );                // 3
+                    //aBtn[i].style.background = &apos;yellow&apos;;  
+                    for (var i = 0; i &lt; aBtn.length; i++) {
+                        aBtn[i].style.background = &apos;yellow&apos;;
+                    }
+
+
+                };
+            }
+        };
+        &lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;input type=&quot;button&quot; value=&quot;按钮1&quot; /&gt;
+        &lt;input type=&quot;button&quot; value=&quot;按钮2&quot; /&gt;
+        &lt;input type=&quot;button&quot; value=&quot;按钮3&quot; /&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
 </code></pre>
       
     </div>
@@ -574,6 +668,10 @@ alert(a);                            // 1
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/05/运算符与流程控制/" rel="prev" title="运算符与流程控制">
+                运算符与流程控制 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -685,7 +783,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -707,7 +805,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -766,7 +864,7 @@ var jiathis_config={
     <h3 class="widget-title">Tag Cloud</h3>
     <div id="myCanvasContainer" class="widget tagcloud">
         <canvas width="250" height="250" id="resCanvas" style="width=100%">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByTagName/">ByTagName</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5标签/">H5标签</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feed/">feed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for/">for</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for循环/">for循环</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacker/">hacker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hxo/">hxo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">18</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web性能/">web性能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容/">兼容</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数传参/">函数传参</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">20</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端练习小项目/">前端练习小项目</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片切换/">图片切换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/子节点和兄弟节点/">子节点和兄弟节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/属性操作/">属性操作</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型转换/">数据类型转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条件判断/">条件判断</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏/">游戏</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/父节点/">父节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/相对定位绝对定位/">相对定位绝对定位</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/站点地图/">站点地图</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义属性/">自定义属性</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByTagName/">ByTagName</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5标签/">H5标签</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feed/">feed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for/">for</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for循环/">for循环</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacker/">hacker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hxo/">hxo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">19</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web性能/">web性能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容/">兼容</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数传参/">函数传参</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">21</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端练习小项目/">前端练习小项目</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片切换/">图片切换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/子节点和兄弟节点/">子节点和兄弟节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/属性操作/">属性操作</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型转换/">数据类型转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条件判断/">条件判断</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/流程控制/">流程控制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏/">游戏</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/父节点/">父节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/相对定位绝对定位/">相对定位绝对定位</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/站点地图/">站点地图</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义属性/">自定义属性</a><span class="tag-list-count">1</span></li></ul>
         </canvas>
     </div>
 </div>
@@ -798,7 +896,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#预解析机制"><span class="nav-number">1.</span> <span class="nav-text">预解析机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域"><span class="nav-number">2.</span> <span class="nav-text">作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小例子"><span class="nav-number">2.1.</span> <span class="nav-text">小例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js单线程运行"><span class="nav-number">3.</span> <span class="nav-text">js单线程运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数也是一个局部的域"><span class="nav-number">4.</span> <span class="nav-text">函数也是一个局部的域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带参数的函数"><span class="nav-number">5.</span> <span class="nav-text">带参数的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数调用带参数"><span class="nav-number">6.</span> <span class="nav-text">函数调用带参数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#预解析机制"><span class="nav-number">1.</span> <span class="nav-text">预解析机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域"><span class="nav-number">2.</span> <span class="nav-text">作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小例子"><span class="nav-number">2.1.</span> <span class="nav-text">小例子</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#js单线程运行"><span class="nav-number">3.</span> <span class="nav-text">js单线程运行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数也是一个局部的域"><span class="nav-number">4.</span> <span class="nav-text">函数也是一个局部的域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带参数的函数"><span class="nav-number">5.</span> <span class="nav-text">带参数的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数调用带参数"><span class="nav-number">6.</span> <span class="nav-text">函数调用带参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#任何函数都可以改全局变量"><span class="nav-number">7.</span> <span class="nav-text">任何函数都可以改全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取函数内的值"><span class="nav-number">8.</span> <span class="nav-text">获取函数内的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">9.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for里面包了一个函数，在函数里面不要直接使用i"><span class="nav-number">10.</span> <span class="nav-text">for里面包了一个函数，在函数里面不要直接使用i</span></a></li></ol></div>
             
 
           </div>
@@ -833,7 +931,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">14.8k</span>
+    <span title="Site words total count">15.3k</span>
   
 </div>
 
