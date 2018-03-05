@@ -143,10 +143,13 @@
 <meta property="og:site_name" content="Isabelle的博客小站">
 <meta property="og:description" content="预解析机制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-05T07:39:22.701Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/04/js作用域/zuoyongyu.gif">
+<meta property="og:image" content="http://yoursite.com/2018/03/04/js作用域/ccuowu.gif">
+<meta property="og:updated_time" content="2018-03-05T08:22:16.242Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js作用域">
 <meta name="twitter:description" content="预解析机制">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/04/js作用域/zuoyongyu.gif">
 
 
 
@@ -414,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,310
+                  1,443
                 </span>
               
 
@@ -562,51 +565,59 @@ if( true ){
 }
 }  
 </code></pre><p>解决这个兼容性问题的方法是：以后尽量不要在if语句里面定义函数，全局变量。改成下面这种写法：  </p>
-<h3 id="for里面包了一个函数，在函数里面不要直接使用i"><a href="#for里面包了一个函数，在函数里面不要直接使用i" class="headerlink" title="for里面包了一个函数，在函数里面不要直接使用i"></a>for里面包了一个函数，在函数里面不要直接使用i</h3><pre><code>alert( fn1 );        // FF 不能对下面的函数进行预解析
-var a = 1;
-function fn1(){
-    alert(123);
-    }
+<h3 id="for里面包了一个函数，在函数里面不要直接使用i"><a href="#for里面包了一个函数，在函数里面不要直接使用i" class="headerlink" title="for里面包了一个函数，在函数里面不要直接使用i"></a>for里面包了一个函数，在函数里面不要直接使用i</h3><p>下例会出现undefined的原因是：点击事件函数是一个作用域，只要有作用域，就会有域解析，点击事件函数里面域解析的时候会找到var i=undefined,所以这里alert(i)是undefined。但是如果把for循环里面的var去掉的话，那么点击事件函数里面就没有变量，所以i就会到父级里面去找，父级i是3,所以此时alert(i)会弹出3。</p>
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
 
-if( true ){
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    window.onload = function() {
+        var aBtn = document.getElementsByTagName(&apos;input&apos;);
 
+        for (var i = 0; i &lt; aBtn.length; i++) {
+            aBtn[i].onclick = function() {
 
-}  
+                 alert( i );                
 
-    &lt;!DOCTYPE HTML&gt;
-    &lt;html&gt;
-
-    &lt;head&gt;
-        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-        &lt;title&gt;无标题文档&lt;/title&gt;
-        &lt;script&gt;
-        window.onload = function() {
-            var aBtn = document.getElementsByTagName(&apos;input&apos;);
-
-            for (var i = 0; i &lt; aBtn.length; i++) {
-                aBtn[i].onclick = function() {
-
-                    // alert( i );                // 3
-                    //aBtn[i].style.background = &apos;yellow&apos;;  
-                    for (var i = 0; i &lt; aBtn.length; i++) {
-                        aBtn[i].style.background = &apos;yellow&apos;;
-                    }
+                for (var i = 0; i &lt; aBtn.length; i++) {
+                    aBtn[i].style.background = &apos;yellow&apos;;
+                }
 
 
-                };
-            }
+            };
+        }
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;input type=&quot;button&quot; value=&quot;按钮1&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;按钮2&quot; /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;按钮3&quot; /&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/04/js作用域/zuoyongyu.gif" alt=""><br>但是如果把js代码改成以下就会出错  </p>
+<pre><code>&lt;script&gt;
+window.onload = function() {
+    var aBtn = document.getElementsByTagName(&apos;input&apos;);
+
+    for (var i = 0; i &lt; aBtn.length; i++) {
+        aBtn[i].onclick = function() {
+
+             alert( i );                // 3
+             aBtn[i].style.background = &apos;yellow&apos;;  
+
+
+
         };
-        &lt;/script&gt;
-    &lt;/head&gt;
+    }
+};
+&lt;/script&gt;  
+</code></pre><p><img src="/2018/03/04/js作用域/ccuowu.gif" alt=""> </p>
 
-    &lt;body&gt;
-        &lt;input type=&quot;button&quot; value=&quot;按钮1&quot; /&gt;
-        &lt;input type=&quot;button&quot; value=&quot;按钮2&quot; /&gt;
-        &lt;input type=&quot;button&quot; value=&quot;按钮3&quot; /&gt;
-    &lt;/body&gt;
-
-    &lt;/html&gt;
-</code></pre>
       
     </div>
     
@@ -931,7 +942,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">15.3k</span>
+    <span title="Site words total count">15.4k</span>
   
 </div>
 
