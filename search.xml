@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[js作用域]]></title>
     <url>%2F2018%2F03%2F04%2Fjs%E4%BD%9C%E7%94%A8%E5%9F%9F%2F</url>
-    <content type="text"><![CDATA[预解析机制]]></content>
+    <content type="text"><![CDATA[预解析机制 作用域域：空间、范围、区域……作用：读、写script 全局变量、全局函数,自上而下函数 由里到外浏览器：“JS解析器”1）“找一些东西” ：var function 参数a = …所有的变量，在正式运行代码之前，都提前赋了一个值：未定义fn1 = function fn1(){ alert(2); }所有的函数，在正式运行代码之前，都是整个函数块JS 的预解析遇到重名的：只留一个变量和函数重名了，就只留下函数 2）逐行解读代码：表达式：= + - * / % ++ – ! 参数……表达式可以修改预解析的值！ 小例子 alert(a); // 输出 function a (){ alert(4); } //因为预解析之后，变量和函数重名了就只留下函数，所以a是整个函数块 function a(){alert(4)}; var a = 1; alert(a); // 输出 1 //表达式var a=1;修改了预解析的值 function a (){ alert(2); } alert(a); // 输出 1 // 函数不修改值 var a = 3; alert(a); // 输出 3 //表达式var a=3;修改了预解析的值 function a (){ alert(4); } alert(a); // 输出 3 //函数不修改值 alert( typeof a ); //number // a(); // 报错 js单线程运行&lt;script&gt; alert(a); //报错 &lt;/script&gt; &lt;script&gt; var a=1; //1 alert(a); &lt;/script&gt; 前一个script区域运行完之后，值会保存。 &lt;script&gt; var a=1; //1 alert(a); &lt;/script&gt; &lt;script&gt; alert(a); //1 &lt;/script&gt; 函数也是一个局部的域函数调用：预解析+逐行解读代码1)预解析： var function 参数….a=…fn1=function(){ alert(a); var a=2；}2）逐行解读代码：表达式函数调用2.1）预解析： a=… 这里的a是局部变量2.2)逐行解读代码： a=2; var a = 1; function fn1(){ alert(a); // undefined var a = 2; //a=2 } fn1(); alert(a); // 1 下面看看 不加var的影响1)预解析： var function 参数….a=…fn1=function(){ alert(a); a=2；}2）逐行解读代码：表达式函数调用2.1）局部预解析：因为函数里面没有var 所有没有找到，2.2)局部逐行解读代码： a=2; var a = 1; function fn1(){ alert(a); // 1 所以返回父级去找。由里到外（作用域链）找到外面那个a a = 2; //这里修改的是外面的那个a } fn1(); alert(a); // 2 小结：先找东西，后执行。执行过程中遇到表达式就会去修改原来库里面的东西，如果遇到函数调用就开了一个新的作用域，一旦新的作用域开始了，又会重复以上步骤，新的作用域中如果没找到里面有东西，又会返回父级里面去找。 带参数的函数1)预解析： var function 参数….a=…fn1=function(a){ alert(a); a=2；}2）逐行解读代码：表达式函数调用2.1）局部预解析：因为函数里面没有var ,也没有找到函数，所有没有找到。参数本质上就是一个局部变量。找到了参数，但是这个例子里函数调用并没有传进来。参数 a=…未定义2.2)局部逐行解读代码： 局部变量a就是undefined var a = 1; //全局变量a=1 function fn1(a){ alert(a); // undefined a = 2; //这句把a改成2 } fn1(); alert(a); // 这里读取父级的a=1 函数调用带参数 var a = 1; function fn1(a){ alert(a); // 1 a = 2; } fn1(a); alert(a); // 1]]></content>
   </entry>
   <entry>
     <title><![CDATA[函数传参项目]]></title>
@@ -388,20 +388,6 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[九大排序算法总结]]></title>
-    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
-    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -427,6 +413,20 @@
         <tag>博客</tag>
         <tag>github</tag>
         <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[九大排序算法总结]]></title>
+    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
+    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
       </tags>
   </entry>
   <entry>
