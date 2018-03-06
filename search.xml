@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[js中的正则表达式]]></title>
     <url>%2F2018%2F03%2F06%2Fjs%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[字符串indexOf 查找substring 获取子字符串charAt 获取某个字符串split 分割字符串，获得数组 字符串比较字符串可以进行比较，所以可以用来判断字符串是不是数字类型 &lt;script&gt; //alert( &apos;a&apos;&lt;&apos;b&apos; ); var str = &apos;5&apos;; if (str &lt;= &apos;9&apos; &amp;&amp; str &gt;= &apos;0&apos;) { alert(&apos;是数字类型的字符串&apos;); } else { alert(&apos;不是数字类型的字符串&apos;); } &lt;/script&gt; 找出字符串中所有的数字 &lt;script&gt; var str = &apos;haj123sdk54hask33dkhalsd879&apos;; function findNum(str) { var arr = []; var tmp = &apos;&apos;; for (var i = 0; i &lt; str.length; i++) { if (str.charAt(i) &lt;= &apos;9&apos; &amp;&amp; str.charAt(i) &gt;= &apos;0&apos;) { tmp += str.charAt(i); } else { if (tmp) { arr.push(tmp); tmp = &apos;&apos;; } } } if (tmp) { arr.push(tmp); tmp = &apos;&apos;; } return arr; } alert(findNum(str)); &lt;/script&gt; 上述功能正则表达式的写法: function findNum(str) { return str.match(/\d+/g); } alert(findNum(str)); 什么是正则正则，也叫规则，让计算机能够读懂人类的规则。 var re= //; //大部分用这种 简写的 var re= new RegExp(); 正则中的test方法test:正则去匹配字符串，如果匹配成功就返回真，如果匹配失败就返回假 。test的写法：正则.test(字符串)。 写法 含义 \s 空格 \S 非空格 \d 数字 \D 非数字 \w 字符 \W 非字符 var str = &apos;374829348791&apos;; var re = /\D/; if( re.test(str) ){ alert(&apos;不全是数字&apos;); } else{ alert(&apos;全是数字&apos;); } 正则中的search方法search : 正则去匹配字符串 , 如果匹配成功，就返回匹配成功的位置，如果匹配失败就返回 -1。 search的写法 : 字符串.search(正则)。正则中的默认 : 是区分大小写的 如果不区分大小写的话，在正则的最后加标识 i 。]]></content>
+    <content type="text"><![CDATA[字符串indexOf 查找substring 获取子字符串charAt 获取某个字符串split 分割字符串，获得数组 字符串比较字符串可以进行比较，所以可以用来判断字符串是不是数字类型 &lt;script&gt; //alert( &apos;a&apos;&lt;&apos;b&apos; ); var str = &apos;5&apos;; if (str &lt;= &apos;9&apos; &amp;&amp; str &gt;= &apos;0&apos;) { alert(&apos;是数字类型的字符串&apos;); } else { alert(&apos;不是数字类型的字符串&apos;); } &lt;/script&gt; 找出字符串中所有的数字 &lt;script&gt; var str = &apos;haj123sdk54hask33dkhalsd879&apos;; function findNum(str) { var arr = []; var tmp = &apos;&apos;; for (var i = 0; i &lt; str.length; i++) { if (str.charAt(i) &lt;= &apos;9&apos; &amp;&amp; str.charAt(i) &gt;= &apos;0&apos;) { tmp += str.charAt(i); } else { if (tmp) { arr.push(tmp); tmp = &apos;&apos;; } } } if (tmp) { arr.push(tmp); tmp = &apos;&apos;; } return arr; } alert(findNum(str)); &lt;/script&gt; 上述功能正则表达式的写法: function findNum(str) { return str.match(/\d+/g); } alert(findNum(str)); 什么是正则正则，也叫规则，让计算机能够读懂人类的规则。 var re= //; //大部分用这种 简写的 var re= new RegExp(); 正则中的test方法test:正则去匹配字符串，如果匹配成功就返回真，如果匹配失败就返回假 。test的写法：正则.test(字符串)。 写法 含义 \s 空格 \S 非空格 \d 数字 \D 非数字 \w 字符 \W 非字符 var str = &apos;374829348791&apos;; var re = /\D/; if( re.test(str) ){ alert(&apos;不全是数字&apos;); } else{ alert(&apos;全是数字&apos;); } 正则中的search方法search : 正则去匹配字符串 , 如果匹配成功，就返回匹配成功的位置，如果匹配失败就返回 -1。 search的写法 : 字符串.search(正则)。正则中的默认 : 是区分大小写的 如果不区分大小写的话，在正则的最后加标识 i 。 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; var str = &apos;abcdef&apos;; var re = /B/i; //不区分大小写的简写写法 //var re = new RegExp(&apos;B&apos;,&apos;i&apos;); //全称的写法 alert(str.search(re)); &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 正则中的match方法match : 正则去匹配字符串，如果匹配成功，就返回匹配成功的数组，如果匹配不成功，就返回null。match的写法 : 字符串.match(正则)。正则默认：正则匹配成功就会结束，不会继续匹配;如果想全部查找，就要加标识 g(全局匹配)。量词 : 匹配不确定的位置 : 至少出现一次,可以看成大于等于1 var str = &apos;haj123sdk54hask33dkhalsd879&apos;; var re = /\d+/g; alert(str.match(re)); //[1] 正则中的replacereplace : 正则去匹配字符串，匹配成功的字符去替换成新的字符串。replace的写法 : 字符串.replace(正则,新的字符串)。 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; var str = &apos;aaa&apos;; var re = /a+/g; //如果把这里改成/a/g 则替换后显示为bbb; 改成/a/，则替换后显示为baa str = str.replace(re, &apos;b&apos;); alert(str); //显示一个b &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; replace的应用：敏感词过滤&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; //菲称仁爱礁附近17艘中国船均在菲军监视之下 //| : 或的意思 //replace : 第二个参数：可以是字符串，也可以是一个回调函数 window.onload = function() { var aT = document.getElementsByTagName(&apos;textarea&apos;); var oInput = document.getElementById(&apos;input1&apos;); var re = /菲称|中国船|监视之下/g; oInput.onclick = function() { //aT[1].value = aT[0].value.replace(re,&apos;*&apos;); aT[1].value = aT[0].value.replace(re, function(str) { //函数的第一个参数：就是匹配成功的字符 //alert( str ); var result = &apos;&apos;; for (var i = 0; i &lt; str.length; i++) { result += &apos;*&apos;; } return result; }); }; }; &lt;/script&gt; &lt;/head&gt; &lt;body&gt; 替换前 &lt;br /&gt; &lt;textarea&gt; &lt;/textarea&gt; &lt;br /&gt; 替换后 &lt;br /&gt; &lt;textarea&gt; &lt;/textarea&gt; &lt;br /&gt; &lt;input type=&quot;button&quot; value=&quot;确定&quot; id=&quot;input1&quot; /&gt; &lt;/body&gt; &lt;/html&gt; 匹配子项匹配子项 : 小括号 () (还有另外一个意思，分组操作)把正则的整体叫做（母亲）, 然后把左边第一个小括号里面的正则，叫做这个第一个子项(母亲的第一个孩子), 第二个小括号就是第二个孩子 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;script&gt; var str = &apos;2013-6-7&apos;; var re = /(\d+)(-)/g; str = str.replace(re, function($0, $1, $2) { //第一个参数：$0（母亲）,第二个参数 : $1(第一个孩子) //,第二个参数 : $1(第二个孩子) //alert( $2 ); //return $1 + &apos;.&apos;; return $0.substring(0, $0.length - 1) + &apos;.&apos;; }); alert(str); //2013.6.7 &lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 也可以用match方法实现 &lt;script&gt; var str = &apos;abc&apos;; var re = /(a)(b)(c)/; alert(str.match(re)); //[abc,a,b,c](当match不加g的时候才可以获取到子项的集合) &lt;/script&gt;]]></content>
       <categories>
         <category>前端</category>
         <category>js</category>
@@ -14,6 +14,7 @@
         <tag>js</tag>
         <tag>字符串</tag>
         <tag>正则</tag>
+        <tag>敏感词过滤</tag>
       </tags>
   </entry>
   <entry>
@@ -459,6 +460,19 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -471,19 +485,6 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>

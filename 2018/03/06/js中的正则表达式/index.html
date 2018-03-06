@@ -123,7 +123,7 @@
 
 
 
-  <meta name="keywords" content="前端,js,字符串,正则," />
+  <meta name="keywords" content="前端,js,字符串,正则,敏感词过滤," />
 
 
 
@@ -137,7 +137,7 @@
 
 
 <meta name="description" content="字符串indexOf  查找substring 获取子字符串charAt  获取某个字符串split  分割字符串，获得数组">
-<meta name="keywords" content="前端,js,字符串,正则">
+<meta name="keywords" content="前端,js,字符串,正则,敏感词过滤">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js中的正则表达式">
 <meta property="og:url" content="http://yoursite.com/2018/03/06/js中的正则表达式/index.html">
@@ -145,7 +145,9 @@
 <meta property="og:description" content="字符串indexOf  查找substring 获取子字符串charAt  获取某个字符串split  分割字符串，获得数组">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/06/js中的正则表达式/bijiao.png">
-<meta property="og:updated_time" content="2018-03-06T10:01:03.717Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/06/js中的正则表达式/guolv.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/06/js中的正则表达式/zixiang.png">
+<meta property="og:updated_time" content="2018-03-06T13:17:27.299Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js中的正则表达式">
 <meta name="twitter:description" content="字符串indexOf  查找substring 获取子字符串charAt  获取某个字符串split  分割字符串，获得数组">
@@ -461,7 +463,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  399
+                  1,205
                 </span>
               
 
@@ -477,7 +479,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  5
                 </span>
               
             </div>
@@ -601,7 +603,161 @@ else{
 }
 </code></pre><h4 id="正则中的search方法"><a href="#正则中的search方法" class="headerlink" title="正则中的search方法"></a>正则中的search方法</h4><p>search : 正则去匹配字符串 , 如果匹配成功，就返回匹配成功的位置，如果匹配失败就返回 -1。 search的写法 : 字符串.search(正则)。正则中的默认 : 是区分大小写的 </p>
 <p>如果不区分大小写的话，在正则的最后加标识 i 。  </p>
+<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
 
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+
+    var str = &apos;abcdef&apos;;
+
+    var re = /B/i;                  //不区分大小写的简写写法
+
+    //var re = new RegExp(&apos;B&apos;,&apos;i&apos;);   //全称的写法
+
+    alert(str.search(re));
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;    
+</code></pre><h4 id="正则中的match方法"><a href="#正则中的match方法" class="headerlink" title="正则中的match方法"></a>正则中的match方法</h4><p>match : 正则去匹配字符串，如果匹配成功，就返回匹配成功的数组，如果匹配不成功，就返回null。<br>match的写法 : 字符串.match(正则)。<br>正则默认：正则匹配成功就会结束，不会继续匹配;如果想全部查找，就要加标识 g(全局匹配)。<br>量词 : 匹配不确定的位置</p>
+<ul>
+<li><p>: 至少出现一次,可以看成大于等于1</p>
+<pre><code> var str = &apos;haj123sdk54hask33dkhalsd879&apos;;
+
+var re = /\d+/g;
+
+alert(str.match(re)); //[1]  
+</code></pre></li>
+</ul>
+<h4 id="正则中的replace"><a href="#正则中的replace" class="headerlink" title="正则中的replace"></a>正则中的replace</h4><p>replace : 正则去匹配字符串，匹配成功的字符去替换成新的字符串。replace的写法 : 字符串.replace(正则,新的字符串)。  </p>
+<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    var str = &apos;aaa&apos;;
+    var re = /a+/g;       //如果把这里改成/a/g  则替换后显示为bbb;  改成/a/，则替换后显示为baa
+
+    str = str.replace(re, &apos;b&apos;);
+
+    alert(str);   //显示一个b   
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><h5 id="replace的应用：敏感词过滤"><a href="#replace的应用：敏感词过滤" class="headerlink" title="replace的应用：敏感词过滤"></a>replace的应用：敏感词过滤</h5><pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+    //菲称仁爱礁附近17艘中国船均在菲军监视之下
+
+    //| : 或的意思
+
+    //replace : 第二个参数：可以是字符串，也可以是一个回调函数
+
+    window.onload = function() {
+        var aT = document.getElementsByTagName(&apos;textarea&apos;);
+        var oInput = document.getElementById(&apos;input1&apos;);
+
+        var re = /菲称|中国船|监视之下/g;
+
+        oInput.onclick = function() {
+
+            //aT[1].value = aT[0].value.replace(re,&apos;*&apos;);
+
+            aT[1].value = aT[0].value.replace(re, function(str) {
+                //函数的第一个参数：就是匹配成功的字符     
+
+                //alert( str );
+
+                var result = &apos;&apos;;
+
+                for (var i = 0; i &lt; str.length; i++) {
+                    result += &apos;*&apos;;
+                }
+
+
+                return result;
+
+            });
+
+        };
+
+    };
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    替换前
+    &lt;br /&gt;
+    &lt;textarea&gt;
+    &lt;/textarea&gt;
+    &lt;br /&gt; 替换后
+    &lt;br /&gt;
+    &lt;textarea&gt;
+    &lt;/textarea&gt;
+    &lt;br /&gt;
+    &lt;input type=&quot;button&quot; value=&quot;确定&quot; id=&quot;input1&quot; /&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/06/js中的正则表达式/guolv.png" alt="">  </p>
+<h4 id="匹配子项"><a href="#匹配子项" class="headerlink" title="匹配子项"></a>匹配子项</h4><p>匹配子项 : 小括号 ()  (还有另外一个意思，分组操作)<br>把正则的整体叫做（母亲）, 然后把左边第一个小括号里面的正则，叫做这个第一个子项(母亲的第一个孩子), 第二个小括号就是第二个孩子 </p>
+<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    &lt;title&gt;无标题文档&lt;/title&gt;
+    &lt;script&gt;
+
+    var str = &apos;2013-6-7&apos;;
+
+    var re = /(\d+)(-)/g;    
+
+    str = str.replace(re, function($0, $1, $2) {
+        //第一个参数：$0（母亲）,第二个参数 : $1(第一个孩子)
+        //,第二个参数 : $1(第二个孩子)
+
+        //alert( $2 );
+
+        //return $1 + &apos;.&apos;;
+
+        return $0.substring(0, $0.length - 1) + &apos;.&apos;;
+
+    });
+
+    alert(str); //2013.6.7
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;  
+</code></pre><p><img src="/2018/03/06/js中的正则表达式/zixiang.png" alt=""><br>也可以用match方法实现  </p>
+<pre><code>&lt;script&gt;
+var str = &apos;abc&apos;;
+
+var re = /(a)(b)(c)/;
+
+alert(str.match(re)); //[abc,a,b,c](当match不加g的时候才可以获取到子项的集合)
+&lt;/script&gt;
+</code></pre>
       
     </div>
     
@@ -654,6 +810,8 @@ else{
             <a href="/tags/字符串/" rel="tag"><i class="fa fa-tag"></i> 字符串</a>
           
             <a href="/tags/正则/" rel="tag"><i class="fa fa-tag"></i> 正则</a>
+          
+            <a href="/tags/敏感词过滤/" rel="tag"><i class="fa fa-tag"></i> 敏感词过滤</a>
           
         </div>
       
@@ -808,7 +966,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">45</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -867,7 +1025,7 @@ var jiathis_config={
     <h3 class="widget-title">Tag Cloud</h3>
     <div id="myCanvasContainer" class="widget tagcloud">
         <canvas width="250" height="250" id="resCanvas" style="width=100%">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByTagName/">ByTagName</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5标签/">H5标签</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feed/">feed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for/">for</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for循环/">for循环</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacker/">hacker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hxo/">hxo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">23</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web性能/">web性能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作用域/">作用域</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容/">兼容</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数传参/">函数传参</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端练习小项目/">前端练习小项目</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片切换/">图片切换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/子节点和兄弟节点/">子节点和兄弟节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串/">字符串</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/属性操作/">属性操作</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型转换/">数据类型转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/易错点/">易错点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条件判断/">条件判断</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/流程控制/">流程控制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏/">游戏</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/父节点/">父节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/相对定位绝对定位/">相对定位绝对定位</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/站点地图/">站点地图</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义属性/">自定义属性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/预解析/">预解析</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByTagName/">ByTagName</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5标签/">H5标签</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feed/">feed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for/">for</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for循环/">for循环</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacker/">hacker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hxo/">hxo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">23</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web性能/">web性能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作用域/">作用域</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容/">兼容</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数传参/">函数传参</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">25</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端练习小项目/">前端练习小项目</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片切换/">图片切换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/子节点和兄弟节点/">子节点和兄弟节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串/">字符串</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/属性操作/">属性操作</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/敏感词过滤/">敏感词过滤</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型转换/">数据类型转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/易错点/">易错点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条件判断/">条件判断</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/流程控制/">流程控制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏/">游戏</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/父节点/">父节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/相对定位绝对定位/">相对定位绝对定位</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/站点地图/">站点地图</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义属性/">自定义属性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/预解析/">预解析</a><span class="tag-list-count">1</span></li></ul>
         </canvas>
     </div>
 </div>
@@ -899,7 +1057,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">1.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串比较"><span class="nav-number">1.1.</span> <span class="nav-text">字符串比较</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#找出字符串中所有的数字"><span class="nav-number">1.2.</span> <span class="nav-text">找出字符串中所有的数字</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是正则"><span class="nav-number">2.</span> <span class="nav-text">什么是正则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#正则中的test方法"><span class="nav-number">2.1.</span> <span class="nav-text">正则中的test方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正则中的search方法"><span class="nav-number">2.2.</span> <span class="nav-text">正则中的search方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">1.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串比较"><span class="nav-number">1.1.</span> <span class="nav-text">字符串比较</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#找出字符串中所有的数字"><span class="nav-number">1.2.</span> <span class="nav-text">找出字符串中所有的数字</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是正则"><span class="nav-number">2.</span> <span class="nav-text">什么是正则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#正则中的test方法"><span class="nav-number">2.1.</span> <span class="nav-text">正则中的test方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正则中的search方法"><span class="nav-number">2.2.</span> <span class="nav-text">正则中的search方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正则中的match方法"><span class="nav-number">2.3.</span> <span class="nav-text">正则中的match方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正则中的replace"><span class="nav-number">2.4.</span> <span class="nav-text">正则中的replace</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#replace的应用：敏感词过滤"><span class="nav-number">2.4.1.</span> <span class="nav-text">replace的应用：敏感词过滤</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#匹配子项"><span class="nav-number">2.5.</span> <span class="nav-text">匹配子项</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -934,7 +1092,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">16.5k</span>
+    <span title="Site words total count">17.3k</span>
   
 </div>
 
