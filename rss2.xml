@@ -8,8 +8,43 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Mon, 05 Mar 2018 10:39:15 GMT</pubDate>
+    <pubDate>Tue, 06 Mar 2018 10:01:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>js中的正则表达式</title>
+      <link>http://yoursite.com/2018/03/06/js%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <guid>http://yoursite.com/2018/03/06/js%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <pubDate>Tue, 06 Mar 2018 00:20:11 GMT</pubDate>
+      <description>
+      
+        &lt;h3 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h3&gt;&lt;p&gt;indexOf  查找&lt;br&gt;substring 获取子字符串&lt;br&gt;charAt  获取某个字符串&lt;br&gt;split  分割字符串，获得数组&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>indexOf  查找<br>substring 获取子字符串<br>charAt  获取某个字符串<br>split  分割字符串，获得数组<a id="more"></a>  </p><h4 id="字符串比较"><a href="#字符串比较" class="headerlink" title="字符串比较"></a>字符串比较</h4><p>字符串可以进行比较，所以可以用来判断字符串是不是数字类型  </p><pre><code>&lt;script&gt;//alert( &apos;a&apos;&lt;&apos;b&apos; );var str = &apos;5&apos;;if (str &lt;= &apos;9&apos; &amp;&amp; str &gt;= &apos;0&apos;) {    alert(&apos;是数字类型的字符串&apos;);} else {    alert(&apos;不是数字类型的字符串&apos;);}&lt;/script&gt;  </code></pre><h4 id="找出字符串中所有的数字"><a href="#找出字符串中所有的数字" class="headerlink" title="找出字符串中所有的数字"></a>找出字符串中所有的数字</h4><pre><code> &lt;script&gt;var str = &apos;haj123sdk54hask33dkhalsd879&apos;;function findNum(str) {    var arr = [];    var tmp = &apos;&apos;;    for (var i = 0; i &lt; str.length; i++) {        if (str.charAt(i) &lt;= &apos;9&apos; &amp;&amp; str.charAt(i) &gt;= &apos;0&apos;) {            tmp += str.charAt(i);        } else {            if (tmp) {                arr.push(tmp);                tmp = &apos;&apos;;            }        }    }    if (tmp) {        arr.push(tmp);        tmp = &apos;&apos;;    }    return arr;}alert(findNum(str)); &lt;/script&gt;  </code></pre><p><img src="/2018/03/06/js中的正则表达式/bijiao.png" alt="">  </p><p>上述功能正则表达式的写法:  </p><pre><code>function findNum(str) {        return str.match(/\d+/g);    }    alert(findNum(str)); </code></pre><h3 id="什么是正则"><a href="#什么是正则" class="headerlink" title="什么是正则"></a>什么是正则</h3><p>正则，也叫规则，让计算机能够读懂人类的规则。  </p><pre><code>var re= //;        //大部分用这种 简写的      var re= new RegExp();  </code></pre><h4 id="正则中的test方法"><a href="#正则中的test方法" class="headerlink" title="正则中的test方法"></a>正则中的test方法</h4><p>test:正则去匹配字符串，如果匹配成功就返回真，如果匹配失败就返回假  。test的写法：正则.test(字符串)。 </p><table><thead><tr><th>写法</th><th>含义</th></tr></thead><tbody><tr><td>\s</td><td>空格</td></tr><tr><td>\S</td><td>非空格</td></tr><tr><td>\d</td><td>数字</td></tr><tr><td>\D</td><td>非数字</td></tr><tr><td>\w</td><td>字符</td></tr><tr><td>\W</td><td>非字符</td></tr></tbody></table><pre><code>var str = &apos;374829348791&apos;;var re = /\D/;if( re.test(str) ){    alert(&apos;不全是数字&apos;);}else{    alert(&apos;全是数字&apos;);}</code></pre><h4 id="正则中的search方法"><a href="#正则中的search方法" class="headerlink" title="正则中的search方法"></a>正则中的search方法</h4><p>search : 正则去匹配字符串 , 如果匹配成功，就返回匹配成功的位置，如果匹配失败就返回 -1。 search的写法 : 字符串.search(正则)。正则中的默认 : 是区分大小写的 </p><p>如果不区分大小写的话，在正则的最后加标识 i 。  </p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/03/06/js%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>函数返回值</title>
+      <link>http://yoursite.com/2018/03/06/%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC/</link>
+      <guid>http://yoursite.com/2018/03/06/%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC/</guid>
+      <pubDate>Mon, 05 Mar 2018 18:41:32 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;函数返回值&quot;&gt;&lt;a href=&quot;#函数返回值&quot; class=&quot;headerlink&quot; title=&quot;函数返回值&quot;&gt;&lt;/a&gt;函数返回值&lt;/h3&gt;
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h3>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/03/06/%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>百度文库评分和百度音乐全选效果</title>
@@ -57,38 +92,6 @@
       <content:encoded><![CDATA[<h3 id="预解析机制"><a href="#预解析机制" class="headerlink" title="预解析机制"></a>预解析机制</h3><a id="more"></a>  <h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p>域：空间、范围、区域……<br>作用：读、写<br>script        全局变量、全局函数,自上而下<br>函数  由里到外<br>浏览器：“JS解析器”<br>1）“找一些东西”    ：var  function 参数<br>a = …<br>所有的变量，在正式运行代码之前，都提前赋了一个值：未定义<br>fn1 = function fn1(){ alert(2); }<br>所有的函数，在正式运行代码之前，都是整个函数块<br>JS 的预解析<br>遇到重名的：只留一个<br>变量和函数重名了，就只留下函数</p><p>2）逐行解读代码：<br>表达式：= + - * / % ++ – ! 参数……<br>表达式可以修改预解析的值！  </p><h4 id="小例子"><a href="#小例子" class="headerlink" title="小例子"></a>小例子</h4><pre><code>    alert(a);                    // 输出   function a (){ alert(4); }//因为预解析之后，变量和函数重名了就只留下函数，所以a是整个函数块   function a(){alert(4)};    var a = 1;     alert(a);                    // 输出  1//表达式var a=1;修改了预解析的值    function a (){ alert(2); }    alert(a);                    // 输出  1//    函数不修改值    var a = 3;            alert(a);                    // 输出  3//表达式var a=3;修改了预解析的值    function a (){ alert(4); }    alert(a);                    // 输出  3//函数不修改值    alert( typeof a );          //number    // a();                                    // 报错  </code></pre><h3 id="js单线程运行"><a href="#js单线程运行" class="headerlink" title="js单线程运行"></a>js单线程运行</h3><pre><code>&lt;script&gt;alert(a);   //报错&lt;/script&gt;&lt;script&gt;var a=1;   //1alert(a);&lt;/script&gt;</code></pre><p>前一个script区域运行完之后，值会保存。</p><pre><code>&lt;script&gt;var a=1;   //1alert(a);&lt;/script&gt;  &lt;script&gt;alert(a);   //1&lt;/script&gt;</code></pre><h3 id="函数也是一个局部的域"><a href="#函数也是一个局部的域" class="headerlink" title="函数也是一个局部的域"></a>函数也是一个局部的域</h3><p>函数调用：预解析+逐行解读代码<br>1)预解析： var function 参数….<br>a=…<br>fn1=function(){<br>  alert(a);<br>  var a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用<br>2.1）预解析：<br>  a=…  这里的a是局部变量<br>2.2)逐行解读代码：<br>  a=2;</p><pre><code>var a = 1;function fn1(){    alert(a);                        // undefined    var a = 2;                      //a=2}fn1();alert(a);                            // 1</code></pre><p>下面看看  不加var的影响<br>1)预解析： var function 参数….<br>a=…<br>fn1=function(){<br>  alert(a);<br>  a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用<br>2.1）局部预解析：<br>因为函数里面没有var 所有没有找到，<br>2.2)局部逐行解读代码：<br>  a=2;</p><pre><code>var a = 1;function fn1(){    alert(a);                        // 1  所以返回父级去找。由里到外（作用域链）找到外面那个a    a = 2;                          //这里修改的是外面的那个a}fn1();alert(a);                            // 2  </code></pre><p>小结：先找东西，后执行。执行过程中遇到表达式就会去修改原来库里面的东西，如果遇到函数调用就开了一个新的作用域，一旦新的作用域开始了，又会重复以上步骤，新的作用域中如果没找到里面有东西，又会返回父级里面去找。  </p><h3 id="带参数的函数"><a href="#带参数的函数" class="headerlink" title="带参数的函数"></a>带参数的函数</h3><p>1)预解析： var function 参数….<br>a=…<br>fn1=function(a){<br>  alert(a);<br>  a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用<br>2.1）局部预解析：<br>因为函数里面没有var ,也没有找到函数，所有没有找到。参数本质上就是一个局部变量。找到了参数，但是这个例子里函数调用并没有传进来。<br>参数 a=…未定义<br>2.2)局部逐行解读代码：<br>  局部变量a就是undefined  </p><pre><code>var a = 1;                           //全局变量a=1function fn1(a){    alert(a);                        // undefined    a = 2;                          //这句把a改成2}fn1();alert(a);                            // 这里读取父级的a=1  </code></pre><h3 id="函数调用带参数"><a href="#函数调用带参数" class="headerlink" title="函数调用带参数"></a>函数调用带参数</h3><p>1)预解析： var function 参数….<br>a=…<br>fn1=function(a){<br>  alert(a);<br>  a=2；<br>}<br>2）逐行解读代码：<br>表达式<br>函数调用fn1(a)<br>2.1）局部预解析：<br>参数本质上就是一个局部变量，因为这个例子里面传递了参数进来，所以a=undefined。<br>参数 a=…未定义<br>2.2)局部逐行解读代码：<br>因为传递进来的a=1,所以局部变量a=1,再下一步就是局部变量a=2。  全局变量a仍然是1</p><pre><code> var a = 1;function fn1(a){    alert(a);                        // 1    a = 2;}fn1(a);alert(a);                            // 1</code></pre><h3 id="任何函数都可以改全局变量"><a href="#任何函数都可以改全局变量" class="headerlink" title="任何函数都可以改全局变量"></a>任何函数都可以改全局变量</h3><p>因为函数内部没有这个变量的话，会从里往外找。</p><pre><code>var num = 0;function fn1(){    num++;}function fn2(){    num--;}fn2();fn1();fn2();alert(num);  </code></pre><h3 id="获取函数内的值"><a href="#获取函数内的值" class="headerlink" title="获取函数内的值"></a>获取函数内的值</h3><p>巧妙利用全局变量来去获取函数内的内容</p><pre><code>var str = &apos;&apos;;function fn1(){    var a = &apos;大鸡腿~&apos;;    str = a;}fn1();alert( str );   //大鸡腿</code></pre><p>另一种方法：</p><pre><code>function fn2(){    var a = &apos;9999999克拉钻石23456789&apos;;    fn3(a);}fn2();function fn3(a){    alert(a);}  </code></pre><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>if(){}和for(){}、do{}while不是作用域，函数是作用域。<br>firefox不能对下面的函数进行预解析,除了火狐以外，其他的浏览器都可以。   </p><pre><code>alert( fn1 );        // FF 不能对下面的函数进行预解析if( true ){    var a = 1;    function fn1(){    alert(123);}}  </code></pre><p>解决这个兼容性问题的方法是：以后尽量不要在if语句里面定义函数，全局变量。改成下面这种写法：  </p><h3 id="for里面包了一个函数，在函数里面不要直接使用i"><a href="#for里面包了一个函数，在函数里面不要直接使用i" class="headerlink" title="for里面包了一个函数，在函数里面不要直接使用i"></a>for里面包了一个函数，在函数里面不要直接使用i</h3><p>下例会出现undefined的原因是：点击事件函数是一个作用域，只要有作用域，就会有域解析，点击事件函数里面域解析的时候会找到var i=undefined,所以这里alert(i)是undefined。但是如果把for循环里面的var去掉的话，那么点击事件函数里面就没有变量，所以i就会到父级里面去找，父级i是3,所以此时alert(i)会弹出3。</p><pre><code>&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;    &lt;title&gt;无标题文档&lt;/title&gt;    &lt;script&gt;    window.onload = function() {        var aBtn = document.getElementsByTagName(&apos;input&apos;);        for (var i = 0; i &lt; aBtn.length; i++) {            aBtn[i].onclick = function() {                 alert( i );                                for (var i = 0; i &lt; aBtn.length; i++) {                    aBtn[i].style.background = &apos;yellow&apos;;                }            };        }    };    &lt;/script&gt;&lt;/head&gt;&lt;body&gt;    &lt;input type=&quot;button&quot; value=&quot;按钮1&quot; /&gt;    &lt;input type=&quot;button&quot; value=&quot;按钮2&quot; /&gt;    &lt;input type=&quot;button&quot; value=&quot;按钮3&quot; /&gt;&lt;/body&gt;&lt;/html&gt;  </code></pre><p><img src="/2018/03/04/js作用域/zuoyongyu.gif" alt=""><br>但是如果把js代码改成以下就会出错  </p><pre><code>&lt;script&gt;window.onload = function() {    var aBtn = document.getElementsByTagName(&apos;input&apos;);    for (var i = 0; i &lt; aBtn.length; i++) {        aBtn[i].onclick = function() {             alert( i );                // 3             aBtn[i].style.background = &apos;yellow&apos;;          };    }};&lt;/script&gt;  </code></pre><p><img src="/2018/03/04/js作用域/ccuowu.gif" alt=""> </p>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/03/04/js%E4%BD%9C%E7%94%A8%E5%9F%9F/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>函数传参项目</title>
-      <link>http://yoursite.com/2018/03/04/%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82%E9%A1%B9%E7%9B%AE/</link>
-      <guid>http://yoursite.com/2018/03/04/%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82%E9%A1%B9%E7%9B%AE/</guid>
-      <pubDate>Sun, 04 Mar 2018 14:37:36 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;搜狐视频纪录片列表展示&quot;&gt;&lt;a href=&quot;#搜狐视频纪录片列表展示&quot; class=&quot;headerlink&quot; title=&quot;搜狐视频纪录片列表展示&quot;&gt;&lt;/a&gt;搜狐视频纪录片列表展示&lt;/h3&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="搜狐视频纪录片列表展示"><a href="#搜狐视频纪录片列表展示" class="headerlink" title="搜狐视频纪录片列表展示"></a>搜狐视频纪录片列表展示</h3><a id="more"></a> <p><img src="/2018/03/04/函数传参项目/souhu.gif" alt=""></p><h3 id="修改文本框的值"><a href="#修改文本框的值" class="headerlink" title="修改文本框的值"></a>修改文本框的值</h3><p><img src="/2018/03/04/函数传参项目/修改文本框的值.gif" alt=""></p><h3 id="选择卡里套选择卡"><a href="#选择卡里套选择卡" class="headerlink" title="选择卡里套选择卡"></a>选择卡里套选择卡</h3><p><img src="/2018/03/04/函数传参项目/选择卡里套选择卡.gif" alt=""></p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/03/04/%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82%E9%A1%B9%E7%9B%AE/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>绝对定位与相对定位</title>
-      <link>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/</link>
-      <guid>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/</guid>
-      <pubDate>Sun, 04 Mar 2018 07:56:39 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;通常情况下，元素的position属性的值默认为static，也就是没有定位，元素出现再正常的文档流中，这个时候如果给元素设置left、right、bottom、top这些偏移属性，都不会生效，z-index也不会生效。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>通常情况下，元素的position属性的值默认为static，也就是没有定位，元素出现再正常的文档流中，这个时候如果给元素设置left、right、bottom、top这些偏移属性，都不会生效，z-index也不会生效。<a id="more"></a></p><h3 id="相对定位relative"><a href="#相对定位relative" class="headerlink" title="相对定位relative"></a>相对定位relative</h3><p>注意：使用相对定位时，就算元素被偏移了，但是它仍然会占据着没偏移之前的空间。  </p><p><img src="/2018/03/04/绝对定位与相对定位/relative1.png" alt=""></p><p><img src="/2018/03/04/绝对定位与相对定位/relative2.png" alt=""><br>上图，第二个块针对本身的位置发生了一个偏移，但是它原来所占据的那个位置空间仍然还在，即使它完全离开原来的位置，但是它原来位于文档流中的位置仍然会存在，不会被第三个浮动过来填补掉；同时它的偏移也不会把别的块从文档流中原来的位置挤开，如果有重叠的地方它会重叠再其他文档流元素之上，可以通关过设置z-index属性来调整他的堆叠顺序。  </p><h3 id="绝对定位absolute"><a href="#绝对定位absolute" class="headerlink" title="绝对定位absolute"></a>绝对定位absolute</h3><p>被设置了绝对定位的元素，在文档流中是不占据空间的，如果某元素设置了绝对定位，那么它在文档流中的位置会被删除，其实这个元素是浮了起来，它与relative的不同点在于：相对定位不会删除它本身在文档流中占据的那块空间，而绝对定位则会删除该元素在文档流中的位置，完全从文档流中抽出来。 </p><p>绝对定位是如何定位的？  </p><p>一、如果它的父级元素设置了除static之外的定位，比如position：relative 或者position：absolute或者position：fixed,那么它就会相对于它的父级元素来定位，位置通过left、top、right、bottom（刚好一个顺时针）属性来规定。</p><p>二、如果它的父级元素没有设置定位，那么就得看它父元素得父元素有没有设置定位，如果还是没有，就继续向更高层得祖先元素类推。  </p><p>小结：总之它的定位就是相对于设置了除static定位之外得定位得第一个祖先元素，如果以上情况都不存在，那么他就会相对于文档body来定位（并非窗口，相对于窗口来定位得是fixed）绝对定位得元素相对于谁来定位，我们就把这个“谁”叫做参照物。  </p><p><img src="/2018/03/04/绝对定位与相对定位/juedui1.png" alt=""><br>下面是使用了绝对定位得效果：  </p><p><img src="/2018/03/04/绝对定位与相对定位/juedui2.png" alt="">  </p><p><img src="/2018/03/04/绝对定位与相对定位/juedui3.png" alt="">  </p><p>注意：在设置偏移量得时候，可以设置负值。  </p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/03/04/%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%B8%8E%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D/#disqus_thread</comments>
     </item>
     
   </channel>
