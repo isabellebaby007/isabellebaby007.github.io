@@ -153,8 +153,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/02/23/元素各种位置宽高/95.png">
 <meta property="og:image" content="http://yoursite.com/2018/02/23/元素各种位置宽高/宽高1.png">
 <meta property="og:image" content="http://yoursite.com/2018/02/23/元素各种位置宽高/宽高2.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/23/元素各种位置宽高/宽高3.png">
-<meta property="og:updated_time" content="2018-02-22T19:50:28.863Z">
+<meta property="og:updated_time" content="2018-03-06T15:11:32.804Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="元素各种位置宽高">
 <meta name="twitter:description" content="offsetLeftoffsetLeft[Top]:只读，属性，当前元素到定位父级的距离（偏移值），就是到当前元素的offsetParent的距离。   当前元素没有定位，但是有定位父级css部分：">
@@ -470,7 +469,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  521
+                  571
                 </span>
               
 
@@ -486,7 +485,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -509,80 +508,38 @@
       
         <h3 id="offsetLeft"><a href="#offsetLeft" class="headerlink" title="offsetLeft"></a>offsetLeft</h3><p>offsetLeft[Top]:只读，属性，当前元素到定位父级的距离（偏移值），就是到当前元素的offsetParent的距离。  </p>
 <h4 id="当前元素没有定位，但是有定位父级"><a href="#当前元素没有定位，但是有定位父级" class="headerlink" title="当前元素没有定位，但是有定位父级"></a>当前元素没有定位，但是有定位父级</h4><p>css部分：  <a id="more"></a></p>
-<pre><code>&lt;style&gt;
-div {padding: 40px 50px;}
-#div1 {background: red;}
-#div2 {background: green;position: relative;}
-#div3 {background: orange; }
-&lt;/style&gt;  
-</code></pre><p>js部分：  </p>
-<pre><code>window.onload = function() {    
-var oDiv3 = document.getElementById(&apos;div3&apos;);  
-alert( oDiv3.offsetLeft );    
-}  
-</code></pre><p>html部分:  </p>
-<pre><code>&lt;body id=&quot;body1&quot;&gt;
-    &lt;div id=&quot;div1&quot;&gt;
-        &lt;div id=&quot;div2&quot;&gt;
-            &lt;div id=&quot;div3&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;  
-</code></pre><p>上述代码在ie11和Ie7的效果如下两图所示，可以得出结论： 在ie7下，如果自己没有定位，那么offsetLeft[Top]是到body的距离。 所以会显示100px</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-tag">div</span> &#123;<span class="attribute">padding</span>: <span class="number">40px</span> <span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-id">#div1</span> &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line"><span class="selector-id">#div2</span> &#123;<span class="attribute">background</span>: green;<span class="attribute">position</span>: relative;&#125;</span><br><span class="line"><span class="selector-id">#div3</span> &#123;<span class="attribute">background</span>: orange; &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>js部分：  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;	</span><br><span class="line"><span class="keyword">var</span> oDiv3 = <span class="built_in">document</span>.getElementById(<span class="string">'div3'</span>);  </span><br><span class="line">alert( oDiv3.offsetLeft );	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>html部分:  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">id</span>=<span class="string">"body1"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div2"</span>&gt;</span></span><br><span class="line">        	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div3"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>上述代码在ie11和Ie7的效果如下两图所示，可以得出结论： 在ie7下，如果自己没有定位，那么offsetLeft[Top]是到body的距离。 所以会显示100px</p>
 <p><img src="/2018/02/23/元素各种位置宽高/ie11标准.png" alt="">  </p>
 <p><img src="/2018/02/23/元素各种位置宽高/ie7非标准.png" alt="">  </p>
 <h4 id="当前元素有定位的情况，且定位父级"><a href="#当前元素有定位的情况，且定位父级" class="headerlink" title="当前元素有定位的情况，且定位父级"></a>当前元素有定位的情况，且定位父级</h4><p>css部分:  </p>
-<pre><code>&lt;style&gt;
-div {padding: 40px 50px;}
-#div1 {background: red;}
-#div2 {background: green;position: relative;}
-#div3 {background: orange;position: relative; }
-&lt;/style&gt;  
-</code></pre><p>其余部分代码同上个例子。ie11的效果同上个例子，但是Ie7的效果发生了变化，当前元素有定位的情况下，是到定位父级的距离。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-tag">div</span> &#123;<span class="attribute">padding</span>: <span class="number">40px</span> <span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-id">#div1</span> &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line"><span class="selector-id">#div2</span> &#123;<span class="attribute">background</span>: green;<span class="attribute">position</span>: relative;&#125;</span><br><span class="line"><span class="selector-id">#div3</span> &#123;<span class="attribute">background</span>: orange;<span class="attribute">position</span>: relative; &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>其余部分代码同上个例子。ie11的效果同上个例子，但是Ie7的效果发生了变化，当前元素有定位的情况下，是到定位父级的距离。</p>
 <p><img src="/2018/02/23/元素各种位置宽高/有定位.png" alt="">  </p>
 <h4 id="当前元素有定位，但是没有定位父级"><a href="#当前元素有定位，但是没有定位父级" class="headerlink" title="当前元素有定位，但是没有定位父级"></a>当前元素有定位，但是没有定位父级</h4><p>当前元素如果没有定位父级，offsetLeft默认的情况下是到body的，但是在Ie7下是指向到html的(在ie7以下body的默认margin-left值是10px)。<br>css部分:  </p>
-<pre><code>&lt;style&gt;
-div {padding: 40px 50px;}
-#div1 {background: red;}
-#div2 {background: green;}
-#div3 {background: orange;position: relative; }
-&lt;/style&gt;  
-</code></pre><p>其余部分代码同例子一。  </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-tag">div</span> &#123;<span class="attribute">padding</span>: <span class="number">40px</span> <span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-id">#div1</span> &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line"><span class="selector-id">#div2</span> &#123;<span class="attribute">background</span>: green;&#125;</span><br><span class="line"><span class="selector-id">#div3</span> &#123;<span class="attribute">background</span>: orange;<span class="attribute">position</span>: relative; &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>其余部分代码同例子一。  </p>
 <p><img src="/2018/02/23/元素各种位置宽高/108.png" alt="">  </p>
 <p><img src="/2018/02/23/元素各种位置宽高/110.png" alt="">  </p>
 <h3 id="offsetTop"><a href="#offsetTop" class="headerlink" title="offsetTop"></a>offsetTop</h3><p>css部分：  </p>
-<pre><code>&lt;style&gt;
-div {padding: 40px 50px;}
-#div1 {background: red;}
-#div2 {background: green;}
-#div3 {background: orange;position: relative; }
-&lt;/style&gt;  
-</code></pre><p>js部分:  </p>
-<pre><code>window.onload = function() {    
-var oDiv3 = document.getElementById(&apos;div3&apos;);  
-alert( oDiv3.offsetLeft );    
-}  
-</code></pre><p>效果如下,得出结论：ie7下的html默认margin-top是15px</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-tag">div</span> &#123;<span class="attribute">padding</span>: <span class="number">40px</span> <span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-id">#div1</span> &#123;<span class="attribute">background</span>: red;&#125;</span><br><span class="line"><span class="selector-id">#div2</span> &#123;<span class="attribute">background</span>: green;&#125;</span><br><span class="line"><span class="selector-id">#div3</span> &#123;<span class="attribute">background</span>: orange;<span class="attribute">position</span>: relative; &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p>js部分:  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;	</span><br><span class="line"><span class="keyword">var</span> oDiv3 = <span class="built_in">document</span>.getElementById(<span class="string">'div3'</span>);  </span><br><span class="line">alert( oDiv3.offsetLeft );	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下,得出结论：ie7下的html默认margin-top是15px</p>
 <p><img src="/2018/02/23/元素各种位置宽高/88.png" alt=""> </p>
 <p><img src="/2018/02/23/元素各种位置宽高/95.png" alt=""> </p>
 <h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>如果有定位父级：<br>ie7以下：如果自己没有定位，那么offsetLeft[Top]是到body的距离；<br>如果自己有定位，那么就是到定位父级的距离。<br>其他浏览器：到定位父级的距离。  </p>
 <h3 id="元素宽高"><a href="#元素宽高" class="headerlink" title="元素宽高"></a>元素宽高</h3><p>html部分：  </p>
-<pre><code>&lt;body&gt;
-    &lt;div id=&quot;div1&quot; style=&quot;width: 100px; height: 100px; border: 1px solid red; padding: 10px; margin: 10px;&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;  
-</code></pre><p>js部分:  </p>
-<pre><code>&lt;script&gt;
-window.onload = function() {    
-var oDiv = document.getElementById(&apos;div1&apos;);
-alert( oDiv.style.width );    //样式宽100
-alert( oDiv.clientWidth );    //样式宽 + padding=可视区宽    120
-alert( oDiv.offsetWidth );    //样式宽 + padding + border  可视区宽 + 边框    122    
-}  
-&lt;script&gt;  
-</code></pre><p>得到三个宽度分别为:  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span> <span class="attr">style</span>=<span class="string">"width: 100px; height: 100px; border: 1px solid red; padding: 10px; margin: 10px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js部分:  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;	</span><br><span class="line"><span class="keyword">var</span> oDiv = <span class="built_in">document</span>.getElementById(<span class="string">'div1'</span>);</span><br><span class="line">alert( oDiv.style.width );	<span class="comment">//样式宽100</span></span><br><span class="line">alert( oDiv.clientWidth );	<span class="comment">//样式宽 + padding=可视区宽	120</span></span><br><span class="line">alert( oDiv.offsetWidth );	<span class="comment">//样式宽 + padding + border  可视区宽 + 边框	122	</span></span><br><span class="line">&#125;  </span><br><span class="line">&lt;script&gt;</span><br></pre></td></tr></table></figure>
+<p>得到三个宽度分别为:  </p>
 <p><img src="/2018/02/23/元素各种位置宽高/宽高1.png" alt="">  </p>
 <p><img src="/2018/02/23/元素各种位置宽高/宽高2.png" alt="">  </p>
-<p><img src="/2018/02/23/元素各种位置宽高/宽高3.png" alt=""></p>
 
       
     </div>
@@ -918,7 +875,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.3k</span>
+    <span title="Site words total count">19.6k</span>
   
 </div>
 

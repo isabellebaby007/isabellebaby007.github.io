@@ -145,7 +145,7 @@
 <meta property="og:description" content="找到合适的值">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/03/数据类型转换练习/zhuanhuan.png">
-<meta property="og:updated_time" content="2018-03-03T18:45:55.953Z">
+<meta property="og:updated_time" content="2018-03-06T15:23:22.088Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据类型转换练习">
 <meta name="twitter:description" content="找到合适的值">
@@ -450,7 +450,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  662
+                  842
                 </span>
               
 
@@ -466,7 +466,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -488,270 +488,10 @@
 
       
         <h3 id="找到合适的值"><a href="#找到合适的值" class="headerlink" title="找到合适的值"></a>找到合适的值</h3><a id="more"></a>
-<pre><code>&lt;!--more--&gt;
-&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    body &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        font-size: 20px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> arr = [<span class="string">'100px'</span>, <span class="string">'abc'</span> - <span class="number">6</span>, [], <span class="number">-98765</span>, <span class="number">34</span>, <span class="number">-2</span>, <span class="number">0</span>, <span class="string">'300'</span>, , <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; alert(<span class="number">1</span>); &#125;, <span class="literal">null</span>, <span class="built_in">document</span>, [], <span class="literal">true</span>, <span class="string">'200px'</span> - <span class="number">30</span>, <span class="string">'23.45元'</span>, <span class="number">5</span>, <span class="built_in">Number</span>(<span class="string">'abc'</span>), <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; alert(<span class="number">3</span>); &#125;, <span class="string">'xyz'</span> - <span class="number">90</span>];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> ob = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> a1 = [];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> a2 = [];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> a3 = [];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> a4 = [];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> max = <span class="number">0</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        /*</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            1、找到arr里所有的数字：-98765, 34, -2, 0, 5</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="number">2</span>、找到可以转成数字的：<span class="string">'100px'</span>, <span class="number">-98765</span>, <span class="number">34</span>, <span class="number">-2</span>, <span class="number">0</span>, <span class="string">'300'</span>, <span class="string">'23.45元'</span>,  <span class="number">5</span> </span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            3、把转成数字以后，最大值判断出来：300</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="number">4</span>、把 <span class="literal">NaN</span> 所在的位置找出来：<span class="number">1</span> <span class="number">14</span> <span class="number">17</span>  <span class="number">19</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        */</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">//题目一：用函数把数字选择出来，由于NaN在数字类型，所以用ISNaN把NAN去除掉</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        ob.innerHTML += <span class="string">'&lt;br/&gt;'</span> + <span class="string">'1、找到arr里所有的数字:  '</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="keyword">if</span> (<span class="keyword">typeof</span> arr[i] == <span class="string">'number'</span> &amp;&amp; !<span class="built_in">isNaN</span>(arr[i])) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                a1.push(arr[i]);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a1.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            ob.innerHTML += a1[i] + <span class="string">' ,'</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">//题目二：用函数把可以数字转换的找出来，再单独找0,要把中括号去除呢</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        ob.innerHTML += <span class="string">'&lt;br/&gt;'</span> + <span class="string">'2、找到可以转成数字的:  '</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="keyword">if</span> (<span class="built_in">parseFloat</span>(arr[i]) || (arr[i] == <span class="number">0</span> &amp;&amp; <span class="keyword">typeof</span> arr[i] == <span class="string">'number'</span>)) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                a2.push(arr[i]);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a2.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            ob.innerHTML += a2[i] + <span class="string">' ,'</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">//题目三：用函数把可以数字转换出来，再单独找0输入</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a2.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="keyword">if</span> (<span class="built_in">parseFloat</span>(a2[i]) || a2[i] == <span class="number">0</span>) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">                a3.push(<span class="built_in">parseFloat</span>(a2[i]));</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        ob.innerHTML += <span class="string">'&lt;br/&gt;'</span> + <span class="string">'3、把转换数字后的数组为:  '</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a3.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="keyword">if</span> (max &lt; a3[i]) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                max = a3[i];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            ob.innerHTML += a3[i] + <span class="string">' ,'</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        ob.innerHTML += <span class="string">'  排序后最大值：'</span> + max;</span></span><br><span class="line"><span class="javascript">          <span class="comment">//题目四：把 NaN 所在的位置找出来：1 14 17  19  </span></span></span><br><span class="line"><span class="javascript">          ob.innerHTML += <span class="string">'&lt;br/&gt;'</span> + <span class="string">'4、把 NaN 所在的位置找出来:  '</span></span></span><br><span class="line"><span class="javascript">           <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span></span><br><span class="line"><span class="javascript">           <span class="keyword">if</span> (<span class="built_in">isNaN</span>(arr[i]) &amp;&amp; <span class="keyword">typeof</span> arr[i] == <span class="string">'number'</span>) &#123;</span></span><br><span class="line"><span class="undefined">            a4.push(i);</span></span><br><span class="line"><span class="undefined">               &#125;</span></span><br><span class="line"><span class="undefined">                &#125;</span></span><br><span class="line"><span class="javascript">           <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a4.length; i++) &#123;	      	      	       	            	               	         	       ob.innerHTML += a4[i] + <span class="string">' ,'</span>;</span></span><br><span class="line"><span class="undefined">           &#125;</span></span><br><span class="line"><span class="undefined">             &#125;</span></span><br><span class="line"><span class="undefined">          </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">               <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">               <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/03/数据类型转换练习/zhuanhuan.png" alt=""></p>
+<h3 id="QQ号码"><a href="#QQ号码" class="headerlink" title="QQ号码"></a>QQ号码</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> oText = <span class="built_in">document</span>.getElementById(<span class="string">'t'</span>)</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'b'</span>)</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> count = <span class="number">0</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    oBtn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">if</span> (oText.value == <span class="string">''</span>) &#123;</span></span><br><span class="line"><span class="javascript">    alert(<span class="string">'没有输入'</span>)</span></span><br><span class="line"><span class="undefined">      count++;</span></span><br><span class="line"><span class="undefined">       &#125;</span></span><br><span class="line"><span class="javascript">       <span class="keyword">if</span> (<span class="built_in">isNaN</span>(oText.value)) &#123;</span></span><br><span class="line"><span class="javascript">       alert(<span class="string">'非数字'</span>)</span></span><br><span class="line"><span class="undefined">         count++;	        	            	          	       	        	            	           &#125;</span></span><br><span class="line"><span class="javascript">         <span class="keyword">if</span> (oText.value.charAt(<span class="number">0</span>) == <span class="number">0</span>) &#123;</span></span><br><span class="line"><span class="javascript">         alert(<span class="string">'不能有0在前面'</span>)</span></span><br><span class="line"><span class="undefined">          count++;</span></span><br><span class="line"><span class="undefined">           &#125;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (<span class="built_in">parseFloat</span>(oText.value) != <span class="built_in">parseInt</span>(oText.value)) &#123;</span></span><br><span class="line"><span class="javascript">         alert(<span class="string">'不能是小数'</span>)</span></span><br><span class="line"><span class="undefined">         count++;</span></span><br><span class="line"><span class="undefined">          &#125;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">if</span> (oText.value.length &lt; <span class="number">5</span> || oText.value.length &gt; <span class="number">10</span>) &#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">'输入的数字必须在5位以上、10位以内'</span>)</span></span><br><span class="line"><span class="undefined">             count++;</span></span><br><span class="line"><span class="javascript">                  &#125;	       	        	            	           	       	       	           	             <span class="keyword">if</span> (count == <span class="number">0</span>) &#123; </span></span><br><span class="line"><span class="javascript">                         alert(<span class="string">'输入的号码正确呢'</span>)</span></span><br><span class="line"><span class="undefined">                           &#125;</span></span><br><span class="line"><span class="undefined">                               &#125;</span></span><br><span class="line"><span class="undefined">             	&#125;</span></span><br><span class="line"><span class="undefined">               </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line">               <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">                   请输入QQ号码：</span><br><span class="line">                   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">value</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"t"</span> /&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"判断"</span> <span class="attr">id</span>=<span class="string">"b"</span> /&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">br</span> /&gt;</span> 1、有没有输入</span><br><span class="line">                   <span class="tag">&lt;<span class="name">br</span> /&gt;</span> 2、输入的是不是数字</span><br><span class="line">                   <span class="tag">&lt;<span class="name">br</span> /&gt;</span> 3、不能有0在前面</span><br><span class="line">                   <span class="tag">&lt;<span class="name">br</span> /&gt;</span> 4、不能是小数</span><br><span class="line">                   <span class="tag">&lt;<span class="name">br</span> /&gt;</span> 5、输入的数字必须在5位以上、10位以内</span><br><span class="line">                   <span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">               <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">               <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;style&gt;
-    body {
-
-        font-size: 20px;
-    }
-    &lt;/style&gt;
-    &lt;script&gt;
-    window.onload = function() {
-
-        var arr = [&apos;100px&apos;, &apos;abc&apos; - 6, [], -98765, 34, -2, 0, &apos;300&apos;, , function() { alert(1); }, null, document, [], true, &apos;200px&apos; - 30, &apos;23.45元&apos;, 5, Number(&apos;abc&apos;), function() { alert(3); }, &apos;xyz&apos; - 90];
-
-        var ob = document.getElementsByTagName(&apos;body&apos;)[0];
-
-        var a1 = [];
-
-        var a2 = [];
-
-        var a3 = [];
-
-        var a4 = [];
-
-        var max = 0;
-
-        /*
-
-            1、找到arr里所有的数字：-98765, 34, -2, 0, 5
-
-            2、找到可以转成数字的：&apos;100px&apos;, -98765, 34, -2, 0, &apos;300&apos;, &apos;23.45元&apos;,  5 
-
-            3、把转成数字以后，最大值判断出来：300
-
-            4、把 NaN 所在的位置找出来：1 14 17  19
-
-        */
-
-        //题目一：用函数把数字选择出来，由于NaN在数字类型，所以用ISNaN把NAN去除掉
-
-        ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;1、找到arr里所有的数字:  &apos;
-
-        for (var i = 0; i &lt; arr.length; i++) {
-
-            if (typeof arr[i] == &apos;number&apos; &amp;&amp; !isNaN(arr[i])) {
-
-                a1.push(arr[i]);
-
-            }
-
-        }
-
-        for (var i = 0; i &lt; a1.length; i++) {
-
-            ob.innerHTML += a1[i] + &apos; ,&apos;;
-
-        }
-
-        //题目二：用函数把可以数字转换的找出来，再单独找0,要把中括号去除呢
-
-        ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;2、找到可以转成数字的:  &apos;
-
-        for (var i = 0; i &lt; arr.length; i++) {
-
-            if (parseFloat(arr[i]) || (arr[i] == 0 &amp;&amp; typeof arr[i] == &apos;number&apos;)) {
-
-                a2.push(arr[i]);
-
-            }
-
-        }
-
-        for (var i = 0; i &lt; a2.length; i++) {
-
-            ob.innerHTML += a2[i] + &apos; ,&apos;;
-
-        }
-
-        //题目三：用函数把可以数字转换出来，再单独找0输入
-
-        for (var i = 0; i &lt; a2.length; i++) {
-
-            if (parseFloat(a2[i]) || a2[i] == 0) {
-
-                a3.push(parseFloat(a2[i]));
-
-            }
-
-        }
-
-        ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;3、把转换数字后的数组为:  &apos;
-
-        for (var i = 0; i &lt; a3.length; i++) {
-
-            if (max &lt; a3[i]) {
-
-                max = a3[i];
-
-            }
-
-            ob.innerHTML += a3[i] + &apos; ,&apos;;
-
-        }
-
-        ob.innerHTML += &apos;  排序后最大值：&apos; + max;
-
-
-
-        //题目四：把 NaN 所在的位置找出来：1 14 17  19
-
-        ob.innerHTML += &apos;&lt;br/&gt;&apos; + &apos;4、把 NaN 所在的位置找出来:  &apos;
-
-        for (var i = 0; i &lt; arr.length; i++) {
-
-            if (isNaN(arr[i]) &amp;&amp; typeof arr[i] == &apos;number&apos;) {
-
-                a4.push(i);
-
-            }
-
-        }
-
-
-
-        for (var i = 0; i &lt; a4.length; i++) {
-
-            ob.innerHTML += a4[i] + &apos; ,&apos;;
-
-        }
-
-
-
-    }
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/03/03/数据类型转换练习/zhuanhuan.png" alt=""></p>
-<h3 id="QQ号码"><a href="#QQ号码" class="headerlink" title="QQ号码"></a>QQ号码</h3><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-&lt;/head&gt;
-&lt;script&gt;
-window.onload = function() {
-
-    var oText = document.getElementById(&apos;t&apos;)
-
-    var oBtn = document.getElementById(&apos;b&apos;)
-
-    var count = 0;
-
-    oBtn.onclick = function() {
-
-
-
-        if (oText.value == &apos;&apos;) {
-
-            alert(&apos;没有输入&apos;)
-
-            count++;
-
-        }
-
-
-
-        if (isNaN(oText.value)) {
-
-            alert(&apos;非数字&apos;)
-
-            count++;
-
-
-
-        }
-
-
-
-        if (oText.value.charAt(0) == 0) {
-
-            alert(&apos;不能有0在前面&apos;)
-
-            count++;
-
-
-
-        }
-
-
-
-        if (parseFloat(oText.value) != parseInt(oText.value)) {
-
-            alert(&apos;不能是小数&apos;)
-
-            count++;
-
-
-
-        }
-
-
-
-        if (oText.value.length &lt; 5 || oText.value.length &gt; 10) {
-
-            alert(&apos;输入的数字必须在5位以上、10位以内&apos;)
-
-            count++;
-
-
-
-        }
-
-
-
-        if (count == 0) {
-
-            alert(&apos;输入的号码正确呢&apos;)
-
-        }
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-}
-&lt;/script&gt;
-
-&lt;body&gt;
-    请输入QQ号码：
-    &lt;input type=&quot;text&quot; value=&quot;&quot; id=&quot;t&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;判断&quot; id=&quot;b&quot; /&gt;
-    &lt;br /&gt; 1、有没有输入
-    &lt;br /&gt; 2、输入的是不是数字
-    &lt;br /&gt; 3、不能有0在前面
-    &lt;br /&gt; 4、不能是小数
-    &lt;br /&gt; 5、输入的数字必须在5位以上、10位以内
-    &lt;br /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
       
     </div>
     
@@ -1088,7 +828,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.3k</span>
+    <span title="Site words total count">19.6k</span>
   
 </div>
 

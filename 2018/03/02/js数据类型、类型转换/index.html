@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="Isabelle的博客小站">
 <meta property="og:description" content="js数据类型以及相关操作">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-03T04:41:23.826Z">
+<meta property="og:updated_time" content="2018-03-06T15:39:13.368Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js数据类型、类型转换">
 <meta name="twitter:description" content="js数据类型以及相关操作">
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  985
+                  1,240
                 </span>
               
 
@@ -464,7 +464,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  6
                 </span>
               
             </div>
@@ -486,275 +486,15 @@
 
       
         <h3 id="js数据类型以及相关操作"><a href="#js数据类型以及相关操作" class="headerlink" title="js数据类型以及相关操作"></a>js数据类型以及相关操作</h3><a id="more"></a>  
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-&lt;title&gt;无标题文档&lt;/title&gt;
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">/*</span></span><br><span class="line"><span class="undefined">ECMAScript：标准、核心</span></span><br><span class="line"><span class="undefined">HTML 标签类型：block、inline、inline-block、table……</span></span><br><span class="line"><span class="javascript">JS中的数据类型：数字、字符串、布尔、函数、对象(obj、[]、&#123;&#125;、<span class="literal">null</span>)、未定义</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">typeof</span> 判断数据类型</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">*/</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> i = <span class="number">100</span>;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof i );			// number</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> s = <span class="string">' miaov '</span>;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof s );				// string</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( s.length );				// 7</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( s.charAt(3) );		// 'a'</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> b = <span class="literal">true</span>;				<span class="comment">// 布尔值：true  false</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof b );		// boolean</span></span></span><br><span class="line"><span class="javascript"><span class="keyword">if</span> ( <span class="literal">true</span> ) &#123;&#125;</span></span><br><span class="line"><span class="javascript"><span class="keyword">for</span> ( ; <span class="literal">false</span> ; ) &#123;  &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> fn = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="number">1</span>); &#125;;</span></span><br><span class="line"><span class="javascript"><span class="comment">// fn();</span></span></span><br><span class="line"><span class="javascript"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="undefined">	alert(2);</span></span><br><span class="line"><span class="undefined">&#125;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( fn1 );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// fn1();</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> obj = <span class="built_in">document</span>;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof obj );				// object  物体、东西、对象</span></span></span><br><span class="line"><span class="undefined">obj.abc = 123;</span></span><br><span class="line"><span class="javascript">obj.onOff = <span class="literal">true</span>;</span></span><br><span class="line"><span class="javascript">obj.fn1 = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="number">1</span>); &#125;;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( document.onOff );		// 123</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// obj.fn1();</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> arr = [ <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span> ];</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( arr.length );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// arr[2] = 345;</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( arr );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// arr.push( 5,6,7 );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( arr );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof arr );		// object</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">arr.abc = 999;</span></span><br><span class="line"><span class="javascript">arr.fn1 = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="string">'ok'</span>); &#125;;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( arr.abc );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// arr.fn1();</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> json = &#123; <span class="attr">name</span>:<span class="string">'miaov'</span>, <span class="attr">age</span>:<span class="number">5</span>  &#125;;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( json.name + '今年' + json.age + '岁了' );</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof json );//object</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> n = <span class="literal">null</span>;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof n );//空的东西不能添加属性</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> u;</span></span><br><span class="line"><span class="javascript"><span class="comment">// alert( typeof u );			// undefined 未定义</span></span></span><br><span class="line"><span class="javascript"><span class="comment">// 表示你写的程序出问题了~~</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="数据类型转换-显式类型转换"><a href="#数据类型转换-显式类型转换" class="headerlink" title="数据类型转换(显式类型转换)"></a>数据类型转换(显式类型转换)</h3><h4 id="字符串变成数字"><a href="#字符串变成数字" class="headerlink" title="字符串变成数字"></a>字符串变成数字</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">	&lt;!DOCTYPE HTML&gt;</span><br><span class="line">	&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">	&lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">	&lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">	</span></span><br><span class="line"><span class="regexp">	&lt;script&gt;</span></span><br><span class="line"><span class="regexp">	</span></span><br><span class="line"><span class="regexp">	var a = '+100';</span></span><br><span class="line"><span class="regexp">	/</span><span class="regexp">/ alert( a+100 );		/</span><span class="regexp">/ '100100'</span></span><br><span class="line"><span class="regexp">	/</span><span class="regexp">/ alert( Number(a) );			/</span><span class="regexp">/ 100</span></span><br><span class="line"><span class="regexp">	var a1 = '    ';</span></span><br><span class="line"><span class="regexp">	/</span><span class="regexp">/ alert( Number(a1) );		/</span><span class="regexp">/ 0</span></span><br><span class="line"><span class="regexp">	var a2 = true;</span></span><br><span class="line"><span class="regexp">	/</span><span class="regexp">/ alert( Number(a2) );			/</span><span class="regexp">/ true-1  false-0</span></span><br><span class="line"><span class="regexp">	var a3=[];</span></span><br><span class="line"><span class="regexp">	alert(Number(a3));             /</span><span class="regexp">/0</span></span><br><span class="line"><span class="regexp">	var a3=[''];</span></span><br><span class="line"><span class="regexp">	alert(Number(a3));             /</span><span class="regexp">/0</span></span><br><span class="line"><span class="regexp">	var a3 = [ 1 ];</span></span><br><span class="line"><span class="regexp">	/</span><span class="regexp">/ alert( Number(a3) );			/</span><span class="regexp">/ 1 </span></span><br><span class="line"><span class="regexp">	var a4 = null;</span></span><br><span class="line"><span class="regexp">	/</span><span class="regexp">/ alert( Number(a4) );				/</span><span class="regexp">/ 0</span></span><br><span class="line"><span class="regexp">	var a3=function()&#123;alert(1);&#125;;</span></span><br><span class="line"><span class="regexp">	alert(Number(a3));              /</span><span class="regexp">/NaN  </span></span><br><span class="line"><span class="regexp">/</span><span class="comment">///////////////////////////////////////////////////////////////////////////</span></span><br><span class="line">    <span class="keyword">var</span> json = &#123;&#125;;</span><br><span class="line">	<span class="comment">// alert( Number(json) );   //NaN</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> u;</span><br><span class="line">	<span class="comment">// alert( Number(u) );   //NaN</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> a3 = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="number">1</span>); &#125;;</span><br><span class="line">	<span class="comment">// alert( Number(a3) );			// NaN</span></span><br><span class="line"> &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">	&lt;/</span>head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">	&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="parseInt与parseFloat的区别与小技巧"><a href="#parseInt与parseFloat的区别与小技巧" class="headerlink" title="parseInt与parseFloat的区别与小技巧"></a>parseInt与parseFloat的区别与小技巧</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> b = <span class="string">' 200px'</span>;</span><br><span class="line"> alert( <span class="built_in">parseInt</span>(b) );      <span class="comment">//200  默认十进制</span></span><br><span class="line"></span><br><span class="line"> <span class="keyword">var</span> b = <span class="string">' 200px'</span>;</span><br><span class="line"> alert( <span class="built_in">parseInt</span>(b，<span class="number">16</span>进制) );      <span class="comment">//200  十六进制</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = <span class="string">' 200px1234567'</span>;</span><br><span class="line"> alert( <span class="built_in">parseInt</span>(b) );      <span class="comment">//200 </span></span><br><span class="line"></span><br><span class="line"> <span class="keyword">var</span> c = <span class="string">'12.34元'</span>;</span><br><span class="line"><span class="comment">// alert( parseInt(c) );    //12</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c = <span class="string">'12.34元'</span>;</span><br><span class="line"><span class="comment">// alert( parseFloat(c) );  //12.34</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c = <span class="string">'12.3.4元'</span>;</span><br><span class="line"><span class="comment">// alert( parseFloat(c) );  //12.3</span></span><br></pre></td></tr></table></figure>
+<p>验证是整数还是小数<br>​<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="string">'200.45'</span>;    </span><br><span class="line"><span class="keyword">if</span>( <span class="built_in">parseInt</span>(num) == <span class="built_in">parseFloat</span>(num) )&#123;</span><br><span class="line">	alert( num + <span class="string">'是整数'</span> );</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	alert( num + <span class="string">'是小数'</span> );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="js中稀奇古怪的隐式类型转换"><a href="#js中稀奇古怪的隐式类型转换" class="headerlink" title="js中稀奇古怪的隐式类型转换"></a>js中稀奇古怪的隐式类型转换</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">    &lt;script&gt;</span></span><br><span class="line"><span class="regexp">    /</span>*</span><br><span class="line">    显式类型转换（强制类型转换）：</span><br><span class="line">    <span class="built_in">Number</span>()</span><br><span class="line">    <span class="built_in">parseInt</span>()</span><br><span class="line">    <span class="built_in">parseFloat</span>()</span><br><span class="line"></span><br><span class="line">    隐式类型转换：</span><br><span class="line">    	+								<span class="number">200</span> + <span class="string">'3'</span>		变成字符串</span><br><span class="line">    	- * <span class="regexp">/ %				'200' - 3     变成数字</span></span><br><span class="line"><span class="regexp">    	++ --						变成数字</span></span><br><span class="line"><span class="regexp">    	&gt; &lt; 						数字的比较 、字符串的比较</span></span><br><span class="line"><span class="regexp">    	!	取反					把右边的数据类型转成布尔值</span></span><br><span class="line"><span class="regexp">    	==     </span></span><br><span class="line"><span class="regexp">    */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// alert( Number('……') );			NaN</span></span><br><span class="line">    <span class="comment">// alert( '……'-9 );									NaN</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// alert( '2' == 2 );</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//字符串的比较</span></span><br><span class="line">    <span class="comment">// alert( '10000000' &gt; '9' );//false 一位一位地比较</span></span><br><span class="line">    <span class="comment">// 数字的比较与字符串的比较</span></span><br><span class="line">    <span class="comment">// '1000000'   '9'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// alert( '2' == 2 );  //true   判断值，所以两个等号可以转换</span></span><br><span class="line">    alert(<span class="string">'2'</span>===<span class="number">2</span>); <span class="comment">//三个等号更严谨，先去判断类型，再去判断值</span></span><br><span class="line">    alert(!<span class="string">'ok'</span>);   <span class="comment">//false</span></span><br><span class="line">    &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// JS中的数据类型：数字（NaN）、字符串、布尔、函数、对象(obj、[]、&#123;&#125;、null)、未定义</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> a = <span class="built_in">Number</span>(<span class="string">'abc'</span>);</span></span><br><span class="line"><span class="javascript">    <span class="comment">// alert( a );			// NaN</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// NaN：not a number 不是个 数字 的 数字类型</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// alert( typeof (a) );			// number</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// 一旦写程序中出现：NaN  肯定进行了非法的运算操作</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// alert( '200px' -  100 );</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// NaN 是 false</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">if</span> (a) &#123;</span></span><br><span class="line"><span class="javascript">        alert( <span class="string">'真'</span> );</span></span><br><span class="line"><span class="javascript">    &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">        alert( <span class="string">'假'</span> );</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> abc = [];</span></span><br><span class="line"><span class="javascript">    <span class="comment">// alert( abc === abc );				true</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">// NaN 与自己都不相等！！除了NaN以外，其他的数据类型都是自己和自己相等的</span></span></span><br><span class="line"><span class="javascript">    alert(a === a); <span class="comment">// false</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">isNaN</span>();<span class="comment">//判断某些值是不是数字类型  不是数字true  是数字 false</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//在内部是根据Number来进行转换，转换之后进行判断</span></span></span><br><span class="line"><span class="javascript">    alert(<span class="built_in">isNaN</span>(<span class="string">'250'</span>));<span class="comment">//'250'--250--false</span></span></span><br><span class="line"><span class="javascript">    alert(<span class="built_in">isNaN</span>(<span class="literal">true</span>));<span class="comment">//true--1--false</span></span></span><br><span class="line"><span class="javascript">    alert(<span class="built_in">isNaN</span>([]));<span class="comment">//[]--0--false</span></span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="isNaN-小应用"><a href="#isNaN-小应用" class="headerlink" title="isNaN()小应用"></a>isNaN()小应用</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> aInp = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'input'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> str = <span class="string">''</span>;</span></span><br><span class="line"><span class="javascript">        aInp[<span class="number">1</span>].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="undefined">            str = aInp[0].value;</span></span><br><span class="line"><span class="javascript">            <span class="comment">// HTML 中拿到的内容，类型都是字符串</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">// alert( typeof str );</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            <span class="keyword">if</span> (<span class="built_in">isNaN</span>(str)) &#123;</span></span><br><span class="line"><span class="javascript">                alert(str + <span class="string">'不是数字'</span>);</span></span><br><span class="line"><span class="javascript">            &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">                alert(str + <span class="string">'是数字'</span>);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"判断输入值是不是数字"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-&lt;script&gt;
-
-/*
-ECMAScript：标准、核心
-HTML 标签类型：block、inline、inline-block、table……
-JS中的数据类型：数字、字符串、布尔、函数、对象(obj、[]、{}、null)、未定义
-
-typeof 判断数据类型
-
-*/
-
-var i = 100;
-// alert( typeof i );            // number
-
-var s = &apos; miaov &apos;;
-// alert( typeof s );                // string
-// alert( s.length );                // 7
-// alert( s.charAt(3) );        // &apos;a&apos;
-
-var b = true;                // 布尔值：true  false
-// alert( typeof b );        // boolean
-if ( true ) {}
-for ( ; false ; ) {  }
-
-var fn = function (){ alert(1); };
-// fn();
-function fn1(){
-    alert(2);
-}
-// alert( fn1 );
-// fn1();
-
-var obj = document;
-// alert( typeof obj );                // object  物体、东西、对象
-obj.abc = 123;
-obj.onOff = true;
-obj.fn1 = function (){ alert(1); };
-// alert( document.onOff );        // 123
-// obj.fn1();
-
-var arr = [ 1,2,3,4 ];
-// alert( arr.length );
-// arr[2] = 345;
-// alert( arr );
-// arr.push( 5,6,7 );
-// alert( arr );
-// alert( typeof arr );        // object
-
-arr.abc = 999;
-arr.fn1 = function (){ alert(&apos;ok&apos;); };
-// alert( arr.abc );
-// arr.fn1();
-
-var json = { name:&apos;miaov&apos;, age:5  };
-// alert( json.name + &apos;今年&apos; + json.age + &apos;岁了&apos; );
-// alert( typeof json );//object
-
-var n = null;
-// alert( typeof n );//空的东西不能添加属性
-
-var u;
-// alert( typeof u );            // undefined 未定义
-// 表示你写的程序出问题了~~
-
-&lt;/script&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;  
-</code></pre><h3 id="数据类型转换-显式类型转换"><a href="#数据类型转换-显式类型转换" class="headerlink" title="数据类型转换(显式类型转换)"></a>数据类型转换(显式类型转换)</h3><h4 id="字符串变成数字"><a href="#字符串变成数字" class="headerlink" title="字符串变成数字"></a>字符串变成数字</h4><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-&lt;title&gt;无标题文档&lt;/title&gt;
-
-&lt;script&gt;
-
-var a = &apos;+100&apos;;
-// alert( a+100 );        // &apos;100100&apos;
-// alert( Number(a) );            // 100
-var a1 = &apos;    &apos;;
-// alert( Number(a1) );        // 0
-var a2 = true;
-// alert( Number(a2) );            // true-1  false-0
-var a3=[];
-alert(Number(a3));             //0
-var a3=[&apos;&apos;];
-alert(Number(a3));             //0
-var a3 = [ 1 ];
-// alert( Number(a3) );            // 1 
-var a4 = null;
-// alert( Number(a4) );                // 0
-var a3=function(){alert(1);};
-alert(Number(a3));              //NaN  
-
-
-
-
-////////////////////////////////////////////////////////////////////////////
-
-var json = {};
-// alert( Number(json) );   //NaN
-
-var u;
-// alert( Number(u) );   //NaN
-
-var a3 = function (){ alert(1); };
-// alert( Number(a3) );            // NaN
-
-
-
-&lt;/script&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h4 id="parseInt与parseFloat的区别与小技巧"><a href="#parseInt与parseFloat的区别与小技巧" class="headerlink" title="parseInt与parseFloat的区别与小技巧"></a>parseInt与parseFloat的区别与小技巧</h4><pre><code> var b = &apos; 200px&apos;;
- alert( parseInt(b) );      //200  默认十进制
-
- var b = &apos; 200px&apos;;
- alert( parseInt(b，16进制) );      //200  十六进制
-
-var b = &apos; 200px1234567&apos;;
- alert( parseInt(b) );      //200 
-
- var c = &apos;12.34元&apos;;
-// alert( parseInt(c) );    //12
-
-var c = &apos;12.34元&apos;;
-// alert( parseFloat(c) );  //12.34
-
-var c = &apos;12.3.4元&apos;;
-// alert( parseFloat(c) );  //12.3
-</code></pre><p>验证是整数还是小数</p>
-<pre><code>var num = &apos;200.45&apos;;    
-if( parseInt(num) == parseFloat(num) ){
-    alert( num + &apos;是整数&apos; );
-}else{
-    alert( num + &apos;是小数&apos; );
-}
-</code></pre><h3 id="js中稀奇古怪的隐式类型转换"><a href="#js中稀奇古怪的隐式类型转换" class="headerlink" title="js中稀奇古怪的隐式类型转换"></a>js中稀奇古怪的隐式类型转换</h3><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    /*
-    显式类型转换（强制类型转换）：
-    Number()
-    parseInt()
-    parseFloat()
-
-    隐式类型转换：
-        +                                200 + &apos;3&apos;        变成字符串
-        - * / %                &apos;200&apos; - 3     变成数字
-        ++ --                        变成数字
-        &gt; &lt;                         数字的比较 、字符串的比较
-        !    取反                    把右边的数据类型转成布尔值
-        ==     
-    */
-
-    // alert( Number(&apos;……&apos;) );            NaN
-    // alert( &apos;……&apos;-9 );                                    NaN
-
-    // alert( &apos;2&apos; == 2 );
-
-
-//字符串的比较
-    // alert( &apos;10000000&apos; &gt; &apos;9&apos; );//false 一位一位地比较
-    // 数字的比较与字符串的比较
-    // &apos;1000000&apos;   &apos;9&apos;
-
-    // alert( &apos;2&apos; == 2 );  //true   判断值，所以两个等号可以转换
-    alert(&apos;2&apos;===2); //三个等号更严谨，先去判断类型，再去判断值
-    alert(!&apos;ok&apos;);   //false
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre><h3 id="NaN"><a href="#NaN" class="headerlink" title="NaN"></a>NaN</h3><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    // JS中的数据类型：数字（NaN）、字符串、布尔、函数、对象(obj、[]、{}、null)、未定义
-
-    var a = Number(&apos;abc&apos;);
-    // alert( a );            // NaN
-
-    // NaN：not a number 不是个 数字 的 数字类型
-
-    // alert( typeof (a) );            // number
-
-    // 一旦写程序中出现：NaN  肯定进行了非法的运算操作
-    // alert( &apos;200px&apos; -  100 );
-
-    // NaN 是 false
-    if (a) {
-        alert( &apos;真&apos; );
-    } else {
-        alert( &apos;假&apos; );
-    }
-
-    var abc = [];
-    // alert( abc === abc );                true
-
-    // NaN 与自己都不相等！！除了NaN以外，其他的数据类型都是自己和自己相等的
-    alert(a === a); // false
-
-    isNaN();//判断某些值是不是数字类型  不是数字true  是数字 false
-    //在内部是根据Number来进行转换，转换之后进行判断
-    alert(isNaN(&apos;250&apos;));//&apos;250&apos;--250--false
-    alert(isNaN(true));//true--1--false
-    alert(isNaN([]));//[]--0--false
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><h4 id="isNaN-小应用"><a href="#isNaN-小应用" class="headerlink" title="isNaN()小应用"></a>isNaN()小应用</h4><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aInp = document.getElementsByTagName(&apos;input&apos;);
-        var str = &apos;&apos;;
-        aInp[1].onclick = function() {
-            str = aInp[0].value;
-            // HTML 中拿到的内容，类型都是字符串
-            // alert( typeof str );
-
-            if (isNaN(str)) {
-                alert(str + &apos;不是数字&apos;);
-            } else {
-                alert(str + &apos;是数字&apos;);
-            }
-        };
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;text&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;判断输入值是不是数字&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
       
     </div>
     
@@ -1089,7 +829,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.3k</span>
+    <span title="Site words total count">19.6k</span>
   
 </div>
 

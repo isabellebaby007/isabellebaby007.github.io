@@ -153,7 +153,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei1.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei2.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/自定义属性/pipei3.png">
-<meta property="og:updated_time" content="2018-03-01T20:45:41.481Z">
+<meta property="og:updated_time" content="2018-03-06T15:00:05.944Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自定义属性">
 <meta name="twitter:description" content="什么是自定义属性通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性">
@@ -458,7 +458,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,137
+                  1,494
                 </span>
               
 
@@ -474,7 +474,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  8
                 </span>
               
             </div>
@@ -496,376 +496,26 @@
 
       
         <h3 id="什么是自定义属性"><a href="#什么是自定义属性" class="headerlink" title="什么是自定义属性"></a>什么是自定义属性</h3><p>通俗地讲，就是js往html上添加东西。js可以为任何html元素添加任意个自定义属性。例如下面程序的abc、xyz就是自定义属性 <a id="more"></a> </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-
-    window.onload = function() {
-        var aBtn = document.getElementsByTagName(&apos;input&apos;);
-
-        for (var i = 0; i &lt; aBtn.length; i++) {
-            aBtn[i].abc = 123;
-            aBtn[i].xyz = true;
-        }
-         alert(aBtn[0].abc);
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;button&quot; value=&quot;按钮1&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;按钮2&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;按钮3&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre><p><img src="/2018/03/02/自定义属性/zidingyi.png" alt=""></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">    &lt;script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    window.onload = function() &#123;</span></span><br><span class="line"><span class="regexp">        var aBtn = document.getElementsByTagName('input');</span></span><br><span class="line"><span class="regexp">       </span></span><br><span class="line"><span class="regexp">        for (var i = 0; i &lt; aBtn.length; i++) &#123;</span></span><br><span class="line"><span class="regexp">            aBtn[i].abc = 123;</span></span><br><span class="line"><span class="regexp">            aBtn[i].xyz = true;</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">         alert(aBtn[0].abc);</span></span><br><span class="line"><span class="regexp">    &#125;;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="button" value="按钮1" /</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"按钮2"</span> /&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"按钮3"</span> /&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/02/自定义属性/zidingyi.png" alt=""></p>
 <h3 id="应用1-自定义一组开关应用"><a href="#应用1-自定义一组开关应用" class="headerlink" title="应用1:自定义一组开关应用"></a>应用1:自定义一组开关应用</h3><p>注意不能当作判断条件的有1、背景不能判断 2、color不能判断 3、相对路径不能当作判断条件  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;style&gt;
-    li {
-        list-style: none;
-        width: 114px;
-        height: 140px;
-        background: url(img/normal.png);
-        float: left;
-        margin-right: 20px;
-    }
-    &lt;/style&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aLi = document.getElementsByTagName(&apos;li&apos;);
-        // var onOff = true;    // 只能控制一组！
-
-        for (var i = 0; i &lt; aLi.length; i++) {
-
-            aLi[i].onOff = true;//给每个要控制的元素都添加一个开关
-
-            aLi[i].onclick = function() {
-
-                // alert( this.style.background );
-
-
-                if (this.onOff) {
-                    this.style.background = &apos;url(img/active.png)&apos;;
-                    this.onOff = false;
-                } else {
-                    this.style.background = &apos;url(img/normal.png)&apos;;
-                    this.onOff = true;
-                }
-            };
-        }
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre><p><img src="/2018/03/02/自定义属性/kaiguan1.png" alt="">  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">    &lt;style&gt;</span></span><br><span class="line"><span class="regexp">    li &#123;</span></span><br><span class="line"><span class="regexp">        list-style: none;</span></span><br><span class="line"><span class="regexp">        width: 114px;</span></span><br><span class="line"><span class="regexp">        height: 140px;</span></span><br><span class="line"><span class="regexp">        background: url(img/</span>normal.png);</span><br><span class="line">        float: left;</span><br><span class="line">        margin-right: <span class="number">20</span>px;</span><br><span class="line">    &#125;</span><br><span class="line">    &lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">    &lt;script&gt;</span></span><br><span class="line"><span class="regexp">    window.onload = function() &#123;</span></span><br><span class="line"><span class="regexp">        var aLi = document.getElementsByTagName('li');</span></span><br><span class="line"><span class="regexp">        /</span><span class="regexp">/ var onOff = true;	/</span><span class="regexp">/ 只能控制一组！</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        for (var i = 0; i &lt; aLi.length; i++) &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aLi[i].onOff = true;/</span><span class="regexp">/给每个要控制的元素都添加一个开关</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aLi[i].onclick = function() &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">                /</span><span class="regexp">/ alert( this.style.background );</span></span><br><span class="line"><span class="regexp">           </span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">                if (this.onOff) &#123;</span></span><br><span class="line"><span class="regexp">                    this.style.background = 'url(img/</span>active.png)<span class="string">';</span></span><br><span class="line"><span class="string">                    this.onOff = false;</span></span><br><span class="line"><span class="string">                &#125; else &#123;</span></span><br><span class="line"><span class="string">                    this.style.background = '</span>url(img/normal.png)<span class="string">';</span></span><br><span class="line"><span class="string">                    this.onOff = true;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string">            &#125;;</span></span><br><span class="line"><span class="string">        &#125;</span></span><br><span class="line"><span class="string">    &#125;;</span></span><br><span class="line"><span class="string">    &lt;/script&gt;</span></span><br><span class="line"><span class="string">&lt;/head&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;body&gt;</span></span><br><span class="line"><span class="string">    &lt;ul&gt;</span></span><br><span class="line"><span class="string">        &lt;li&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">        &lt;li&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">        &lt;li&gt;&lt;/li&gt;</span></span><br><span class="line"><span class="string">    &lt;/ul&gt;</span></span><br><span class="line"><span class="string">&lt;/body&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;/html&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/02/自定义属性/kaiguan1.png" alt="">  </p>
 <p><img src="/2018/03/02/自定义属性/kaiguan2.png" alt="">  </p>
-<h3 id="应用2：获取自身递增数字及匹配数组内容"><a href="#应用2：获取自身递增数字及匹配数组内容" class="headerlink" title="应用2：获取自身递增数字及匹配数组内容"></a>应用2：获取自身递增数字及匹配数组内容</h3><p>相当于一个按钮就可以 控制一组东西的变化  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aBtn = document.getElementsByTagName(&apos;input&apos;);
-        var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;];
-
-        for (var i = 0; i &lt; aBtn.length; i++) {
-
-            aBtn[i].num = 0;
-
-            aBtn[i].onclick = function() {
-                // alert( arr[ this.num ] );
-                this.value = arr[this.num];
-
-                this.num++;
-                if (this.num === arr.length) {
-                    this.num = 0;
-                }
-            };
-        }
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;0&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/03/02/自定义属性/zizeng.png" alt=""> </p>
-<h3 id="应用3：添加索引值、匹配数组"><a href="#应用3：添加索引值、匹配数组" class="headerlink" title="应用3：添加索引值、匹配数组"></a>应用3：添加索引值、匹配数组</h3><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aBtn = document.getElementsByTagName(&apos;input&apos;);
-
-        for (var i = 0; i &lt; aBtn.length; i++) {
-
-            aBtn[i].index = i; // 自定义属性（索引值）
-
-            aBtn[i].onclick = function() {
-
-                // alert( i );            
-                alert(this.index); //添加索引值，自定义索引值
-
-            };
-        }
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/03/02/自定义属性/index1.png" alt="">  </p>
+<h3 id="应用2：获取自身递增数字及匹配数组内容"><a href="#应用2：获取自身递增数字及匹配数组内容" class="headerlink" title="应用2：获取自身递增数字及匹配数组内容"></a>应用2：获取自身递增数字及匹配数组内容</h3><p>相当于一个按钮就可以 控制一组东西的变化 </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> aBtn = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'input'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> arr = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; aBtn.length; i++) &#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">            aBtn[i].num = 0;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">            aBtn[i].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="comment">// alert( arr[ this.num ] );</span></span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.value = arr[<span class="keyword">this</span>.num];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.num++;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">if</span> (<span class="keyword">this</span>.num === arr.length) &#123;</span></span><br><span class="line"><span class="javascript">                    <span class="keyword">this</span>.num = <span class="number">0</span>;</span></span><br><span class="line"><span class="undefined">                &#125;</span></span><br><span class="line"><span class="undefined">            &#125;;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"0"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"0"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"0"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/02/自定义属性/zizeng.png" alt=""> </p>
+<h3 id="应用3：添加索引值、匹配数组"><a href="#应用3：添加索引值、匹配数组" class="headerlink" title="应用3：添加索引值、匹配数组"></a>应用3：添加索引值、匹配数组</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">    &lt;script&gt;</span></span><br><span class="line"><span class="regexp">    window.onload = function() &#123;</span></span><br><span class="line"><span class="regexp">        var aBtn = document.getElementsByTagName('input');</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        for (var i = 0; i &lt; aBtn.length; i++) &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aBtn[i].index = i; /</span><span class="regexp">/ 自定义属性（索引值）</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aBtn[i].onclick = function() &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">                /</span><span class="regexp">/ alert( i );			</span></span><br><span class="line"><span class="regexp">                alert(this.index); /</span><span class="regexp">/添加索引值，自定义索引值</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            &#125;;</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="button" value="btn1" /</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"btn2"</span> /&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"btn3"</span> /&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/02/自定义属性/index1.png" alt="">  </p>
 <p><img src="/2018/03/02/自定义属性/index2.png" alt="">  </p>
 <h4 id="索引的引用"><a href="#索引的引用" class="headerlink" title="索引的引用"></a>索引的引用</h4><p>想建立“匹配”“对应”关系，就用索引值  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aBtn = document.getElementsByTagName(&apos;input&apos;);
-
-
-        var arr = [&apos;莫涛&apos;, &apos;张森&apos;, &apos;杜鹏&apos;];
-
-        for (var i = 0; i &lt; aBtn.length; i++) {
-
-            aBtn[i].index = i; // 自定义属性（索引值）
-
-            aBtn[i].onclick = function() {
-                // alert( arr[ this.index ] );
-                this.value = arr[this.index];
-            };
-        }
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  
-</code></pre><p><img src="/2018/03/02/自定义属性/pipei1.png" alt="">  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">    &lt;script&gt;</span></span><br><span class="line"><span class="regexp">    window.onload = function() &#123;</span></span><br><span class="line"><span class="regexp">        var aBtn = document.getElementsByTagName('input');</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        var arr = ['莫涛', '张森', '杜鹏'];</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        for (var i = 0; i &lt; aBtn.length; i++) &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aBtn[i].index = i; /</span><span class="regexp">/ 自定义属性（索引值）</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aBtn[i].onclick = function() &#123;</span></span><br><span class="line"><span class="regexp">                /</span><span class="regexp">/ alert( arr[ this.index ] );</span></span><br><span class="line"><span class="regexp">                this.value = arr[this.index];</span></span><br><span class="line"><span class="regexp">            &#125;;</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="button" value="btn1" /</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"btn2"</span> /&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"btn3"</span> /&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/02/自定义属性/pipei1.png" alt="">  </p>
 <p><img src="/2018/03/02/自定义属性/pipei2.png" alt="">  </p>
-<h4 id="通过索引将按钮和P匹配"><a href="#通过索引将按钮和P匹配" class="headerlink" title="通过索引将按钮和P匹配"></a>通过索引将按钮和P匹配</h4><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
+<h4 id="通过索引将按钮和P匹配"><a href="#通过索引将按钮和P匹配" class="headerlink" title="通过索引将按钮和P匹配"></a>通过索引将按钮和P匹配</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;无标题文档&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">    &lt;script&gt;</span></span><br><span class="line"><span class="regexp">    window.onload = function() &#123;</span></span><br><span class="line"><span class="regexp">        var aBtn = document.getElementsByTagName('input');</span></span><br><span class="line"><span class="regexp">        var aP = document.getElementsByTagName('p');</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        var arr = ['马云', '马化腾', '李彦宏'];</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        for (var i = 0; i &lt; aBtn.length; i++) &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aBtn[i].index = i; /</span><span class="regexp">/ 自定义属性（索引值）</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            aBtn[i].onclick = function() &#123;</span></span><br><span class="line"><span class="regexp">                /</span><span class="regexp">/ alert( arr[ this.index ] );</span></span><br><span class="line"><span class="regexp">                this.value = arr[this.index];</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">                aP[this.index].innerHTML = arr[this.index];</span></span><br><span class="line"><span class="regexp">            &#125;;</span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/head&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;body&gt;</span></span><br><span class="line"><span class="regexp">    &lt;input type="button" value="btn1" /</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"btn2"</span> /&gt;</span><br><span class="line">    &lt;input type=<span class="string">"button"</span> value=<span class="string">"btn3"</span> /&gt;</span><br><span class="line">    &lt;p&gt;a&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">    &lt;p&gt;b&lt;/</span>p&gt;</span><br><span class="line">    &lt;p&gt;c&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="regexp">/html&gt;  hexo</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/02/自定义属性/pipei3.png" alt="">  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    ul &#123;</span></span><br><span class="line"><span class="undefined">        padding: 0;</span></span><br><span class="line"><span class="undefined">        margin: 0;</span></span><br><span class="line"><span class="css">    &#125;<span class="comment">/*样式的重置*/</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    li &#123;</span></span><br><span class="line"><span class="undefined">        list-style: none;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    body &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background</span>: <span class="selector-id">#333</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 400px;</span></span><br><span class="line"><span class="undefined">        height: 500px;</span></span><br><span class="line"><span class="undefined">        position: relative;</span></span><br><span class="line"><span class="undefined">        margin: 0 auto;</span></span><br><span class="line"><span class="undefined">        background: url(img/loader_ico.gif) no-repeat center #fff;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">img</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 400px;</span></span><br><span class="line"><span class="undefined">        height: 500px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">ul</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 40px;</span></span><br><span class="line"><span class="undefined">        position: absolute;</span></span><br><span class="line"><span class="undefined">        top: 0;</span></span><br><span class="line"><span class="undefined">        right: -50px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">li</span> &#123;</span></span><br><span class="line"><span class="undefined">        width: 40px;</span></span><br><span class="line"><span class="undefined">        height: 40px;</span></span><br><span class="line"><span class="undefined">        margin-bottom: 4px;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background</span>: <span class="selector-id">#666</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-class">.active</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background</span>: <span class="selector-id">#FC3</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">span</span> &#123;</span></span><br><span class="line"><span class="undefined">        top: 0;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">p</span> &#123;</span></span><br><span class="line"><span class="undefined">        bottom: 0;</span></span><br><span class="line"><span class="undefined">        margin: 0;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">p</span>,</span></span><br><span class="line"><span class="css">    <span class="selector-id">#pic</span> <span class="selector-tag">span</span> &#123;</span></span><br><span class="line"><span class="undefined">        position: absolute;</span></span><br><span class="line"><span class="undefined">        left: 0;</span></span><br><span class="line"><span class="undefined">        width: 400px;</span></span><br><span class="line"><span class="undefined">        height: 30px;</span></span><br><span class="line"><span class="undefined">        line-height: 30px;</span></span><br><span class="line"><span class="undefined">        text-align: center;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">color</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background</span>: <span class="selector-id">#000</span>;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oDiv = <span class="built_in">document</span>.getElementById(<span class="string">'pic'</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oImg = oDiv.getElementsByTagName(<span class="string">'img'</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oSpan = oDiv.getElementsByTagName(<span class="string">'span'</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oP = oDiv.getElementsByTagName(<span class="string">'p'</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oUl = oDiv.getElementsByTagName(<span class="string">'ul'</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> aLi = oUl.getElementsByTagName(<span class="string">'li'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> arrUrl = [<span class="string">'img/1.png'</span>, <span class="string">'img/2.png'</span>, <span class="string">'img/3.png'</span>, <span class="string">'img/4.png'</span>];</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> arrText = [<span class="string">'小宠物'</span>, <span class="string">'图片二'</span>, <span class="string">'图片三'</span>, <span class="string">'面具'</span>];</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> num = <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oldLi = <span class="literal">null</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arrUrl.length; i++) &#123;</span></span><br><span class="line"><span class="xml">            oUl.innerHTML += '<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>';</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">        oldLi = aLi[num];</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">// 初始化</span></span></span><br><span class="line"><span class="undefined">        oImg.src = arrUrl[num];</span></span><br><span class="line"><span class="javascript">        oSpan.innerHTML = <span class="number">1</span> + num + <span class="string">' / '</span> + arrUrl.length;</span></span><br><span class="line"><span class="undefined">        oP.innerHTML = arrText[num];</span></span><br><span class="line"><span class="javascript">        aLi[num].className = <span class="string">'active'</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; aLi.length; i++) &#123;</span></span><br><span class="line"><span class="javascript">            aLi[i].index = i; <span class="comment">// 索引值</span></span></span><br><span class="line"><span class="javascript">            aLi[i].onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                oImg.src = arrUrl[<span class="keyword">this</span>.index];</span></span><br><span class="line"><span class="javascript">                oP.innerHTML = arrText[<span class="keyword">this</span>.index];</span></span><br><span class="line"><span class="javascript">                oSpan.innerHTML = <span class="number">1</span> + <span class="keyword">this</span>.index + <span class="string">' / '</span> + arrText.length;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                /*</span></span><br><span class="line"><span class="javascript">                	&lt;li <span class="class"><span class="keyword">class</span></span>=<span class="string">"active"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></span><br><span class="line"><span class="javascript">                	&lt;li&gt;<span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></span><br><span class="line"><span class="javascript">                	&lt;li&gt;<span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></span><br><span class="line"><span class="javascript">                	&lt;li&gt;<span class="xml"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span></span><br><span class="line"><span class="undefined">                */</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">                <span class="comment">// 思路一：全部清空，当前添加</span></span></span><br><span class="line"><span class="javascript">                <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; aLi.length; i++) &#123;</span></span><br><span class="line"><span class="javascript">                    aLi[i].className = <span class="string">''</span>;</span></span><br><span class="line"><span class="undefined">                &#125;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.className = <span class="string">'active'</span>;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                /*</span></span><br><span class="line"><span class="javascript">                <span class="comment">// 思路二：清空上个，当前添加</span></span></span><br><span class="line"><span class="javascript">                oldLi.className = <span class="string">''</span>;</span></span><br><span class="line"><span class="javascript">                oldLi = <span class="keyword">this</span>;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.className = <span class="string">'active'</span>;</span></span><br><span class="line"><span class="undefined">                */</span></span><br><span class="line"><span class="undefined">            &#125;;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"pic"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>数量正在加载中……<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>文字说明正在加载中……<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aBtn = document.getElementsByTagName(&apos;input&apos;);
-        var aP = document.getElementsByTagName(&apos;p&apos;);
-
-        var arr = [&apos;马云&apos;, &apos;马化腾&apos;, &apos;李彦宏&apos;];
-
-        for (var i = 0; i &lt; aBtn.length; i++) {
-
-            aBtn[i].index = i; // 自定义属性（索引值）
-
-            aBtn[i].onclick = function() {
-                // alert( arr[ this.index ] );
-                this.value = arr[this.index];
-
-                aP[this.index].innerHTML = arr[this.index];
-            };
-        }
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn1&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn2&quot; /&gt;
-    &lt;input type=&quot;button&quot; value=&quot;btn3&quot; /&gt;
-    &lt;p&gt;a&lt;/p&gt;
-    &lt;p&gt;b&lt;/p&gt;
-    &lt;p&gt;c&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;  hexo 
-</code></pre><p><img src="/2018/03/02/自定义属性/pipei3.png" alt="">  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;style&gt;
-    ul {
-        padding: 0;
-        margin: 0;
-    }/*样式的重置*/
-
-    li {
-        list-style: none;
-    }
-
-    body {
-        background: #333;
-    }
-
-    #pic {
-        width: 400px;
-        height: 500px;
-        position: relative;
-        margin: 0 auto;
-        background: url(img/loader_ico.gif) no-repeat center #fff;
-    }
-
-    #pic img {
-        width: 400px;
-        height: 500px;
-    }
-
-    #pic ul {
-        width: 40px;
-        position: absolute;
-        top: 0;
-        right: -50px;
-    }
-
-    #pic li {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 4px;
-        background: #666;
-    }
-
-    #pic .active {
-        background: #FC3;
-    }
-
-    #pic span {
-        top: 0;
-    }
-
-    #pic p {
-        bottom: 0;
-        margin: 0;
-    }
-
-    #pic p,
-    #pic span {
-        position: absolute;
-        left: 0;
-        width: 400px;
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        color: #fff;
-        background: #000;
-    }
-    &lt;/style&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var oDiv = document.getElementById(&apos;pic&apos;);
-        var oImg = oDiv.getElementsByTagName(&apos;img&apos;)[0];
-        var oSpan = oDiv.getElementsByTagName(&apos;span&apos;)[0];
-        var oP = oDiv.getElementsByTagName(&apos;p&apos;)[0];
-        var oUl = oDiv.getElementsByTagName(&apos;ul&apos;)[0];
-        var aLi = oUl.getElementsByTagName(&apos;li&apos;);
-
-        var arrUrl = [&apos;img/1.png&apos;, &apos;img/2.png&apos;, &apos;img/3.png&apos;, &apos;img/4.png&apos;];
-        var arrText = [&apos;小宠物&apos;, &apos;图片二&apos;, &apos;图片三&apos;, &apos;面具&apos;];
-        var num = 0;
-        var oldLi = null;
-
-        for (var i = 0; i &lt; arrUrl.length; i++) {
-            oUl.innerHTML += &apos;&lt;li&gt;&lt;/li&gt;&apos;;
-        }
-        oldLi = aLi[num];
-
-        // 初始化
-        oImg.src = arrUrl[num];
-        oSpan.innerHTML = 1 + num + &apos; / &apos; + arrUrl.length;
-        oP.innerHTML = arrText[num];
-        aLi[num].className = &apos;active&apos;;
-
-        for (var i = 0; i &lt; aLi.length; i++) {
-            aLi[i].index = i; // 索引值
-            aLi[i].onclick = function() {
-                oImg.src = arrUrl[this.index];
-                oP.innerHTML = arrText[this.index];
-                oSpan.innerHTML = 1 + this.index + &apos; / &apos; + arrText.length;
-
-                /*
-                    &lt;li class=&quot;active&quot;&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;/li&gt;
-                */
-
-                // 思路一：全部清空，当前添加
-                for (var i = 0; i &lt; aLi.length; i++) {
-                    aLi[i].className = &apos;&apos;;
-                }
-                this.className = &apos;active&apos;;
-
-                /*
-                // 思路二：清空上个，当前添加
-                oldLi.className = &apos;&apos;;
-                oldLi = this;
-                this.className = &apos;active&apos;;
-                */
-            };
-        }
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;div id=&quot;pic&quot;&gt;
-        &lt;img src=&quot;&quot; /&gt;
-        &lt;span&gt;数量正在加载中……&lt;/span&gt;
-        &lt;p&gt;文字说明正在加载中……&lt;/p&gt;
-        &lt;ul&gt;&lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
       
     </div>
     
@@ -1200,7 +850,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.3k</span>
+    <span title="Site words total count">19.6k</span>
   
 </div>
 

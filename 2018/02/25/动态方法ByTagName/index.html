@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="Isabelle的博客小站">
 <meta property="og:description" content="ById与ByTagName区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-26T14:29:59.172Z">
+<meta property="og:updated_time" content="2018-03-06T15:31:19.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态方法ByTagName">
 <meta name="twitter:description" content="ById与ByTagName区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。">
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  360
+                  419
                 </span>
               
 
@@ -485,71 +485,18 @@
       
 
       
-        <h3 id="ById与ByTagName"><a href="#ById与ByTagName" class="headerlink" title="ById与ByTagName"></a>ById与ByTagName</h3><h4 id="区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。"><a href="#区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。" class="headerlink" title="区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。"></a>区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。<a id="more"></a></h4><pre><code>var oUI=document.getElementById(&apos;list&apos;);
-document.getElementByTagName(&apos;li&apos;);
-var aLi=oUI.getElementsByTagName(&apos;li&apos;);
-</code></pre><h4 id="区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号-即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。"><a href="#区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号-即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。" class="headerlink" title="区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号[],即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。"></a>区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号[],即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。</h4><p>html部分： </p>
-<pre><code>&lt;body&gt;
-    &lt;ul id=&quot;list&quot;&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/body&gt;
-</code></pre><p>js部分：  </p>
-<pre><code>window.onload = function() {
-//    var oUl = document.getElementById(&apos;list&apos;);
-var oUl = document.getElementsByTagName(&apos;ul&apos;)[0];
-var aLi = oUl.getElementsByTagName(&apos;li&apos;);
-</code></pre><p>如在下例中，document.getElementByTagName找到的li，既包含了ul里面的li，又包含了ol里面的li。<br>html部分：  </p>
-<pre><code>&lt;body&gt;
-    &lt;ul id=&quot;list&quot;&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ol&gt;
-        &lt;li&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-&lt;/body&gt;
-</code></pre><p>js部分：  </p>
-<pre><code>window.onload = function() {
-document.getElementsByTagName(&apos;li&apos;);
-}
-</code></pre><p>区别3：ById是静态方法，ByTagName是动态方法  </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-&lt;title&gt;无标题文档&lt;/title&gt;
+        <h3 id="ById与ByTagName"><a href="#ById与ByTagName" class="headerlink" title="ById与ByTagName"></a>ById与ByTagName</h3><h4 id="区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。"><a href="#区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。" class="headerlink" title="区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。"></a>区别1：ById前面就只能跟document，不能跟别的元素；ByTagName前面可以跟别的元素。<a id="more"></a></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> oUI=<span class="built_in">document</span>.getElementById(<span class="string">'list'</span>);</span><br><span class="line"><span class="built_in">document</span>.getElementByTagName(<span class="string">'li'</span>);</span><br><span class="line"><span class="keyword">var</span> aLi=oUI.getElementsByTagName(<span class="string">'li'</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号-即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。"><a href="#区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号-即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。" class="headerlink" title="区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号[],即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。"></a>区别2：ById的方法找到的是一个元素，而ByTagName方法实际上找到的是多个东西，是元素的集合，在使用TagName的时候，必须要加上中括号[],即使页面上只有一个该标签元素，其实找到的也是一个集合。也就是说以后只要见到ByTagName方法，后面必须要跟一个中括号。</h4><p>html部分： </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"list"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js部分：  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="comment">//	var oUl = document.getElementById('list');</span></span><br><span class="line">   <span class="keyword">var</span> oUl = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'ul'</span>)[<span class="number">0</span>];</span><br><span class="line">   <span class="keyword">var</span> aLi = oUl.getElementsByTagName(<span class="string">'li'</span>);</span><br></pre></td></tr></table></figure>
+<p>如在下例中，document.getElementByTagName找到的li，既包含了ul里面的li，又包含了ol里面的li。<br>html部分：  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"list"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js部分：  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>区别3：ById是静态方法，ByTagName是动态方法  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">	<span class="comment">// document.title = 123;</span></span></span><br><span class="line"><span class="javascript">	<span class="comment">// document.body.innerHTML = 'abc';</span></span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> aBtn = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'input'</span>);</span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="javascript">	<span class="comment">// alert(aBtn.length);</span></span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="xml">	document.body.innerHTML = '<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span>';</span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="javascript">	<span class="comment">// alert(aBtn.length);</span></span></span><br><span class="line"><span class="javascript">	aBtn[<span class="number">0</span>].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="number">1</span>); &#125;;</span></span><br><span class="line"><span class="javascript">	aBtn[<span class="number">1</span>].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="number">1</span>); &#125;;</span></span><br><span class="line"><span class="javascript">	aBtn[<span class="number">2</span>].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123; alert(<span class="number">1</span>); &#125;;</span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="javascript">	<span class="comment">// 重复执行某些代码</span></span></span><br><span class="line"><span class="javascript">	<span class="comment">// 每次执行的时候，有个数字在变化</span></span></span><br><span class="line"><span class="undefined">&#125;;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-&lt;script&gt;
-window.onload = function (){
-    // document.title = 123;
-    // document.body.innerHTML = &apos;abc&apos;;
-    var aBtn = document.getElementsByTagName(&apos;input&apos;);
-
-    // alert(aBtn.length);
-
-    document.body.innerHTML = &apos;&lt;input type=&quot;button&quot; value=&quot;按钮&quot; /&gt;&lt;input type=&quot;button&quot; value=&quot;按钮&quot; /&gt;&lt;input type=&quot;button&quot; value=&quot;按钮&quot; /&gt;&apos;;
-
-    // alert(aBtn.length);
-    aBtn[0].onclick = function (){ alert(1); };
-    aBtn[1].onclick = function (){ alert(1); };
-    aBtn[2].onclick = function (){ alert(1); };
-
-    // 重复执行某些代码
-    // 每次执行的时候，有个数字在变化
-};
-&lt;/script&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
       
     </div>
     
@@ -884,7 +831,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.3k</span>
+    <span title="Site words total count">19.6k</span>
   
 </div>
 

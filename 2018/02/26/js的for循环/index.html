@@ -145,7 +145,7 @@
 <meta property="og:description" content="for应用：选取、生成、性能方法1：document.body.innerHTML添加使用这种方法添加多个元素的时候，性能不好。因为每一次添加元素的时候都要访问一次body">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/02/26/js的for循环/anniu.png">
-<meta property="og:updated_time" content="2018-02-26T15:07:20.123Z">
+<meta property="og:updated_time" content="2018-03-06T15:40:41.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js的for循环">
 <meta name="twitter:description" content="for应用：选取、生成、性能方法1：document.body.innerHTML添加使用这种方法添加多个元素的时候，性能不好。因为每一次添加元素的时候都要访问一次body">
@@ -450,7 +450,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  380
+                  443
                 </span>
               
 
@@ -488,73 +488,12 @@
 
       
         <h3 id="for应用：选取、生成、性能"><a href="#for应用：选取、生成、性能" class="headerlink" title="for应用：选取、生成、性能"></a>for应用：选取、生成、性能</h3><h4 id="方法1：document-body-innerHTML添加"><a href="#方法1：document-body-innerHTML添加" class="headerlink" title="方法1：document.body.innerHTML添加"></a>方法1：document.body.innerHTML添加</h4><p>使用这种方法添加多个元素的时候，性能不好。因为每一次添加元素的时候都要访问一次body <a id="more"></a> </p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="actionscript">	<span class="comment">// 性能有问题！！！			</span></span></span><br><span class="line"><span class="actionscript">	<span class="keyword">for</span>( <span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">6000</span>; i++ )&#123;</span></span><br><span class="line"><span class="handlebars"><span class="xml">		document.body.innerHTML += '<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span>';</span></span></span><br><span class="line"><span class="undefined">	&#125;		</span></span><br><span class="line"><span class="undefined">&#125;;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>		</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>		</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">	<span class="comment">// 性能有问题！！！			</span></span></span><br><span class="line"><span class="javascript">	<span class="keyword">for</span>( <span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">6000</span>; i++ )&#123;</span></span><br><span class="line"><span class="xml">		document.body.innerHTML += '<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span>';</span></span><br><span class="line"><span class="undefined">	&#125;		</span></span><br><span class="line"><span class="undefined">&#125;;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>		</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>		</span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="方法2：只访问一次body"><a href="#方法2：只访问一次body" class="headerlink" title="方法2：只访问一次body"></a>方法2：只访问一次body</h4><p>这个方法比上个方法，性能好很多，即使添加多个元素速度也很快 </p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-    &lt;html&gt;
-    &lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-
-    &lt;script&gt;
-    window.onload = function (){            
-        var str = &apos;&apos;;
-        for( var i=0; i&lt;6000; i++ ){
-            str += &apos;&lt;input type=&quot;button&quot; value=&quot;按钮&quot; /&gt;&apos;;
-        }    
-            document.body.innerHTML = str;    
-    };
-    &lt;/script&gt;        
-    &lt;/head&gt;        
-    &lt;body&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-</code></pre><p><img src="/2018/02/26/js的for循环/anniu.png" alt=""><br>小tips：可以利用循环来生成视频网站每个播放页面的每个第几集的按钮。  </p>
-<h3 id="for循环生成坐标"><a href="#for循环生成坐标" class="headerlink" title="for循环生成坐标"></a>for循环生成坐标</h3><pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
-    &lt;title&gt;无标题文档&lt;/title&gt;
-    &lt;style&gt;
-    div {
-        width: 50px;
-        height: 50px;
-        background: red;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 30px;
-        text-align: center;
-        line-height: 50px;
-        color: #fff;
-    }
-    &lt;/style&gt;
-    &lt;script&gt;
-    window.onload = function() {
-        var aDiv = document.getElementsByTagName(&apos;div&apos;);
-
-        for (var i = 0; i &lt; 11; i++) {
-            document.body.innerHTML += &apos;&lt;div&gt;&apos; + i + &apos;&lt;/div&gt;&apos;;
-        }
-
-        for (var i = 0; i &lt; aDiv.length; i++) {
-            aDiv[i].style.left = 10 + i * 50 + &apos;px&apos;;
-            aDiv[i].style.top = 10 + i * 50 + &apos;px&apos;;
-        }
-
-        // 逢10 往下一行（小练习）
-        // 来一个小V字形（小练习）
-
-    };
-    &lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre><h3 id="for循环遍历二维数组，嵌套元素"><a href="#for循环遍历二维数组，嵌套元素" class="headerlink" title="for循环遍历二维数组，嵌套元素"></a>for循环遍历二维数组，嵌套元素</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">	<span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;			</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> str = <span class="string">''</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">for</span>( <span class="keyword">var</span> i=<span class="number">0</span>; i&lt;<span class="number">6000</span>; i++ )&#123;</span></span><br><span class="line"><span class="xml">			str += '<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"按钮"</span> /&gt;</span>';</span></span><br><span class="line"><span class="undefined">		&#125;	</span></span><br><span class="line"><span class="javascript">			<span class="built_in">document</span>.body.innerHTML = str;	</span></span><br><span class="line"><span class="undefined">	&#125;;</span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>		</span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span>		</span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/02/26/js的for循环/anniu.png" alt=""><br>小tips：可以利用循环来生成视频网站每个播放页面的每个第几集的按钮。  </p>
+<h3 id="for循环生成坐标"><a href="#for循环生成坐标" class="headerlink" title="for循环生成坐标"></a>for循环生成坐标</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    div &#123;</span></span><br><span class="line"><span class="undefined">        width: 50px;</span></span><br><span class="line"><span class="undefined">        height: 50px;</span></span><br><span class="line"><span class="undefined">        background: red;</span></span><br><span class="line"><span class="undefined">        position: absolute;</span></span><br><span class="line"><span class="undefined">        top: 0;</span></span><br><span class="line"><span class="undefined">        left: 0;</span></span><br><span class="line"><span class="undefined">        font-size: 30px;</span></span><br><span class="line"><span class="undefined">        text-align: center;</span></span><br><span class="line"><span class="undefined">        line-height: 50px;</span></span><br><span class="line"><span class="undefined">        color: #fff;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> aDiv = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">11</span>; i++) &#123;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">document</span>.body.innerHTML += <span class="string">'&lt;div&gt;'</span> + i + <span class="string">'&lt;/div&gt;'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; aDiv.length; i++) &#123;</span></span><br><span class="line"><span class="javascript">            aDiv[i].style.left = <span class="number">10</span> + i * <span class="number">50</span> + <span class="string">'px'</span>;</span></span><br><span class="line"><span class="javascript">            aDiv[i].style.top = <span class="number">10</span> + i * <span class="number">50</span> + <span class="string">'px'</span>;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="comment">// 逢10 往下一行（小练习）</span></span></span><br><span class="line"><span class="javascript">        <span class="comment">// 来一个小V字形（小练习）</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="for循环遍历二维数组，嵌套元素"><a href="#for循环遍历二维数组，嵌套元素" class="headerlink" title="for循环遍历二维数组，嵌套元素"></a>for循环遍历二维数组，嵌套元素</h3>
       
     </div>
     
@@ -889,7 +828,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.3k</span>
+    <span title="Site words total count">19.6k</span>
   
 </div>
 
