@@ -136,18 +136,18 @@
 
 
 
-<meta name="description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。 Ajax过程详解：">
+<meta name="description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。">
 <meta name="keywords" content="前端,ajax">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ajax原理">
 <meta property="og:url" content="http://yoursite.com/2018/03/07/ajax原理/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。 Ajax过程详解：">
+<meta property="og:description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-07T05:01:03.598Z">
+<meta property="og:updated_time" content="2018-03-08T07:36:52.457Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax原理">
-<meta name="twitter:description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。 Ajax过程详解：">
+<meta name="twitter:description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。">
 
 
 
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  111
+                  701
                 </span>
               
 
@@ -464,7 +464,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -486,8 +486,80 @@
 
       
         <h3 id="什么是ajax"><a href="#什么是ajax" class="headerlink" title="什么是ajax"></a>什么是ajax</h3><p>Asynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据  </p>
-<p>使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。</p>
+<p>使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。<a id="more"></a></p>
 <p>Ajax过程详解：  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">        oBtn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">//打开浏览器</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">/*1、创建一个ajax对象*/</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//ie6以下 new  ActiveXObject('Microsoft.XMLHTTP')</span></span></span><br><span class="line"><span class="javascript">            <span class="keyword">var</span> xhr=<span class="literal">null</span>;</span></span><br><span class="line"><span class="undefined">           /* if(window.XMLHttpRequest)&#123;</span></span><br><span class="line"><span class="javascript">                xhr = <span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line"><span class="javascript">            &#125;<span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">                xhr= <span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHTTP'</span>);</span></span><br><span class="line"><span class="undefined">            &#125;*/</span></span><br><span class="line"><span class="javascript">            <span class="keyword">try</span>&#123;</span></span><br><span class="line"><span class="javascript">                xhr = <span class="keyword">new</span> XMLHttpRequest();</span></span><br><span class="line"><span class="javascript">            &#125;<span class="keyword">catch</span>(e)&#123;</span></span><br><span class="line"><span class="javascript">                xhr= <span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHTTP'</span>);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">            </span></span><br><span class="line"><span class="javascript">            <span class="comment">//在地址栏输入地址</span></span></span><br><span class="line"><span class="undefined">            /*</span></span><br><span class="line"><span class="undefined">            open方法</span></span><br><span class="line"><span class="undefined">            参数</span></span><br><span class="line"><span class="undefined">                1、打开方式</span></span><br><span class="line"><span class="undefined">                2、地址</span></span><br><span class="line"><span class="undefined">                3、是否异步  </span></span><br><span class="line"><span class="undefined">                   异步：非阻塞，前面的代码不会影响后面代码的执行</span></span><br><span class="line"><span class="undefined">                   同步：阻塞，前面的代码会影响后面代码的执行</span></span><br><span class="line"><span class="undefined">            */</span></span><br><span class="line"><span class="javascript">            xhr.open(<span class="string">'get'</span>, <span class="string">'1.txt'</span>, <span class="literal">true</span>);<span class="comment">//true代表异步 false代表同步</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//提交，发送请求</span></span></span><br><span class="line"><span class="undefined">            xhr.send();</span></span><br><span class="line"><span class="javascript">			<span class="comment">//等待服务器返回内容</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//readyState:ajax工作状态</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//responseText:ajax请求返回的内容就被存放在这个属性下民</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//on readystate change :当readyState改变的时候触发</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//status:服务器状态，http状态码</span></span></span><br><span class="line"><span class="javascript">            xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">                <span class="keyword">if</span> (xhr.readyState == <span class="number">4</span>) &#123;</span></span><br><span class="line"><span class="javascript">                    <span class="keyword">if</span>(xhr.status==<span class="number">200</span>)&#123;   alert(xhr.responseText);&#125;</span></span><br><span class="line"><span class="javascript">                    <span class="keyword">else</span>&#123;</span></span><br><span class="line"><span class="javascript">                        alert(<span class="string">"出错了"</span>+<span class="string">"err:404"</span>);</span></span><br><span class="line"><span class="undefined">                    &#125;</span></span><br><span class="line"><span class="undefined">                 </span></span><br><span class="line"><span class="undefined">                &#125;</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">name</span>=<span class="string">"按钮"</span> <span class="attr">id</span>=<span class="string">"btn"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><p>表单：数据的提交</p>
+<table>
+<thead>
+<tr>
+<th>action</th>
+<th>数据提交的地址，默认是当前页面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>method</td>
+<td>数据提交的方式，分为get和post，默认是get</td>
+</tr>
+<tr>
+<td>enctype</td>
+<td>提交的数据的格式,默认是application/x-www-form-urlencoded</td>
+</tr>
+</tbody>
+</table>
+<p>get方式：把数据名称和数据对应的数据值用=连接，如果有多个的话，那么他会把多个数据组合用&amp;进行连接，然后把数据放到url?的后面传到指定页面。url长度限制的原因，我们不要通过get方式传递过多的数据   </p>
+<p>post方式：理论上传递数据长度无限制</p>
+<h3 id="数据的获取"><a href="#数据的获取" class="headerlink" title="数据的获取"></a>数据的获取</h3><p>onreadystatechange事件</p>
+<table>
+<thead>
+<tr>
+<th>readyState属性</th>
+<th>请求状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>未初始化，还没有调用open()方法</td>
+</tr>
+<tr>
+<td>1</td>
+<td>载入，已调用send()方法，正在发送请求</td>
+</tr>
+<tr>
+<td>2</td>
+<td>载入完成，send()方法完成，已收到全部响应内容</td>
+</tr>
+<tr>
+<td>3</td>
+<td>解析，正在解析相应内容</td>
+</tr>
+<tr>
+<td>4</td>
+<td>完成，相应内容解析完成，可以在客户端调用了</td>
+</tr>
+</tbody>
+</table>
+<p>status属性：服务器请求资源的状态</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>responeseText</td>
+<td>返回以文本形式存放的内容</td>
+</tr>
+<tr>
+<td>responseXML</td>
+<td>返回XML形式的内容</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -558,6 +630,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/08/前端工具/" rel="prev" title="前端工具">
+                前端工具 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -669,7 +745,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -752,7 +828,7 @@ var jiathis_config={
     <h3 class="widget-title">Tag Cloud</h3>
     <div id="myCanvasContainer" class="widget tagcloud">
         <canvas width="250" height="250" id="resCanvas" style="width=100%">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByTagName/">ByTagName</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5标签/">H5标签</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feed/">feed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for/">for</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for循环/">for循环</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacker/">hacker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hxo/">hxo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">23</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web性能/">web性能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作用域/">作用域</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容/">兼容</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数传参/">函数传参</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">26</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端练习小项目/">前端练习小项目</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片切换/">图片切换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/子节点和兄弟节点/">子节点和兄弟节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串/">字符串</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/属性操作/">属性操作</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/敏感词过滤/">敏感词过滤</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型转换/">数据类型转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/易错点/">易错点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条件判断/">条件判断</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/流程控制/">流程控制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏/">游戏</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/父节点/">父节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/相对定位绝对定位/">相对定位绝对定位</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/站点地图/">站点地图</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义属性/">自定义属性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/预解析/">预解析</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ByTagName/">ByTagName</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/H5标签/">H5标签</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ajax/">ajax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/feed/">feed</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for/">for</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/for循环/">for循环</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacker/">hacker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hxo/">hxo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a><span class="tag-list-count">23</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/">this</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web性能/">web性能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作用域/">作用域</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容/">兼容</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数/">函数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/函数传参/">函数传参</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">27</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端练习小项目/">前端练习小项目</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图片切换/">图片切换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/子节点和兄弟节点/">子节点和兄弟节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符串/">字符串</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/属性操作/">属性操作</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/排序/">排序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/敏感词过滤/">敏感词过滤</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型/">数据类型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型转换/">数据类型转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/易错点/">易错点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/条件判断/">条件判断</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/流程控制/">流程控制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/游戏/">游戏</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/父节点/">父节点</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/相对定位绝对定位/">相对定位绝对定位</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/破解/">破解</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/站点地图/">站点地图</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自定义属性/">自定义属性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/预解析/">预解析</a><span class="tag-list-count">1</span></li></ul>
         </canvas>
     </div>
 </div>
@@ -786,7 +862,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是ajax"><span class="nav-number">1.</span> <span class="nav-text">什么是ajax</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是ajax"><span class="nav-number">1.</span> <span class="nav-text">什么是ajax</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单"><span class="nav-number">2.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的获取"><span class="nav-number">3.</span> <span class="nav-text">数据的获取</span></a></li></ol></div>
             
 
           </div>
@@ -823,7 +899,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">21.3k</span>
+    <span title="Site words total count">21.9k</span>
   
 </div>
 
