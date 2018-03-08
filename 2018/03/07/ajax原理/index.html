@@ -144,10 +144,16 @@
 <meta property="og:site_name" content="Isabelle的博客小站">
 <meta property="og:description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T07:36:52.457Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/ajax原理/JSON.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/ajax原理/stringify1.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/ajax原理/stringify2.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/ajax原理/PARSE1.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/ajax原理/PARSE2.png">
+<meta property="og:updated_time" content="2018-03-08T16:42:49.020Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax原理">
 <meta name="twitter:description" content="什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据   使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/07/ajax原理/JSON.png">
 
 
 
@@ -448,7 +454,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  701
+                  1,009
                 </span>
               
 
@@ -464,7 +470,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -560,6 +566,17 @@
 </tr>
 </tbody>
 </table>
+<h3 id="ajax获取数据的处理和实例"><a href="#ajax获取数据的处理和实例" class="headerlink" title="ajax获取数据的处理和实例"></a>ajax获取数据的处理和实例</h3><h4 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h4><p>chrome,ie7以上都支持，Ie7和Ie7以下不支持。可以去json.org官网下载对应的语言的包，来支持json互转。  </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"json.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>  //这里的json.js文件是从json.org官网复制的json2.js库,这样就可以解决ie7及ie7以下不兼容的问题</span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="javascript">		alert(<span class="built_in">JSON</span>);</span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/07/ajax原理/JSON.png" alt=""></p>
+<h4 id="stringify"><a href="#stringify" class="headerlink" title="stringify"></a>stringify</h4><p>可以把一个对象转换成一个字符串。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"json.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="javascript">		<span class="comment">//alert(JSON);</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> j=&#123;<span class="attr">left</span>:<span class="number">100</span>&#125;;</span></span><br><span class="line"><span class="javascript">		alert(<span class="built_in">JSON</span>.stringify(arr));<span class="comment">//把数组转成字符串</span></span></span><br><span class="line"><span class="javascript">		alert(<span class="built_in">JSON</span>.stringify(j));<span class="comment">//把JSON转成字符串</span></span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/07/ajax原理/stringify1.png" alt=""></p>
+<p><img src="/2018/03/07/ajax原理/stringify2.png" alt=""></p>
+<h4 id="parse"><a href="#parse" class="headerlink" title="parse"></a>parse</h4><p>可以把字符串转换成对应的对象。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"JSON.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> s1=<span class="string">'[100,200,300]'</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> a1=<span class="built_in">JSON</span>.parse(s1);  <span class="comment">//字符串转换成数组</span></span></span><br><span class="line"><span class="undefined">		alert(a1[0]);   </span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> s2=<span class="string">'&#123;"left":100&#125;'</span>;</span></span><br><span class="line"><span class="javascript">		<span class="comment">//JSON将作为key的值必须用双引号括起来</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span>  a2=<span class="built_in">JSON</span>.parse(s2); <span class="comment">//字符串转换成JSON</span></span></span><br><span class="line"><span class="undefined">		alert(a2.left);</span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/07/ajax原理/PARSE1.png" alt=""></p>
+<p><img src="/2018/03/07/ajax原理/PARSE2.png" alt=""></p>
 
       
     </div>
@@ -862,7 +879,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是ajax"><span class="nav-number">1.</span> <span class="nav-text">什么是ajax</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单"><span class="nav-number">2.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的获取"><span class="nav-number">3.</span> <span class="nav-text">数据的获取</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是ajax"><span class="nav-number">1.</span> <span class="nav-text">什么是ajax</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单"><span class="nav-number">2.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的获取"><span class="nav-number">3.</span> <span class="nav-text">数据的获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ajax获取数据的处理和实例"><span class="nav-number">4.</span> <span class="nav-text">ajax获取数据的处理和实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JSON"><span class="nav-number">4.1.</span> <span class="nav-text">JSON</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#stringify"><span class="nav-number">4.2.</span> <span class="nav-text">stringify</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#parse"><span class="nav-number">4.3.</span> <span class="nav-text">parse</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -899,7 +916,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22.8k</span>
+    <span title="Site words total count">23.1k</span>
   
 </div>
 
