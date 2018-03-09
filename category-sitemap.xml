@@ -91,13 +91,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/</loc>
-        <lastmod>2018-03-06T15:42:26.346Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/%E6%AD%A3%E5%88%99/</loc>
         <lastmod>2018-03-07T02:25:12.690Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -133,15 +126,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/</loc>
+        <lastmod>2018-03-08T18:44:19.009Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-08T18:21:09.122Z</lastmod>
+        <lastmod>2018-03-09T04:26:38.651Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/ajax/</loc>
-        <lastmod>2018-03-08T18:21:09.122Z</lastmod>
+        <lastmod>2018-03-09T04:26:38.651Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

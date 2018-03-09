@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ajax小项目-留言板瀑布流]]></title>
+    <url>%2F2018%2F03%2F09%2Fajax%E5%B0%8F%E9%A1%B9%E7%9B%AE-%E7%95%99%E8%A8%80%E6%9D%BF%E7%80%91%E5%B8%83%E6%B5%81%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>前端</category>
+        <category>练习项目</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>ajax</tag>
+        <tag>前端练习小项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[浏览器的标准模式与怪异模式]]></title>
     <url>%2F2018%2F03%2F08%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F%E4%B8%8E%E6%80%AA%E5%BC%82%E6%A8%A1%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[标准模式与怪异模式的由来在HTML与CSS的标准化未完成之前，各个浏览器对于HTML和CSS的解析有各自不同的实现，而有很多旧的网页都是按照这些非标准的实现去设计的。在HTML与CSS标准确定之后，浏览器一方面要按照标准去实现对HTML与CSS的支持，另一方面又要保证对非标准的旧网页设计的后向兼容性。因此，现代的浏览器一般都有两种渲染模式：标准模式和怪异模式。在标准模式下，浏览器按照HTML与CSS标准对文档进行解析和渲染；而在怪异模式下，浏览器则按照旧有的非标准的实现方式对文档进行解析和渲染。这样的话，对于旧有的网页，浏览器启动怪异模式，就能够使得旧网页正常显示；对于新的网页，则可以启动标准模式，使得新网页能够使用HTML与CSS的标准特性。 浏览器如何确定使用哪种渲染模式知道了这两种渲染模式的来由，那剩下的问题就是浏览器如何能够确定应该使用哪种模式了。其实归根结底就是，浏览器如何能将旧网页与新网页区分开来。 平常编写网页的时候，一般都会见到HTML文档的头部会有文档类型声明：DOCTYPE。当浏览器遇到正确的文档声明时，浏览器就会启动标准模式，按照制定的文档类型标准解析和渲染文档。而对于旧有的网页，由于网页编写的当时标准还没有确定，所以一般是不会有文档类型声明的。所以，对于没有文档类型声明或者文档类型声明不正确的文档，浏览器就会认为它是一个旧的HTML文档，就会使用怪异模式解析和渲染该文档。关于DOCTYPE的更详细说明，请戳这里 DOCTYPE声明作用及用法详解。 标准模式与怪异模式的区别盒模型的处理差异标准CSS盒模型的宽度和高度等于内容区的高度和宽度，不包含内边距和边框，而IE6之前的浏览器实现的盒模型的宽高计算方式是包含内边距和边框的。因此，对于IE，怪异模式和标准模式下的盒模型宽高计算方式是不一样的； 行内元素的垂直对齐很多早期的浏览器对齐图片至包含它们的盒子的下边框，虽然CSS的规范要求它们被对齐至盒内文本的基线。标准模式下，基于Gecko的浏览器将会对齐至基线，而在quirks模式下它们会对齐至底部。最直接的例子就是图片的显示。在标准模式下，图片并不是与父元素的下边框对齐的，如果仔细观察，你会发现图片与父元素下边框之间存在一点小空隙。那是因为标准模式下，图片是基线对齐的。而怪异模式下，则不存在这个问题。具体请看这篇文章 CSS深入理解vertical-align和line-height的基友关系。 参考文章 CSS深入理解vertical-align和line-height的基友关系 DOCTYPE声明作用及用法详解 怪异模式 作者：tsyeyuanfeng链接：https://www.jianshu.com/p/dcab7cde8c04來源：简书著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。]]></content>
@@ -47,7 +61,7 @@
   <entry>
     <title><![CDATA[ajax原理]]></title>
     <url>%2F2018%2F03%2F07%2Fajax%E5%8E%9F%E7%90%86%2F</url>
-    <content type="text"><![CDATA[什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据 使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。 Ajax过程详解： 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script type="text/javascript"&gt; window.onload = function() &#123; var oBtn = document.getElementById('btn'); oBtn.onclick = function() &#123; //打开浏览器 /*1、创建一个ajax对象*/ //ie6以下 new ActiveXObject('Microsoft.XMLHTTP') var xhr=null; /* if(window.XMLHttpRequest)&#123; xhr = new XMLHttpRequest(); &#125;else&#123; xhr= new ActiveXObject('Microsoft.XMLHTTP'); &#125;*/ try&#123; xhr = new XMLHttpRequest(); &#125;catch(e)&#123; xhr= new ActiveXObject('Microsoft.XMLHTTP'); &#125; //在地址栏输入地址 /* open方法 参数 1、打开方式 2、地址 3、是否异步 异步：非阻塞，前面的代码不会影响后面代码的执行 同步：阻塞，前面的代码会影响后面代码的执行 */ xhr.open('get', '1.txt', true);//true代表异步 false代表同步 //提交，发送请求 xhr.send(); //等待服务器返回内容 //readyState:ajax工作状态 //responseText:ajax请求返回的内容就被存放在这个属性下民 //on readystate change :当readyState改变的时候触发 //status:服务器状态，http状态码 xhr.onreadystatechange = function() &#123; if (xhr.readyState == 4) &#123; if(xhr.status==200)&#123; alert(xhr.responseText);&#125; else&#123; alert("出错了"+"err:404"); &#125; &#125; &#125; &#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="button" name="按钮" id="btn" /&gt;&lt;/body&gt;&lt;/html&gt; 表单表单：数据的提交 action 数据提交的地址，默认是当前页面 method 数据提交的方式，分为get和post，默认是get enctype 提交的数据的格式,默认是application/x-www-form-urlencoded get方式：把数据名称和数据对应的数据值用=连接，如果有多个的话，那么他会把多个数据组合用&amp;进行连接，然后把数据放到url?的后面传到指定页面。url长度限制的原因，我们不要通过get方式传递过多的数据 post方式：理论上传递数据长度无限制 数据的获取onreadystatechange事件 readyState属性 请求状态 0 未初始化，还没有调用open()方法 1 载入，已调用send()方法，正在发送请求 2 载入完成，send()方法完成，已收到全部响应内容 3 解析，正在解析相应内容 4 完成，相应内容解析完成，可以在客户端调用了 status属性：服务器请求资源的状态 responeseText 返回以文本形式存放的内容 responseXML 返回XML形式的内容 ajax获取数据的处理和实例JSONchrome,ie7以上都支持，Ie7和Ie7以下不支持。可以去json.org官网下载对应的语言的包，来支持json互转。 1234567891011121314&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="json.js"&gt;&lt;/script&gt; //这里的json.js文件是从json.org官网复制的json2.js库,这样就可以解决ie7及ie7以下不兼容的问题 &lt;script&gt; alert(JSON); &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; stringify可以把一个对象转换成一个字符串。 12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="json.js"&gt;&lt;/script&gt; &lt;script&gt; //alert(JSON); var arr=[1,2,3]; var j=&#123;left:100&#125;; alert(JSON.stringify(arr));//把数组转成字符串 alert(JSON.stringify(j));//把JSON转成字符串 &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; parse可以把字符串转换成对应的对象。 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="JSON.js"&gt;&lt;/script&gt; &lt;script&gt; var s1='[100,200,300]'; var a1=JSON.parse(s1); //字符串转换成数组 alert(a1[0]); var s2='&#123;"left":100&#125;'; //JSON将作为key的值必须用双引号括起来 var a2=JSON.parse(s2); //字符串转换成JSON alert(a2.left); &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; 实例：获取并显示新闻数据php后端部分：getNews.php 123456789101112131415&lt;?phpheader('content-type:text/html;charset="utf-8"');error_reporting(0);$news =array( array（'title' =&gt;'很穷但很自豪！实拍朝鲜农村生活现状','data'=&gt;'2015-7-8' ）, array（'title' =&gt;'周冬雨登杂志封面 清新灵动别具一格','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'听说桂林这个壕要过生日，这些大牌都来了','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'妈妈把老公旧衣改成宝宝的新衣','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'事实告诉你 中餐在美到底有多受欢迎!','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'海外体检全知道：去日本体检该办哪种签证？','data'=&gt;'2015-9-10' ）,);echo json_encode($news); 前端部分： 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="JSON.js"&gt;&lt;/script&gt; &lt;script&gt; window.onload = function() &#123; var oBtn = document.getElementById('btn'); var xhr = null; oBtn.onclick = function() &#123; try &#123; xhr = new XMLHttpRequest(); &#125; catch (e) &#123; xhr = new ActiveXObject('Microsoft.XMLHttp'); &#125; xhr.open('get', 'getNews.php', true); xhr.send(); xhr.onreadystatechange = function() &#123; if (xhr.readyState == 4) &#123; if (xhr.status == 200) &#123; // alert(xhr.responseText); var data = JSON.parse(xhr.responseText); //把字符串转换成对应的对象 var oUl = document.getElementById('ul1'); var html = ''; for (var i = 0; i &lt; data.length; i++) &#123; html += '&lt;li&gt;&lt;a href=""&gt;' + data[i].title + '&lt;/a&gt;[&lt;span&gt;' + data[i].date + '&lt;/span&gt;]&lt;/li&gt;'; &#125; oUl.innerHTML = html; &#125; else &#123; alert('出错了，err:' + xhr.status); &#125; &#125; &#125; &#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="button" name="按钮" value="按钮" id="btn" /&gt; &lt;ul id="ul1"&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+    <content type="text"><![CDATA[什么是ajaxAsynchronous JavaScript and XML(异步JavaScript和XML)。作用1、节省用户操作，时间，提高用户体验，减少数据请求。2、传输获取数据 使用Ajax：使用Ajax获取某一文本文件的内容 ,可以使页面在无刷新的情况下去获取数据。因为网页是单次请求的，如果不再去刷新，请求的话，页面是不会变化的。 Ajax过程详解： 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script type="text/javascript"&gt; window.onload = function() &#123; var oBtn = document.getElementById('btn'); oBtn.onclick = function() &#123; //打开浏览器 /*1、创建一个ajax对象*/ //ie6以下 new ActiveXObject('Microsoft.XMLHTTP') var xhr=null; /* if(window.XMLHttpRequest)&#123; xhr = new XMLHttpRequest(); &#125;else&#123; xhr= new ActiveXObject('Microsoft.XMLHTTP'); &#125;*/ try&#123; xhr = new XMLHttpRequest(); &#125;catch(e)&#123; xhr= new ActiveXObject('Microsoft.XMLHTTP'); &#125; //在地址栏输入地址 /* open方法 参数 1、打开方式 2、地址 3、是否异步 异步：非阻塞，前面的代码不会影响后面代码的执行 同步：阻塞，前面的代码会影响后面代码的执行 */ xhr.open('get', '1.txt', true);//true代表异步 false代表同步 //提交，发送请求 xhr.send(); //等待服务器返回内容 //readyState:ajax工作状态 //responseText:ajax请求返回的内容就被存放在这个属性下民 //on readystate change :当readyState改变的时候触发 //status:服务器状态，http状态码 xhr.onreadystatechange = function() &#123; if (xhr.readyState == 4) &#123; if(xhr.status==200)&#123; alert(xhr.responseText);&#125; else&#123; alert("出错了"+"err:404"); &#125; &#125; &#125; &#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="button" name="按钮" id="btn" /&gt;&lt;/body&gt;&lt;/html&gt; 表单表单：数据的提交 action 数据提交的地址，默认是当前页面 method 数据提交的方式，分为get和post，默认是get enctype 提交的数据的格式,默认是application/x-www-form-urlencoded get方式：把数据名称和数据对应的数据值用=连接，如果有多个的话，那么他会把多个数据组合用&amp;进行连接，然后把数据放到url?的后面传到指定页面。url长度限制的原因，我们不要通过get方式传递过多的数据 post方式：理论上传递数据长度无限制 数据的获取onreadystatechange事件 readyState属性 请求状态 0 未初始化，还没有调用open()方法 1 载入，已调用send()方法，正在发送请求 2 载入完成，send()方法完成，已收到全部响应内容 3 解析，正在解析相应内容 4 完成，相应内容解析完成，可以在客户端调用了 status属性：服务器请求资源的状态 responeseText 返回以文本形式存放的内容 responseXML 返回XML形式的内容 ajax获取数据的处理和实例JSONchrome,ie7以上都支持，Ie7和Ie7以下不支持。可以去json.org官网下载对应的语言的包，来支持json互转。 1234567891011121314&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="json.js"&gt;&lt;/script&gt; //这里的json.js文件是从json.org官网复制的json2.js库,这样就可以解决ie7及ie7以下不兼容的问题 &lt;script&gt; alert(JSON); &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; stringify可以把一个对象转换成一个字符串。 12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="json.js"&gt;&lt;/script&gt; &lt;script&gt; //alert(JSON); var arr=[1,2,3]; var j=&#123;left:100&#125;; alert(JSON.stringify(arr));//把数组转成字符串 alert(JSON.stringify(j));//把JSON转成字符串 &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; parse可以把字符串转换成对应的对象。 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="JSON.js"&gt;&lt;/script&gt; &lt;script&gt; var s1='[100,200,300]'; var a1=JSON.parse(s1); //字符串转换成数组 alert(a1[0]); var s2='&#123;"left":100&#125;'; //JSON将作为key的值必须用双引号括起来 var a2=JSON.parse(s2); //字符串转换成JSON alert(a2.left); &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; 实例：获取并显示新闻数据php后端部分：getNews.php 123456789101112131415&lt;?phpheader('content-type:text/html;charset="utf-8"');error_reporting(0);$news =array( array（'title' =&gt;'很穷但很自豪！实拍朝鲜农村生活现状','data'=&gt;'2015-7-8' ）, array（'title' =&gt;'周冬雨登杂志封面 清新灵动别具一格','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'听说桂林这个壕要过生日，这些大牌都来了','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'妈妈把老公旧衣改成宝宝的新衣','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'事实告诉你 中餐在美到底有多受欢迎!','data'=&gt;'2015-9-10' ）, array（'title' =&gt;'海外体检全知道：去日本体检该办哪种签证？','data'=&gt;'2015-9-10' ）,);echo json_encode($news); 前端部分： 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="JSON.js"&gt;&lt;/script&gt; &lt;script&gt; window.onload = function() &#123; var oBtn = document.getElementById('btn'); var xhr = null; oBtn.onclick = function() &#123; try &#123; xhr = new XMLHttpRequest(); &#125; catch (e) &#123; xhr = new ActiveXObject('Microsoft.XMLHttp'); &#125; xhr.open('get', 'getNews.php', true); xhr.send(); xhr.onreadystatechange = function() &#123; if (xhr.readyState == 4) &#123; if (xhr.status == 200) &#123; // alert(xhr.responseText); var data = JSON.parse(xhr.responseText); //把字符串转换成对应的对象 var oUl = document.getElementById('ul1'); var html = ''; for (var i = 0; i &lt; data.length; i++) &#123; html += '&lt;li&gt;&lt;a href=""&gt;' + data[i].title + '&lt;/a&gt;[&lt;span&gt;' + data[i].date + '&lt;/span&gt;]&lt;/li&gt;'; &#125; oUl.innerHTML = html; &#125; else &#123; alert('出错了，err:' + xhr.status); &#125; &#125; &#125; &#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="button" name="按钮" value="按钮" id="btn" /&gt; &lt;ul id="ul1"&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt; 应用中get和post的区别处理get方式：缓存问题解决方法：在url?后面连接一个随机数，时间戳。 get方式：中文乱码问题解决方法：编码encodeURI,中文进行编码再传输。 12345678910111213141516171819202122232425262728293031323334353637383940414243444546&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="JSON.js"&gt;&lt;/script&gt; &lt;script&gt; window.onload = function() &#123; var oBtn = document.getElementById('btn'); var xhr = null; oBtn.onclick = function() &#123; try &#123; xhr = new XMLHttpRequest(); &#125; catch (e) &#123; xhr = new ActiveXObject('Microsoft.XMLHttp'); &#125; /*解决缓存问题：在url?后面连接一个随机数，时间戳 2、乱码：编码encodeURI,中文进行编码再传输 */ xhr.open('get', '2.get.php?username=' + encodeURI('李明') + '&amp;age=30&amp;' + new Date().getTime(), true); xhr.send(); xhr.onreadystatechange = function() &#123; if (xhr.readyState == 4) &#123; if (xhr.status == 200) &#123; alert(xhr.responseText); &#125; else &#123; alert('出错了，err:' + xhr.status); &#125; &#125; &#125; &#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="button" name="按钮" value="按钮" id="btn" /&gt; &lt;ul id="ul1"&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt; post方式：数据放在send()方法里面作为参数传递，记得要申明发送的数据类型。 注意：post方式没有缓存问题，因为是往服务器提交数据，不产生缓存。post方式，中文也不会乱码，无需编码 123456789101112131415161718192021222324252627282930313233343536373839404142434445&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script src="JSON.js"&gt;&lt;/script&gt; &lt;script&gt; window.onload = function() &#123; var oBtn = document.getElementById('btn'); var xhr = null; oBtn.onclick = function() &#123; try &#123; xhr = new XMLHttpRequest(); &#125; catch (e) &#123; xhr = new ActiveXObject('Microsoft.XMLHttp'); &#125; xhr.open('post', '2.get.php', true); xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded'); //申明发送的数据类型 xhr.send('username=leo&amp;age=30'); xhr.onreadystatechange = function() &#123; if (xhr.readyState == 4) &#123; if (xhr.status == 200) &#123; alert(xhr.responseText); &#125; else &#123; alert('出错了，err:' + xhr.status); &#125; &#125; &#125; &#125; &#125; &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="button" name="按钮" value="按钮" id="btn" /&gt; &lt;ul id="ul1"&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt; 后端部分： 12345678&lt;?phpheader('content-type:text/html;charset="utf-8"');error_reporting(0);$username=$_POST['username'];$age=$_POST['age'];echo "你的名字：&#123;$username&#125;,年龄：&#123;$age&#125;";]]></content>
       <categories>
         <category>前端</category>
         <category>ajax</category>
@@ -150,8 +164,8 @@
       <tags>
         <tag>前端</tag>
         <tag>js</tag>
-        <tag>函数传参</tag>
         <tag>前端练习小项目</tag>
+        <tag>函数传参</tag>
       </tags>
   </entry>
   <entry>
@@ -179,8 +193,8 @@
       <tags>
         <tag>前端</tag>
         <tag>js</tag>
-        <tag>函数传参</tag>
         <tag>前端练习小项目</tag>
+        <tag>函数传参</tag>
       </tags>
   </entry>
   <entry>
@@ -228,8 +242,8 @@
       <tags>
         <tag>前端</tag>
         <tag>js</tag>
-        <tag>for</tag>
         <tag>前端练习小项目</tag>
+        <tag>for</tag>
       </tags>
   </entry>
   <entry>
@@ -397,8 +411,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>web性能</tag>
         <tag>工具</tag>
+        <tag>web性能</tag>
       </tags>
   </entry>
   <entry>
@@ -535,20 +549,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[九大排序算法总结]]></title>
-    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
-    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -561,6 +561,20 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[九大排序算法总结]]></title>
+    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
+    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
       </tags>
   </entry>
   <entry>
