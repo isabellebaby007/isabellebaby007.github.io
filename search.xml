@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[ajax小项目-留言板瀑布流]]></title>
     <url>%2F2018%2F03%2F09%2Fajax%E5%B0%8F%E9%A1%B9%E7%9B%AE-%E7%95%99%E8%A8%80%E6%9D%BF%E7%80%91%E5%B8%83%E6%B5%81%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[瀑布流瀑布流实现原理分析特点：每一列的宽度一样的，分批加载， 分类 特点 固定列 可视区域宽度变化，列数不变 非固定列 可视区域宽度变化，列数变化 固定列的瀑布流布局：在页面放一个ul,定好列数量，三个li，浮动布局，每一列的高度统一都为0，通过ajax异步请求数据，把数据动态地往页面添加，数据是分批请求过来的，每请求一批，把数据动态填充到li里面。为了让高度相差不会太大，把当前数据往三个总高度最短的一列去添加，就可以保证三个li之间的总高度不会相差太远 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;script type="text/javascript"&gt; window.onload=function()&#123; var oUl=document.getElementById("ul1"); var aLi=oUl.getElementsByTagName('li'); var iLen=aLi.length; //初始化数据处理 ajax('get','getPics.php','cpage=1',function(data))&#123; var data= JSON.parse(data); for (var i = 0; i &lt; data.length; i++) &#123; //获取高度最短的li var _index=getShort(); var oDiv=document.createElement('div'); var oImg=document.createElement('img'); oImg.src=data[i].preview; //oImg.style.width =data[i].width+'px'; oImg.style.width =225px; oImg.style.height =data[i].height+'px'; oDiv.appendChild(oImg); var oP=document.createElement('p'); oDiv.appendChild(oP); oP.innerHTML=data[i]. aLi[_index].appendChild(oDiv); &#125; &#125;); function getShort()&#123; var index=0; var ih=aLi[index].offsetHeight; for(var i=1;i&lt;data.length;i++)&#123; if (aLi[index].offsetHeight) &#123; index=i; ih=aLi[i].offsetHeight; &#125; &#125; return index; &#125; &#125; &lt;/script&gt; &lt;style type="text/css"&gt; body&#123;margin: 0; &#125; #ul1 &#123; width: 1080px; margin: 100px auto 0; &#125; li &#123; width: 247px; list-style: none; float: left; margin-right: 10px; &#125; li div &#123; border: 1px solid #000 ; padding: 10px; margin-bottom: 10px; &#125; li div img &#123; width: 225px; display: block; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;ul id="ul1"&gt; &lt;li&gt; &lt;div&gt; &lt;img src="http://s3.mogucdn.com/mlcdn/c45406/171227_2da0h5dl13dgedj4j8k62la45h5kf_640x960.jpg_240x360.v1cAC.70.webp"&gt; &lt;p&gt;&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div&gt; &lt;img src="http://s3.mogucdn.com/mlcdn/c45406/171227_2da0h5dl13dgedj4j8k62la45h5kf_640x960.jpg_240x360.v1cAC.70.webp"&gt; &lt;p&gt;&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div&gt; &lt;img src="http://s3.mogucdn.com/mlcdn/c45406/171227_2da0h5dl13dgedj4j8k62la45h5kf_640x960.jpg_240x360.v1cAC.70.webp"&gt; &lt;p&gt;&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div&gt; &lt;img src="http://s3.mogucdn.com/mlcdn/c45406/171227_2da0h5dl13dgedj4j8k62la45h5kf_640x960.jpg_240x360.v1cAC.70.webp"&gt; &lt;p&gt;&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt; 流的实现当我们往下拉的时候，动态地再添加一批数据过来，条件是当前最短的一列li，出现在可视区的时候，也就是只要下面有一列没数据了，就可以开始加载下一批数据了。 当li的top值加上自身的高小于滚动条滚动的高加上可视区自身的高的时候，说明当前最短的一列已经进入可视区了。 12 留言本项目]]></content>
       <categories>
         <category>前端</category>
         <category>练习项目</category>
@@ -536,6 +536,20 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[九大排序算法总结]]></title>
+    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
+    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
     <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
     <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -561,20 +575,6 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[九大排序算法总结]]></title>
-    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
-    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>排序</tag>
       </tags>
   </entry>
   <entry>
