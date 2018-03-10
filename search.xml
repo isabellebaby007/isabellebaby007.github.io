@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[响应式布局]]></title>
+    <url>%2F2018%2F03%2F11%2F%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[css3盒模型新增属性]]></title>
     <url>%2F2018%2F03%2F10%2Fcss3%E7%9B%92%E6%A8%A1%E5%9E%8B%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[盒模型阴影box-shadowbox-shadow:[inset] x y blur [spread] color 参数： inset 投影方式 inset:内投影 不给 ：外投影 x、y 阴影偏移 blur 模糊半径 spread 扩展阴影半径 先扩展原有形状再2开始画阴影 color 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; margin: 100px; background: red; box-shadow: 0 0 30px 30px #000, inset 0 0 10px #ccc; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-reflect倒影 box-reflect direction above \ below \ left \ right 距离 渐变（可选） 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; body&#123; background: #000; &#125; img &#123; display: block; margin: 200px auto; -webkit-box-reflect:right 10px -webkit-linear-gradient(right rgba(0,0,0,1) 0,rgba(0,0,0,0) 70%); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;img src="minguo.jpg" /&gt;&lt;/body&gt;&lt;/html&gt; resize自由缩放 both 水平垂直都可以缩放 horizontal 只有水平方向可以缩放 vertical 只有垂直方向可以缩放 要配合overflow：auto来使用，只有水平方向可以缩放 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: url(minguo.jpg); border: 5px solid #000; resize: both; overflow: auto; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-sizing盒模型的解析模式 content-box 标准盒模型 width\ height=border+padding+content border-box 怪异盒模型 12345678910111213141516171819202122232425262728&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 200px; height: 200px; padding: 50px; border: 10px solid #000; box-sizing: border-box; &#125; .div &#123; height: 50px; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div class="div"&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
       <categories>
         <category>前端</category>
         <category>css3</category>
@@ -158,9 +163,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
+        <tag>前端</tag>
         <tag>getpos()</tag>
       </tags>
   </entry>
@@ -204,8 +209,8 @@
         <category>正则</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>字符串</tag>
         <tag>正则</tag>
         <tag>敏感词过滤</tag>
@@ -220,8 +225,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>函数</tag>
       </tags>
   </entry>
@@ -234,8 +239,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>运算符</tag>
         <tag>流程控制</tag>
@@ -250,8 +255,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>运算符</tag>
       </tags>
   </entry>
@@ -264,8 +269,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>作用域</tag>
         <tag>预解析</tag>
         <tag>易错点</tag>
@@ -280,8 +285,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -309,8 +314,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -324,8 +329,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>数据类型转换</tag>
       </tags>
@@ -344,8 +349,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>数据类型</tag>
       </tags>
   </entry>
@@ -358,8 +363,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>for</tag>
       </tags>
@@ -373,8 +378,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>自定义属性</tag>
       </tags>
   </entry>
@@ -399,8 +404,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>this</tag>
       </tags>
   </entry>
@@ -413,8 +418,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -427,8 +432,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -441,8 +446,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>for循环</tag>
       </tags>
   </entry>
@@ -455,8 +460,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>图片切换</tag>
       </tags>
   </entry>
@@ -469,8 +474,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>ByTagName</tag>
       </tags>
   </entry>
@@ -495,8 +500,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>条件判断</tag>
       </tags>
   </entry>
@@ -514,8 +519,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>属性操作</tag>
       </tags>
   </entry>
@@ -584,9 +589,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -598,8 +603,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>父节点</tag>
       </tags>
   </entry>
@@ -612,9 +617,9 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
+        <tag>前端</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -627,8 +632,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
   <entry>
@@ -668,19 +673,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -696,6 +688,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DOM浅谈]]></title>
     <url>%2F2018%2F02%2F02%2FDOM%E6%B5%85%E8%B0%88%2F</url>
     <content type="text"><![CDATA[先附上一个DOM的教程：http://www.w3school.com.cn/htmldom/dom_methods.asp DOM的结构实际上和数据结构里面的树非常相似 方法 描述getElementById() 返回带有指定 ID 的元素。getElementsByTagName() 返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。getElementsByClassName() 返回包含带有指定类名的所有元素的节点列表。appendChild() 把新的子节点添加到指定节点。removeChild() 删除子节点。replaceChild() 替换子节点。insertBefore() 在指定的子节点前面插入新的子节点。createAttribute() 创建属性节点。createElement() 创建元素节点。createTextNode() 创建文本节点。getAttribute() 返回指定的属性值。setAttribute() 把指定属性设置或修改为指定的值。 ·其他细节修改Copyright：isabllezhou mail:isabellezhou@163.com]]></content>
@@ -703,8 +708,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>DOM</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
 </search>
