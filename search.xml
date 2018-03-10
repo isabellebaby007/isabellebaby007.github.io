@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[css3文本新增属性]]></title>
+    <url>%2F2018%2F03%2F10%2Fcss3%E6%96%87%E6%9C%AC%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[新增颜色模式 rgba r red 红 0-255 g green 绿 0-255 b blue 蓝 0-255 a Alpha 透明 0-1 例子：背景透明，文字不透明text-shadow 文字透明属性text-shadow:第一个参数表示x轴的偏移量 第二个参数表示y轴的偏移量 第三个参数表示模糊程度 第四个参数表示阴影颜色 阴影效果可以多层叠加，中间用,隔开 1234567891011121314151617&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p&#123; font；100px/200px "微软雅黑"； text-align: center; text-shadow: -5px -10px 1px red,5px 10px 1px green; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：层叠12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p&#123; color: red; font-size: 100px; font-weight: bold; text-shadow: 2px 2px 0px white,4px 4px 0px red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：光晕1234567891011121314151617181920&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; color: white; font-size: 100px; text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：火焰文字123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; color: white; font-size: 100px; text-shadow: 0px 0px 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; font-family: Verdana,Geneva,sans-serif; font-size: 100px; font-weight: bold; color: white; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：模糊效果123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1&#123; font:100px/200px "微软雅黑"; text-align: center; color: #000; text-shadow: 0 0 0 rgba(0,0,0,1); border:1px solid #000; transition:1s; &#125; h1:hover&#123; color: rgba(0,0,0,0); text-shadow: 0 0 100px rgba(0,0,0,0.5); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;北京邮电&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt; 文字描边只有webkit内核的浏览器才支持。webkit-text-stroke:宽度 颜色；]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>文本新增属性</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[css3伪类和伪元素]]></title>
     <url>%2F2018%2F03%2F10%2Fcss3%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%2F</url>
-    <content type="text"><![CDATA[伪类 E:target 表示当前的URL片段的元素类型，这个元素必须是E E:disabled 表示不可点击的表单控件 E:enabled 表示可点击的表单控件 E:checked 表示已选中的checkbox或radio E:first-line 表示E元素中的第一行 E:first-letter 表示E元素中的第一个字母 E::selection 表示E元素在用户选中文字时 E::before 生成内容在E元素前 E::after 生成内容在E元素之后 E：not(s) 表示E元素不被匹配 E~F 表示E元素毗邻的F元素,是指在E后面的标签 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; div &#123; width: 300px; height: 200px; background: #000; font: 50px/200px "微软雅黑"; color: #fff; text-align: center; display: none; &#125; div:target &#123; display: block; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;a href="#div1"&gt;div1&lt;/a&gt; &lt;a href="#div2"&gt;div2&lt;/a&gt; &lt;a href="#div3"&gt;div3&lt;/a&gt; &lt;div id="div1"&gt;div1&lt;/div&gt; &lt;div id="div2"&gt;div2&lt;/div&gt; &lt;div id="div3"&gt;div3&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; input &#123; width: 100px; height: 30px; color: #000; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="text" name="" value="请输入" /&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+    <content type="text"><![CDATA[伪类 E:target 表示当前的URL片段的元素类型，这个元素必须是E E:disabled 表示不可点击的表单控件 E:enabled 表示可点击的表单控件 E:checked 表示已选中的checkbox或radio E:first-line 表示E元素中的第一行 E:first-letter 表示E元素中的第一个字母 E::selection 表示E元素在用户选中文字时 E::before 生成内容在E元素前 E::after 生成内容在E元素之后 E：not(s) 表示E元素不被匹配 E~F 表示E元素毗邻的F元素,是指在E后面的标签 content 内容属性 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; div &#123; width: 300px; height: 200px; background: #000; font: 50px/200px "微软雅黑"; color: #fff; text-align: center; display: none; &#125; div:target &#123; display: block; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;a href="#div1"&gt;div1&lt;/a&gt; &lt;a href="#div2"&gt;div2&lt;/a&gt; &lt;a href="#div3"&gt;div3&lt;/a&gt; &lt;div id="div1"&gt;div1&lt;/div&gt; &lt;div id="div2"&gt;div2&lt;/div&gt; &lt;div id="div3"&gt;div3&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; input &#123; width: 100px; height: 30px; color: #000; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="text" name="" value="请输入" /&gt;&lt;/body&gt;&lt;/html&gt; 例子：模拟单选框1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; label &#123; float: left; margin: 0 5px; overflow: hidden; position: relative; &#125; label input &#123; position: absolute; left: -50px; top: -50px; &#125; span &#123; float: left; width: 50px; height: 50px; border: 3px solid #000; &#125; input:checked~span &#123; background: red; s &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt;&lt;/body&gt;&lt;/html&gt; 123456789101112131415161718192021222324252627282930313233343536373839&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 12px/30px "宋体"; padding: 10px; &#125; p:first-line &#123; background: red; &#125; p:first-letter &#123; font-size: 30px; &#125; p::selection &#123; background: #F60; color: #690; &#125; p::before &#123; content: "BUPT" &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt; 北京邮电大学（Beijing University of Posts and Telecommunications），简称北邮，是中华人民共和国教育部直属，工业和信息化部共建的一所以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学，是北京高科大学联盟成员高校[1] 、国家首批“双一流”世界一流学科建设高校[2] 。系国家“211工程”、“985工程优势学科创新平台”项目重点建设，列入首批“卓越工程师教育培养计划”、“111计划”。被誉为“中国信息科技人才的摇篮”。[3] 前身是1955年成立的新中国第一所邮电高等学府——北京邮电学院。1960年被国务院确定为全国重点高校。 1993年更名为“北京邮电大学”。2000年，划入教育部直属高校行列。2012年，信息与通信工程一级学科全国排名第一。 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1:not(.h2)&#123; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;h1&lt;/h1&gt;&lt;h1 class="h2"&gt;h1&lt;/h1&gt;&lt;h1&gt;h1&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
       <categories>
         <category>前端</category>
         <category>css3</category>
@@ -98,9 +113,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
         <tag>getpos()</tag>
       </tags>
   </entry>
@@ -144,8 +159,8 @@
         <category>正则</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>字符串</tag>
         <tag>正则</tag>
         <tag>敏感词过滤</tag>
@@ -160,8 +175,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>函数</tag>
       </tags>
   </entry>
@@ -174,8 +189,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>运算符</tag>
         <tag>流程控制</tag>
@@ -190,8 +205,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>运算符</tag>
       </tags>
   </entry>
@@ -204,8 +219,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>作用域</tag>
         <tag>预解析</tag>
         <tag>易错点</tag>
@@ -220,8 +235,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -249,8 +264,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -264,8 +279,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>数据类型转换</tag>
       </tags>
@@ -284,8 +299,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>数据类型</tag>
       </tags>
   </entry>
@@ -298,8 +313,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>for</tag>
       </tags>
@@ -313,8 +328,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>自定义属性</tag>
       </tags>
   </entry>
@@ -339,8 +354,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>this</tag>
       </tags>
   </entry>
@@ -353,8 +368,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -367,8 +382,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -381,8 +396,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for循环</tag>
       </tags>
   </entry>
@@ -395,8 +410,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>图片切换</tag>
       </tags>
   </entry>
@@ -409,8 +424,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>ByTagName</tag>
       </tags>
   </entry>
@@ -435,8 +450,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>条件判断</tag>
       </tags>
   </entry>
@@ -454,8 +469,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>属性操作</tag>
       </tags>
   </entry>
@@ -524,9 +539,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -538,8 +553,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>父节点</tag>
       </tags>
   </entry>
@@ -552,9 +567,9 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -567,8 +582,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -643,8 +658,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
 </search>

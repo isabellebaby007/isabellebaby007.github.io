@@ -310,14 +310,14 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/js/</loc>
+        <loc>http://yoursite.com/tags/DOM/</loc>
         <lastmod>2018-03-08T12:16:06.242Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/DOM/</loc>
+        <loc>http://yoursite.com/tags/js/</loc>
         <lastmod>2018-03-08T12:16:06.242Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -366,22 +366,29 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/tags/%E4%BC%AA%E7%B1%BB/</loc>
+        <lastmod>2018-03-10T05:48:30.872Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-10T05:13:51.637Z</lastmod>
+        <lastmod>2018-03-10T09:15:24.476Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/css3/</loc>
-        <lastmod>2018-03-10T05:13:51.637Z</lastmod>
+        <lastmod>2018-03-10T09:15:24.476Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E4%BC%AA%E7%B1%BB/</loc>
-        <lastmod>2018-03-10T05:13:51.637Z</lastmod>
+        <loc>http://yoursite.com/tags/%E6%96%87%E6%9C%AC%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7/</loc>
+        <lastmod>2018-03-10T09:15:24.476Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
