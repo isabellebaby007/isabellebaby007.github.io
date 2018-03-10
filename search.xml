@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[css3结构选择器]]></title>
+    <url>%2F2018%2F03%2F10%2Fcss3%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[结构性伪类nth-child() 找到父级下第几个子节点 表示 含义 E:first-child 表示E元素中的第一个子节点 E:last-child 表示E元素的最后一个子节点 E:first-of-type 表示E元素中的第一个子节点且节点类型是E E:last-of-type 表示E元素中的最后一个子节点且节点类型是E的 E:only-child 表示E元素中只有一个子节点。注意：子节点不包含文本节点 E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E.注意：子节点不包含文本节点 E：empty 表示E元素中没有子节点。注意：子节点包含文本节点 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; border: 1px solid #000; &#125; p:nth-child(odd) &#123; background: red; &#125; /*p:nth-child(2)找到父级下的第二个子元素，并且这个元素还得是p标签 body:*:nth-child(2)找到body下第二个子节点，不管是什么标签 p:nth-last-child(2) 从后往前数 p:nth-of-type(2) 找到父级下的第二个p类型的标签 p:nth-of-last-type(2) 从后往前找 */ &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;p1&lt;/p&gt; &lt;p&gt;p2&lt;/p&gt; &lt;p&gt;p3&lt;/p&gt; &lt;p&gt;p4&lt;/p&gt; &lt;p&gt;p5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：新浪新闻导航头部1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .list &#123; margin: 0; padding: 0; list-style: none; &#125; .list li &#123; width: 150px; border: 1px solid #000; float: left; &#125; .list li:last-of-type &#123; border: none; &#125; .list a &#123; float: left; width: 40px; margin: 0 5px; font: 12px/30px "宋体"; text-align: center; &#125; .list li a:nth-of-type(3n+1) &#123; font-weight: bold; &#125; .list li:ntn-child(3) a:nth-child(2) &#123; color: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;ul class="list"&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>结构选择器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3属性选择器]]></title>
+    <url>%2F2018%2F03%2F09%2Fcss3%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[transition向前兼容问题 1234567891011121314151617181920212223242526&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: red; transition: 1s; &#125; .box:hover &#123; width: 200px; height: 200px; background: blue; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 测试得到其他浏览器都没问题，但是ie9和9以下，transition属性就失效了，不兼容。 12345678910111213141516171819202122232425262728293031323334353637&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: red; /*transition: 1s;*/ -webkit-transition:1s;/*兼容老版的chrome，safari*/ -moz-transition:1s; /*兼容老版的火狐*/ -o-transition:1s; /*兼容老版的opera*/ transition: 1s;/*标准的*/ &#125; .box:hover &#123; width: 200px; height: 200px; background: blue; &#125; /* js里面不支持横杠,所以前缀去掉横杠，改成大写 WebKitTransition OTransition MozTransition */ &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; css3属性选择器12345678910111213141516171819202122232425&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; border: 1px solid #000; &#125; p[xichen] &#123; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p xichen="leo"&gt;leo&lt;/p&gt; &lt;p xichen="kris"&gt;kris&lt;/p&gt; &lt;p xichen="jasper"&gt;jasper&lt;/p&gt; &lt;p xichen="hades"&gt;hades&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 属性选择器 表示 含义 E[attr] 只使用属性名，但没有确定任何属性值 E[attr=”value”] 指定属性名，并制定了该属性的属性值 E[attr~=”value”] 指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表包含了一个value词，而且等号前面的”~”不能不写 E[attr^=”value”] 指定属性名，并且具有属性值，属性值是以value开头的 E[attr$=”value”] 指定属性名，并且具有属性值，属性值是以value结束的 E[attr*=”value”] 指定属性名，并且具有属性值，而且属性值中包含了value E[attr\ =”value”] 指定属性名，并且具有属性值，而且属性值是以value或者以”value-“开头的值（比如zh-cn） 小例子:仿百度文库分类图标 做出不同的文档类型前面加上不同的图标的效果 。 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; line-height: 30px; font-size: 12px; border: 1px solid #000; &#125; p a &#123; background: url(img/w.gif) no-repeat 3px center; padding-left: 20px; display: block; &#125; p a[href*=text] &#123; background-image: url(img/text.gif); &#125; p a[href*=pdf] &#123; background-image: url(img/pdf.gif); &#125; p a[href*=excel] &#123; background-image: url(img/excel.gif); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/doc/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/pdf/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/text/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/excel/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>属性选择器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[webpack]]></title>
     <url>%2F2018%2F03%2F09%2Fwebpack%2F</url>
     <content type="text"><![CDATA[webpack开发一个项目，业务逻辑非常多，开发会按照功能逻辑拆分成一个一个的模块，这个时候开发会更加地有条理，维护起来也会更加方便，但是这样会涉及到一个问题，模块之间会有着复杂的依赖关系，在处理这些依赖的时候，对于前端开发来说，会遇到一个很棘手的问题：因为代码都是从后端请求过来的，没办法像后端那样同步地引用代码，这个时候就需要模块打包器了。 模块打包器会先分析你的项目依赖，然后会按照一些复杂的规则打包，最后会得到一个新的js文件，这个时候你只需要加载这个js文件就可以了。webpack天生拥有这种模块打包的能力，他不仅拥有js打包的能力，还能帮你打包你所有的资源（css文件、字体、图片），在打包过程中，有各种各样的loader来帮助处理各种而样的内容。还有各种插件来辅助开发和项目构建，从而加快开发效率。频繁使用到CommonJS和ES6语法。]]></content>
@@ -53,9 +83,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
         <tag>getpos()</tag>
       </tags>
   </entry>
@@ -99,8 +129,8 @@
         <category>正则</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>字符串</tag>
         <tag>正则</tag>
         <tag>敏感词过滤</tag>
@@ -115,8 +145,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>函数</tag>
       </tags>
   </entry>
@@ -129,8 +159,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>运算符</tag>
         <tag>流程控制</tag>
@@ -145,8 +175,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>运算符</tag>
       </tags>
   </entry>
@@ -159,8 +189,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>作用域</tag>
         <tag>预解析</tag>
         <tag>易错点</tag>
@@ -175,8 +205,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -204,8 +234,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -219,8 +249,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
         <tag>数据类型转换</tag>
       </tags>
@@ -239,8 +269,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>数据类型</tag>
       </tags>
   </entry>
@@ -253,10 +283,10 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
-        <tag>for</tag>
+        <tag>js</tag>
         <tag>前端练习小项目</tag>
+        <tag>for</tag>
       </tags>
   </entry>
   <entry>
@@ -268,8 +298,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>自定义属性</tag>
       </tags>
   </entry>
@@ -294,8 +324,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>this</tag>
       </tags>
   </entry>
@@ -308,8 +338,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -322,8 +352,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -336,8 +366,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>for循环</tag>
       </tags>
   </entry>
@@ -350,8 +380,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>图片切换</tag>
       </tags>
   </entry>
@@ -364,8 +394,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>ByTagName</tag>
       </tags>
   </entry>
@@ -390,8 +420,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>条件判断</tag>
       </tags>
   </entry>
@@ -409,8 +439,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>属性操作</tag>
       </tags>
   </entry>
@@ -479,9 +509,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -493,8 +523,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>前端</tag>
+        <tag>js</tag>
         <tag>父节点</tag>
       </tags>
   </entry>
@@ -507,9 +537,9 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>js</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -522,8 +552,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -549,16 +579,17 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+    <title><![CDATA[九大排序算法总结]]></title>
+    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
+    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
       <categories>
-        <category>hexo博客</category>
+        <category>数据结构</category>
+        <category>算法</category>
       </categories>
       <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
       </tags>
   </entry>
   <entry>
@@ -577,17 +608,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[九大排序算法总结]]></title>
-    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
-    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
       <categories>
-        <category>数据结构</category>
-        <category>算法</category>
+        <category>hexo博客</category>
       </categories>
       <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>排序</tag>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>
@@ -598,8 +628,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>DOM</tag>
         <tag>前端</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
 </search>

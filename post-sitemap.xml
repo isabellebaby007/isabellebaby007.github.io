@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/10/css3%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
+        <lastmod>2018-03-10T02:55:38.668Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/09/css3%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
+        <lastmod>2018-03-09T16:52:37.357Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/09/webpack/</loc>
         <lastmod>2018-03-09T13:57:28.525Z</lastmod>
         <changefreq>weekly</changefreq>
