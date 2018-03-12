@@ -423,21 +423,35 @@
 
     <url>
         <loc>http://yoursite.com/tags/js/</loc>
-        <lastmod>2018-03-12T15:46:36.993Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-12T15:46:36.993Z</lastmod>
+        <lastmod>2018-03-12T16:41:23.170Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
-        <lastmod>2018-03-12T15:46:36.993Z</lastmod>
+        <lastmod>2018-03-12T16:41:23.170Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-12T21:27:24.925Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/</loc>
+        <lastmod>2018-03-12T21:27:24.925Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/bootstrap/</loc>
+        <lastmod>2018-03-12T21:27:24.925Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
