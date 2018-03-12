@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[面向对象基础]]></title>
     <url>%2F2018%2F03%2F12%2F%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%9F%BA%E7%A1%80%2F</url>
-    <content type="text"><![CDATA[什么是面向对象用对象的思想去写程序，就是面向对象编程 -过程式写法 -面向对象写法 例如：数组Array时间Date 1234567891011var arr=new Array(); //系统自带的对象，叫做系统对象var date=new Date();arr.lengtharr.push();arr.sort();date.getDate();var t1=new Tab();t1.over();t1.autoPlay(); 面向对象编程（OOP）的特点 抽象 抓住核心问题 封装 只能通过对象来访问方法 继承 从已有对象上继承出新的对象 多态 多对象的不同形态 面向对象的基本写法何组成对象的组成方法（行为、操作）–函数：过程、动态的 属性-变量：状态、静态的 创建第一个面向对象程序对象下面的变量：叫做对象的属性 对象下面的函数：叫做对象的方法 为对象添加属性和方法 object对象 this指向 创建两个对象：重复代码过多 12345678910var arr=[];arr.number=10;arr.test=function()&#123; alert(123);&#125;;arr.test();arr.push();arr.sort(); 12345var obj=new object();//创建了一个空的对象obj.name='小明';obj.showName=function()&#123; alert(obj.name);&#125;; 工厂方式与构造函数1234567891011121314151617function createPerson(name)&#123; //原料 var obj =new Object(); //加工 obj.name=name; obj.showName=function()&#123; alert(this.name); &#125;; //出场 return obj;&#125;var p1=createPerson('小明');p1.showName();var p2=createPerson('小明');p2.showName(); 当new去调用一个函数：这个时候函数中的this就是创建出来的对象，而且函数的返回值直接就是this （隐式返回） 12345678910111213function CreatePerson(name)&#123; this.name=name; this.shortName=function()&#123; alert(this.name); &#125;; &#125;var p1=new CreatePerson('小明');p1.showName();var p2=CreatePerson('小明');p2.showName(); 对象引用是什么和它的问题]]></content>
+    <content type="text"><![CDATA[什么是面向对象用对象的思想去写程序，就是面向对象编程 -过程式写法 -面向对象写法 例如：数组Array时间Date 1234567891011var arr=new Array(); //系统自带的对象，叫做系统对象var date=new Date();arr.lengtharr.push();arr.sort();date.getDate();var t1=new Tab();t1.over();t1.autoPlay(); 面向对象编程（OOP）的特点 抽象 抓住核心问题 封装 只能通过对象来访问方法 继承 从已有对象上继承出新的对象 多态 多对象的不同形态 面向对象的基本写法何组成对象的组成方法（行为、操作）–函数：过程、动态的 属性-变量：状态、静态的 创建第一个面向对象程序对象下面的变量：叫做对象的属性 对象下面的函数：叫做对象的方法 为对象添加属性和方法 object对象 this指向 创建两个对象：重复代码过多 12345678910var arr=[];arr.number=10;arr.test=function()&#123; alert(123);&#125;;arr.test();arr.push();arr.sort(); 12345var obj=new object();//创建了一个空的对象obj.name='小明';obj.showName=function()&#123; alert(obj.name);&#125;; 工厂方式与构造函数1234567891011121314151617function createPerson(name)&#123; //原料 var obj =new Object(); //加工 obj.name=name; obj.showName=function()&#123; alert(this.name); &#125;; //出场 return obj;&#125;var p1=createPerson('小明');p1.showName();var p2=createPerson('小明');p2.showName(); 当new去调用一个函数：这个时候函数中的this就是创建出来的对象，而且函数的返回值直接就是this （隐式返回） 12345678910111213function CreatePerson(name)&#123; this.name=name; this.shortName=function()&#123; alert(this.name); &#125;; &#125;var p1=new CreatePerson('小明');p1.showName();var p2=CreatePerson('小明');p2.showName(); 对象引用是什么和它的问题1234567891011function CreatePerson(name)&#123; this.name=name; this.shortName=function()&#123; alert(this.name); &#125;;&#125;var p1=new CreatePerson('小强');var p2=new CreatePerson('小明');alert(p1.showName==p2.showName); //false 这里为什么会出现false? 原因：因为基本类型的比较，只要值相同就可以了；而对象类型的比较，值和引用都要相同才可以。p1.showName和p2.showName分别在不同的地址创建了对象，所以这里返回的是false。但是会造成很大的内存浪费 1234567891011121314151617181920212223242526var a = 5;var b = a;b += 3;alert(b); //8alert(a); //5 基本类型 : 赋值的时候只是值的复制var a = [1,2,3];var b = a;b.push(4);alert(b); //[1,2,3,4]alert(a); //[1,2,3,4] 对象类型 : 赋值不仅是值的复制，而且也是引用的传递//var a = [1,2,3];//var b = a;//b = [1,2,3,4];////alert(b); //[1,2,3,4]//alert(a); //[1,2,3]var a = 5;var b = 5;alert(a == b); // true 基本类型 : 值相同就可以var a = [1,2,3];var b = [1,2,3];alert( a == b ); //false //对象类型 : 值和引用都相同才行 面向对象之原型学习原型：去改写对象下面公用的方法或者属性，让同样的公用的东西在内存当中只存在一份（目的是为了提高性能） 类比：原型就像css中的class一样 ，而普通方法就像CSS中的style一样 注意：原型prototype : 要写在构造函数的下面 普通方法的例子123456789101112131415161718192021222324var arr = [1,2,3,4,5]; var arr2 = [2,2,2,2,2]; arr.sum = function()&#123; var result = 0; for(var i=0;i&lt;this.length;i++)&#123; result += this[i]; &#125; return result; &#125;; arr2.sum = function()&#123; var result = 0; for(var i=0;i&lt;this.length;i++)&#123; result += this[i]; &#125; return result; &#125;; //alert( arr.sum() ); //15 //alert( arr2.sum() ); //10*/ 原型的例子12345678910111213var arr = [1, 2, 3, 4, 5]; var arr2 = [2, 2, 2, 2, 2]; Array.prototype.sum = function() &#123; var result = 0; for (var i = 0; i &lt; this.length; i++) &#123; result += this[i]; &#125; return result; &#125;; alert(arr.sum()); //15 alert(arr2.sum()); //10 类比css中style的优先级大于class,所以这里的优先级也是 12345var arr = [];arr.number = 10;Array.prototype.number = 20;alert(arr.number); //10 1234var arr = [];Array.prototype.number = 20;alert(arr.number); //20 工厂方式之原型1234567891011121314151617181920212223242526 function CreatePerson(name) &#123; this.name = name; &#125; CreatePerson.prototype.showName = function() &#123; alert(this.name); &#125;; var p1 = new CreatePerson('小明'); //p1.showName(); var p2 = new CreatePerson('小强'); //p2.showName(); alert(p1.showName == p2.showName); //true 不仅值相同，而且地址相同，在内存中只存在一份 var arr = new Array(); var date = new Date(); &lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; 小结：面向对象的写法1234567891011function 构造函数()&#123; this.属性&#125;构造函数.原型.方法 = function()&#123;&#125;;var 对象1 = new 构造函数();对象1.方法(); 传统的过程式编写选项卡]]></content>
       <categories>
         <category>前端</category>
         <category>js</category>
@@ -718,6 +718,21 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[青蛙旅行破解版]]></title>
+    <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
+    <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
+      <categories>
+        <category>android</category>
+        <category>逆向</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>破解</tag>
+        <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
     <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
     <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -742,21 +757,6 @@
         <tag>数据结构</tag>
         <tag>算法</tag>
         <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[青蛙旅行破解版]]></title>
-    <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
-    <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
-      <categories>
-        <category>android</category>
-        <category>逆向</category>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>游戏</tag>
-        <tag>破解</tag>
-        <tag>android</tag>
       </tags>
   </entry>
   <entry>
