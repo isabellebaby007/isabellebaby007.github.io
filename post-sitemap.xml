@@ -7,8 +7,152 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/14/let%E5%92%8Cconst/</loc>
+        <lastmod>2018-03-14T11:14:18.665Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8B%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9CPromise/</loc>
+        <lastmod>2018-03-14T10:51:29.404Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8B%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A9%E5%B1%95%E3%80%81%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/</loc>
+        <lastmod>2018-03-14T10:51:08.457Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8B%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/</loc>
+        <lastmod>2018-03-14T10:50:36.358Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8BSymbol%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+        <lastmod>2018-03-14T10:50:10.663Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8Bclass%E7%9A%84%E7%BB%A7%E6%89%BF/</loc>
+        <lastmod>2018-03-14T10:49:54.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8Bclass%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
+        <lastmod>2018-03-14T10:49:39.767Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8Biterator%E5%92%8Cfoor-of%E5%BE%AA%E7%8E%AF/</loc>
+        <lastmod>2018-03-14T10:49:19.206Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84Map/</loc>
+        <lastmod>2018-03-14T10:48:31.582Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84set/</loc>
+        <lastmod>2018-03-14T10:48:07.418Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC/</loc>
+        <lastmod>2018-03-14T10:47:54.256Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/ES6%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+        <lastmod>2018-03-14T10:45:29.162Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/13/bootstrap/</loc>
-        <lastmod>2018-03-13T12:36:20.434Z</lastmod>
+        <lastmod>2018-03-14T06:52:26.446Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/HTML5%E7%9A%84%E9%9F%B3%E9%A2%91%E4%B8%8E%E8%A7%86%E9%A2%91/</loc>
+        <lastmod>2018-03-14T06:52:18.147Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/HTML5%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E3%80%81%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8%E3%80%81%E7%A6%BB%E7%BA%BF%E5%AD%98%E5%82%A8/</loc>
+        <lastmod>2018-03-14T06:51:48.845Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/HTML5%E7%9A%84%E8%B7%A8%E6%96%87%E6%A1%A3%E6%B6%88%E6%81%AF%E9%80%9A%E4%BF%A1/</loc>
+        <lastmod>2018-03-14T06:51:19.766Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/HTML5%E7%9A%84canvas/</loc>
+        <lastmod>2018-03-14T06:50:59.303Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/HTML5%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+        <lastmod>2018-03-14T06:50:41.011Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/%E5%88%9D%E8%AF%86HTML5/</loc>
+        <lastmod>2018-03-14T06:49:58.570Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

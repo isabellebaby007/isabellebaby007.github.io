@@ -436,22 +436,29 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-13T12:36:20.434Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/%E6%A1%86%E6%9E%B6/</loc>
-        <lastmod>2018-03-13T12:36:20.434Z</lastmod>
+        <lastmod>2018-03-14T06:52:26.446Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/bootstrap/</loc>
-        <lastmod>2018-03-13T12:36:20.434Z</lastmod>
+        <lastmod>2018-03-14T06:52:26.446Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-14T11:14:18.665Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/ES6/</loc>
+        <lastmod>2018-03-14T11:14:18.665Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
