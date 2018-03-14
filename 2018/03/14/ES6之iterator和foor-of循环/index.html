@@ -136,19 +136,19 @@
 
 
 
-<meta name="description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 Iterator就是这样一种机制，他是一种接口，为各种不同的数据结构提供统一的访问机制，任何数据结构只要部署Iterator接口，就可以完成遍历">
+<meta name="description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。">
 <meta name="keywords" content="前端,ES6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6之iterator和foor-of循环">
 <meta property="og:url" content="http://yoursite.com/2018/03/14/ES6之iterator和foor-of循环/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 Iterator就是这样一种机制，他是一种接口，为各种不同的数据结构提供统一的访问机制，任何数据结构只要部署Iterator接口，就可以完成遍历">
+<meta property="og:description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/14/ES6之iterator和foor-of循环/C:/blog/source/_posts/ES6之iterator和foor-of循环/iterator.png">
-<meta property="og:updated_time" content="2018-03-14T18:38:59.116Z">
+<meta property="og:updated_time" content="2018-03-14T18:53:18.739Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6之iterator和foor-of循环">
-<meta name="twitter:description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 Iterator就是这样一种机制，他是一种接口，为各种不同的数据结构提供统一的访问机制，任何数据结构只要部署Iterator接口，就可以完成遍历">
+<meta name="twitter:description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。">
 <meta name="twitter:image" content="http://yoursite.com/2018/03/14/ES6之iterator和foor-of循环/C:/blog/source/_posts/ES6之iterator和foor-of循环/iterator.png">
 
 
@@ -487,7 +487,7 @@
       
 
       
-        <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。</p>
+        <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。<a id="more"></a></p>
 <p>Iterator就是这样一种机制，他是一种接口，为各种不同的数据结构提供统一的访问机制，任何数据结构只要部署Iterator接口，就可以完成遍历操作，而且这种遍历操作是依次处理该数据结构的所有成员。</p>
 <h3 id="Iterator遍历器的作用"><a href="#Iterator遍历器的作用" class="headerlink" title="Iterator遍历器的作用"></a>Iterator遍历器的作用</h3><p>1、为各种数据结构，提供一个统一的、简便的访问接口。</p>
 <p>2、使得数据结构的成员能够按照某种次序排列</p>

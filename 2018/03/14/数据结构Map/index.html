@@ -136,18 +136,18 @@
 
 
 
-<meta name="description" content="Map字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。 JavaScript的对象(Object:{})只能用字符串当作键。这给它的使用带来了很大的限制。 为了解决这个问题，ES6提供了Map数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。也就是说，Object结构提供了“">
+<meta name="description" content="Map字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。">
 <meta name="keywords" content="前端,ES6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构Map">
 <meta property="og:url" content="http://yoursite.com/2018/03/14/数据结构Map/index.html">
 <meta property="og:site_name" content="Isabelle的博客小站">
-<meta property="og:description" content="Map字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。 JavaScript的对象(Object:{})只能用字符串当作键。这给它的使用带来了很大的限制。 为了解决这个问题，ES6提供了Map数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。也就是说，Object结构提供了“">
+<meta property="og:description" content="Map字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-14T18:01:49.709Z">
+<meta property="og:updated_time" content="2018-03-14T18:53:00.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构Map">
-<meta name="twitter:description" content="Map字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。 JavaScript的对象(Object:{})只能用字符串当作键。这给它的使用带来了很大的限制。 为了解决这个问题，ES6提供了Map数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。也就是说，Object结构提供了“">
+<meta name="twitter:description" content="Map字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。">
 
 
 
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  533
+                  536
                 </span>
               
 
@@ -485,7 +485,7 @@
       
 
       
-        <h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。</p>
+        <h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>字典：是用来存储不重复key的Hash结构，不同于集合（Set）的是，字典使用的是[键，值]的形式来储存数据的。<a id="more"></a></p>
 <p>JavaScript的对象(Object:{})只能用字符串当作键。这给它的使用带来了很大的限制。</p>
 <p>为了解决这个问题，ES6提供了Map数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。也就是说，Object结构提供了“字符串-值”的对应，Map结构提供了“值-值”的对应，是一种更完善的Hash结构实现。如果你需要“键值对”的数据结构，Map比Object更合适。</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var data1=&#123;a:<span class="number">1</span>&#125;,data2=&#123;<span class="keyword">b,2&#125;,obj=&#123;&#125;;</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line"><span class="keyword">obj[data1]=1;</span></span><br><span class="line"><span class="keyword">obj[data2]=2;</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line"><span class="keyword">console.log(obj);</span></span><br><span class="line"><span class="keyword"></span></span><br><span class="line"><span class="keyword">console.log(data1.toString()===data2.toString());</span></span><br></pre></td></tr></table></figure>
@@ -509,8 +509,7 @@
 <figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(<span class="keyword">map</span>.entries());//返回MapIterator&#123;&#123;<span class="string">"b"</span>,<span class="number">2</span>&#125;,&#123;<span class="string">"atom"</span>,<span class="string">"coco"</span>&#125;&#125;</span><br></pre></td></tr></table></figure>
 <p>9、forEach()  使用毁掉函数遍历每个成员</p>
 <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>.forEach(function(<span class="built_in">key</span>,value,<span class="built_in">map</span>)&#123;</span><br><span class="line">    console.<span class="built_in">log</span>(<span class="built_in">key</span>+<span class="string">':'</span>+value);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>map.set(NaN,10).set(NaN,100);</p>
-<p>console.log(map);</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>.<span class="built_in">set</span>(NaN,<span class="number">10</span>).<span class="built_in">set</span>(NaN,<span class="number">100</span>);</span><br><span class="line"></span><br><span class="line">console.<span class="built_in">log</span>(<span class="built_in">map</span>);</span><br></pre></td></tr></table></figure>
 
       
     </div>
