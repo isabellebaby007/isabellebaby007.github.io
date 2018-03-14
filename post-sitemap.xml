@@ -7,8 +7,8 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/2018/03/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84set/</loc>
-        <lastmod>2018-03-14T16:28:07.730Z</lastmod>
+        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8Biterator%E5%92%8Cfoor-of%E5%BE%AA%E7%8E%AF/</loc>
+        <lastmod>2018-03-14T18:28:48.764Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +16,15 @@
 
     <url>
         <loc>http://yoursite.com/2018/03/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84Map/</loc>
-        <lastmod>2018-03-14T14:30:16.473Z</lastmod>
+        <lastmod>2018-03-14T18:01:49.709Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/14/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84set/</loc>
+        <lastmod>2018-03-14T16:57:49.208Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -81,14 +89,6 @@
     <url>
         <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8Bclass%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
         <lastmod>2018-03-14T10:49:39.767Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/14/ES6%E4%B9%8Biterator%E5%92%8Cfoor-of%E5%BE%AA%E7%8E%AF/</loc>
-        <lastmod>2018-03-14T10:49:19.206Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
