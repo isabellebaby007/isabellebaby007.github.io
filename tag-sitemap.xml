@@ -451,14 +451,14 @@
 
     <url>
         <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-14T18:28:48.764Z</lastmod>
+        <lastmod>2018-03-14T18:38:59.116Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/ES6/</loc>
-        <lastmod>2018-03-14T18:28:48.764Z</lastmod>
+        <lastmod>2018-03-14T18:38:59.116Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -144,10 +144,12 @@
 <meta property="og:site_name" content="Isabelle的博客小站">
 <meta property="og:description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 Iterator就是这样一种机制，他是一种接口，为各种不同的数据结构提供统一的访问机制，任何数据结构只要部署Iterator接口，就可以完成遍历">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-14T18:28:48.764Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/14/ES6之iterator和foor-of循环/C:/blog/source/_posts/ES6之iterator和foor-of循环/iterator.png">
+<meta property="og:updated_time" content="2018-03-14T18:38:59.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6之iterator和foor-of循环">
 <meta name="twitter:description" content="基本概念在ES6中新增了Set和Map两种数据结构，再加上JS之前原有的数组和对象，这样就有了四种数据集合，平时还可以组合使用它们，定义自己的数据结构，比如数组的成员是Map,Map的成员是对象等。这样就需要一种统一的接口机制，来处理所有不同的数据结构。 Iterator就是这样一种机制，他是一种接口，为各种不同的数据结构提供统一的访问机制，任何数据结构只要部署Iterator接口，就可以完成遍历">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/14/ES6之iterator和foor-of循环/C:/blog/source/_posts/ES6之iterator和foor-of循环/iterator.png">
 
 
 
@@ -448,7 +450,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  266
+                  559
                 </span>
               
 
@@ -464,7 +466,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -491,8 +493,14 @@
 <p>2、使得数据结构的成员能够按照某种次序排列</p>
 <p>3、ES6新增了便利命令for….of循环，Iterator接口主要供for…of消费</p>
 <p>1、手写Iterrator接口</p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> iterator(arr)&#123;</span><br><span class="line">    <span class="keyword">let</span> index=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span>&#123;</span><br><span class="line">        next:<span class="keyword">function</span>()&#123;</span><br><span class="line">            <span class="keyword">return</span> index&lt;arr.length ?</span><br><span class="line">            &#123;value:arr[index++],done:<span class="literal">false</span>&#125;:</span><br><span class="line">            &#123;value:<span class="literal">undefined</span>,done:<span class="literal">true</span>&#125;;</span><br><span class="line">                </span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="literal">it</span>=iterator(arr);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">it</span>.next());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">it</span>.next());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">it</span>.next());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="literal">it</span>.next());</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/03/14/ES6之iterator和foor-of循环/C:/blog\source\_posts\ES6之iterator和foor-of循环\iterator.png" alt=""></p>
+<h4 id="Iterator的遍历过程"><a href="#Iterator的遍历过程" class="headerlink" title="Iterator的遍历过程"></a>Iterator的遍历过程</h4><p>1、创建一个指针队形，指向当前数据结构的起始位置。也就是说，遍历器对象本质上，就是一个指针对象。</p>
+<p>2、第一次调用只针对想的next方法，可以将指针指向数据结构的第一个成员。</p>
+<p>3、第二次调用只针对想的next方法，指针就指向数据结构的第二个成员</p>
+<p>4、不断调用只针对想的next方法，知道它指向数据结构的结束位置。</p>
+<p>5、每一次调用next方法，都会返回数据结构的当前成员的信息。具体来说，就是返回一个包含value和done两个属性的对象。其中，value属性就是当前成员的值，done属性是一个布尔值，便是遍历是否结束。</p>
+<h4 id="小结：凡是具有Symbol-iterator属性的数据结构都具有Iterator接口"><a href="#小结：凡是具有Symbol-iterator属性的数据结构都具有Iterator接口" class="headerlink" title="小结：凡是具有Symbol.iterator属性的数据结构都具有Iterator接口"></a>小结：凡是具有Symbol.iterator属性的数据结构都具有Iterator接口</h4>
       
     </div>
     
@@ -677,7 +685,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">78</span>
+                  <span class="site-state-item-count">93</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -794,7 +802,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Iterator遍历器的作用"><span class="nav-number">2.</span> <span class="nav-text">Iterator遍历器的作用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Iterator遍历器的作用"><span class="nav-number">2.</span> <span class="nav-text">Iterator遍历器的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Iterator的遍历过程"><span class="nav-number">2.1.</span> <span class="nav-text">Iterator的遍历过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小结：凡是具有Symbol-iterator属性的数据结构都具有Iterator接口"><span class="nav-number">2.2.</span> <span class="nav-text">小结：凡是具有Symbol.iterator属性的数据结构都具有Iterator接口</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -831,7 +839,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">37.1k</span>
+    <span title="Site words total count">37.4k</span>
   
 </div>
 
