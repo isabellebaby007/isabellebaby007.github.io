@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Wed, 14 Mar 2018 18:47:43 GMT</pubDate>
+    <pubDate>Thu, 15 Mar 2018 03:04:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>react学习线路</title>
+      <link>http://yoursite.com/2018/03/15/react%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF/</link>
+      <guid>http://yoursite.com/2018/03/15/react%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF/</guid>
+      <pubDate>Thu, 15 Mar 2018 02:33:41 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;学习规划&quot;&gt;&lt;a href=&quot;#学习规划&quot; class=&quot;headerlink&quot; title=&quot;学习规划&quot;&gt;&lt;/a&gt;学习规划&lt;/h3&gt;&lt;p&gt; 基础：ES6语法      npm管理开发依赖    babel编译ES6和CSS的语法&lt;/p&gt;
+&lt;p&gt;react基础：J
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="学习规划"><a href="#学习规划" class="headerlink" title="学习规划"></a>学习规划</h3><p> 基础：ES6语法      npm管理开发依赖    babel编译ES6和CSS的语法</p><p>react基础：JSX语法、Component组件、数据、事件、生命周期</p><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><h4 id="nodejs环境"><a href="#nodejs环境" class="headerlink" title="nodejs环境"></a>nodejs环境</h4><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>    下载文件之后并安装，此时命令行窗口输入node -v并回车可以查看版本。输入以下命令安装：</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="selector-tag">i</span> -g nrm</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/03/15/react%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>webpack之此publicPath和彼publicPath</title>
@@ -57,18 +77,6 @@
       </description>
       
       <comments>http://yoursite.com/2018/03/15/webpack%E4%B9%8B%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86babel-loader/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>webpack之使用babel插件和预设</title>
-      <link>http://yoursite.com/2018/03/15/webpack%E4%B9%8B%E4%BD%BF%E7%94%A8babel%E6%8F%92%E4%BB%B6%E5%92%8C%E9%A2%84%E8%AE%BE/</link>
-      <guid>http://yoursite.com/2018/03/15/webpack%E4%B9%8B%E4%BD%BF%E7%94%A8babel%E6%8F%92%E4%BB%B6%E5%92%8C%E9%A2%84%E8%AE%BE/</guid>
-      <pubDate>Wed, 14 Mar 2018 18:46:03 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>http://yoursite.com/2018/03/15/webpack%E4%B9%8B%E4%BD%BF%E7%94%A8babel%E6%8F%92%E4%BB%B6%E5%92%8C%E9%A2%84%E8%AE%BE/#disqus_thread</comments>
     </item>
     
   </channel>

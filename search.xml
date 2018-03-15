@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[react学习线路]]></title>
+    <url>%2F2018%2F03%2F15%2Freact%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF%2F</url>
+    <content type="text"><![CDATA[学习规划 基础：ES6语法 npm管理开发依赖 babel编译ES6和CSS的语法 react基础：JSX语法、Component组件、数据、事件、生命周期 环境搭建nodejs环境https://nodejs.org/en/ 下载文件之后并安装，此时命令行窗口输入node -v并回车可以查看版本。输入以下命令安装： 1npm i -g nrm]]></content>
+      <categories>
+        <category>前端</category>
+        <category>react</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>react</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[webpack之此publicPath和彼publicPath]]></title>
     <url>%2F2018%2F03%2F15%2Fwebpack%E4%B9%8B%E6%AD%A4publicPath%E5%92%8C%E5%BD%BCpublicPath%2F</url>
     <content type="text"></content>
@@ -99,11 +112,27 @@
     <title><![CDATA[ES6之class的继承]]></title>
     <url>%2F2018%2F03%2F14%2FES6%E4%B9%8Bclass%E7%9A%84%E7%BB%A7%E6%89%BF%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>前端</category>
+        <category>ES6</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>ES6</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[ES6之class的基本使用]]></title>
     <url>%2F2018%2F03%2F14%2FES6%E4%B9%8Bclass%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[class语法JS语言的传递方法是通过构造函数，定义并生成新对象，是一种基于原型的面向对象系统。这种写法跟传统的面向对象语言差异很大，很容易让新学习这门语言的人感到困惑。所以，在ES6中新增了类的概念，可以使用class关键字声明了一个类，之后以这个类来实例化对象。 基于原型的面向对象系统： 1234567891011121314const Miaov=function(a,b)&#123; this.a=a; this.b=b; return this;&#125;;Miaov.prototype=&#123; constructor:Miaov, print:funvtion()&#123; console.log(this.a+''+this.b); &#125;&#125;;const miaov=new Miaov('hello','world').print(); 1234567891011121314class Miaov&#123; constructor(a,b)&#123; this.a=a; this.b=b; return this; &#125; print()&#123; console.log(this.a+''+this.b); &#125;&#125;;const miaov=new Miaov('hello','world').print();console.log(typeof Miaov); //function 说明：1、Miaov中的constructor方法是构造方法，this关键字则代表实例对象。也就是说，ES5的构造函数Miaov,对应ES6的Miaov这个类的构造方法。 2、Miaov这个类除了构造方法，还定义了一个print方法。注意，定义“类”的方法的时候，前面不需要加上function这个关键字，直接把函数定义放进去了就可以了。另外，方法之间不需要逗号分隔，加了会报错。 3、构造函数的prototype属性，在ES6的类上面继续存在，而且类的所有方法都定义在类的prototype属性上面。 console.log(Miaov.prototype);//object{constructor:function,print:function} 4、定义在类中的方法都是不可以枚举的。 console.log(object.keys(Miaov.prototype));//不能打印出来 5、constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，如果没有显式定义，一个空的constructor方法会被默认添加。]]></content>
+      <categories>
+        <category>前端</category>
+        <category>ES6</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>ES6</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[ES6之iterator和foor-of循环]]></title>
@@ -234,8 +263,8 @@
         <category>js面向对象及组件开发</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>面向对象</tag>
       </tags>
   </entry>
@@ -249,8 +278,8 @@
         <category>js面向对象及组件开发</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>面向对象</tag>
       </tags>
   </entry>
@@ -283,8 +312,8 @@
         <category>闭包</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>闭包</tag>
       </tags>
   </entry>
@@ -461,9 +490,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
+        <tag>前端</tag>
         <tag>getpos()</tag>
       </tags>
   </entry>
@@ -507,8 +536,8 @@
         <category>正则</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>字符串</tag>
         <tag>正则</tag>
         <tag>敏感词过滤</tag>
@@ -523,8 +552,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>函数</tag>
       </tags>
   </entry>
@@ -537,8 +566,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>运算符</tag>
         <tag>流程控制</tag>
@@ -553,8 +582,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>运算符</tag>
       </tags>
   </entry>
@@ -567,8 +596,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>作用域</tag>
         <tag>预解析</tag>
         <tag>易错点</tag>
@@ -583,8 +612,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -612,8 +641,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>函数传参</tag>
       </tags>
@@ -627,8 +656,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>数据类型转换</tag>
       </tags>
@@ -647,8 +676,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>数据类型</tag>
       </tags>
   </entry>
@@ -661,8 +690,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>前端练习小项目</tag>
         <tag>for</tag>
       </tags>
@@ -676,8 +705,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>自定义属性</tag>
       </tags>
   </entry>
@@ -702,8 +731,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>this</tag>
       </tags>
   </entry>
@@ -716,8 +745,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -730,8 +759,8 @@
         <category>练习项目</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>for</tag>
       </tags>
   </entry>
@@ -744,8 +773,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>for循环</tag>
       </tags>
   </entry>
@@ -758,8 +787,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>图片切换</tag>
       </tags>
   </entry>
@@ -772,8 +801,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>ByTagName</tag>
       </tags>
   </entry>
@@ -798,8 +827,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>条件判断</tag>
       </tags>
   </entry>
@@ -817,8 +846,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>属性操作</tag>
       </tags>
   </entry>
@@ -887,9 +916,9 @@
         <category>DOM</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -901,8 +930,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>js</tag>
+        <tag>前端</tag>
         <tag>父节点</tag>
       </tags>
   </entry>
@@ -915,9 +944,9 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
+        <tag>前端</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -930,8 +959,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
   <entry>
@@ -957,6 +986,19 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -969,19 +1011,6 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>
@@ -1006,8 +1035,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>DOM</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
 </search>
