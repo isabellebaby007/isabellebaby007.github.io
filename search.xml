@@ -1,6 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[实现JQ中的extend]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E7%9A%84extend%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[实现JQ中链式操作和事件细节]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E9%93%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E5%92%8C%E4%BA%8B%E4%BB%B6%E7%BB%86%E8%8A%82%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[实现JQ中的常见功能(五)]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8A%9F%E8%83%BD-%E4%BA%94%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[实现JQ中的常见功能(四)]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8A%9F%E8%83%BD-%E5%9B%9B%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[实现JQ中的常见功能(三)]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8A%9F%E8%83%BD-%E4%B8%89%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[实现JQ中的常见功能(二)]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8A%9F%E8%83%BD-%E4%BA%8C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[实现JQ中的常见功能(一)]]></title>
+    <url>%2F2018%2F03%2F16%2F%E5%AE%9E%E7%8E%B0JQ%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8A%9F%E8%83%BD-%E4%B8%80%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[vquery的选择元素]]></title>
+    <url>%2F2018%2F03%2F16%2Fvquery%E7%9A%84%E9%80%89%E6%8B%A9%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[vquery的基本框架形式]]></title>
+    <url>%2F2018%2F03%2F16%2Fvquery%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%BD%A2%E5%BC%8F%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[什么是vquery]]></title>
+    <url>%2F2018%2F03%2F16%2F%E4%BB%80%E4%B9%88%E6%98%AFvquery%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery的插件操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%9A%84%E6%8F%92%E4%BB%B6%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery的工具方法和ajax]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%9A%84%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95%E5%92%8Cajax%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery的工具方法]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%9A%84%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery事件操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E4%BA%8B%E4%BB%B6%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery中的运动]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E4%B8%AD%E7%9A%84%E8%BF%90%E5%8A%A8%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery中的DOM操作和数据操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E4%B8%AD%E7%9A%84DOM%E6%93%8D%E4%BD%9C%E5%92%8C%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery的DOM操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%9A%84DOM%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery基础的扩展]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E5%9F%BA%E7%A1%80%E7%9A%84%E6%89%A9%E5%B1%95%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之hover和简单动画]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8Bhover%E5%92%8C%E7%AE%80%E5%8D%95%E5%8A%A8%E7%94%BB%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery编写拖拽]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%BC%96%E5%86%99%E6%8B%96%E6%8B%BD%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之offsetParent、val、size、each]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8BoffsetParent%E3%80%81val%E3%80%81size%E3%80%81each%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之位置操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8B%E4%BD%8D%E7%BD%AE%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之事件细节]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8B%E4%BA%8B%E4%BB%B6%E7%BB%86%E8%8A%82%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery编写弹窗]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%BC%96%E5%86%99%E5%BC%B9%E7%AA%97%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之事件操作和scrollTop]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8B%E4%BA%8B%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%92%8CscrollTop%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之DOM操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8BDOM%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之属性操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8B%E5%B1%9E%E6%80%A7%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery编写选项卡]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%BC%96%E5%86%99%E9%80%89%E9%A1%B9%E5%8D%A1%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之next、prev、find、eq、index、attr]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8Bnext%E3%80%81prev%E3%80%81find%E3%80%81eq%E3%80%81index%E3%80%81attr%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery方法之filter、not、has]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E6%96%B9%E6%B3%95%E4%B9%8Bfilter%E3%80%81not%E3%80%81has%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery设计思想之filter、not、has]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3%E4%B9%8Bfilter%E3%80%81not%E3%80%81has%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery设计思想之取值和赋值]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3%E4%B9%8B%E5%8F%96%E5%80%BC%E5%92%8C%E8%B5%8B%E5%80%BC%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery设计思想之原生关系和链式操作]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3%E4%B9%8B%E5%8E%9F%E7%94%9F%E5%85%B3%E7%B3%BB%E5%92%8C%E9%93%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery设计思想之写法]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3%E4%B9%8B%E5%86%99%E6%B3%95%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery设计思想之选择元素]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3%E4%B9%8B%E9%80%89%E6%8B%A9%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery简介]]></title>
+    <url>%2F2018%2F03%2F16%2FjQuery%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[react学习线路]]></title>
     <url>%2F2018%2F03%2F15%2Freact%E5%AD%A6%E4%B9%A0%E7%BA%BF%E8%B7%AF%2F</url>
     <content type="text"><![CDATA[学习规划 基础：ES6语法 npm管理开发依赖 babel编译ES6和CSS的语法 react基础：JSX语法、Component组件、数据、事件、生命周期 环境搭建nodejs环境https://nodejs.org/en/ 下载文件之后并安装，此时命令行窗口输入node -v并回车可以查看版本。输入以下命令安装： 1npm i -g nrm]]></content>
@@ -76,17 +256,41 @@
   <entry>
     <title><![CDATA[webpack之devserver介绍]]></title>
     <url>%2F2018%2F03%2F15%2Fwebpack%E4%B9%8Bdevserver%E4%BB%8B%E7%BB%8D%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[dev-server安装开发服务器的库 1npm i -D webpack-dev-server 在packag.json添加运行命令start1234567891011121314151617181920212223242526&#123; "name": "2", "version": "1.0.0", "description": "", "main": "webpack.config.js", "scripts": &#123; "test": "echo \"Error: no test specified\" &amp;&amp; exit 1", "dev": "webpack --config webpack.config.dev.js", "start": "webpack-dev-server --config webpack.config.dev.js" &#125;, "keywords": [], "author": "", "license": "ISC", "devDependencies": &#123; "babel-core": "^6.26.0", "babel-loader": "^7.1.2", "babel-preset-react": "^6.24.1", "html-webpack-plugin": "^2.30.1", "webpack": "^3.5.5", "webpack-dev-server": "^2.8.2" &#125;, "dependencies": &#123; "react": "^15.6.1", "react-dom": "^15.6.1" &#125;&#125; 运行,开启服务器，开启服务器的时候，首先找到配置文件，先帮我们打包，打包完成之后，再让我们去访问已经打包好的资源。所以后面要加–config webpack.config.dev.js找到配置文件 1npm run start 注意：这里dev-server打包后的资源并不是放到硬盘里面，而是打包后放到内存里面，所以文件夹下面并没有生成新的打包资源文件。 定制化配置webpack.config.dev.js 12345678910111213141516171819202122232425262728293031const HtmlWebpackPlugin = require('html-webpack-plugin');const path = require('path');module.exports = &#123; entry: './src/app.js', output: &#123; path: path.resolve(__dirname, 'dist'), filename: 'app.js', &#125;, plugins: [ new HtmlWebpackPlugin(&#123; filename: 'index.html', template: 'src/index.html' &#125;) ], module: &#123; rules: [&#123; test: /\.js$/, use: [&#123; loader: 'babel-loader', options: &#123; presets: ['react'] &#125; &#125;] &#125;] &#125;, devServer: &#123; open: true, port: 9000 &#125;&#125;;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>webpack</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[webpack之loader]]></title>
     <url>%2F2018%2F03%2F15%2Fwebpack%E4%B9%8Bloader%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[loader作用：预处理模块里的内容 安装两个库 1npm i 1npm i -S react react-dom 安装完成后，可以看到package.json里面新增了 我们在app.js文件里面先把这两个库引用进来 使用命令行来进行打包 1npm run dev 这个时候会报错，需要一个model来处理这些文件]]></content>
+      <categories>
+        <category>前端</category>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>webpack</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[webpack之插件]]></title>
     <url>%2F2018%2F03%2F15%2Fwebpack%E4%B9%8B%E6%8F%92%E4%BB%B6%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[插件自动在dist文件夹中添加index.html文件的插件 1r npm i -D html webpack -plugin 在webpack.config.dev.js配置文件添加]]></content>
+      <categories>
+        <category>前端</category>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>webpack</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[ES6之异步操作Promise]]></title>
@@ -986,19 +1190,6 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -1011,6 +1202,19 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>

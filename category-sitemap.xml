@@ -126,13 +126,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/webpack/</loc>
-        <lastmod>2018-03-09T13:57:28.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/css3/css3%E5%9F%BA%E7%A1%80/</loc>
         <lastmod>2018-03-10T11:26:19.741Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -210,15 +203,22 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/react/</loc>
         <lastmod>2018-03-15T03:04:25.369Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/react/</loc>
-        <lastmod>2018-03-15T03:04:25.369Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-15T18:11:20.103Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/webpack/</loc>
+        <lastmod>2018-03-15T18:11:20.103Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
