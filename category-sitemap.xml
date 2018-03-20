@@ -210,22 +210,36 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-15T21:23:59.873Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+        <lastmod>2018-03-15T22:00:15.838Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/webpack/</loc>
-        <lastmod>2018-03-15T21:23:59.873Z</lastmod>
+        <lastmod>2018-03-16T09:28:33.270Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
-        <lastmod>2018-03-15T22:00:15.838Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/%E5%A4%A7%E9%A1%B9%E7%9B%AE/</loc>
+        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/%E5%A4%A7%E9%A1%B9%E7%9B%AE/%E6%A1%82%E6%9E%97%E5%A4%B4%E6%9D%A1/</loc>
+        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

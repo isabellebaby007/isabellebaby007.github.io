@@ -373,13 +373,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/</loc>
-        <lastmod>2018-03-10T16:53:16.049Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/%E9%97%AD%E5%8C%85/</loc>
         <lastmod>2018-03-11T03:58:35.313Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -450,29 +443,36 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/react/</loc>
-        <lastmod>2018-03-15T03:04:25.369Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-15T21:23:59.873Z</lastmod>
+        <loc>http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+        <lastmod>2018-03-15T22:00:15.838Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/webpack/</loc>
-        <lastmod>2018-03-15T21:23:59.873Z</lastmod>
+        <lastmod>2018-03-16T09:28:33.270Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
-        <lastmod>2018-03-15T22:00:15.838Z</lastmod>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/react/</loc>
+        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/</loc>
+        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
