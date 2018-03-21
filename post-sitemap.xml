@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/</loc>
+        <lastmod>2018-03-21T16:04:11.269Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8BProps%E5%B1%9E%E6%80%A7/</loc>
         <lastmod>2018-03-21T11:44:24.365Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -105,14 +113,6 @@
     <url>
         <loc>http://yoursite.com/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E5%8F%AF%E5%A4%8D%E7%94%A8%E7%BB%84%E4%BB%B6/</loc>
         <lastmod>2018-03-21T10:56:21.923Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/</loc>
-        <lastmod>2018-03-21T10:56:04.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
