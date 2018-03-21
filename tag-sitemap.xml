@@ -457,22 +457,71 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <loc>http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/</loc>
         <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/node/</loc>
+        <lastmod>2018-03-20T16:32:36.038Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/npm/</loc>
+        <lastmod>2018-03-20T16:32:36.038Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/atom/</loc>
+        <lastmod>2018-03-21T07:42:20.982Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E8%99%9A%E6%8B%9FDOM/</loc>
+        <lastmod>2018-03-21T07:56:12.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/react%E7%BB%84%E4%BB%B6/</loc>
+        <lastmod>2018-03-21T08:10:42.347Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/react%E5%A4%9A%E7%BB%84%E4%BB%B6%E5%B5%8C%E5%A5%97/</loc>
+        <lastmod>2018-03-21T08:22:33.175Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-21T08:24:13.952Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/react/</loc>
-        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <lastmod>2018-03-21T08:24:13.952Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/</loc>
-        <lastmod>2018-03-20T11:11:27.234Z</lastmod>
+        <loc>http://yoursite.com/tags/JSX%E5%86%85%E7%BD%AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+        <lastmod>2018-03-21T08:24:13.952Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
