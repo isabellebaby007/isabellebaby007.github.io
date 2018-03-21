@@ -3,10 +3,150 @@
   
     
     <entry>
-      <title>react属性与事件之state属性</title>
-      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8Bstate%E5%B1%9E%E6%80%A7/"/>
+      <title>react router之router参数传递</title>
+      <link href="/2018/03/21/react-router%E4%B9%8Brouter%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/"/>
       <content type="html"><![CDATA[]]></content>
       
+      
+    </entry>
+    
+    <entry>
+      <title>react router之router概念</title>
+      <link href="/2018/03/21/react-router%E4%B9%8Brouter%E6%A6%82%E5%BF%B5/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react样式之Ant Design样式框架使用</title>
+      <link href="/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react样式之Ant Design样式框架介绍</title>
+      <link href="/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react样式之JSX样式与CSS的互转</title>
+      <link href="/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BJSX%E6%A0%B7%E5%BC%8F%E4%B8%8ECSS%E7%9A%84%E4%BA%92%E8%BD%AC/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react样式之css模块化</title>
+      <link href="/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8Bcss%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react样式之内联样式中的表达式</title>
+      <link href="/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8B%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%E4%B8%AD%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react样式之内联样式</title>
+      <link href="/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8B%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react属性与事件之独立组件间共享Mixins</title>
+      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E7%8B%AC%E7%AB%8B%E7%BB%84%E4%BB%B6%E9%97%B4%E5%85%B1%E4%BA%ABMixins/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react属性与事件之组件的Refs</title>
+      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E7%BB%84%E4%BB%B6%E7%9A%84Refs/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react属性与事件之可复用组件</title>
+      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E5%8F%AF%E5%A4%8D%E7%94%A8%E7%BB%84%E4%BB%B6/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react属性与事件之事件与属性的双向绑定</title>
+      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>react属性与事件之Props属性</title>
+      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8BProps%E5%B1%9E%E6%80%A7/"/>
+      <content type="html"><![CDATA[<h3 id="Props属性"><a href="#Props属性" class="headerlink" title="Props属性"></a>Props属性</h3><p>对于模块属于外来属性</p><a id="more"></a><p>在index.js里面定义username的值</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> React = <span class="built_in">require</span>(<span class="string">'react'</span>);</span><br><span class="line"><span class="keyword">var</span> ReactDOM = <span class="built_in">require</span>(<span class="string">'react-dom'</span>);</span><br><span class="line"><span class="keyword">import</span> ComponentHeader <span class="keyword">from</span> <span class="string">'./components/header'</span>;</span><br><span class="line"><span class="keyword">import</span> ComponentFooter <span class="keyword">from</span> <span class="string">'./components/footer'</span>;</span><br><span class="line"><span class="keyword">import</span> BodyIndex <span class="keyword">from</span> <span class="string">'./components/bodyindex'</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Index</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">componentWillMount()&#123;</span><br><span class="line"><span class="comment">//定义你的逻辑即可</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"Index - componentWillMount"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">componentDidMount()&#123;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"Index - componentDidMount"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">render() &#123;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">var component;</span></span><br><span class="line"><span class="comment">if (用户已登录) &#123;</span></span><br><span class="line"><span class="comment">component = &lt;ComponentLoginedHeader/&gt;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">else&#123;</span></span><br><span class="line"><span class="comment">component = &lt;ComponentHeader/&gt;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;ComponentHeader/&gt;</span><br><span class="line">&lt;BodyIndex userid=&#123;<span class="number">123456</span>&#125; username=&#123;<span class="string">"nick"</span>&#125;/&gt;  <span class="comment">//传递参数</span></span><br><span class="line">&lt;ComponentFooter/&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">);</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">ReactDOM.render(</span></span><br><span class="line"><span class="regexp">&lt;Index/</span>&gt;, <span class="built_in">document</span>.getElementById(<span class="string">'example'</span>));</span><br></pre></td></tr></table></figure><p>bodyindex.js模块里面引用index.js的username的值</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">BodyIndex</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>()&#123;</span><br><span class="line">      <span class="keyword">super</span>(); <span class="comment">//调用基类的所有的初始化方法</span></span><br><span class="line">      <span class="keyword">this</span>.state =  &#123;</span><br><span class="line">        username : <span class="string">"Parry"</span>,</span><br><span class="line">        age : <span class="number">20</span></span><br><span class="line">      &#125;; <span class="comment">//初始化赋值</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">render() &#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">      <span class="comment">//更改 state 的时候</span></span><br><span class="line">      <span class="keyword">this</span>.setState(&#123;<span class="attr">username</span>: <span class="string">"IMOOC"</span>,<span class="attr">age</span> : <span class="number">30</span>&#125;);</span><br><span class="line">    &#125;,<span class="number">4000</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;h2&gt;页面的主体内容&lt;<span class="regexp">/h2&gt;</span></span><br><span class="line"><span class="regexp">&lt;p&gt;&#123;this.state.username&#125; &#123;this.state.age&#125; &#123;this.props.userid&#125; &#123;this.props.username&#125;&lt;/</span>p&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><h5 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数 "></a>传递参数 <bodyindex userid="{123456}" username="{" nick"}="" "=""></bodyindex></h5><h5 id="模块中接受参数-this-props-username"><a href="#模块中接受参数-this-props-username" class="headerlink" title="模块中接受参数 this.props.username"></a>模块中接受参数 this.props.username</h5>]]></content>
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> react </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> react </tag>
+            
+            <tag> Props </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>react属性与事件之state属性</title>
+      <link href="/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8Bstate%E5%B1%9E%E6%80%A7/"/>
+      <content type="html"><![CDATA[<h3 id="State属性"><a href="#State属性" class="headerlink" title="State属性"></a>State属性</h3><p>State属于自身属性，不会污染其他的组件</p><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;;</span><br><span class="line">export default class BodyIndex extends React.Component &#123;</span><br><span class="line">constructor() &#123;</span><br><span class="line">super(); //调用基类的所有的初始化方法</span><br><span class="line">this.state = &#123;</span><br><span class="line">username: &quot;Parry&quot;,</span><br><span class="line">age: 20</span><br><span class="line">&#125;; //初始化赋值</span><br><span class="line">&#125;</span><br><span class="line">render() &#123;</span><br><span class="line">setTimeout(() =&gt; &#123;</span><br><span class="line">//更改 state 的时候</span><br><span class="line">this.setState(&#123;username: &quot;IMOOC&quot;, age: 30&#125;);</span><br><span class="line">&#125;, 4000);</span><br><span class="line">return (</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;h2&gt;页面的主体内容&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;&#123;this.state.username&#125; &#123;this.state.age&#125;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/2018/03/21/react属性与事件之state属性/C:/blog\source\_posts\react属性与事件之state属性\STATE.png" alt=""></p><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><h5 id="state初始化可以放在构造函数constructor里"><a href="#state初始化可以放在构造函数constructor里" class="headerlink" title="state初始化可以放在构造函数constructor里"></a>state初始化可以放在构造函数constructor里</h5><h5 id="修改state-this-setState"><a href="#修改state-this-setState" class="headerlink" title="修改state:  this.setState"></a>修改state:  this.setState</h5><h5 id="state的作用域只属于当前的类，不污染其他模块"><a href="#state的作用域只属于当前的类，不污染其他模块" class="headerlink" title="state的作用域只属于当前的类，不污染其他模块"></a>state的作用域只属于当前的类，不污染其他模块</h5>]]></content>
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> react </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> react </tag>
+            
+            <tag> state </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1366,9 +1506,9 @@
             
             <tag> 前端 </tag>
             
-            <tag> DOM </tag>
-            
             <tag> js </tag>
+            
+            <tag> DOM </tag>
             
         </tags>
       
@@ -1760,9 +1900,9 @@
             
             <tag> 前端 </tag>
             
-            <tag> DOM </tag>
-            
             <tag> js </tag>
+            
+            <tag> DOM </tag>
             
             <tag> getpos() </tag>
             
@@ -2548,9 +2688,9 @@
             
             <tag> 前端 </tag>
             
-            <tag> DOM </tag>
-            
             <tag> js </tag>
+            
+            <tag> DOM </tag>
             
         </tags>
       
@@ -2600,9 +2740,9 @@
             
             <tag> 前端 </tag>
             
-            <tag> DOM </tag>
-            
             <tag> js </tag>
+            
+            <tag> DOM </tag>
             
             <tag> 子节点和兄弟节点 </tag>
             
@@ -2626,9 +2766,9 @@
       
         <tags>
             
-            <tag> DOM </tag>
-            
             <tag> js </tag>
+            
+            <tag> DOM </tag>
             
         </tags>
       
