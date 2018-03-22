@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</loc>
+        <lastmod>2018-03-22T15:11:07.941Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/</loc>
+        <lastmod>2018-03-22T15:00:52.517Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BJSX%E6%A0%B7%E5%BC%8F%E4%B8%8ECSS%E7%9A%84%E4%BA%92%E8%BD%AC/</loc>
         <lastmod>2018-03-22T14:43:43.927Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -65,22 +81,6 @@
     <url>
         <loc>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E6%A6%82%E5%BF%B5/</loc>
         <lastmod>2018-03-21T10:59:56.866Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</loc>
-        <lastmod>2018-03-21T10:59:19.005Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/</loc>
-        <lastmod>2018-03-21T10:59:10.710Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
