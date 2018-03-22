@@ -534,15 +534,29 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/tags/react%E6%A0%B7%E5%BC%8F/</loc>
+        <lastmod>2018-03-22T14:40:44.851Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-03-21T16:04:11.269Z</lastmod>
+        <lastmod>2018-03-22T14:43:43.927Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/tags/react/</loc>
-        <lastmod>2018-03-21T16:04:11.269Z</lastmod>
+        <lastmod>2018-03-22T14:43:43.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/JSX%E6%A0%B7%E5%BC%8F%E4%B8%8ECSS%E4%BA%92%E8%BD%AC/</loc>
+        <lastmod>2018-03-22T14:43:43.927Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

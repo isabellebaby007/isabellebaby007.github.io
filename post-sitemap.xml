@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BJSX%E6%A0%B7%E5%BC%8F%E4%B8%8ECSS%E7%9A%84%E4%BA%92%E8%BD%AC/</loc>
+        <lastmod>2018-03-22T14:43:43.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8B%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F/</loc>
+        <lastmod>2018-03-22T14:40:44.851Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8Bcss%E6%A8%A1%E5%9D%97%E5%8C%96/</loc>
+        <lastmod>2018-03-22T12:46:05.359Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/21/react%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6%E4%B9%8B%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/</loc>
         <lastmod>2018-03-21T16:04:11.269Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -63,32 +87,8 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BJSX%E6%A0%B7%E5%BC%8F%E4%B8%8ECSS%E7%9A%84%E4%BA%92%E8%BD%AC/</loc>
-        <lastmod>2018-03-21T10:58:43.081Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8Bcss%E6%A8%A1%E5%9D%97%E5%8C%96/</loc>
-        <lastmod>2018-03-21T10:58:25.084Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8B%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%E4%B8%AD%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
         <lastmod>2018-03-21T10:58:05.702Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8B%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F/</loc>
-        <lastmod>2018-03-21T10:57:53.558Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

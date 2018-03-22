@@ -23,12 +23,30 @@
   <entry>
     <title><![CDATA[react样式之JSX样式与CSS的互转]]></title>
     <url>%2F2018%2F03%2F21%2Freact%E6%A0%B7%E5%BC%8F%E4%B9%8BJSX%E6%A0%B7%E5%BC%8F%E4%B8%8ECSS%E7%9A%84%E4%BA%92%E8%BD%AC%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[在线转换网址： https://staxmanade.com/CssToReact/ 其他前端工程师写好的一个css模块代码，可以直接通过这个工具在线转换为react可用的样式，提高协同工作的效率。 转成JSX之后可以直接在react项目里面使用 123456789101112131415161718192021222324import React from 'react';//var footerCss = require("../../css/footer.css");export default class ComponentFooter extends React.Component &#123; render() &#123; var footerConvertStyle = &#123; "miniFooter": &#123; "backgroundColor": "#333333", "color": "#ffffff", "paddingLeft": "20px", "paddingTop": "3px", "paddingBottom": "3px" &#125;, "miniFooter_h1": &#123; "fontSize": "15px" &#125; &#125;; //console.log(footerCss); return ( &lt;footer style=&#123;footerConvertStyle.miniFooter&#125;&gt; &lt;h1 style=&#123;footerConvertStyle.miniFooter_h1&#125;&gt;这里是页脚，一般放置版权的一些信息。&lt;/h1&gt; &lt;/footer&gt; ) &#125;&#125;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>react</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>react</tag>
+        <tag>JSX样式与CSS互转</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[react样式之css模块化]]></title>
     <url>%2F2018%2F03%2F21%2Freact%E6%A0%B7%E5%BC%8F%E4%B9%8Bcss%E6%A8%A1%E5%9D%97%E5%8C%96%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>前端</category>
+        <category>react</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>react</tag>
+        <tag>react样式</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[react样式之内联样式中的表达式]]></title>
@@ -39,6 +57,15 @@
     <title><![CDATA[react样式之内联样式]]></title>
     <url>%2F2018%2F03%2F21%2Freact%E6%A0%B7%E5%BC%8F%E4%B9%8B%E5%86%85%E8%81%94%E6%A0%B7%E5%BC%8F%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>前端</category>
+        <category>react</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>react</tag>
+        <tag>react样式</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[react属性与事件之独立组件间共享Mixins]]></title>
@@ -1589,6 +1616,21 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[青蛙旅行破解版]]></title>
+    <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
+    <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
+      <categories>
+        <category>android</category>
+        <category>逆向</category>
+        <category>破解</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>破解</tag>
+        <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[九大排序算法总结]]></title>
     <url>%2F2018%2F02%2F13%2Fercha%2F</url>
     <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -1613,21 +1655,6 @@
         <tag>博客</tag>
         <tag>github</tag>
         <tag>hxo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[青蛙旅行破解版]]></title>
-    <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
-    <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
-      <categories>
-        <category>android</category>
-        <category>逆向</category>
-        <category>破解</category>
-      </categories>
-      <tags>
-        <tag>游戏</tag>
-        <tag>破解</tag>
-        <tag>android</tag>
       </tags>
   </entry>
   <entry>
