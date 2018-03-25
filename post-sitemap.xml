@@ -7,8 +7,16 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/2018/03/25/HTML5%E6%96%B0%E7%9A%84%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
-        <lastmod>2018-03-25T13:25:56.959Z</lastmod>
+        <loc>http://yoursite.com/2018/03/25/HTML5%E4%B9%8Bjson%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95/</loc>
+        <lastmod>2018-03-25T13:37:29.585Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2017/03/25/HTML5%E6%96%B0%E7%9A%84%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
+        <lastmod>2018-03-25T13:37:00.241Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
