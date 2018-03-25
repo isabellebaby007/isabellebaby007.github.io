@@ -8,7 +8,16 @@
   <entry>
     <title><![CDATA[react router之router概念]]></title>
     <url>%2F2018%2F03%2F21%2Freact-router%E4%B9%8Brouter%E6%A6%82%E5%BF%B5%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[router简介推荐使用react router插件： https://github.com/ReactTraining/react-router]]></content>
+      <categories>
+        <category>前端</category>
+        <category>react</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>react</tag>
+        <tag>react router</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[react样式之Ant Design样式框架使用]]></title>
@@ -205,19 +214,6 @@
         <tag>前端</tag>
         <tag>react</tag>
         <tag>虚拟DOM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[atom编辑器使用及配置]]></title>
-    <url>%2F2018%2F03%2F21%2Fatom%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E5%8F%8A%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[下载和安装官网：https://atom.io/ github地址： https://github.com/atom/atom 插件配置在install里面安装插件 JS支持 atom-ternjs对js支持的一些包 格式化 atom-beautify做格式化的插件 直接打开浏览器 open-in-browser 快速HTML代码 emmet 文件图标 file-icons高亮当前行 highlight-line高亮所有选择highlight-selected]]></content>
-      <categories>
-        <category>前端</category>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>atom</tag>
       </tags>
   </entry>
   <entry>
@@ -842,31 +838,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[HTML5的音频与视频]]></title>
-    <url>%2F2018%2F03%2F14%2FHTML5%E7%9A%84%E9%9F%B3%E9%A2%91%E4%B8%8E%E8%A7%86%E9%A2%91%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[HTML5的地理信息、本地存储、离线存储]]></title>
-    <url>%2F2018%2F03%2F14%2FHTML5%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E3%80%81%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8%E3%80%81%E7%A6%BB%E7%BA%BF%E5%AD%98%E5%82%A8%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[HTML5的跨文档消息通信]]></title>
-    <url>%2F2018%2F03%2F14%2FHTML5%E7%9A%84%E8%B7%A8%E6%96%87%E6%A1%A3%E6%B6%88%E6%81%AF%E9%80%9A%E4%BF%A1%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[HTML5的canvas]]></title>
-    <url>%2F2018%2F03%2F14%2FHTML5%E7%9A%84canvas%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[HTML5的新特性]]></title>
-    <url>%2F2018%2F03%2F14%2FHTML5%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[初识HTML5]]></title>
     <url>%2F2018%2F03%2F14%2F%E5%88%9D%E8%AF%86HTML5%2F</url>
     <content type="text"></content>
@@ -932,11 +903,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[html5的历史管理]]></title>
-    <url>%2F2018%2F03%2F11%2Fhtml5%E7%9A%84%E5%8E%86%E5%8F%B2%E7%AE%A1%E7%90%86%2F</url>
-    <content type="text"><![CDATA[历史管理onhashchange :改变hash值来管理 history pushState 三个参数：数据 标题 (都没实现) 地址（可选） popstate事件 读取数据 event.state 注意:网址是虚假的，需要在服务器指定对应 页面，不然刷新找不到页面]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Firebug]]></title>
     <url>%2F2018%2F03%2F11%2FFirebug%2F</url>
     <content type="text"><![CDATA[命令 console.dir(cat); //输出所有信息 console.dirxml（）；//显示当前元素的代码结构 console.assert(a); //断言，如果a是真，返回断言成功 a是假，返回断言失败 console.trace();//显示当前函数的执行过程 1234567891011function a()&#123; return b();&#125;function b()&#123; return c();&#125;function c()&#123; console.trace(); return 1;&#125;a(); 12345console.time('计时器');for(var i=0;i&lt;1000000;i++)&#123; &#125;console.timend('计时器'); 查看性能 1234567891011121314151617function a()&#123; for(var i=0;i&lt;10;i++)&#123; b(); &#125; for(var i=0;i&lt;5;i++)&#123; c(); &#125; function b()&#123; var b=10; &#125; function c()&#123; var c=20; &#125;&#125;console.profile();a();console.profileEnd(); 在其他浏览器下使用firebug1&lt;script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"&gt;&lt;/script&gt;]]></content>
@@ -978,111 +944,6 @@
         <tag>前端</tag>
         <tag>css3</tag>
         <tag>响应式布局</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3盒模型新增属性]]></title>
-    <url>%2F2018%2F03%2F10%2Fcss3%E7%9B%92%E6%A8%A1%E5%9E%8B%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%2F</url>
-    <content type="text"><![CDATA[盒模型阴影box-shadowbox-shadow:[inset] x y blur [spread] color 参数： inset 投影方式 inset:内投影 不给 ：外投影 x、y 阴影偏移 blur 模糊半径 spread 扩展阴影半径 先扩展原有形状再2开始画阴影 color 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; margin: 100px; background: red; box-shadow: 0 0 30px 30px #000, inset 0 0 10px #ccc; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-reflect倒影 box-reflect direction above \ below \ left \ right 距离 渐变（可选） 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; body&#123; background: #000; &#125; img &#123; display: block; margin: 200px auto; -webkit-box-reflect:right 10px -webkit-linear-gradient(right rgba(0,0,0,1) 0,rgba(0,0,0,0) 70%); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;img src="minguo.jpg" /&gt;&lt;/body&gt;&lt;/html&gt; resize自由缩放 both 水平垂直都可以缩放 horizontal 只有水平方向可以缩放 vertical 只有垂直方向可以缩放 要配合overflow：auto来使用，只有水平方向可以缩放 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: url(minguo.jpg); border: 5px solid #000; resize: both; overflow: auto; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-sizing盒模型的解析模式 content-box 标准盒模型 width\ height=border+padding+content border-box 怪异盒模型 12345678910111213141516171819202122232425262728&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 200px; height: 200px; padding: 50px; border: 10px solid #000; box-sizing: border-box; &#125; .div &#123; height: 50px; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div class="div"&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>盒模型设计和响应式布局</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>盒模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3弹性盒模型]]></title>
-    <url>%2F2018%2F03%2F10%2Fcss3%E5%BC%B9%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[弹性盒模型注意在使用弹性盒模型的时候，父元素必须要加display:box 或 inline-box box-orient 定义盒模型的布局方向 horizontal 水平方向 vertical 垂直显示 box-direction 元素排列顺序 normal 正序 reverse 反序 box-ordinal-group 设置元素的具体位置 12345678910111213141516171819202122232425262728293031323334&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; height: 100px; border: 10px solid #000; padding: 10px; display: -webkit-box; -webkit-box-orient: vertical; &#125; .box div &#123; width: 100px; height: 100px; background: red; border: 1px solid #fff; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;1&lt;/div&gt; &lt;div&gt;2&lt;/div&gt; &lt;div&gt;3&lt;/div&gt; &lt;div&gt;4&lt;/div&gt; &lt;div&gt;5&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 混序排列1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; height: 100px; border: 10px solid #000; padding: 10px; display: -webkit-box; &#125; .box div &#123; width: 100px; height: 100px; background: red; border: 1px solid #fff; &#125; .box div:nth-of-type(1) &#123; -webkit-box-ordinal-group: 2; &#125; .box div:nth-of-type(2) &#123; -webkit-box-ordinal-group: 4; &#125; .box div:nth-of-type(3) &#123; -webkit-box-ordinal-group: 1; &#125; .box div:nth-of-type(4) &#123; -webkit-box-ordinal-group: 5; &#125; .box div:nth-of-type(5) &#123; -webkit-box-ordinal-group: 3; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;1&lt;/div&gt; &lt;div&gt;2&lt;/div&gt; &lt;div&gt;3&lt;/div&gt; &lt;div&gt;4&lt;/div&gt; &lt;div&gt;5&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-flex定义盒子的弹性空间 子元素的尺寸=盒子的尺寸*子元素的box-flex属性值/所有子元素的box-flex属性值之和 例子： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; height: 100px; border: 10px solid #000; padding: 10px; display: -webkit-box; &#125; .box div &#123; width: 100px; height: 100px; background: red; border: 1px solid #fff; box-orient:horizontal; &#125; .box div:nth-of-type(1) &#123; -webkit-box-flex:1; &#125; .box div:nth-of-type(2) &#123; -webkit-box-flex:1; &#125; .box div:nth-of-type(3) &#123; width: 300px; &#125; .box div:nth-of-type(4) &#123; -webkit-box-flex:1; &#125; .box div:nth-of-type(5) &#123; -webkit-box-flex:1; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;1&lt;/div&gt; &lt;div&gt;2&lt;/div&gt; &lt;div&gt;3&lt;/div&gt; &lt;div&gt;4&lt;/div&gt; &lt;div&gt;5&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-pack对盒子富裕的空间进行管理 start 所有子元素在盒子左侧显示，富裕空间在右侧 end 所有子元素在盒子右侧显示，富裕空间在左侧 center 所有子元素居中 justify 富裕空间在子元素之间平均分布]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>盒模型设计和响应式布局</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>弹性盒模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3新增UI样式]]></title>
-    <url>%2F2018%2F03%2F10%2Fcss3%E6%96%B0%E5%A2%9EUI%E6%A0%B7%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[圆角border-radiusborder-radius:1-4个数字/1-4个数字 前面是水平，后面是垂直 不给”/“,则水平和垂直一样 border-radius:10px/5px 参数：各种长度单位都可以：px,%, %有时候很方便，但是宽高不一致时不太好 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; .box &#123; width: 400px; height: 400px; margin: 50px auto; transition: 5s linear; &#125; .box div &#123; width: 180px; height: 180px; margin: 10px; border: 1px solid #000; box-sizing: border-box; float: left; background: url(new_bg.png) no-repeat; &#125; .box div:nth-child(1), .box div:nth-child(4) &#123; border-radius: 0 70%; &#125; .box div:nth-child(2), .box div:nth-child(3) &#123; border-radius: 70% 0; &#125; .box:hover &#123; -webkit-transform: rotate(720deg); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>新增UI样式</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>UI样式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3文本新增属性]]></title>
-    <url>%2F2018%2F03%2F10%2Fcss3%E6%96%87%E6%9C%AC%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%2F</url>
-    <content type="text"><![CDATA[新增颜色模式 rgba r red 红 0-255 g green 绿 0-255 b blue 蓝 0-255 a Alpha 透明 0-1 例子：背景透明，文字不透明text-shadow 文字透明属性text-shadow:第一个参数表示x轴的偏移量 第二个参数表示y轴的偏移量 第三个参数表示模糊程度 第四个参数表示阴影颜色 阴影效果可以多层叠加，中间用,隔开 1234567891011121314151617&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p&#123; font；100px/200px "微软雅黑"； text-align: center; text-shadow: -5px -10px 1px red,5px 10px 1px green; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：层叠12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p&#123; color: red; font-size: 100px; font-weight: bold; text-shadow: 2px 2px 0px white,4px 4px 0px red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：光晕1234567891011121314151617181920&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; color: white; font-size: 100px; text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：火焰文字123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; color: white; font-size: 100px; text-shadow: 0px 0px 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; font-family: Verdana,Geneva,sans-serif; font-size: 100px; font-weight: bold; color: white; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：模糊效果123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1&#123; font:100px/200px "微软雅黑"; text-align: center; color: #000; text-shadow: 0 0 0 rgba(0,0,0,1); border:1px solid #000; transition:1s; &#125; h1:hover&#123; color: rgba(0,0,0,0); text-shadow: 0 0 100px rgba(0,0,0,0.5); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;北京邮电&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt; 文字描边只有webkit内核的浏览器才支持。-webkit-text-stroke:宽度 颜色； 1234567891011121314151617181920&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1 &#123; font: 100px/200px "微软雅黑"; text-align: center; color: #000; -webkit-text-stroke: 3px red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;北京邮电&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt; 文字排版direction 定义文字排列方式 Rtl 从右到左排列 ltr 从左到右排列 注意要配合unicode-bili一块使用 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 14px/30px "宋体"; direction: rtl; unicode-bidi: bidi-override; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 文本省略text-overflow定义省略文本的处理方式 clip 无省略号 ellipsis 省略号 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 14px/30px "宋体"; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;简称北邮，是中华人民共和国教育部直属，工业和信息化部共建的一所以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 自定义文字工具：asia font studio4 格式： @font-face{ font-family:’isabelle’; src:url(‘111-webfont.eot’); src:url(‘111-webfont.eot?#iefix’)format(‘embedded-opentype’), url(‘111-webfont.woff’)format(‘woff’), url(‘111-webfont.ttf’)format(‘truetype’), url(‘111-webfont.svg#untitledregular’)format(‘svg’); font-weight:normal; font-style:normal; } 转换字体格式生成兼容代码： http://www.fontsquirrel.com/fontface/generator]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>css3基础</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>文本新增属性</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3伪类和伪元素]]></title>
-    <url>%2F2018%2F03%2F10%2Fcss3%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%2F</url>
-    <content type="text"><![CDATA[伪类 E:target 表示当前的URL片段的元素类型，这个元素必须是E E:disabled 表示不可点击的表单控件 E:enabled 表示可点击的表单控件 E:checked 表示已选中的checkbox或radio E:first-line 表示E元素中的第一行 E:first-letter 表示E元素中的第一个字母 E::selection 表示E元素在用户选中文字时 E::before 生成内容在E元素前 E::after 生成内容在E元素之后 E：not(s) 表示E元素不被匹配 E~F 表示E元素毗邻的F元素,是指在E后面的标签 content 内容属性 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; div &#123; width: 300px; height: 200px; background: #000; font: 50px/200px "微软雅黑"; color: #fff; text-align: center; display: none; &#125; div:target &#123; display: block; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;a href="#div1"&gt;div1&lt;/a&gt; &lt;a href="#div2"&gt;div2&lt;/a&gt; &lt;a href="#div3"&gt;div3&lt;/a&gt; &lt;div id="div1"&gt;div1&lt;/div&gt; &lt;div id="div2"&gt;div2&lt;/div&gt; &lt;div id="div3"&gt;div3&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; input &#123; width: 100px; height: 30px; color: #000; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="text" name="" value="请输入" /&gt;&lt;/body&gt;&lt;/html&gt; 例子：模拟单选框1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; label &#123; float: left; margin: 0 5px; overflow: hidden; position: relative; &#125; label input &#123; position: absolute; left: -50px; top: -50px; &#125; span &#123; float: left; width: 50px; height: 50px; border: 3px solid #000; &#125; input:checked~span &#123; background: red; s &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt;&lt;/body&gt;&lt;/html&gt; 123456789101112131415161718192021222324252627282930313233343536373839&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 12px/30px "宋体"; padding: 10px; &#125; p:first-line &#123; background: red; &#125; p:first-letter &#123; font-size: 30px; &#125; p::selection &#123; background: #F60; color: #690; &#125; p::before &#123; content: "BUPT" &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt; 北京邮电大学（Beijing University of Posts and Telecommunications），简称北邮，是中华人民共和国教育部直属，工业和信息化部共建的一所以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学，是北京高科大学联盟成员高校[1] 、国家首批“双一流”世界一流学科建设高校[2] 。系国家“211工程”、“985工程优势学科创新平台”项目重点建设，列入首批“卓越工程师教育培养计划”、“111计划”。被誉为“中国信息科技人才的摇篮”。[3] 前身是1955年成立的新中国第一所邮电高等学府——北京邮电学院。1960年被国务院确定为全国重点高校。 1993年更名为“北京邮电大学”。2000年，划入教育部直属高校行列。2012年，信息与通信工程一级学科全国排名第一。 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1:not(.h2)&#123; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;h1&lt;/h1&gt;&lt;h1 class="h2"&gt;h1&lt;/h1&gt;&lt;h1&gt;h1&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>css3基础</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>伪类</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3结构选择器]]></title>
-    <url>%2F2018%2F03%2F10%2Fcss3%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
-    <content type="text"><![CDATA[结构性伪类nth-child() 找到父级下第几个子节点 表示 含义 E:first-child 表示E元素中的第一个子节点 E:last-child 表示E元素的最后一个子节点 E:first-of-type 表示E元素中的第一个子节点且节点类型是E E:last-of-type 表示E元素中的最后一个子节点且节点类型是E的 E:only-child 表示E元素中只有一个子节点。注意：子节点不包含文本节点 E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E.注意：子节点不包含文本节点 E：empty 表示E元素中没有子节点。注意：子节点包含文本节点 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; border: 1px solid #000; &#125; p:nth-child(odd) &#123; background: red; &#125; /*p:nth-child(2)找到父级下的第二个子元素，并且这个元素还得是p标签 body:*:nth-child(2)找到body下第二个子节点，不管是什么标签 p:nth-last-child(2) 从后往前数 p:nth-of-type(2) 找到父级下的第二个p类型的标签 p:nth-of-last-type(2) 从后往前找 */ &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;p1&lt;/p&gt; &lt;p&gt;p2&lt;/p&gt; &lt;p&gt;p3&lt;/p&gt; &lt;p&gt;p4&lt;/p&gt; &lt;p&gt;p5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：新浪新闻导航头部1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .list &#123; margin: 0; padding: 0; list-style: none; &#125; .list li &#123; width: 150px; border: 1px solid #000; float: left; &#125; .list li:last-of-type &#123; border: none; &#125; .list a &#123; float: left; width: 40px; margin: 0 5px; font: 12px/30px "宋体"; text-align: center; &#125; .list li a:nth-of-type(3n+1) &#123; font-weight: bold; &#125; .list li:ntn-child(3) a:nth-child(2) &#123; color: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;ul class="list"&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>css3基础</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>结构选择器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css3属性选择器]]></title>
-    <url>%2F2018%2F03%2F09%2Fcss3%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
-    <content type="text"><![CDATA[transition向前兼容问题 1234567891011121314151617181920212223242526&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: red; transition: 1s; &#125; .box:hover &#123; width: 200px; height: 200px; background: blue; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 测试得到其他浏览器都没问题，但是ie9和9以下，transition属性就失效了，不兼容。 12345678910111213141516171819202122232425262728293031323334353637&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: red; /*transition: 1s;*/ -webkit-transition:1s;/*兼容老版的chrome，safari*/ -moz-transition:1s; /*兼容老版的火狐*/ -o-transition:1s; /*兼容老版的opera*/ transition: 1s;/*标准的*/ &#125; .box:hover &#123; width: 200px; height: 200px; background: blue; &#125; /* js里面不支持横杠,所以前缀去掉横杠，改成大写 WebKitTransition OTransition MozTransition */ &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; css3属性选择器12345678910111213141516171819202122232425&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; border: 1px solid #000; &#125; p[xichen] &#123; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p xichen="leo"&gt;leo&lt;/p&gt; &lt;p xichen="kris"&gt;kris&lt;/p&gt; &lt;p xichen="jasper"&gt;jasper&lt;/p&gt; &lt;p xichen="hades"&gt;hades&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 属性选择器 表示 含义 E[attr] 只使用属性名，但没有确定任何属性值 E[attr=”value”] 指定属性名，并制定了该属性的属性值 E[attr~=”value”] 指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表包含了一个value词，而且等号前面的”~”不能不写 E[attr^=”value”] 指定属性名，并且具有属性值，属性值是以value开头的 E[attr$=”value”] 指定属性名，并且具有属性值，属性值是以value结束的 E[attr*=”value”] 指定属性名，并且具有属性值，而且属性值中包含了value E[attr\ =”value”] 指定属性名，并且具有属性值，而且属性值是以value或者以”value-“开头的值（比如zh-cn） 小例子:仿百度文库分类图标 做出不同的文档类型前面加上不同的图标的效果 。 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; line-height: 30px; font-size: 12px; border: 1px solid #000; &#125; p a &#123; background: url(img/w.gif) no-repeat 3px center; padding-left: 20px; display: block; &#125; p a[href*=text] &#123; background-image: url(img/text.gif); &#125; p a[href*=pdf] &#123; background-image: url(img/pdf.gif); &#125; p a[href*=excel] &#123; background-image: url(img/excel.gif); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/doc/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/pdf/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/text/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/excel/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
-      <categories>
-        <category>前端</category>
-        <category>css3</category>
-        <category>css3基础</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>css3</tag>
-        <tag>属性选择器</tag>
       </tags>
   </entry>
   <entry>
@@ -1634,6 +1495,20 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[九大排序算法总结]]></title>
+    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
+    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
     <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
     <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -1662,20 +1537,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[九大排序算法总结]]></title>
-    <url>%2F2018%2F02%2F13%2Fercha%2F</url>
-    <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-        <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[DOM浅谈]]></title>
     <url>%2F2018%2F02%2F02%2FDOM%E6%B5%85%E8%B0%88%2F</url>
     <content type="text"><![CDATA[先附上一个DOM的教程：http://www.w3school.com.cn/htmldom/dom_methods.asp DOM的结构实际上和数据结构里面的树非常相似 方法 描述getElementById() 返回带有指定 ID 的元素。getElementsByTagName() 返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。getElementsByClassName() 返回包含带有指定类名的所有元素的节点列表。appendChild() 把新的子节点添加到指定节点。removeChild() 删除子节点。replaceChild() 替换子节点。insertBefore() 在指定的子节点前面插入新的子节点。createAttribute() 创建属性节点。createElement() 创建元素节点。createTextNode() 创建文本节点。getAttribute() 返回指定的属性值。setAttribute() 把指定属性设置或修改为指定的值。 ·其他细节修改Copyright：isabllezhou mail:isabellezhou@163.com]]></content>
@@ -1686,5 +1547,161 @@
         <tag>前端</tag>
         <tag>DOM</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[atom编辑器使用及配置]]></title>
+    <url>%2F2017%2F03%2F21%2Fatom%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E5%8F%8A%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[下载和安装官网：https://atom.io/ github地址： https://github.com/atom/atom 插件配置在install里面安装插件 JS支持 atom-ternjs对js支持的一些包 格式化 atom-beautify做格式化的插件 直接打开浏览器 open-in-browser 快速HTML代码 emmet 文件图标 file-icons高亮当前行 highlight-line高亮所有选择highlight-selected]]></content>
+      <categories>
+        <category>前端</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>atom</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3新增UI样式]]></title>
+    <url>%2F2017%2F03%2F13%2Fcss3%E6%96%B0%E5%A2%9EUI%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[圆角border-radiusborder-radius:1-4个数字/1-4个数字 前面是水平，后面是垂直 不给”/“,则水平和垂直一样 border-radius:10px/5px 参数：各种长度单位都可以：px,%, %有时候很方便，但是宽高不一致时不太好 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt; &lt;title&gt;无标题文档&lt;/title&gt; &lt;style&gt; .box &#123; width: 400px; height: 400px; margin: 50px auto; transition: 5s linear; &#125; .box div &#123; width: 180px; height: 180px; margin: 10px; border: 1px solid #000; box-sizing: border-box; float: left; background: url(new_bg.png) no-repeat; &#125; .box div:nth-child(1), .box div:nth-child(4) &#123; border-radius: 0 70%; &#125; .box div:nth-child(2), .box div:nth-child(3) &#123; border-radius: 70% 0; &#125; .box:hover &#123; -webkit-transform: rotate(720deg); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>新增UI样式</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>UI样式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3盒模型新增属性]]></title>
+    <url>%2F2017%2F03%2F12%2Fcss3%E7%9B%92%E6%A8%A1%E5%9E%8B%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[盒模型阴影box-shadowbox-shadow:[inset] x y blur [spread] color 参数： inset 投影方式 inset:内投影 不给 ：外投影 x、y 阴影偏移 blur 模糊半径 spread 扩展阴影半径 先扩展原有形状再2开始画阴影 color 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; margin: 100px; background: red; box-shadow: 0 0 30px 30px #000, inset 0 0 10px #ccc; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-reflect倒影 box-reflect direction above \ below \ left \ right 距离 渐变（可选） 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; body&#123; background: #000; &#125; img &#123; display: block; margin: 200px auto; -webkit-box-reflect:right 10px -webkit-linear-gradient(right rgba(0,0,0,1) 0,rgba(0,0,0,0) 70%); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;img src="minguo.jpg" /&gt;&lt;/body&gt;&lt;/html&gt; resize自由缩放 both 水平垂直都可以缩放 horizontal 只有水平方向可以缩放 vertical 只有垂直方向可以缩放 要配合overflow：auto来使用，只有水平方向可以缩放 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: url(minguo.jpg); border: 5px solid #000; resize: both; overflow: auto; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-sizing盒模型的解析模式 content-box 标准盒模型 width\ height=border+padding+content border-box 怪异盒模型 12345678910111213141516171819202122232425262728&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 200px; height: 200px; padding: 50px; border: 10px solid #000; box-sizing: border-box; &#125; .div &#123; height: 50px; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div class="div"&gt;&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>盒模型设计和响应式布局</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>盒模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3文本新增属性]]></title>
+    <url>%2F2017%2F03%2F11%2Fcss3%E6%96%87%E6%9C%AC%E6%96%B0%E5%A2%9E%E5%B1%9E%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[新增颜色模式 rgba r red 红 0-255 g green 绿 0-255 b blue 蓝 0-255 a Alpha 透明 0-1 例子：背景透明，文字不透明text-shadow 文字透明属性text-shadow:第一个参数表示x轴的偏移量 第二个参数表示y轴的偏移量 第三个参数表示模糊程度 第四个参数表示阴影颜色 阴影效果可以多层叠加，中间用,隔开 1234567891011121314151617&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p&#123; font；100px/200px "微软雅黑"； text-align: center; text-shadow: -5px -10px 1px red,5px 10px 1px green; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：层叠12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p&#123; color: red; font-size: 100px; font-weight: bold; text-shadow: 2px 2px 0px white,4px 4px 0px red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：光晕1234567891011121314151617181920&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; color: white; font-size: 100px; text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：火焰文字123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; color: white; font-size: 100px; text-shadow: 0px 0px 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; font-family: Verdana,Geneva,sans-serif; font-size: 100px; font-weight: bold; color: white; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：模糊效果123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1&#123; font:100px/200px "微软雅黑"; text-align: center; color: #000; text-shadow: 0 0 0 rgba(0,0,0,1); border:1px solid #000; transition:1s; &#125; h1:hover&#123; color: rgba(0,0,0,0); text-shadow: 0 0 100px rgba(0,0,0,0.5); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;北京邮电&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt; 文字描边只有webkit内核的浏览器才支持。-webkit-text-stroke:宽度 颜色； 1234567891011121314151617181920&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1 &#123; font: 100px/200px "微软雅黑"; text-align: center; color: #000; -webkit-text-stroke: 3px red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;北京邮电&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt; 文字排版direction 定义文字排列方式 Rtl 从右到左排列 ltr 从左到右排列 注意要配合unicode-bili一块使用 123456789101112131415161718192021&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 14px/30px "宋体"; direction: rtl; unicode-bidi: bidi-override; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;北京邮电&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 文本省略text-overflow定义省略文本的处理方式 clip 无省略号 ellipsis 省略号 12345678910111213141516171819202122&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 14px/30px "宋体"; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;简称北邮，是中华人民共和国教育部直属，工业和信息化部共建的一所以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 自定义文字工具：asia font studio4 格式： @font-face{ font-family:’isabelle’; src:url(‘111-webfont.eot’); src:url(‘111-webfont.eot?#iefix’)format(‘embedded-opentype’), url(‘111-webfont.woff’)format(‘woff’), url(‘111-webfont.ttf’)format(‘truetype’), url(‘111-webfont.svg#untitledregular’)format(‘svg’); font-weight:normal; font-style:normal; } 转换字体格式生成兼容代码： http://www.fontsquirrel.com/fontface/generator]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>文本新增属性</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3结构选择器]]></title>
+    <url>%2F2017%2F03%2F11%2Fcss3%E7%BB%93%E6%9E%84%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[结构性伪类nth-child() 找到父级下第几个子节点 表示 含义 E:first-child 表示E元素中的第一个子节点 E:last-child 表示E元素的最后一个子节点 E:first-of-type 表示E元素中的第一个子节点且节点类型是E E:last-of-type 表示E元素中的最后一个子节点且节点类型是E的 E:only-child 表示E元素中只有一个子节点。注意：子节点不包含文本节点 E:only-of-type 表示E的父元素中只有一个子节点，且这个唯一的子节点的类型必须是E.注意：子节点不包含文本节点 E：empty 表示E元素中没有子节点。注意：子节点包含文本节点 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; border: 1px solid #000; &#125; p:nth-child(odd) &#123; background: red; &#125; /*p:nth-child(2)找到父级下的第二个子元素，并且这个元素还得是p标签 body:*:nth-child(2)找到body下第二个子节点，不管是什么标签 p:nth-last-child(2) 从后往前数 p:nth-of-type(2) 找到父级下的第二个p类型的标签 p:nth-of-last-type(2) 从后往前找 */ &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt;p1&lt;/p&gt; &lt;p&gt;p2&lt;/p&gt; &lt;p&gt;p3&lt;/p&gt; &lt;p&gt;p4&lt;/p&gt; &lt;p&gt;p5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子：新浪新闻导航头部1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .list &#123; margin: 0; padding: 0; list-style: none; &#125; .list li &#123; width: 150px; border: 1px solid #000; float: left; &#125; .list li:last-of-type &#123; border: none; &#125; .list a &#123; float: left; width: 40px; margin: 0 5px; font: 12px/30px "宋体"; text-align: center; &#125; .list li a:nth-of-type(3n+1) &#123; font-weight: bold; &#125; .list li:ntn-child(3) a:nth-child(2) &#123; color: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;ul class="list"&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;a href="#"&gt;新闻&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>结构选择器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3弹性盒模型]]></title>
+    <url>%2F2017%2F03%2F10%2Fcss3%E5%BC%B9%E6%80%A7%E7%9B%92%E6%A8%A1%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[弹性盒模型注意在使用弹性盒模型的时候，父元素必须要加display:box 或 inline-box box-orient 定义盒模型的布局方向 horizontal 水平方向 vertical 垂直显示 box-direction 元素排列顺序 normal 正序 reverse 反序 box-ordinal-group 设置元素的具体位置 12345678910111213141516171819202122232425262728293031323334&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; height: 100px; border: 10px solid #000; padding: 10px; display: -webkit-box; -webkit-box-orient: vertical; &#125; .box div &#123; width: 100px; height: 100px; background: red; border: 1px solid #fff; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;1&lt;/div&gt; &lt;div&gt;2&lt;/div&gt; &lt;div&gt;3&lt;/div&gt; &lt;div&gt;4&lt;/div&gt; &lt;div&gt;5&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 混序排列1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; height: 100px; border: 10px solid #000; padding: 10px; display: -webkit-box; &#125; .box div &#123; width: 100px; height: 100px; background: red; border: 1px solid #fff; &#125; .box div:nth-of-type(1) &#123; -webkit-box-ordinal-group: 2; &#125; .box div:nth-of-type(2) &#123; -webkit-box-ordinal-group: 4; &#125; .box div:nth-of-type(3) &#123; -webkit-box-ordinal-group: 1; &#125; .box div:nth-of-type(4) &#123; -webkit-box-ordinal-group: 5; &#125; .box div:nth-of-type(5) &#123; -webkit-box-ordinal-group: 3; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;1&lt;/div&gt; &lt;div&gt;2&lt;/div&gt; &lt;div&gt;3&lt;/div&gt; &lt;div&gt;4&lt;/div&gt; &lt;div&gt;5&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-flex定义盒子的弹性空间 子元素的尺寸=盒子的尺寸*子元素的box-flex属性值/所有子元素的box-flex属性值之和 例子： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; height: 100px; border: 10px solid #000; padding: 10px; display: -webkit-box; &#125; .box div &#123; width: 100px; height: 100px; background: red; border: 1px solid #fff; box-orient:horizontal; &#125; .box div:nth-of-type(1) &#123; -webkit-box-flex:1; &#125; .box div:nth-of-type(2) &#123; -webkit-box-flex:1; &#125; .box div:nth-of-type(3) &#123; width: 300px; &#125; .box div:nth-of-type(4) &#123; -webkit-box-flex:1; &#125; .box div:nth-of-type(5) &#123; -webkit-box-flex:1; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;div&gt;1&lt;/div&gt; &lt;div&gt;2&lt;/div&gt; &lt;div&gt;3&lt;/div&gt; &lt;div&gt;4&lt;/div&gt; &lt;div&gt;5&lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; box-pack对盒子富裕的空间进行管理 start 所有子元素在盒子左侧显示，富裕空间在右侧 end 所有子元素在盒子右侧显示，富裕空间在左侧 center 所有子元素居中 justify 富裕空间在子元素之间平均分布]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>盒模型设计和响应式布局</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>弹性盒模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3伪类和伪元素]]></title>
+    <url>%2F2017%2F03%2F10%2Fcss3%E4%BC%AA%E7%B1%BB%E5%92%8C%E4%BC%AA%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"><![CDATA[伪类 E:target 表示当前的URL片段的元素类型，这个元素必须是E E:disabled 表示不可点击的表单控件 E:enabled 表示可点击的表单控件 E:checked 表示已选中的checkbox或radio E:first-line 表示E元素中的第一行 E:first-letter 表示E元素中的第一个字母 E::selection 表示E元素在用户选中文字时 E::before 生成内容在E元素前 E::after 生成内容在E元素之后 E：not(s) 表示E元素不被匹配 E~F 表示E元素毗邻的F元素,是指在E后面的标签 content 内容属性 1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; div &#123; width: 300px; height: 200px; background: #000; font: 50px/200px "微软雅黑"; color: #fff; text-align: center; display: none; &#125; div:target &#123; display: block; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;a href="#div1"&gt;div1&lt;/a&gt; &lt;a href="#div2"&gt;div2&lt;/a&gt; &lt;a href="#div3"&gt;div3&lt;/a&gt; &lt;div id="div1"&gt;div1&lt;/div&gt; &lt;div id="div2"&gt;div2&lt;/div&gt; &lt;div id="div3"&gt;div3&lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516171819&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; input &#123; width: 100px; height: 30px; color: #000; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;input type="text" name="" value="请输入" /&gt;&lt;/body&gt;&lt;/html&gt; 例子：模拟单选框1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; label &#123; float: left; margin: 0 5px; overflow: hidden; position: relative; &#125; label input &#123; position: absolute; left: -50px; top: -50px; &#125; span &#123; float: left; width: 50px; height: 50px; border: 3px solid #000; &#125; input:checked~span &#123; background: red; s &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt; &lt;label&gt; &lt;input type="radio" name="tab"&gt; &lt;span&gt;&lt;/span&gt; &lt;/label&gt;&lt;/body&gt;&lt;/html&gt; 123456789101112131415161718192021222324252627282930313233343536373839&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; width: 300px; border: 1px solid #000; font: 12px/30px "宋体"; padding: 10px; &#125; p:first-line &#123; background: red; &#125; p:first-letter &#123; font-size: 30px; &#125; p::selection &#123; background: #F60; color: #690; &#125; p::before &#123; content: "BUPT" &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt; 北京邮电大学（Beijing University of Posts and Telecommunications），简称北邮，是中华人民共和国教育部直属，工业和信息化部共建的一所以信息科技为特色，工学门类为主体，管理学、文学、理学等多个学科门类协调发展的全国重点大学，是北京高科大学联盟成员高校[1] 、国家首批“双一流”世界一流学科建设高校[2] 。系国家“211工程”、“985工程优势学科创新平台”项目重点建设，列入首批“卓越工程师教育培养计划”、“111计划”。被誉为“中国信息科技人才的摇篮”。[3] 前身是1955年成立的新中国第一所邮电高等学府——北京邮电学院。1960年被国务院确定为全国重点高校。 1993年更名为“北京邮电大学”。2000年，划入教育部直属高校行列。2012年，信息与通信工程一级学科全国排名第一。 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 12345678910111213141516&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; h1:not(.h2)&#123; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;h1&lt;/h1&gt;&lt;h1 class="h2"&gt;h1&lt;/h1&gt;&lt;h1&gt;h1&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>伪类</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css3属性选择器]]></title>
+    <url>%2F2017%2F03%2F09%2Fcss3%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[transition向前兼容问题 1234567891011121314151617181920212223242526&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: red; transition: 1s; &#125; .box:hover &#123; width: 200px; height: 200px; background: blue; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; 测试得到其他浏览器都没问题，但是ie9和9以下，transition属性就失效了，不兼容。 12345678910111213141516171819202122232425262728293031323334353637&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; .box &#123; width: 100px; height: 100px; background: red; /*transition: 1s;*/ -webkit-transition:1s;/*兼容老版的chrome，safari*/ -moz-transition:1s; /*兼容老版的火狐*/ -o-transition:1s; /*兼容老版的opera*/ transition: 1s;/*标准的*/ &#125; .box:hover &#123; width: 200px; height: 200px; background: blue; &#125; /* js里面不支持横杠,所以前缀去掉横杠，改成大写 WebKitTransition OTransition MozTransition */ &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;div class="box"&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt; css3属性选择器12345678910111213141516171819202122232425&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; border: 1px solid #000; &#125; p[xichen] &#123; background: red; &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p xichen="leo"&gt;leo&lt;/p&gt; &lt;p xichen="kris"&gt;kris&lt;/p&gt; &lt;p xichen="jasper"&gt;jasper&lt;/p&gt; &lt;p xichen="hades"&gt;hades&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 属性选择器 表示 含义 E[attr] 只使用属性名，但没有确定任何属性值 E[attr=”value”] 指定属性名，并制定了该属性的属性值 E[attr~=”value”] 指定属性名，并且具有属性值，此属性值是一个词列表，并且以空格隔开，其中词列表包含了一个value词，而且等号前面的”~”不能不写 E[attr^=”value”] 指定属性名，并且具有属性值，属性值是以value开头的 E[attr$=”value”] 指定属性名，并且具有属性值，属性值是以value结束的 E[attr*=”value”] 指定属性名，并且具有属性值，而且属性值中包含了value E[attr\ =”value”] 指定属性名，并且具有属性值，而且属性值是以value或者以”value-“开头的值（比如zh-cn） 小例子:仿百度文库分类图标 做出不同的文档类型前面加上不同的图标的效果 。 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style type="text/css"&gt; p &#123; height: 30px; line-height: 30px; font-size: 12px; border: 1px solid #000; &#125; p a &#123; background: url(img/w.gif) no-repeat 3px center; padding-left: 20px; display: block; &#125; p a[href*=text] &#123; background-image: url(img/text.gif); &#125; p a[href*=pdf] &#123; background-image: url(img/pdf.gif); &#125; p a[href*=excel] &#123; background-image: url(img/excel.gif); &#125; &lt;/style&gt;&lt;/head&gt;&lt;body&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/doc/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/pdf/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/text/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt; &lt;p&gt; &lt;a href="http://www.baidu.com/excel/javascript.html"&gt;百度文库&lt;/a&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css3</category>
+        <category>css3基础</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>css3</tag>
+        <tag>属性选择器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML5的canvas]]></title>
+    <url>%2F2017%2F02%2F15%2FHTML5%E7%9A%84canvas%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML5的音频与视频]]></title>
+    <url>%2F2017%2F02%2F14%2FHTML5%E7%9A%84%E9%9F%B3%E9%A2%91%E4%B8%8E%E8%A7%86%E9%A2%91%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML5的地理信息、本地存储、离线存储]]></title>
+    <url>%2F2017%2F02%2F14%2FHTML5%E7%9A%84%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E3%80%81%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8%E3%80%81%E7%A6%BB%E7%BA%BF%E5%AD%98%E5%82%A8%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML5的新特性]]></title>
+    <url>%2F2017%2F02%2F14%2FHTML5%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[HTML5新的页面结构和宽松的语义化规范12&lt;!doctype html&gt;&lt;meta charset=“utf-8”/&gt; 语义化标签的由来 http://devfiles.myopera.com/articles/572/idlist-url.htm •主要用于页面的头部的信息介绍，也可用于板块头部 页面上的一个标题组合 一个标题和一个子标题，或者标语的组合 导航 （包含链接的的一个列表） 页脚 页面的底部 或者 版块底部 页面上的版块 用于划分页面上的不同区域,或者划分文章里不同的节 用来在页面中表示一套结构完整且独立的内容部分 •可以用来呈现论坛的一个帖子，杂志或报纸中的一篇文章，一篇博客，用户提交的评论内容，可互动的页面模块挂件等。 元素标签可以包含与当前页面或主要内容相关的引用、侧边栏、广告、nav元素组，以及其他类似的有别与主要内容的部分 •aside的内容应该与article的内容相关。 •被包含在中作为主要内容的附属信息部分，其中的内容以是与当前文章有关的引用、词汇列表等 •在之外使用，作为页面或站点全局的附属信息部分；最典型的形式是侧边栏(sidebar)，其中的内容可以是友情链接、附属导航或广告单元等。 用于对元素进行组合。一般用于图片或视频 figure的子元素用于对figure的内容进行说明 用来表现时间或日期 用于描述文档或文档某个部分的细节 •该元素用于摘录引用等应该与页面的主要内容区分开的其他内容 •Open属性默认展开 details元素的标题 定义一段对话 定义文章 或页面作者的详细联系信息 需要标记的词或句子 给表单添加一个公钥 定义进度条 header1234567891011&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;header&gt;用在页面的头部或者版块的头部&lt;/header&gt;&lt;footer&gt;用在页面的头部或者版块的底部&lt;/footer&gt;&lt;/body&gt;&lt;/html&gt; hgroup12345678910111213&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;hgroup&gt; &lt;h1&gt;标题一&lt;/h1&gt; &lt;h2&gt;标题二&lt;/h2&gt;&lt;/hgroup&gt;&lt;/body&gt;&lt;/html&gt; nav导航 （包含链接的的一个列表） 123456789101112131415161718192021&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;nav&gt;&lt;a href="#"&gt;链接&lt;/a&gt;&lt;a href="#"&gt;链接&lt;/a&gt;&lt;/nav&gt;&lt;nav&gt; &lt;p&gt;&lt;a href="#"&gt;isabelle&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="#"&gt;isabelle&lt;/a&gt;&lt;/p&gt;&lt;/nav&gt;&lt;nav&gt; &lt;h2&gt;计算机课程&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;&lt;a href="#"&gt;javascript&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="#"&gt;html+css&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt;&lt;/nav&gt;&lt;/body&gt;&lt;/html&gt; footersection页面上的版块 用于划分页面上的不同区域,或者划分文章里不同的节 12345678910&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;section&gt;用来划分区域&lt;/section&gt;&lt;/body&gt;&lt;/html&gt; article用来在页面中表示一套结构完整且独立的内容部分 •可以用来呈现论坛的一个帖子，杂志或报纸中的一篇文章，一篇博客，用户提交的评论内容，可互动的页面模块挂件等。 1234567891011&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;article&gt;主体&lt;/article&gt;&lt;aside&gt;和主体相关的附属信息&lt;/aside&gt;&lt;/body&gt;&lt;/html&gt; aside元素标签可以包含与当前页面或主要内容相关的引用、侧边栏、广告、nav元素组，以及其他类似的有别与主要内容的部分 •aside的内容应该与article的内容相关。 •被包含在中作为主要内容的附属信息部分，其中的内容以是与当前文章有关的引用、词汇列表等 •在之外使用，作为页面或站点全局的附属信息部分；最典型的形式是侧边栏(sidebar)，其中的内容可以是友情链接、附属导航或广告单元等。 1234567891011&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;article&gt;主体&lt;/article&gt;&lt;aside&gt;和主体相关的附属信息&lt;/aside&gt;&lt;/body&gt;&lt;/html&gt; figure用于对元素进行组合。一般用于图片或视频 12345678910111213&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;figure&gt; &lt;img /&gt; &lt;figcaption&gt; 计算机课程 photo &amp;copy 计算机课程&lt;/figcaption&gt;&lt;/figure&gt;&lt;/body&gt;&lt;/html&gt; figcation figure的子元素用于对figure的内容进行说明 time1234567891011&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt; 我们在每天早上 &lt;time&gt;9:00&lt;/time&gt; 开始营业。 &lt;/p&gt;&lt;p&gt; 我在 &lt;time datetime="2008-02-14"&gt;情人节&lt;/time&gt; 有个约会。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; datalist选项列表。与 input元素配合使用，来定义input可能的值 123456789101112131415&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;input type="text" list="valList" /&gt;&lt;datalist id="valList"&gt; &lt;option value="javascript"&gt;javascript&lt;/option&gt; &lt;option value="html"&gt;html&lt;/option&gt; &lt;option value="css"&gt;css&lt;/option&gt;&lt;/datalist&gt;&lt;/body&gt;&lt;/html&gt; details summary12345678910111213&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;details&gt; &lt;summary&gt;react框架&lt;/summary&gt; &lt;p&gt;最近热门的框架&lt;/p&gt;&lt;/details&gt;&lt;/body&gt;&lt;/html&gt; dialog1234567891011121314151617&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;dialog open&gt; &lt;dt&gt;老师&lt;/dt&gt; &lt;dd&gt;2+2 等于？&lt;/dd&gt; &lt;dt&gt;学生&lt;/dt&gt; &lt;dd&gt;4&lt;/dd&gt; &lt;dt&gt;老师&lt;/dt&gt; &lt;dd&gt;答对了！&lt;/dd&gt;&lt;/dialog&gt;&lt;/body&gt;&lt;/html&gt; adress12345678910&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;address&gt;作者信息&lt;/address&gt;&lt;/body&gt;&lt;/html&gt; mark12345678910111213&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;style&gt;mark&#123; background:Red;&#125;&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;mark&gt;标记&lt;/mark&gt;&lt;/body&gt;&lt;/html&gt; keygen1234567891011121314&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;form action="http://www.baidu.com" method="get"&gt; 用户: &lt;input type="text" name="usr_name" /&gt; 公钥: &lt;keygen name="security" /&gt; &lt;input type="submit" /&gt;&lt;/form&gt;&lt;/body&gt;&lt;/html&gt; progress123456789101112&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;progress max="200" value="100"&gt; &lt;span&gt;76&lt;/span&gt; //span用来做兼容，显示比例&lt;/progress&gt;&lt;/body&gt;&lt;/html&gt; HTML5新标签在IE下的兼容针对IE6-8这些不支持HTML5语义化标签的浏览器我们可以使用javascript来解决他们. HTML5语义化标签在IE6-8下，我们用js创建出来之后，他是不会有任何默认样式的甚至是display，所以在样式表里要对这些标签定义一下 它默认的display 方法如下： 123456789101112131415161718192021222324252627282930313233&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&lt;title&gt;无标题文档&lt;/title&gt;&lt;script&gt;document.createElement("leo");document.createElement("header");document.createElement("article");document.createElement("aside");document.createElement("section");document.createElement("footer");&lt;/script&gt;&lt;style&gt;body&#123;margin:0;&#125;header&#123;height:100px;background:#9F3; display:block;&#125;article&#123; padding:10px;background:#CF6; overflow:hidden;zoom:1; position:relative; display:block;&#125;aside&#123;width:200px;height:300px;background:#F06; position:absolute;left:10px;top:10px; display:block;&#125;section&#123;margin-left:210px;background:#F90;height:300px; display:block;&#125;footer&#123; height:100px;background:#C6C; display:block;&#125;leo&#123; background:#F03;height:100px; display:block;&#125;&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;header&gt;页面头部&lt;/header&gt;&lt;article&gt; &lt;aside&gt;侧边栏&lt;/aside&gt; &lt;section&gt;内容区域&lt;/section&gt;&lt;/article&gt;&lt;footer&gt;页面底部&lt;/footer&gt;&lt;leo&gt;刘伟是个胖子&lt;/leo&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>HTML5</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML5的跨文档消息通信]]></title>
+    <url>%2F2017%2F02%2F12%2FHTML5%E7%9A%84%E8%B7%A8%E6%96%87%E6%A1%A3%E6%B6%88%E6%81%AF%E9%80%9A%E4%BF%A1%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[html5的历史管理]]></title>
+    <url>%2F2017%2F02%2F11%2Fhtml5%E7%9A%84%E5%8E%86%E5%8F%B2%E7%AE%A1%E7%90%86%2F</url>
+    <content type="text"><![CDATA[历史管理onhashchange :改变hash值来管理 history pushState 三个参数：数据 标题 (都没实现) 地址（可选） popstate事件 读取数据 event.state 注意:网址是虚假的，需要在服务器指定对应 页面，不然刷新找不到页面]]></content>
   </entry>
 </search>
