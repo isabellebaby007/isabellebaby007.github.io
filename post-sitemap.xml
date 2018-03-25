@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2018/03/25/HTML5%E8%A1%A8%E5%8D%95%E6%96%B0%E5%A2%9E/</loc>
+        <lastmod>2018-03-25T12:44:42.614Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2017/02/14/HTML5%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
-        <lastmod>2018-03-25T12:13:31.958Z</lastmod>
+        <lastmod>2018-03-25T12:33:19.103Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
