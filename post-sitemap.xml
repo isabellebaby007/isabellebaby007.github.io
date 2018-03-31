@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2017/03/31/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%91%BD%E4%BB%A4%E5%A4%A7%E6%80%BB%E7%BB%93/</loc>
+        <lastmod>2018-03-31T15:52:51.830Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2017/06/18/jQuery%E7%9A%84DOM%E6%93%8D%E4%BD%9C/</loc>
+        <lastmod>2018-03-31T15:50:46.294Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</loc>
         <lastmod>2018-03-31T15:45:11.160Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -225,14 +241,6 @@
     <url>
         <loc>http://yoursite.com/2017/06/04/jQuery%E7%AE%80%E4%BB%8B/</loc>
         <lastmod>2018-03-26T14:09:52.512Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/06/18/jQuery%E7%9A%84DOM%E6%93%8D%E4%BD%9C/</loc>
-        <lastmod>2018-03-26T14:09:25.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
