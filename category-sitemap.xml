@@ -245,15 +245,22 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/</loc>
         <lastmod>2018-03-27T02:12:30.197Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/js/</loc>
-        <lastmod>2018-03-27T02:12:30.197Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-03-31T15:45:11.160Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/%E7%AE%97%E6%B3%95/</loc>
+        <lastmod>2018-03-31T15:45:11.160Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -24,6 +24,25 @@
     </item>
     
     <item>
+      <title>js之二分查找</title>
+      <link>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</link>
+      <guid>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</guid>
+      <pubDate>Sat, 31 Mar 2018 10:01:38 GMT</pubDate>
+      <description>
+      
+        &lt;h3 id=&quot;二分查找基本思路描述&quot;&gt;&lt;a href=&quot;#二分查找基本思路描述&quot; class=&quot;headerlink&quot; title=&quot;二分查找基本思路描述&quot;&gt;&lt;/a&gt;二分查找基本思路描述&lt;/h3&gt;&lt;p&gt;采用二分查找之前，数据应该是排好序的。&lt;/p&gt;
+&lt;p&gt;主要思路是：设查找的数组区间为array[s,e]&lt;/p&gt;
+&lt;p&gt;(1)确定区间的中间位置&lt;/p&gt;
+&lt;p&gt;(2)将要查找的值x与数组中间位置的值作比较array[m]，查找成功则返回此位置；否则重复1、2步，继续确定新的查找位置，继续二分查找。&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="二分查找基本思路描述"><a href="#二分查找基本思路描述" class="headerlink" title="二分查找基本思路描述"></a>二分查找基本思路描述</h3><p>采用二分查找之前，数据应该是排好序的。</p><p>主要思路是：设查找的数组区间为array[s,e]</p><p>(1)确定区间的中间位置</p><p>(2)将要查找的值x与数组中间位置的值作比较array[m]，查找成功则返回此位置；否则重复1、2步，继续确定新的查找位置，继续二分查找。</p><a id="more"></a><p>区域确定过程：这里假设array是按照从小到大的顺序排列的</p><p>array[m]&gt;T由数组的有序性可知array[m,…..,e]都大于T;</p><p>故新的区间为array[s,…….m-1],</p><p>重复上述步骤，每一次查找与中间值进行比较，判断是否成功，不成功则当前查找区间缩小一半，循环查找，即可。</p><p>时间复杂度为O（log2 n）；</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr1=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,,<span class="number">7</span>,<span class="number">8</span>];</span><br><span class="line"><span class="keyword">let</span> arr2=[<span class="number">88</span>,<span class="number">77</span>,<span class="number">66</span>,<span class="number">55</span>,<span class="number">44</span>,<span class="number">33</span>,<span class="number">22</span>,<span class="number">11</span>];</span><br><span class="line"></span><br><span class="line">BinarySearch(arr1,<span class="number">2</span>);</span><br><span class="line">BinarySearch(arr2,<span class="number">77</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">BinarySearch</span>(<span class="params">arr,target</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> e=arr.length<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">let</span> m=<span class="built_in">Math</span>.floor((s+e)/<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">let</span> sortTag=arr[s]&lt;=arr[e];  <span class="comment">//确定排序的顺序是升序还是降序</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(s&lt;e &amp;&amp; arr[m] !==target)&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr[m] &gt;target)&#123;</span><br><span class="line">        sortTag &amp;&amp; (e=m<span class="number">-1</span>); <span class="comment">//</span></span><br><span class="line">        !sortTag &amp;&amp; (s=m+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        !sortTag &amp;&amp; (e=m<span class="number">-1</span>);</span><br><span class="line">        sortTag &amp;&amp; (s=m+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    m=<span class="built_in">Math</span>.floor((s+e)/<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">if</span>(arr[m] == target)&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">'找到了，位于%s'</span>,m);</span><br><span class="line">       <span class="keyword">return</span> m;</span><br><span class="line">   &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">'没找到'</span>);</span><br><span class="line">       <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这里使用了&amp;&amp; 的短路原理：</p><p>1、只要 &amp;&amp; 前面是false,无论 &amp;&amp; 后面是true还是false,结果都将返回 &amp;&amp; 前面的值</p><p>2、只要 &amp;&amp; 前面是true，无论 &amp;&amp; 后面是true还是false,结果都将返回 &amp;&amp; 后面的值。</p><p>例如：</p><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="number">0</span> <span class="symbol">&amp;&amp;</span> 'a')<span class="comment">;</span></span><br></pre></td></tr></table></figure><p>结果返回0， &amp;&amp; 前面 0 是false,后面 a是true,所以直接分返回前面的值</p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>react router之router参数传递</title>
       <link>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/</link>
       <guid>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/</guid>
@@ -70,22 +89,6 @@
       <content:encoded><![CDATA[<h3 id="框架的使用"><a href="#框架的使用" class="headerlink" title="框架的使用"></a>框架的使用</h3><p><a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener">https://ant.design/docs/react/introduce-cn</a></p><p>安装框架</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install antd --save</span><br></pre></td></tr></table></figure><a id="more"></a>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>react样式之Ant Design样式框架介绍</title>
-      <link>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/</link>
-      <guid>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/</guid>
-      <pubDate>Wed, 21 Mar 2018 10:59:10 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;react样式框架介绍&quot;&gt;&lt;a href=&quot;#react样式框架介绍&quot; class=&quot;headerlink&quot; title=&quot;react样式框架介绍&quot;&gt;&lt;/a&gt;react样式框架介绍&lt;/h3&gt;&lt;p&gt;国外的google公司出的一款样式框架：&lt;a href=&quot;http://www.material-ui.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.material-ui.com&lt;/a&gt;   只有英文版。国内的同志们可以使用蚂蚁金服出的Ant Design  &lt;a href=&quot;https://ant.design/index-cn这个框架，对中文支持更友好。&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ant.design/index-cn这个框架，对中文支持更友好。&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="react样式框架介绍"><a href="#react样式框架介绍" class="headerlink" title="react样式框架介绍"></a>react样式框架介绍</h3><p>国外的google公司出的一款样式框架：<a href="http://www.material-ui.com" target="_blank" rel="noopener">http://www.material-ui.com</a>   只有英文版。国内的同志们可以使用蚂蚁金服出的Ant Design  <a href="https://ant.design/index-cn这个框架，对中文支持更友好。" target="_blank" rel="noopener">https://ant.design/index-cn这个框架，对中文支持更友好。</a></p><a id="more"></a><p>阿里的这个UI框架的设计语言这一块，建议空余的时间可以看看，对前端美学设计很有启发。</p><p><img src="/2018/03/21/react样式之Ant-Design样式框架介绍/C:/blog\source\_posts\react样式之Ant-Design样式框架介绍\ant.png" alt=""></p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D/#disqus_thread</comments>
     </item>
     
   </channel>
