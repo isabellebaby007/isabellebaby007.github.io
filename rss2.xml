@@ -8,8 +8,61 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Thu, 05 Apr 2018 18:36:27 GMT</pubDate>
+    <pubDate>Thu, 05 Apr 2018 19:35:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>微信小游戏的关系链数据</title>
+      <link>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE/</link>
+      <guid>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE/</guid>
+      <pubDate>Thu, 05 Apr 2018 19:20:59 GMT</pubDate>
+      <description>
+      
+        &lt;h3 id=&quot;微信用户的关系链数据组成&quot;&gt;&lt;a href=&quot;#微信用户的关系链数据组成&quot; class=&quot;headerlink&quot; title=&quot;微信用户的关系链数据组成&quot;&gt;&lt;/a&gt;微信用户的关系链数据组成&lt;/h3&gt;&lt;p&gt;包括两部分：&lt;/p&gt;
+&lt;p&gt;​      该用户好友的用户数据  &lt;/p&gt;
+&lt;p&gt;​       该用户所在的某个群的群成员的用户数据。&lt;/p&gt;
+&lt;p&gt;获取关系链数据的API：&lt;/p&gt;
+&lt;p&gt;​      &lt;a href=&quot;https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wx.getFriendCloudStorage()&lt;/a&gt;获取当前用户也玩该小游戏的好友的用户数据&lt;/p&gt;
+&lt;p&gt;​      &lt;a href=&quot;https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wx.getGroupCloudStorage()&lt;/a&gt; 获取当前用户在某个群中也玩该小游戏的成员的用户数据&lt;/p&gt;
+&lt;p&gt;API返回的结果为一个对象数组，数组的每一个元素都是一个表示用户数据的对象。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;openId&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;用户的openId&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;avatarUrI&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;用户的微信头像url&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nickName&lt;/td&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;用户的微信昵称&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;data&lt;/td&gt;
+&lt;td&gt;Object&lt;/td&gt;
+&lt;td&gt;用户的游戏数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="微信用户的关系链数据组成"><a href="#微信用户的关系链数据组成" class="headerlink" title="微信用户的关系链数据组成"></a>微信用户的关系链数据组成</h3><p>包括两部分：</p><p>​      该用户好友的用户数据  </p><p>​       该用户所在的某个群的群成员的用户数据。</p><p>获取关系链数据的API：</p><p>​      <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getFriendCloudStorage()</a>获取当前用户也玩该小游戏的好友的用户数据</p><p>​      <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getGroupCloudStorage()</a> 获取当前用户在某个群中也玩该小游戏的成员的用户数据</p><p>API返回的结果为一个对象数组，数组的每一个元素都是一个表示用户数据的对象。</p><table><thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead><tbody><tr><td>openId</td><td>string</td><td>用户的openId</td></tr><tr><td>avatarUrI</td><td>string</td><td>用户的微信头像url</td></tr><tr><td>nickName</td><td>string</td><td>用户的微信昵称</td></tr><tr><td>data</td><td>Object</td><td>用户的游戏数据</td></tr></tbody></table><a id="more"></a><h3 id="关系链数据的应用场景"><a href="#关系链数据的应用场景" class="headerlink" title="关系链数据的应用场景"></a>关系链数据的应用场景</h3><p>例如 用户的段位、战绩、积分等排行榜，这些游戏业务特有的数据，都可以用到这个功能。</p><p>通过调用 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.setUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.setUserCloudStorage()</a> 可以将当前用户的游戏数据托管在微信后台。只有被托管过数据的用户，才会被视为 <code>玩过</code> 该小游戏的用户，才会出现在 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getFriendCloudStorage()</a> 和 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getGroupCloudStorage()</a> 返回的对象数组中。</p><p>除此之外，我们还提供了以下 API：</p><ul><li><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.removeUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.removeUserCloudStorage()</a> 删除用户托管数据中指定字段的数据</li><li><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getUserCloudStorage()</a> 获取当前用户的托管数据</li></ul><p><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getUserCloudStorage</a>、<a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getFriendCloudStorage()</a> 和 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getGroupCloudStorage()</a> 只能在 <code>开放数据域</code> 中调用。<br><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.setUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.setUserCloudStorage()</a> 和 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.removeUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.removeUserCloudStorage()</a> 可以同时在 <code>主域</code> 和开放数据域中调用。</p><h3 id="展示关系链数据"><a href="#展示关系链数据" class="headerlink" title="展示关系链数据"></a>展示关系链数据</h3><p>如果想要展示通过关系链 API 获取到的用户数据，如绘制排行榜等业务场景，需要将排行榜绘制到 <code>sharedCanvas</code> 上，再在主域将 sharedCanvas 渲染上屏。</p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>微信小游戏的Adapter适配层</title>
@@ -78,24 +131,6 @@
       <content:encoded><![CDATA[<h3 id="router简介"><a href="#router简介" class="headerlink" title="router简介"></a>router简介</h3><p>推荐使用react router插件： <a href="https://github.com/ReactTraining/react-router" target="_blank" rel="noopener">https://github.com/ReactTraining/react-router</a></p>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E6%A6%82%E5%BF%B5/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>react样式之Ant Design样式框架使用</title>
-      <link>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</link>
-      <guid>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/</guid>
-      <pubDate>Wed, 21 Mar 2018 10:59:18 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;框架的使用&quot;&gt;&lt;a href=&quot;#框架的使用&quot; class=&quot;headerlink&quot; title=&quot;框架的使用&quot;&gt;&lt;/a&gt;框架的使用&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://ant.design/docs/react/introduce-cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ant.design/docs/react/introduce-cn&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;安装框架&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install antd --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="框架的使用"><a href="#框架的使用" class="headerlink" title="框架的使用"></a>框架的使用</h3><p><a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener">https://ant.design/docs/react/introduce-cn</a></p><p>安装框架</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install antd --save</span><br></pre></td></tr></table></figure><a id="more"></a>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/03/21/react%E6%A0%B7%E5%BC%8F%E4%B9%8BAnt-Design%E6%A0%B7%E5%BC%8F%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
     </item>
     
   </channel>
