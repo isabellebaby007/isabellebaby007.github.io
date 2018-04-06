@@ -818,8 +818,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -1242,8 +1242,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -1270,8 +1270,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -1284,8 +1284,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -1311,6 +1311,19 @@
     <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[九大排序算法总结]]></title>
     <url>%2F2018%2F02%2F13%2Fercha%2F</url>
     <content type="text"><![CDATA[主要有以下32种： 在右上角或者左上角实现fork me on github添加RSS添加动态背景实现点击出现桃心效果修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
@@ -1322,19 +1335,6 @@
         <tag>数据结构</tag>
         <tag>算法</tag>
         <tag>排序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>
@@ -1394,8 +1394,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>js</tag>
         <tag>DOM</tag>
+        <tag>js</tag>
         <tag>getpos()</tag>
       </tags>
   </entry>
