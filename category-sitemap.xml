@@ -294,15 +294,22 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
-        <lastmod>2018-04-05T19:35:45.765Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/%E7%A4%BE%E4%BA%A4%E7%8E%A9%E6%B3%95/</loc>
+        <lastmod>2018-04-05T20:40:25.029Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/%E7%A4%BE%E4%BA%A4%E7%8E%A9%E6%B3%95/</loc>
-        <lastmod>2018-04-05T19:35:45.765Z</lastmod>
+        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
+        <lastmod>2018-04-06T00:18:14.774Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/Cocos/</loc>
+        <lastmod>2018-04-06T00:18:14.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[微信小游戏开发之Cocos]]></title>
+    <url>%2F2018%2F04%2F06%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8BCocos%2F</url>
+    <content type="text"><![CDATA[发布Creator游戏到小程序平台1、下载微信开发者工具 2、在Creator偏好中设置微信开发者工具路径 3、登录微信公众平台，找到appid 4、在构建面板中设置项目名和appid 5、构建发布 6、点击play打开微信开发者工具 7、预览部署 小游戏平台的资源管理1、游戏包体小于4MB可以直接上传因为小游戏是一次性加载所有的资源，不是按需加载，所以小游戏的包体大小越小，用户体验越好。 2、代码库+远程资源的支持推荐方法：代码库全部放在小游戏包体里面，远程资源放在服务器上。只需设置远程资源路径，就会自动寻找是否有远程资源，有远程资源就会自动下载，然后放在本地跟代码库一起运行。 3、远程资源的版本管理]]></content>
+      <categories>
+        <category>微信小游戏</category>
+        <category>Cocos</category>
+      </categories>
+      <tags>
+        <tag>微信小游戏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[微信小游戏的关系链数据]]></title>
     <url>%2F2018%2F04%2F06%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE%2F</url>
     <content type="text"><![CDATA[微信用户的关系链数据组成包括两部分： ​ 该用户好友的用户数据 ​ 该用户所在的某个群的群成员的用户数据。 获取关系链数据的API： ​ wx.getFriendCloudStorage()获取当前用户也玩该小游戏的好友的用户数据 ​ wx.getGroupCloudStorage() 获取当前用户在某个群中也玩该小游戏的成员的用户数据 API返回的结果为一个对象数组，数组的每一个元素都是一个表示用户数据的对象。 属性 类型 说明 openId string 用户的openId avatarUrI string 用户的微信头像url nickName string 用户的微信昵称 data Object 用户的游戏数据 关系链数据的应用场景例如 用户的段位、战绩、积分等排行榜，这些游戏业务特有的数据，都可以用到这个功能。 通过调用 wx.setUserCloudStorage() 可以将当前用户的游戏数据托管在微信后台。只有被托管过数据的用户，才会被视为 玩过 该小游戏的用户，才会出现在 wx.getFriendCloudStorage() 和 wx.getGroupCloudStorage() 返回的对象数组中。 除此之外，我们还提供了以下 API： wx.removeUserCloudStorage() 删除用户托管数据中指定字段的数据 wx.getUserCloudStorage() 获取当前用户的托管数据 wx.getUserCloudStorage、wx.getFriendCloudStorage() 和 wx.getGroupCloudStorage() 只能在 开放数据域 中调用。wx.setUserCloudStorage() 和 wx.removeUserCloudStorage() 可以同时在 主域 和开放数据域中调用。 展示关系链数据如果想要展示通过关系链 API 获取到的用户数据，如绘制排行榜等业务场景，需要将排行榜绘制到 sharedCanvas 上，再在主域将 sharedCanvas 渲染上屏。]]></content>
@@ -806,8 +818,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
   <entry>
@@ -1230,8 +1242,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
   <entry>
@@ -1258,8 +1270,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
         <tag>子节点和兄弟节点</tag>
       </tags>
   </entry>
@@ -1272,8 +1284,8 @@
         <category>js</category>
       </categories>
       <tags>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
       </tags>
   </entry>
   <entry>
@@ -1313,6 +1325,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
+    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
+      <categories>
+        <category>hexo博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hxo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[青蛙旅行破解版]]></title>
     <url>%2F2018%2F02%2F13%2Fqingwa%2F</url>
     <content type="text"><![CDATA[链接 密码 gggg hhhhhhhhhhhhh aaaaaaaaaaaaaa aadddddddddddddd rrrrrrrrrrrrrrrrrr ggggggggggggggggg]]></content>
@@ -1325,19 +1350,6 @@
         <tag>游戏</tag>
         <tag>破解</tag>
         <tag>android</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[(更新)hexo+github博客搭建进阶指南]]></title>
-    <url>%2F2018%2F02%2F13%2Fgithub-hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[[TOC] 在右上角或者左上角实现fork me on github点击 这里 或者 这里选择自己喜欢的样式，并复制相应的代码。然后复制代码到themes/next/layout/_layout.swig文件中，放置在&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;的下面，并把href改为你的GitHub地址。 添加RSS 切换到你博客文件夹的根目录下，然后在git bash里面输入以下代码，安装模块 npm install --save hexo-generator-feed 然后打开站点配置文件，在里面的末尾添加：(请注意在冒号后面要加一个空格，不然会发生错误！) #3、添加动态背景实现点击出现桃心效果 修改文章内链接文本样式修改文章底部的那个带#号的标签在每篇文章末尾统一添加“本文结束”标记修改作者头像并旋转博文压缩修改“代码块自定义样式侧边栏社交小图标设置主页文章添加阴影效果在网站底部加上访问量添加热度网站底部字数统计添加 README.md 文件设置网站的图标Favicon实现统计功能添加顶部加载条在文章底部增加版权信息添加网易云跟帖(跟帖关闭，已失效，改为来必力)隐藏网页底部powered By Hexo / 强力驱动修改网页底部的桃心文章加密访问添加jiathis分享博文置顶修改字体大小修改打赏字体不闪动自定义鼠标样式为博客加上萌萌的宠物DaoVoice 在线联系点击爆炸效果]]></content>
-      <categories>
-        <category>hexo博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>github</tag>
-        <tag>hxo</tag>
       </tags>
   </entry>
   <entry>
@@ -1382,8 +1394,8 @@
       </categories>
       <tags>
         <tag>前端</tag>
-        <tag>DOM</tag>
         <tag>js</tag>
+        <tag>DOM</tag>
         <tag>getpos()</tag>
       </tags>
   </entry>
