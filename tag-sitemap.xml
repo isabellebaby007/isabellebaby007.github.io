@@ -590,13 +590,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-        <lastmod>2018-04-03T14:40:15.080Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/jquery/</loc>
         <lastmod>2018-04-03T14:40:15.080Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -605,7 +598,21 @@
 
     <url>
         <loc>http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
-        <lastmod>2018-04-06T00:18:14.774Z</lastmod>
+        <lastmod>2018-04-07T10:01:00.101Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/</loc>
+        <lastmod>2018-04-08T03:32:16.218Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/TypeScript/</loc>
+        <lastmod>2018-04-08T03:32:16.218Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

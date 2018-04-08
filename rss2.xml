@@ -8,8 +8,46 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Fri, 06 Apr 2018 00:18:14 GMT</pubDate>
+    <pubDate>Sun, 08 Apr 2018 03:32:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>TypeScript快速上手</title>
+      <link>http://yoursite.com/2018/04/08/TypeScript%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</link>
+      <guid>http://yoursite.com/2018/04/08/TypeScript%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</guid>
+      <pubDate>Sun, 08 Apr 2018 02:57:25 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/04/08/TypeScript%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>微信小游戏之使用白鹭引擎快速开发微信小游戏</title>
+      <link>http://yoursite.com/2018/04/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B9%8B%E4%BD%BF%E7%94%A8%E7%99%BD%E9%B9%AD%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/</link>
+      <guid>http://yoursite.com/2018/04/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B9%8B%E4%BD%BF%E7%94%A8%E7%99%BD%E9%B9%AD%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/</guid>
+      <pubDate>Sat, 07 Apr 2018 09:24:08 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA4Mzk1ODYzMw==&amp;amp;mid=2653275605&amp;amp;idx=1&amp;amp;sn=3f34c378b2f68da3868b4fce217a19b9&amp;amp;chksm=
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><a href="http://mp.weixin.qq.com/s?__biz=MzA4Mzk1ODYzMw==&amp;mid=2653275605&amp;idx=1&amp;sn=3f34c378b2f68da3868b4fce217a19b9&amp;chksm=843febd3b34862c577cf6e95c977536b1f0259aedb03d2243b1a52787caba0a4ee881da8000d&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">http://mp.weixin.qq.com/s?__biz=MzA4Mzk1ODYzMw==&amp;mid=2653275605&amp;idx=1&amp;sn=3f34c378b2f68da3868b4fce217a19b9&amp;chksm=843febd3b34862c577cf6e95c977536b1f0259aedb03d2243b1a52787caba0a4ee881da8000d&amp;scene=21#wechat_redirect</a></p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/04/07/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B9%8B%E4%BD%BF%E7%94%A8%E7%99%BD%E9%B9%AD%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>微信小游戏开发之Cocos</title>
@@ -100,37 +138,6 @@
       <content:encoded><![CDATA[<h3 id="为什么要用Adapter"><a href="#为什么要用Adapter" class="headerlink" title="为什么要用Adapter"></a>为什么要用Adapter</h3><p>因为小游戏的运行环境在IOS上是javaScriptCore,在安卓上是V8，都没有BOM和DOM的运行环境，没有全局的document和window对象。因此如果直接用DOM API来创建Canvas和Image等元素的时候，会引发错误。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> canvas=<span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>)   <span class="comment">//出现错误</span></span><br></pre></td></tr></table></figure><p>但是我们可以使用wx.createCanvas和wx.createImage来封装一个document。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="built_in">document</span>=&#123;</span><br><span class="line">    createElement:<span class="function"><span class="keyword">function</span>(<span class="params">tagName</span>)</span>&#123;</span><br><span class="line">        tagName = tagName.toLowerCase()</span><br><span class="line">        <span class="keyword">if</span>(tagName===<span class="string">'canvas'</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> wx.createCanvas()</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(tagName=== <span class="string">'image'</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> wx.createImage()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>封装了上面的函数之后，我们就可以直接创建元素Canvas和Image了。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> canvas=<span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>)</span><br><span class="line"><span class="keyword">var</span> image=<span class="built_in">document</span>.createImage(<span class="string">'image'</span>)</span><br></pre></td></tr></table></figure><p>同样，如果想实现 new Image() 的方式创建 Image 对象，只须添加如下代码。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Image</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> wx.createImage()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Adapter是用户代码，是用来使游戏引擎适配小游戏的运行环境"><a href="#Adapter是用户代码，是用来使游戏引擎适配小游戏的运行环境" class="headerlink" title="Adapter是用户代码，是用来使游戏引擎适配小游戏的运行环境"></a>Adapter是用户代码，是用来使游戏引擎适配小游戏的运行环境</h3><p>原因：因为小游戏的宿主环境根本没有提供document和window这两个在浏览器中内置的全局变量，而H5游戏基本上大量地使用到这些DOM和BOM API 。Adapter即在引擎和游戏逻辑代码之间加一层模拟 BOM 和 DOM API 的适配层，我们称之为 Adapter。这层适配层在全局通过 wx API 模拟了引擎会访问到的那部分 window 和 document 对象的属性和方法，使引擎感受不到环境的差异。</p><p><img src="https://developers.weixin.qq.com/minigame/dev/tutorial/images/framework-1.png" alt=""></p>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84Adapter%E9%80%82%E9%85%8D%E5%B1%82/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>js之二分查找</title>
-      <link>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</link>
-      <guid>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</guid>
-      <pubDate>Sat, 31 Mar 2018 10:01:38 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;二分查找基本思路描述&quot;&gt;&lt;a href=&quot;#二分查找基本思路描述&quot; class=&quot;headerlink&quot; title=&quot;二分查找基本思路描述&quot;&gt;&lt;/a&gt;二分查找基本思路描述&lt;/h3&gt;&lt;p&gt;采用二分查找之前，数据应该是排好序的。&lt;/p&gt;
-&lt;p&gt;主要思路是：设查找的数组区间为array[s,e]&lt;/p&gt;
-&lt;p&gt;(1)确定区间的中间位置&lt;/p&gt;
-&lt;p&gt;(2)将要查找的值x与数组中间位置的值作比较array[m]，查找成功则返回此位置；否则重复1、2步，继续确定新的查找位置，继续二分查找。&lt;/p&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="二分查找基本思路描述"><a href="#二分查找基本思路描述" class="headerlink" title="二分查找基本思路描述"></a>二分查找基本思路描述</h3><p>采用二分查找之前，数据应该是排好序的。</p><p>主要思路是：设查找的数组区间为array[s,e]</p><p>(1)确定区间的中间位置</p><p>(2)将要查找的值x与数组中间位置的值作比较array[m]，查找成功则返回此位置；否则重复1、2步，继续确定新的查找位置，继续二分查找。</p><a id="more"></a><p>区域确定过程：这里假设array是按照从小到大的顺序排列的</p><p>array[m]&gt;T由数组的有序性可知array[m,…..,e]都大于T;</p><p>故新的区间为array[s,…….m-1],</p><p>重复上述步骤，每一次查找与中间值进行比较，判断是否成功，不成功则当前查找区间缩小一半，循环查找，即可。</p><p>时间复杂度为O（log2 n）；</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr1=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,,<span class="number">7</span>,<span class="number">8</span>];</span><br><span class="line"><span class="keyword">let</span> arr2=[<span class="number">88</span>,<span class="number">77</span>,<span class="number">66</span>,<span class="number">55</span>,<span class="number">44</span>,<span class="number">33</span>,<span class="number">22</span>,<span class="number">11</span>];</span><br><span class="line"></span><br><span class="line">BinarySearch(arr1,<span class="number">2</span>);</span><br><span class="line">BinarySearch(arr2,<span class="number">77</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">BinarySearch</span>(<span class="params">arr,target</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> e=arr.length<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">let</span> m=<span class="built_in">Math</span>.floor((s+e)/<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">let</span> sortTag=arr[s]&lt;=arr[e];  <span class="comment">//确定排序的顺序是升序还是降序</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(s&lt;e &amp;&amp; arr[m] !==target)&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr[m] &gt;target)&#123;</span><br><span class="line">        sortTag &amp;&amp; (e=m<span class="number">-1</span>); <span class="comment">//</span></span><br><span class="line">        !sortTag &amp;&amp; (s=m+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        !sortTag &amp;&amp; (e=m<span class="number">-1</span>);</span><br><span class="line">        sortTag &amp;&amp; (s=m+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    m=<span class="built_in">Math</span>.floor((s+e)/<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">if</span>(arr[m] == target)&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">'找到了，位于%s'</span>,m);</span><br><span class="line">       <span class="keyword">return</span> m;</span><br><span class="line">   &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">'没找到'</span>);</span><br><span class="line">       <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这里使用了&amp;&amp; 的短路原理：</p><p>1、只要 &amp;&amp; 前面是false,无论 &amp;&amp; 后面是true还是false,结果都将返回 &amp;&amp; 前面的值</p><p>2、只要 &amp;&amp; 前面是true，无论 &amp;&amp; 后面是true还是false,结果都将返回 &amp;&amp; 后面的值。</p><p>例如：</p><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="number">0</span> <span class="symbol">&amp;&amp;</span> 'a')<span class="comment">;</span></span><br></pre></td></tr></table></figure><p>结果返回0， &amp;&amp; 前面 0 是false,后面 a是true,所以直接分返回前面的值</p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/03/31/js%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>react router之router参数传递</title>
-      <link>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/</link>
-      <guid>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/</guid>
-      <pubDate>Wed, 21 Mar 2018 11:00:07 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>http://yoursite.com/2018/03/21/react-router%E4%B9%8Brouter%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/#disqus_thread</comments>
     </item>
     
   </channel>
