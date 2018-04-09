@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="%5Bobject%20Object%5D" rel="hub"/>
     <description>Isabelle的博客小站</description>
-    <pubDate>Mon, 09 Apr 2018 22:04:01 GMT</pubDate>
+    <pubDate>Mon, 09 Apr 2018 23:16:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ionic学习之结构分析以及组件使用</title>
+      <link>http://yoursite.com/2018/04/10/ionic%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%BB%A5%E5%8F%8A%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+      <guid>http://yoursite.com/2018/04/10/ionic%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%BB%A5%E5%8F%8A%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8/</guid>
+      <pubDate>Mon, 09 Apr 2018 22:25:03 GMT</pubDate>
+      <description>
+      
+        &lt;h3 id=&quot;ionic目录结构分析&quot;&gt;&lt;a href=&quot;#ionic目录结构分析&quot; class=&quot;headerlink&quot; title=&quot;ionic目录结构分析&quot;&gt;&lt;/a&gt;ionic目录结构分析&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\ionic.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;hooks&quot;&gt;&lt;a href=&quot;#hooks&quot; class=&quot;headerlink&quot; title=&quot;hooks:&quot;&gt;&lt;/a&gt;hooks:&lt;/h5&gt;&lt;p&gt;便宜cordova时自定义的脚本命令，方便整合到我们的编译系统和版本控制系统中。&lt;/p&gt;
+&lt;h5 id=&quot;node-modules&quot;&gt;&lt;a href=&quot;#node-modules&quot; class=&quot;headerlink&quot; title=&quot;node_modules:&quot;&gt;&lt;/a&gt;node_modules:&lt;/h5&gt;&lt;p&gt;node各类依赖包&lt;/p&gt;
+&lt;h5 id=&quot;resources&quot;&gt;&lt;a href=&quot;#resources&quot; class=&quot;headerlink&quot; title=&quot;resources:&quot;&gt;&lt;/a&gt;resources:&lt;/h5&gt;&lt;p&gt;android/ios资源(更换图标和启动动画)&lt;/p&gt;
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="ionic目录结构分析"><a href="#ionic目录结构分析" class="headerlink" title="ionic目录结构分析"></a>ionic目录结构分析</h3><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\ionic.png" alt=""></p><h5 id="hooks"><a href="#hooks" class="headerlink" title="hooks:"></a>hooks:</h5><p>便宜cordova时自定义的脚本命令，方便整合到我们的编译系统和版本控制系统中。</p><h5 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules:"></a>node_modules:</h5><p>node各类依赖包</p><h5 id="resources"><a href="#resources" class="headerlink" title="resources:"></a>resources:</h5><p>android/ios资源(更换图标和启动动画)</p><a id="more"></a><h5 id="src："><a href="#src：" class="headerlink" title="src："></a>src：</h5><p>开发工作目录，页面、样式、脚本和图片都放在这个目录下</p><h5 id="www"><a href="#www" class="headerlink" title="www:"></a>www:</h5><p>静态文件</p><h5 id="platforms"><a href="#platforms" class="headerlink" title="platforms:"></a>platforms:</h5><p>生成android或者ios安装包路径（platforms\android\build\outputs\apk:apk所在位置）执行</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cordova platform <span class="keyword">add</span><span class="bash"> android</span></span><br></pre></td></tr></table></figure><p>之后会生成。</p><h5 id="plugins"><a href="#plugins" class="headerlink" title="plugins:"></a>plugins:</h5><p>插件文件夹，里面放置各种cordova安装的插件</p><h5 id="config-xml"><a href="#config-xml" class="headerlink" title="config.xml"></a>config.xml</h5><p>打包成app的配置文件</p><h5 id="package-json"><a href="#package-json" class="headerlink" title="package.json:"></a>package.json:</h5><p>配置项目的元数据和管理项目所需要的依赖</p><h5 id="tsconfig-json"><a href="#tsconfig-json" class="headerlink" title="tsconfig,json:"></a>tsconfig,json:</h5><p>TypeScript项目的根目录，指定用来编译这个项目的根文件和编译选项</p><h5 id="tslint-json"><a href="#tslint-json" class="headerlink" title="tslint.json:"></a>tslint.json:</h5><p>格式化和校验typescript</p><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\ionic3.png" alt=""></p><h4 id="src"><a href="#src" class="headerlink" title="src"></a>src</h4><p>工作目录</p><h5 id="app"><a href="#app" class="headerlink" title="app"></a>app</h5><p>应用根目录</p><h5 id="assets"><a href="#assets" class="headerlink" title="assets:"></a>assets:</h5><p>资源根目录（静态文件（图片，js框架））</p><h5 id="pages"><a href="#pages" class="headerlink" title="pages:"></a>pages:</h5><p>页面文件，放置编写的页面文件，包含：html、scss、ts</p><h5 id="theme"><a href="#theme" class="headerlink" title="theme:"></a>theme:</h5><p>主题文件，里面有一个scss文件，设置主题信息</p><h3 id="ionic3-x-src文件目录分析"><a href="#ionic3-x-src文件目录分析" class="headerlink" title="ionic3.x   src文件目录分析"></a>ionic3.x   src文件目录分析</h3><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\src.png" alt=""></p><h3 id="app-module-ts分析"><a href="#app-module-ts分析" class="headerlink" title="app.module.ts分析"></a>app.module.ts分析</h3><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\app.png" alt=""></p><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\app2.png" alt=""></p><h3 id="ionic创建组件"><a href="#ionic创建组件" class="headerlink" title="ionic创建组件"></a>ionic创建组件</h3><h5 id="1、cd到项目根目录"><a href="#1、cd到项目根目录" class="headerlink" title="1、cd到项目根目录"></a>1、cd到项目根目录</h5><h5 id="2、通过ionic-g-component-组件名称创建组件"><a href="#2、通过ionic-g-component-组件名称创建组件" class="headerlink" title="2、通过ionic g component 组件名称创建组件"></a>2、通过ionic g component 组件名称创建组件</h5><h5 id="3、创建完成组件以后会在src目录下多一个components的目录，这个目录里面有我们用命令创建的所有的组件"><a href="#3、创建完成组件以后会在src目录下多一个components的目录，这个目录里面有我们用命令创建的所有的组件" class="headerlink" title="3、创建完成组件以后会在src目录下多一个components的目录，这个目录里面有我们用命令创建的所有的组件"></a>3、创建完成组件以后会在src目录下多一个components的目录，这个目录里面有我们用命令创建的所有的组件</h5><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\component.png" alt=""></p><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\component2.png" alt=""></p><h5 id="4、如果我们要使用这些组件必须在app-module-ts里面注册我们的模块，注册完成以后就可以在pages里面的其他页面里面使用这些组件。"><a href="#4、如果我们要使用这些组件必须在app-module-ts里面注册我们的模块，注册完成以后就可以在pages里面的其他页面里面使用这些组件。" class="headerlink" title="4、如果我们要使用这些组件必须在app.module.ts里面注册我们的模块，注册完成以后就可以在pages里面的其他页面里面使用这些组件。"></a>4、如果我们要使用这些组件必须在app.module.ts里面注册我们的模块，注册完成以后就可以在pages里面的其他页面里面使用这些组件。</h5><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\appmodule1.png" alt=""></p><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\appmodule2.png" alt=""></p><h3 id="ionic3-x-创建页面以及页面跳转"><a href="#ionic3-x-创建页面以及页面跳转" class="headerlink" title="ionic3.x 创建页面以及页面跳转"></a>ionic3.x 创建页面以及页面跳转</h3><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\yemian1.png" alt=""></p><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\yemian2.png" alt=""></p><p><img src="/2018/04/10/ionic学习之结构分析以及组件使用/C:/blog\source\_posts\ionic学习之结构分析以及组件使用\yemian3.png" alt=""></p>]]></content:encoded>
+      
+      <comments>http://yoursite.com/2018/04/10/ionic%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%BB%A5%E5%8F%8A%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>ionic学习之环境搭建</title>
@@ -85,59 +104,6 @@
       <content:encoded><![CDATA[<h3 id="发布Creator游戏到小程序平台"><a href="#发布Creator游戏到小程序平台" class="headerlink" title="发布Creator游戏到小程序平台"></a>发布Creator游戏到小程序平台</h3><p>1、下载微信开发者工具</p><p>2、在Creator偏好中设置微信开发者工具路径</p><p>3、登录微信公众平台，找到appid</p><p>4、在构建面板中设置项目名和appid</p><p>5、构建发布</p><p>6、点击play打开微信开发者工具</p><p>7、预览部署</p><h3 id="小游戏平台的资源管理"><a href="#小游戏平台的资源管理" class="headerlink" title="小游戏平台的资源管理"></a>小游戏平台的资源管理</h3><h4 id="1、游戏包体小于4MB可以直接上传"><a href="#1、游戏包体小于4MB可以直接上传" class="headerlink" title="1、游戏包体小于4MB可以直接上传"></a>1、游戏包体小于4MB可以直接上传</h4><p>因为小游戏是一次性加载所有的资源，不是按需加载，所以小游戏的包体大小越小，用户体验越好。</p><h4 id="2、代码库-远程资源的支持"><a href="#2、代码库-远程资源的支持" class="headerlink" title="2、代码库+远程资源的支持"></a>2、代码库+远程资源的支持</h4><p>推荐方法：代码库全部放在小游戏包体里面，远程资源放在服务器上。只需设置远程资源路径，就会自动寻找是否有远程资源，有远程资源就会自动下载，然后放在本地跟代码库一起运行。</p><h4 id="3、远程资源的版本管理"><a href="#3、远程资源的版本管理" class="headerlink" title="3、远程资源的版本管理"></a>3、远程资源的版本管理</h4>]]></content:encoded>
       
       <comments>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8BCocos/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>微信小游戏的关系链数据</title>
-      <link>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE/</link>
-      <guid>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE/</guid>
-      <pubDate>Thu, 05 Apr 2018 19:20:59 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;微信用户的关系链数据组成&quot;&gt;&lt;a href=&quot;#微信用户的关系链数据组成&quot; class=&quot;headerlink&quot; title=&quot;微信用户的关系链数据组成&quot;&gt;&lt;/a&gt;微信用户的关系链数据组成&lt;/h3&gt;&lt;p&gt;包括两部分：&lt;/p&gt;
-&lt;p&gt;​      该用户好友的用户数据  &lt;/p&gt;
-&lt;p&gt;​       该用户所在的某个群的群成员的用户数据。&lt;/p&gt;
-&lt;p&gt;获取关系链数据的API：&lt;/p&gt;
-&lt;p&gt;​      &lt;a href=&quot;https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wx.getFriendCloudStorage()&lt;/a&gt;获取当前用户也玩该小游戏的好友的用户数据&lt;/p&gt;
-&lt;p&gt;​      &lt;a href=&quot;https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;wx.getGroupCloudStorage()&lt;/a&gt; 获取当前用户在某个群中也玩该小游戏的成员的用户数据&lt;/p&gt;
-&lt;p&gt;API返回的结果为一个对象数组，数组的每一个元素都是一个表示用户数据的对象。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;属性&lt;/th&gt;
-&lt;th&gt;类型&lt;/th&gt;
-&lt;th&gt;说明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;openId&lt;/td&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;用户的openId&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;avatarUrI&lt;/td&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;用户的微信头像url&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;nickName&lt;/td&gt;
-&lt;td&gt;string&lt;/td&gt;
-&lt;td&gt;用户的微信昵称&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;data&lt;/td&gt;
-&lt;td&gt;Object&lt;/td&gt;
-&lt;td&gt;用户的游戏数据&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="微信用户的关系链数据组成"><a href="#微信用户的关系链数据组成" class="headerlink" title="微信用户的关系链数据组成"></a>微信用户的关系链数据组成</h3><p>包括两部分：</p><p>​      该用户好友的用户数据  </p><p>​       该用户所在的某个群的群成员的用户数据。</p><p>获取关系链数据的API：</p><p>​      <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getFriendCloudStorage()</a>获取当前用户也玩该小游戏的好友的用户数据</p><p>​      <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getGroupCloudStorage()</a> 获取当前用户在某个群中也玩该小游戏的成员的用户数据</p><p>API返回的结果为一个对象数组，数组的每一个元素都是一个表示用户数据的对象。</p><table><thead><tr><th>属性</th><th>类型</th><th>说明</th></tr></thead><tbody><tr><td>openId</td><td>string</td><td>用户的openId</td></tr><tr><td>avatarUrI</td><td>string</td><td>用户的微信头像url</td></tr><tr><td>nickName</td><td>string</td><td>用户的微信昵称</td></tr><tr><td>data</td><td>Object</td><td>用户的游戏数据</td></tr></tbody></table><a id="more"></a><h3 id="关系链数据的应用场景"><a href="#关系链数据的应用场景" class="headerlink" title="关系链数据的应用场景"></a>关系链数据的应用场景</h3><p>例如 用户的段位、战绩、积分等排行榜，这些游戏业务特有的数据，都可以用到这个功能。</p><p>通过调用 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.setUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.setUserCloudStorage()</a> 可以将当前用户的游戏数据托管在微信后台。只有被托管过数据的用户，才会被视为 <code>玩过</code> 该小游戏的用户，才会出现在 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getFriendCloudStorage()</a> 和 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getGroupCloudStorage()</a> 返回的对象数组中。</p><p>除此之外，我们还提供了以下 API：</p><ul><li><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.removeUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.removeUserCloudStorage()</a> 删除用户托管数据中指定字段的数据</li><li><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getUserCloudStorage()</a> 获取当前用户的托管数据</li></ul><p><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getUserCloudStorage</a>、<a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getFriendCloudStorage()</a> 和 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.getGroupCloudStorage()</a> 只能在 <code>开放数据域</code> 中调用。<br><a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.setUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.setUserCloudStorage()</a> 和 <a href="https://developers.weixin.qq.com/minigame/dev/document/open-api/data/wx.removeUserCloudStorage.html?t=2018329" target="_blank" rel="noopener">wx.removeUserCloudStorage()</a> 可以同时在 <code>主域</code> 和开放数据域中调用。</p><h3 id="展示关系链数据"><a href="#展示关系链数据" class="headerlink" title="展示关系链数据"></a>展示关系链数据</h3><p>如果想要展示通过关系链 API 获取到的用户数据，如绘制排行榜等业务场景，需要将排行榜绘制到 <code>sharedCanvas</code> 上，再在主域将 sharedCanvas 渲染上屏。</p><p><img src="https://developers.weixin.qq.com/minigame/dev/tutorial/images/open-data/data-flow.png" alt=""></p>]]></content:encoded>
-      
-      <comments>http://yoursite.com/2018/04/06/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E5%85%B3%E7%B3%BB%E9%93%BE%E6%95%B0%E6%8D%AE/#disqus_thread</comments>
     </item>
     
   </channel>
